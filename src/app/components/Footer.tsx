@@ -6,7 +6,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({}) => {
   return (
-  <div>123</div>
+  <div>12345</div>
   )
 }
 
