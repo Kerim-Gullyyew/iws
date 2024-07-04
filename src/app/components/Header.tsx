@@ -13,7 +13,7 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, RectangleGroupIcon } from '
 
 const products = [
   {
-    name: 'Analytics12',
+    name: 'Analytics123',
     description: 'Get a better understanding where your traffic is coming from',
     href: '#',
     icon: ChartPieIcon,
