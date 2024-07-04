@@ -13,11 +13,7 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, RectangleGroupIcon } from '
 
 const products = [
   {
-<<<<<<< Updated upstream
-    name: 'Analytics123',
-=======
     name: 'Analytics12',
->>>>>>> Stashed changes
     description: 'Get a better understanding where your traffic is coming from',
     href: '#',
     icon: ChartPieIcon,
