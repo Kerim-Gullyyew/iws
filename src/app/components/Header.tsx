@@ -16,7 +16,7 @@ const products = [
 <<<<<<< Updated upstream
     name: 'Analytics12',
 =======
-    name: 'Analytics1',
+    name: 'Analytics12',
 >>>>>>> Stashed changes
     description: 'Get a better understanding where your traffic is coming from',
     href: '#',
