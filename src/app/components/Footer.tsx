@@ -6,7 +6,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({}) => {
   return (
-  <div></div>
+  <div>sdfs</div>
   )
 }
 
