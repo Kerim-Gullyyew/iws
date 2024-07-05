@@ -52,27 +52,35 @@ const Header: React.FC<HeaderProps> = ({ }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="fixed w-full isolate z-10 bg-white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <header className="fixed w-full isolate z-50 bg-white shadow-sm">
+      <nav className="mx-auto container flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">IWS Online School</span>
-            <img className="h-10 w-auto" src="./IWS_Logo.webp" alt="" />
+            <img className="h-10 w-auto" src="./IWS_Logo.webp" alt="IWS Online School Icon" />
           </a>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex lg:hidden xs:items-center xs:gap-4">
+          <div className="hidden xs:flex">
+            <a
+              href="#"
+              className="rounded-md bg-indigo-600 px-5 py-2 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Sign up
+            </a>
+          </div>
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <Bars3Icon className="h-8 w-8" aria-hidden="true" />
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover>
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 font-semibold leading-6 text-gray-900">
               About Us
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
@@ -121,20 +129,20 @@ const Header: React.FC<HeaderProps> = ({ }) => {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="font-semibold leading-6 text-gray-900">
             Features
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="font-semibold leading-6 text-gray-900">
             Marketplace
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="font-semibold leading-6 text-gray-900">
             Company
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="#"
-            className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-indigo-600 px-5 py-2 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Sign up
           </a>
@@ -148,8 +156,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                src="./IWS_Logo.webp" alt="IWS Online School Icon"
               />
             </a>
             <button
