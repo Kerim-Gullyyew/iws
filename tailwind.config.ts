@@ -11,7 +11,7 @@ const config: Config = {
       center: true,
       padding: "2rem",
       screens: {
-        'xl': '1200px',
+        'xl': '1400px',
       },
     },
     extend: {
@@ -29,8 +29,9 @@ const config: Config = {
       },
 
       colors: {
-        primary: "#F70776",
+        primary: "#003372",
         background: "#FFF5E4",
+        cardback: "#F4F5F8",
       },
     },
   },
