@@ -74,7 +74,7 @@ export default function Home() {
           <div className="relative bg-sky-100 rounded-xl ">
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
-                <h3 className='text-base font-semibold text-gray-900'>Ages 7-11</h3>
+                <h3 className='text-base font-semibold text-gray-900'>Ages 11-14</h3>
 
               </div>
               <img className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
@@ -82,8 +82,8 @@ export default function Home() {
 
             <div className="bg-white flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h1 className="text-3xl text-gray-900 font-bold">Primary School</h1>
-                <p className="text-lg font-semibold">A strong foundation and a love for learning for your child.</p>
+                <h1 className="text-3xl text-gray-900 font-bold">Middle School</h1>
+                <p className="text-lg font-semibold">Foster your child’s growth and academic success.</p>
 
               </div>
 
@@ -99,7 +99,7 @@ export default function Home() {
           <div className="relative bg-sky-100 rounded-xl ">
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
-                <h3 className='text-base font-semibold text-gray-900'>Ages 7-11</h3>
+                <h3 className='text-base font-semibold text-gray-900'>Ages 14-16</h3>
 
               </div>
               <img className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
@@ -107,8 +107,8 @@ export default function Home() {
 
             <div className="bg-white flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h1 className="text-3xl text-gray-900 font-bold">Primary School</h1>
-                <p className="text-lg font-semibold">A strong foundation and a love for learning for your child.</p>
+                <h1 className="text-3xl text-gray-900 font-bold">I/GCSE</h1>
+                <p className="text-lg font-semibold">Unlock your teen’s full potential and prepare for future success.</p>
 
               </div>
 
@@ -124,7 +124,7 @@ export default function Home() {
           <div className="relative bg-sky-100 rounded-xl ">
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
-                <h3 className='text-base font-semibold text-gray-900'>Ages 7-11</h3>
+                <h3 className='text-base font-semibold text-gray-900'>Ages 16-18</h3>
 
               </div>
               <img className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
@@ -132,8 +132,8 @@ export default function Home() {
 
             <div className="bg-white flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h1 className="text-3xl text-gray-900 font-bold">Primary School</h1>
-                <p className="text-lg font-semibold">A strong foundation and a love for learning for your child.</p>
+                <h1 className="text-3xl text-gray-900 font-bold">A Level</h1>
+                <p className="text-lg font-semibold">Prepare teens for university with advanced studies.</p>
 
               </div>
 
@@ -357,7 +357,7 @@ export default function Home() {
                 <p className='text-lg leading-6 text-gray-900 font-semibold'>
                   Blend online learning with hands-on experience.
                 </p>
-                <p className='text-lg leading-6 text-gray-900 font-semibold'>Every child is unique. Our personalized assessments and Success Coaching ensure tailored educational paths for every student.</p>
+                <p className='text-lg leading-6 text-gray-900 font-semibold'>From September to June, students join live online classes, then attend a 4-week summer camp in the UK.</p>
               </div>
               <div className="flex flex-1 bg-white shadow-sm rounded-full px-8 py-4 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                 <h2 className="text-xl tracking-wide font-semibold">Learn more</h2>
@@ -435,8 +435,8 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap gap-5">
-              <button className="bg-blue-600 rounded-lg hover:border hover:border-inherit hover:border-blue-600 px-8 py-2 text-white hover:bg-blue-700 transition-colors duration-300 font-semibold text-lg">Contact Us</button>
-              <button className=" border-blue-600  hover:bg-blue-600 transition-all duration-300 border-[3px] rounded-lg px-8 py-2 text-white font-semibold text-lg">Enrol now</button>
+              <button className="bg-blue-600 rounded-lg hover:border hover:border-inherit hover:border-blue-600 px-8 py-2 text-white hover:bg-blue-700 transition-colors duration-300 font-semibold text-lg">Book a Call</button>
+              <button className=" border-blue-600  hover:bg-blue-600 transition-all duration-300 border-[3px] rounded-lg px-8 py-2 text-white font-semibold text-lg">Contact Us</button>
 
             </div>
 
