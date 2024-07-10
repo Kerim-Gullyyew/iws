@@ -1,0 +1,21 @@
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  color: #000; /* Change the color of the navigation buttons */
+  background-color: rgba(255, 255, 255, 0.7); /* Add a background color */
+  padding: 10px; /* Add padding to the buttons */
+  border-radius: 50%; /* Make the buttons round */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow to the buttons */
+}
+
+.mySwiper .swiper-button-next:hover,
+.mySwiper .swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+  transform: scale(1.1); /* Add a scale effect on hover */
+}
+
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+  font-size: 20px; /* Increase the size of the arrows */
+}

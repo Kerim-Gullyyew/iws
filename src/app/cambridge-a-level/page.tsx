@@ -11,12 +11,12 @@ const page: React.FC<pageProps> = ({ }) => {
     <div className='py-14 lg:py-24'>
       <div className='gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row'>
         <div className='flex flex-col gap-5'>
-          <h3 className='text-lg font-bold text-blue-600'>Ages from 14 - 16</h3>
-          <h1 className='text-3xl font-bold text-gray-900'>
-            Cambridge I/GCSE
+          <h3 className='text-lg font-bold text-blue-600'>Ages from 16 - 19</h3>
+          <h1 className='text-5xl font-bold text-blue-900'>
+            Cambridge Online A Level Course
           </h1>
           <p className='text-lg leading-8 text-gray-900'>
-            The two-year IWS Online School I/GCSE programme sets your child on the path to obtaining globally recognised and accredited Cambridge certifications. The I/GCSE is an esteemed qualification widely accepted by renowned universities and employers worldwide, serving as a powerful catalyst for both academic and professional advancement, ensuring future success on a global scale. Enrol in our I/GCSE online courses today!
+            A Levels at IWS Online School hold global recognition from esteemed universities and leading employers, significantly enhancing our students’ prospects of gaining admission to their desired institutions and securing positions in top organisations. We deliver top-quality A Level Online teaching  to successfully prepare students to achieve their academic goals.
           </p>
 
           <div className="flex flex-wrap gap-5">
@@ -24,7 +24,7 @@ const page: React.FC<pageProps> = ({ }) => {
             <button className="bg-blue-600 rounded-lg px-6 py-2 text-white hover:bg-blue-700 transition-all duration-300 font-semibold text-lg">Contact Us</button>
           </div>
         </div>
-        <img className="max-w-lg w-3/4 lg:w-[450px] xl:w-auto object-contain" src="./Hero.webp" alt="Hero Image" />
+        <img className="max-w-lg w-3/4 lg:w-[450px] xl:w-auto object-contain" src="./Hero2.webp" alt="Hero Image" />
 
       </div>
 
@@ -32,8 +32,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className='pt-20 flex flex-col gap-14'>
         <div className='container flex flex-col gap-5'>
-          <h1 className='text-center text-4xl text-blue-900 font-bold tracking-tight'>Fulfilling Potential</h1>
-          <h2 className='text-blue-900 text-3xl text-center'>Shaping Future Success: IWS Online School's I/GCSE Courses</h2>
+          <h1 className='text-center text-4xl text-blue-900 font-bold tracking-tight'>Supporting the Transition From IGCSE to A Levels and Helping Students Succeed</h1>
         </div>
 
 
@@ -43,9 +42,10 @@ const page: React.FC<pageProps> = ({ }) => {
               <img className='h-full object-cover' src="./igcse/Student_1-1.jpg" alt="igcse" />
 
             </div>
-            <div className='container lg:col-span-3 flex flex-col gap-5 py-10 justify-center items-center'>
-              <h1 className='text-4xl font-bold text-blue-900'>Personalised Instruction in Private, Virtual Classrooms</h1>
-              <p className='text-xl leading-10 text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
+            <div className='container lg:col-span-3 flex flex-col gap-5 py-10 justify-center'>
+              <h1 className='text-4xl font-bold text-blue-900'>Elevate Your Distance Learning Journey</h1>
+              <p className='text-lg text-blue-600'>A Level 6th Form Excellence at IWS Online School</p>
+              <p className='text-xl leading-10 text-gray-800 pt-4'>Experience a seamless transition from I/GCSE to A Level with our flexible online studies. Our dedicated teachers foster independent learning in small class settings, ensuring every student reaches their full potential.</p>
             </div>
           </div>
 
@@ -68,9 +68,12 @@ const page: React.FC<pageProps> = ({ }) => {
               <img className='h-full max-h-96 lg:max-h-full lg:h-full w-full object-cover lg:max-w-[900px]' src="./igcse/Student_2-1.jpg" alt="igcse" />
 
             </div>
-            <div className='container flex flex-col gap-5 py-10 justify-center items-center'>
-              <h1 className='text-4xl font-bold text-green-800'>Comprehensive I/GCSE Courses for Academic Excellence</h1>
-              <p className='text-xl leading-10 text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
+            <div className='container flex flex-col gap-5 py-10 justify-center'>
+              <h1 className='text-4xl font-bold text-gray-900'>Empowering Your Future</h1>
+              <h2 className='text-lg text-green-600'>
+                Comprehensive Online A Level Support at IWS Online School
+              </h2>
+              <p className='text-xl leading-10 text-gray-800'>Benefit from 24/7 access to resources for A Level revision and exam preparations. Our recorded classes allow for personalised pacing, while after-school clubs offer opportunities for social and intellectual growth.</p>
             </div>
           </div>
 
@@ -81,12 +84,12 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className='pt-20 container'>
         <div className='flex flex-col gap-6'>
-          <h1 className='text-3xl text-center text-blue-900 font-bold'>
-            I/GCSE Curriculum Packages
-          </h1>
           <p className='text-lg text-center text-blue-900 leading-10'>
-            Find your perfect combination of I/GCSE online subjects.
+            Maximise your academic potential with IWS Online School. Explore our A Level subjects here and combine current studies with IWS courses for exam preparation or distance learning.
           </p>
+          <h1 className='text-3xl text-center text-blue-900 font-bold'>
+            Study A Level Online Subjects
+          </h1>
         </div>
 
 
@@ -232,7 +235,8 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className='pt-20 container flex flex-col gap-4'>
         <h1 className='text-center text-4xl text-blue-900 font-bold'>
-          Cambridge I/GCSE Tuition Fees
+          Cambridge A Level
+          Course Tuition Fees
         </h1>
         <p className='text-center text-xl'>
           Our initial meeting is free with no obligations. If you decide to enroll, our flexible fee structure includes a £200 one-time fee covering comprehensive tests to tailor your child’s education. For pricing details, visit our tuition fees page.
