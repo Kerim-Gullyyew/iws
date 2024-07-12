@@ -13,7 +13,7 @@ const page: React.FC<pageProps> = ({ }) => {
     <div className='py-14 lg:py-24 container'>
       <h1 className='text-center text-4xl font-bold text-sky-500'>School Fees</h1>
       <h2 className='text-center text-lg font-bold mt-14'>
-        fGive your child the best education at the most reasonable rates at IWS.
+        Give your child the best education at the most reasonable rates at IWS.
       </h2>
       <p className='text-center text-lg text-gray-900 tracking-wide mt-5'>
         Our initial meeting is free. If you decide to enrol, our flexible fee structure includes a £200 one-time registration
