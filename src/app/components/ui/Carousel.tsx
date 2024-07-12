@@ -32,28 +32,28 @@ const Carousel: React.FC<CarouselProps> = ({ }) => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={50} height={50} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={50} height={50} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={50} height={50} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={50} height={50} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={50} height={50} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={50} height={50} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={50} height={50} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={50} height={50} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
 
 

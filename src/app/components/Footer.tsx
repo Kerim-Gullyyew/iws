@@ -103,7 +103,7 @@ const Footer: React.FC<FooterProps> = ({ }) => {
 
         <div className="mt-16 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
           <div>
-            <Image className="h-10 w-auto" src="./IWS_Logo.webp" alt="IWS Online School Icon" />
+            <Image width={50} height={50} className="h-10 w-auto" src="/IWS_Logo.webp" alt="IWS Online School Icon" />
           </div>
           <form className="mt-6 sm:flex sm:max-w-md lg:mt-0">
             <label htmlFor="email-address" className="sr-only">

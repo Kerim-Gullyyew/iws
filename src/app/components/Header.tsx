@@ -59,7 +59,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
         <div className="flex lg:flex-1">
           <Link className="-m-1.5 p-1.5" href={"http://localhost:3000/"} >
             <span className="sr-only">IWS Online School</span>
-            <Image className="h-10 w-auto" src="./IWS_Logo.webp" alt="IWS Online School Icon" />
+            <Image width={50} height={50} className="h-10 w-auto" src="/IWS_Logo.webp" alt="IWS Online School Icon" />
           </Link>
         </div>
         <div className="flex lg:hidden xs:items-center xs:gap-4">
@@ -163,9 +163,9 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <Image
+              <Image width={50} height={50}
                 className="h-8 w-auto"
-                src="./IWS_Logo.webp" alt="IWS Online School Icon"
+                src="/IWS_Logo.webp" alt="IWS Online School Icon"
               />
             </a>
             <button

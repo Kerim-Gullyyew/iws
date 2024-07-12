@@ -267,7 +267,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
       <div className='pt-20 flex flex-col md:flex-row lg:flex-row-reverse gap-5'>
-        <Image className=' object-cover md:w-1/2' src="./IWS_fees_1.webp" alt="" />
+        <Image width={50} height={50} className=' object-cover md:w-1/2' src="/IWS_fees_1.webp" alt="" />
         <div className='flex flex-col gap-5 justify-center'>
           <h1 className='text-4xl text-sky-500 font-bold'>
             What our fees include

@@ -36,7 +36,7 @@ export default function Home() {
 
         </div>
 
-        <Image className="max-w-lg w-3/4 lg:w-[450px] xl:w-auto object-contain" src="./Hero.webp" alt="Hero Image" />
+        <Image width={50} height={50} className="max-w-lg w-3/4 lg:w-[450px] xl:w-auto object-contain" src="/Hero.webp" alt="Hero Image width={50} height={50}" />
       </div>
 
       <div className="pt-20 container">
@@ -52,7 +52,7 @@ export default function Home() {
                 <h3 className='text-base font-semibold text-gray-900'>Ages 7-11</h3>
 
               </div>
-              <Image className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
+              <Image width={50} height={50} className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="/programm/Primary@2x.webp" alt="Hero Image width={50} height={50}" />
             </div>
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
@@ -79,7 +79,7 @@ export default function Home() {
                 <h3 className='text-base font-semibold text-gray-900'>Ages 11-14</h3>
 
               </div>
-              <Image className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
+              <Image width={50} height={50} className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="/programm/Primary@2x.webp" alt="Hero Image width={50} height={50}" />
             </div>
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
@@ -104,7 +104,7 @@ export default function Home() {
                 <h3 className='text-base font-semibold text-gray-900'>Ages 14-16</h3>
 
               </div>
-              <Image className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
+              <Image width={50} height={50} className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="/programm/Primary@2x.webp" alt="Hero Image width={50} height={50}" />
             </div>
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
@@ -129,7 +129,7 @@ export default function Home() {
                 <h3 className='text-base font-semibold text-gray-900'>Ages 16-18</h3>
 
               </div>
-              <Image className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
+              <Image width={50} height={50} className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="/programm/Primary@2x.webp" alt="Hero Image width={50} height={50}" />
             </div>
 
             <div className="bg-white flex flex-1 gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
@@ -164,7 +164,7 @@ export default function Home() {
           </div>
 
           <div className="overflow-hidden gap-10 md:gap-0 flex flex-col md:flex-row-reverse md:items-center rounded-xl col-span-6 md:col-span-4 bg-sky-100">
-            <Image className="object-contain self-center md:w-3/5 max-w-sm" src="./await/2-1-1024x589.webp" alt="Hero Image" />
+            <Image width={50} height={50} className="object-contain self-center md:w-3/5 max-w-sm" src="/await/2-1-1024x589.webp" alt="Hero Image width={50} height={50}" />
 
             <div className='flex flex-col gap-6 px-6 py-8'>
               <h2 className='text-3xl font-bold text-gray-900 tracking-wide'>Our teachers are always in touch</h2>
@@ -177,7 +177,7 @@ export default function Home() {
 
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-violet-100">
-            <Image className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="./await/3.webp" alt="Hero Image" />
+            <Image width={50} height={50} className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="/await/3.webp" alt="Hero Image width={50} height={50}" />
 
             <div className='flex flex-col gap-6 pt-44 md:pt-20 lg:pt-0'>
               <h2 className='text-3xl font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl'>Individual
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-pink-100">
-            <Image className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="./await/4.webp" alt="Hero Image" />
+            <Image width={50} height={50} className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="/await/4.webp" alt="Hero Image width={50} height={50}" />
 
             <div className='flex flex-col gap-6 pt-44 md:pt-20 lg:pt-0'>
               <h2 className='text-3xl font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl'>Dynamic Live Lessons</h2>
@@ -197,7 +197,7 @@ export default function Home() {
 
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-amber-100">
-            <Image className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="./await/5.webp" alt="Hero Image" />
+            <Image width={50} height={50} className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="/await/5.webp" alt="Hero Image width={50} height={50}" />
 
             <div className='flex flex-col gap-6 pt-44 md:pt-20 lg:pt-0'>
               <h2 className='text-3xl font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl'>Accredited Curriculum</h2>
@@ -206,7 +206,7 @@ export default function Home() {
           </div>
 
           <div className="overflow-hidden gap-10 md:gap-0 flex flex-col md:flex-row-reverse md:items-center rounded-xl col-span-6  bg-sky-100">
-            <Image className="object-contain self-center md:w-3/5 max-w-sm" src="./await/6-1024x399.webp" alt="Hero Image" />
+            <Image width={50} height={50} className="object-contain self-center md:w-3/5 max-w-sm" src="/await/6-1024x399.webp" alt="Hero Image width={50} height={50}" />
 
             <div className='flex flex-col gap-6 px-6 py-8'>
               <h2 className='text-3xl font-bold text-gray-900 tracking-wide'>Taking care of parents</h2>
@@ -229,7 +229,7 @@ export default function Home() {
 
             <div className="group w-[430px] relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
               <div className="">
-                <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./benefit/4_1.webp" alt="" />
+                <Image width={50} height={50} className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/benefit/4_1.webp" alt="" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
               <div className="absolute inset-0 flex translate-y-3/4 xs:translate-y-[70%] flex-col justify-center px-3 xs:px-9 py-4 xs:py-10 transition-all duration-500 group-hover:translate-y-0 gap-3 xs:gap-10">
@@ -257,7 +257,7 @@ export default function Home() {
 
             <div className="group w-[430px] relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
               <div className="">
-                <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./benefit/4_2.webp" alt="" />
+                <Image width={50} height={50} className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/benefit/4_2.webp" alt="" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
               <div className="absolute inset-0 flex translate-y-3/4 xs:translate-y-[70%] flex-col justify-center px-3 xs:px-9 py-4 xs:py-10 transition-all duration-500 group-hover:translate-y-0 gap-3 xs:gap-10">
@@ -285,7 +285,7 @@ export default function Home() {
 
             <div className="group w-[430px] relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
               <div className="">
-                <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./benefit/4_3.webp" alt="" />
+                <Image width={50} height={50} className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/benefit/4_3.webp" alt="" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
               <div className="absolute inset-0 flex translate-y-3/4 xs:translate-y-[70%] flex-col justify-center px-3 xs:px-9 py-4 xs:py-10 transition-all duration-500 group-hover:translate-y-0 gap-3 xs:gap-10">
@@ -313,7 +313,7 @@ export default function Home() {
 
             <div className="group w-[430px] relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
               <div className="">
-                <Image className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./benefit/4_1.webp" alt="" />
+                <Image width={50} height={50} className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/benefit/4_1.webp" alt="" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
               <div className="absolute inset-0 flex translate-y-3/4 xs:translate-y-[70%] flex-col justify-center px-3 xs:px-9 py-4 xs:py-10 transition-all duration-500 group-hover:translate-y-0 gap-3 xs:gap-10">
@@ -351,7 +351,7 @@ export default function Home() {
 
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
-            <Image className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="./await/3.webp" alt="Hero Image" />
+            <Image width={50} height={50} className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="/await/3.webp" alt="Hero Image width={50} height={50}" />
             <div className='flex flex-col gap-14'>
               <div className='flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0'>
                 <h2 className='text-4xl font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl'>Hybrid
@@ -370,7 +370,7 @@ export default function Home() {
           </div>
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
-            <Image className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="./await/3.webp" alt="Hero Image" />
+            <Image width={50} height={50} className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="/await/3.webp" alt="Hero Image width={50} height={50}" />
             <div className='flex flex-col gap-14'>
               <div className='flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0'>
                 <h2 className='text-4xl font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl'>Hybrid
@@ -389,7 +389,7 @@ export default function Home() {
           </div>
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
-            <Image className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="./await/3.webp" alt="Hero Image" />
+            <Image width={50} height={50} className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="/await/3.webp" alt="Hero Image width={50} height={50}" />
             <div className='flex flex-col gap-14'>
               <div className='flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0'>
                 <h2 className='text-4xl font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl'>Hybrid
@@ -444,7 +444,7 @@ export default function Home() {
 
           </div>
 
-          <Image className="object-contain md:w-1/2 self-end" src="./Brochure.png" alt="Hero Image" />
+          <Image width={50} height={50} className="object-contain md:w-1/2 self-end" src="/Brochure.png" alt="Hero Image width={50} height={50}" />
 
 
         </div>
