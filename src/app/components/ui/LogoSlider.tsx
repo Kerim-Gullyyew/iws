@@ -38,7 +38,7 @@ const LogoSlider: React.FC<LogoSliderProps> = ({ }) => {
     <div className="logos overflow-hidden py-15 bg-white relative">
       <div className="logos-slide inline-block animate-slide">
         {logos.map((logo, index) => (
-          <Image width={50} height={50}
+          <Image width={1000} height={1000}
             key={index}
             src={`/logos/${logo}`}
             alt={`${logo}`}
