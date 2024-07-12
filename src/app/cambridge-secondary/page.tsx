@@ -16,7 +16,7 @@ const page: React.FC<pageProps> = ({ }) => {
             Cambridge Secondary
           </h1>
           <p className='text-lg leading-8 text-gray-900'>
-            At IWS Online School, Middle level Education commences at age 11, culminating with students undertaking the prestigious Cambridge I/GCSE exams. This educational journey encompasses two distinct phases: Middle (spanning the initial three years) and I/GCSE (comprising two years). Upon successful completion, students will be well-prepared to embark on their A-Level studies.
+            At IWS fOnline School, Middle level Education commences at age 11, culminating with students undertaking the prestigious Cambridge I/GCSE exams. This educational journey encompasses two distinct phases: Middle (spanning the initial three years) and I/GCSE (comprising two years). Upon successful completion, students will be well-prepared to embark on their A-Level studies.
           </p>
 
           <div className="flex flex-wrap gap-5">
