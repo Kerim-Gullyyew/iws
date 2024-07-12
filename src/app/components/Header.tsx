@@ -10,6 +10,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, RectangleGroupIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 const products = [
   {
@@ -79,18 +80,20 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="/cambridge-primary/" className="font-semibold leading-6 text-gray-900">
+          <Link className='font-semibold leading-6 text-gray-900' href={"/cambridge-primary/"} >
             Primary
-          </a>
-          <a href="/cambridge-secondary/" className="font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link className='font-semibold leading-6 text-gray-900' href={"/cambridge-secondary/"} >
             Middle
-          </a>
-          <a href="/cambridge-igcse/" className="font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link className='font-semibold leading-6 text-gray-900' href={"/cambridge-igcse/"} >
             I/GCSE
-          </a>
-          <a href="/cambridge-a-level/" className="font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link className='font-semibold leading-6 text-gray-900' href={"/cambridge-a-level/"} >
             A Level
-          </a>
+          </Link>
+
+
           <Popover>
             <Popover.Button className="flex items-center gap-x-1 font-semibold leading-6 text-gray-900">
               About Us
