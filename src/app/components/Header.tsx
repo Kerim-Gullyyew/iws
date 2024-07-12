@@ -79,6 +79,18 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
+          <a href="/cambridge-primary/" className="font-semibold leading-6 text-gray-900">
+            Primary
+          </a>
+          <a href="/cambridge-secondary/" className="font-semibold leading-6 text-gray-900">
+            Middle
+          </a>
+          <a href="/cambridge-igcse/" className="font-semibold leading-6 text-gray-900">
+            I/GCSE
+          </a>
+          <a href="/cambridge-a-level/" className="font-semibold leading-6 text-gray-900">
+            A Level
+          </a>
           <Popover>
             <Popover.Button className="flex items-center gap-x-1 font-semibold leading-6 text-gray-900">
               About Us
@@ -128,23 +140,13 @@ const Header: React.FC<HeaderProps> = ({ }) => {
               </Popover.Panel>
             </Transition>
           </Popover>
-
-          <a href="#" className="font-semibold leading-6 text-gray-900">
-            Features
-          </a>
-          <a href="#" className="font-semibold leading-6 text-gray-900">
-            Marketplace
-          </a>
-          <a href="#" className="font-semibold leading-6 text-gray-900">
-            Company
-          </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="#"
             className="rounded-md bg-indigo-600 px-5 py-2 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Sign up
+            Enrol Now
           </a>
         </div>
       </nav>
