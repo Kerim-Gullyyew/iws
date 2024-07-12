@@ -45,7 +45,7 @@ export default function Home() {
         <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-4 xl:gap-8 gap-y-14">
 
 
-          <div className="relative bg-sky-100 rounded-xl ">
+          <div className="relative bg-sky-100 flex flex-col justify-between rounded-xl  ">
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
                 <h3 className='text-base font-semibold text-gray-900'>Ages 7-11</h3>
@@ -54,14 +54,14 @@ export default function Home() {
               <img className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
             </div>
 
-            <div className="bg-white flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
+            <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
                 <h1 className="text-3xl text-gray-900 font-bold">Primary School</h1>
                 <p className="text-lg font-semibold">A strong foundation and a love for learning for your child.</p>
 
               </div>
 
-              <div className="flex flex-1 bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+              <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                 <h2 className="text-lg tracking-wide font-semibold">Learn more</h2>
                 <ArrowRightCircleIcon className="h-10 w-10 -rotate-45" aria-hidden="true" />
 
@@ -71,7 +71,8 @@ export default function Home() {
           </div>
 
 
-          <div className="relative bg-sky-100 rounded-xl ">
+          <div className="relative bg-sky-100 flex flex-col justify-between rounded-xl  ">
+
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
                 <h3 className='text-base font-semibold text-gray-900'>Ages 11-14</h3>
@@ -80,14 +81,14 @@ export default function Home() {
               <img className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
             </div>
 
-            <div className="bg-white flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
+            <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
                 <h1 className="text-3xl text-gray-900 font-bold">Middle School</h1>
                 <p className="text-lg font-semibold">Foster your child’s growth and academic success.</p>
 
               </div>
 
-              <div className="flex flex-1 bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+              <div className="flex  bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                 <h2 className="text-lg tracking-wide font-semibold">Learn more</h2>
                 <ArrowRightCircleIcon className="h-10 w-10 -rotate-45" aria-hidden="true" />
 
@@ -96,7 +97,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative bg-sky-100 rounded-xl ">
+          <div className="relative bg-sky-100 flex flex-col justify-between rounded-xl  ">
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
                 <h3 className='text-base font-semibold text-gray-900'>Ages 14-16</h3>
@@ -105,14 +106,14 @@ export default function Home() {
               <img className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
             </div>
 
-            <div className="bg-white flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
+            <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
                 <h1 className="text-3xl text-gray-900 font-bold">I/GCSE</h1>
                 <p className="text-lg font-semibold">Unlock your teen’s full potential and prepare for future success.</p>
 
               </div>
 
-              <div className="flex flex-1 bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+              <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                 <h2 className="text-lg tracking-wide font-semibold">Learn more</h2>
                 <ArrowRightCircleIcon className="h-10 w-10 -rotate-45" aria-hidden="true" />
 
@@ -121,7 +122,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative bg-sky-100 rounded-xl ">
+          <div className="relative bg-sky-100 flex flex-col justify-between rounded-xl ">
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
                 <h3 className='text-base font-semibold text-gray-900'>Ages 16-18</h3>
@@ -130,14 +131,14 @@ export default function Home() {
               <img className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="./programm/Primary@2x.webp" alt="Hero Image" />
             </div>
 
-            <div className="bg-white flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
+            <div className="bg-white flex flex-1 gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
                 <h1 className="text-3xl text-gray-900 font-bold">A Level</h1>
                 <p className="text-lg font-semibold">Prepare teens for university with advanced studies.</p>
 
               </div>
 
-              <div className="flex flex-1 bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+              <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                 <h2 className="text-lg tracking-wide font-semibold">Learn more</h2>
                 <ArrowRightCircleIcon className="h-10 w-10 -rotate-45" aria-hidden="true" />
 
