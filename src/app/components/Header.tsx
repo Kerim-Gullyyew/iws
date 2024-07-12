@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
     <header className="fixed w-full isolate z-50 bg-white shadow-sm">
       <nav className="mx-auto container flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link className="-m-1.5 p-1.5" href={"http://localhost:3000/"} >
+          <Link className="-m-1.5 p-1.5" href={"/"} >
             <span className="sr-only">IWS Online School</span>
             <Image width={1000} height={1000} className="h-10 w-auto" src="/IWS_Logo.webp" alt="IWS Online School Icon" />
           </Link>
