@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useEffect } from 'react'
 
 interface LogoSliderProps {
@@ -37,7 +38,7 @@ const LogoSlider: React.FC<LogoSliderProps> = ({ }) => {
     <div className="logos overflow-hidden py-15 bg-white relative">
       <div className="logos-slide inline-block animate-slide">
         {logos.map((logo, index) => (
-          <img
+          <Image
             key={index}
             src={`./logos/${logo}`}
             alt={`${logo}`}

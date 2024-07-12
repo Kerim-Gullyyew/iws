@@ -2,6 +2,7 @@
 import React from 'react'
 import TabSection from '../components/ui/TabSection'
 import AccordionSecondary from '../components/ui/AccordionSecondary'
+import Image from 'next/image'
 interface pageProps {
 
 }
@@ -24,7 +25,7 @@ const page: React.FC<pageProps> = ({ }) => {
             <button className="bg-blue-600 rounded-lg px-6 py-2 text-white hover:bg-blue-700 transition-all duration-300 font-semibold text-lg">Contact Us</button>
           </div>
         </div>
-        <img className="max-w-lg w-3/4 lg:w-[450px] xl:w-auto object-contain" src="./Hero.webp" alt="Hero Image" />
+        <Image className="max-w-lg w-3/4 lg:w-[450px] xl:w-auto object-contain" src="./Hero.webp" alt="Hero Image" />
 
       </div>
 
@@ -33,14 +34,14 @@ const page: React.FC<pageProps> = ({ }) => {
       <div className='pt-20 flex flex-col gap-14'>
         <div className='container flex flex-col gap-5'>
           <h1 className='text-center text-4xl text-blue-900 font-bold tracking-tight'>Fulfilling Potential</h1>
-          <h2 className='text-blue-900 text-3xl text-center'>Shaping Future Success: IWS Online School's I/GCSE Courses</h2>
+          <h2 className='text-blue-900 text-3xl text-center'>{"Shaping Future Success: IWS Online School's I/GCSE Courses"}</h2>
         </div>
 
 
         <div className='bg-white lg:container'>
           <div className='bg-indigo-50 grid grid-cols-1 lg:grid-cols-5 lg:gap-10 '>
             <div className='lg:col-span-2'>
-              <img className='h-full object-cover' src="./igcse/Student_1-1.jpg" alt="igcse" />
+              <Image className='h-full object-cover' src="./igcse/Student_1-1.jpg" alt="igcse" />
 
             </div>
             <div className='container lg:col-span-3 flex flex-col gap-5 py-10 justify-center items-center'>
@@ -65,7 +66,7 @@ const page: React.FC<pageProps> = ({ }) => {
         <div className='bg-white lg:container'>
           <div className='bg-green-50 flex flex-col lg:flex-row-reverse lg:gap-10 '>
             <div className=' flex'>
-              <img className='h-full max-h-96 lg:max-h-full lg:h-full w-full object-cover lg:max-w-[900px]' src="./igcse/Student_2-1.jpg" alt="igcse" />
+              <Image className='h-full max-h-96 lg:max-h-full lg:h-full w-full object-cover lg:max-w-[900px]' src="./igcse/Student_2-1.jpg" alt="igcse" />
 
             </div>
             <div className='container flex flex-col gap-5 py-10 justify-center items-center'>
@@ -94,7 +95,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
           <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
             <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
               <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
@@ -104,7 +105,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
           <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
             <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
               <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
@@ -114,7 +115,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
           <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
             <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
               <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
@@ -124,48 +125,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
           <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
             <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
               <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
@@ -176,7 +136,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
           <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
             <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
               <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
@@ -186,7 +146,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
           <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
             <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
               <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
@@ -196,7 +156,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
           <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
             <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
               <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
@@ -206,7 +166,48 @@ const page: React.FC<pageProps> = ({ }) => {
 
           <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
             <div className='bg-[#DAE1FF] '>
-              <img className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+            </div>
+            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
+              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+            </div>
+          </div>
+
+
+          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
+            <div className='bg-[#DAE1FF] '>
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+            </div>
+            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
+              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
+              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+            </div>
+          </div>
+
+          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
+            <div className='bg-[#DAE1FF] '>
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+            </div>
+            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
+              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+            </div>
+          </div>
+
+          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
+            <div className='bg-[#DAE1FF] '>
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
+            </div>
+            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
+              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
+              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+            </div>
+          </div>
+
+          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
+            <div className='bg-[#DAE1FF] '>
+              <Image className='max-w-20' src="./subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
               <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
@@ -244,9 +245,9 @@ const page: React.FC<pageProps> = ({ }) => {
           </h3>
 
           <div className='grid grid-cols-1 gap-10 mt-5 sm:grid-cols-2 md:grid-cols-3 justify-center items-center'>
-            <img className='lg:max-w-60' src="./accredited/889-1536x670.webp" alt="" />
-            <img className='lg:max-w-60' src="./accredited/Asset-18@3x.webp" alt="" />
-            <img className='lg:max-w-60' src="./accredited/COBISLogo.webp" alt="" />
+            <Image className='lg:max-w-60' src="./accredited/889-1536x670.webp" alt="" />
+            <Image className='lg:max-w-60' src="./accredited/Asset-18@3x.webp" alt="" />
+            <Image className='lg:max-w-60' src="./accredited/COBISLogo.webp" alt="" />
           </div>
         </div>
 

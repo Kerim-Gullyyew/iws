@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import { FreeMode, Pagination } from 'swiper/modules';
+import Image from 'next/image';
 
 
 interface CarouselProps {
@@ -31,28 +32,28 @@ const Carousel: React.FC<CarouselProps> = ({ }) => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='' src="./carousel/GOC-1024x1024.webp" alt="" />
+          <Image className='' src="./carousel/GOC-1024x1024.webp" alt="" />
         </SwiperSlide>
 
 

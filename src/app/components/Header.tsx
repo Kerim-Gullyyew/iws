@@ -11,6 +11,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, RectangleGroupIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const products = [
   {
@@ -58,7 +59,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
         <div className="flex lg:flex-1">
           <Link className="-m-1.5 p-1.5" href={"http://localhost:3000/"} >
             <span className="sr-only">IWS Online School</span>
-            <img className="h-10 w-auto" src="./IWS_Logo.webp" alt="IWS Online School Icon" />
+            <Image className="h-10 w-auto" src="./IWS_Logo.webp" alt="IWS Online School Icon" />
           </Link>
         </div>
         <div className="flex lg:hidden xs:items-center xs:gap-4">
@@ -162,7 +163,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image
                 className="h-8 w-auto"
                 src="./IWS_Logo.webp" alt="IWS Online School Icon"
               />
