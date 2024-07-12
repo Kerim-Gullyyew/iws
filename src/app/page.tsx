@@ -39,7 +39,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h1 className="text-gray-900 text-3xl text-center xs:text-4xl sm:text-5xl font-bold">The1 right study programme for you</h1>
+        <h1 className="text-gray-900 text-3xl text-center xs:text-4xl sm:text-5xl font-bold">The right study programme for you</h1>
 
 
         <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-4 xl:gap-8 gap-y-14">
