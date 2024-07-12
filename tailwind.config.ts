@@ -15,7 +15,9 @@ const config: Config = {
       },
     },
     extend: {
-
+      fontFamily: {
+        custom: ['MyCustomFont', 'sans-serif'],
+      },
       screens: {
         xs: '500px',
         sm: "576px",

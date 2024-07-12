@@ -20,7 +20,7 @@ export default function RootLayout({
         <header>
           <Header />
         </header>
-        <main className="flex flex-col pt-[90px] w-full min-h-screen bg-white">
+        <main className="flex font-custom flex-col pt-[90px] w-full min-h-screen bg-white">
           {children}
         </main>
 
