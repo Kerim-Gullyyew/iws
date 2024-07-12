@@ -56,10 +56,10 @@ const Header: React.FC<HeaderProps> = ({ }) => {
     <header className="fixed w-full isolate z-50 bg-white shadow-sm">
       <nav className="mx-auto container flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link className="-m-1.5 p-1.5" href={"http://localhost:3000/"} >
             <span className="sr-only">IWS Online School</span>
             <img className="h-10 w-auto" src="./IWS_Logo.webp" alt="IWS Online School Icon" />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden xs:items-center xs:gap-4">
           <div className="hidden xs:flex">
@@ -91,6 +91,9 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </Link>
           <Link className='font-semibold leading-6 text-gray-900' href={"/cambridge-a-level/"} >
             A Level
+          </Link>
+          <Link className='font-semibold leading-6 text-gray-900' href={"/school-fees/"} >
+            School Fees
           </Link>
 
 
