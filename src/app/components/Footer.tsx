@@ -105,7 +105,7 @@ const Footer: React.FC<FooterProps> = ({ }) => {
           <div>
             <Image width={1000} height={1000} className="h-10 w-auto" src="/IWS_Logo.webp" alt="IWS Online School Icon" />
           </div>
-          <form className="mt-6 sm:flex sm:max-w-md lg:mt-0">
+          {/* <form className="mt-6 sm:flex sm:max-w-md lg:mt-0">
             <label htmlFor="email-address" className="sr-only">
               Email address
             </label>
@@ -126,7 +126,7 @@ const Footer: React.FC<FooterProps> = ({ }) => {
                 Subscribe
               </button>
             </div>
-          </form>
+          </form> */}
         </div>
         <div className="mt-8 border-t border-white/70 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
@@ -138,7 +138,7 @@ const Footer: React.FC<FooterProps> = ({ }) => {
             ))}
           </div>
           <p className="mt-8 text-xs leading-5 text-white md:order-1 md:mt-0">
-            &copy; 2020 Your Company, Inc. All rights reserved.
+            &copy; 2024 IWS Online School LTD
           </p>
         </div>
       </div>
