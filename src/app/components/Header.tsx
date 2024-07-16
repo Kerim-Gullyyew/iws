@@ -98,7 +98,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </Link>
 
 
-          <Popover>
+          {/* <Popover>
             <Popover.Button className="flex items-center gap-x-1 font-semibold leading-6 text-gray-900">
               About Us
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
@@ -146,7 +146,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
                 </div>
               </Popover.Panel>
             </Transition>
-          </Popover>
+          </Popover> */}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
