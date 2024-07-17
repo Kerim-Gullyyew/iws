@@ -12,10 +12,10 @@ const page: React.FC<pageProps> = ({ }) => {
     <div>
       <div className='relative h-[calc(100vh-90px)] overflow-hidden flex items-center justify-center w-full'>
         <div className='absolute z-20 flex flex-col gap-5 max-w-xl'>
-          <h1 className='text-5xl font-bold text-center text-white'>
+          <h1 className='text-h1 font-bold text-center text-white'>
             About Us
           </h1>
-          <p className='text-center text-white leading-5'>
+          <p className='text-center text-p text-white leading-5'>
             IWS Online School – Your compass in the digital realm of learning. Discover new horizons, Create lasting memories, and Lead the future with our live lessons.
           </p>
 

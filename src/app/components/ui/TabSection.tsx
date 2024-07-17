@@ -114,13 +114,12 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
 
 
     <div className='flex flex-col gap-5 mt-10 max-w-4xl w-full container'>
-      <h1 className='text-4xl text-center font-bold text-blue-900'>Would you like to send us a message?</h1>
-      <p className='text-center text-xl text-gray-500'>Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we’re here to help!</p>
+      <h1 className='text-h1 text-center font-bold text-blue-900'>Would you like to send us a message?</h1>
+      <p className='text-center text-p text-gray-500'>Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we’re here to help!</p>
 
       <div className="space-y-12">
 
-
-        <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+        <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-6">
           <div className="sm:col-span-3">
             <input
               type="text"
@@ -128,7 +127,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
               id="first-name"
               placeholder='First Name *'
               autoComplete="given-name"
-              className="block w-full rounded-md border-0 py-2.5 text-[#b1b1b1] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+              className="block w-full rounded-md border-0 py-3 text-[#b1b1b1] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
             />
           </div>
 
@@ -139,7 +138,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
               id="last-name"
               placeholder='Last Name *'
               autoComplete="family-name"
-              className="block w-full rounded-md border-0 py-2.5 text-[#b1b1b1] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+              className="block w-full rounded-md border-0 py-3 text-[#b1b1b1] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
             />
           </div>
 
@@ -151,7 +150,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
               type="email"
               autoComplete="email"
               placeholder='Email'
-              className="block w-full rounded-md border-0 py-2.5 text-[#b1b1b1] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+              className="block w-full rounded-md border-0 py-3 text-[#b1b1b1] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
             />
           </div>
 
@@ -170,7 +169,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
                 name="about"
                 rows={6}
                 placeholder='Write your message here...'
-                className="block w-full rounded-md border-0 py-2.5 text-[#b1b1b1] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+                className="block w-full rounded-md border-0 py-3 text-[#b1b1b1] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
                 defaultValue={''}
               />
             </div>
@@ -188,7 +187,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
           SEND A MESSAGE
         </button>
       </div>
-      <p className='text-center text-xl text-blue-900'>
+      <p className='text-center text-p text-blue-900'>
         Simply fill out the form below, and one of our friendly team members will get back to you as soon as possible. Let’s start your journey with IWS Online School together!
       </p>
     </div>

@@ -3,6 +3,8 @@ import React from 'react'
 import TabSection from '../components/ui/TabSection'
 import AccordionSecondary from '../components/ui/AccordionSecondary'
 import Image from 'next/image'
+import ContactButton from '../components/buttons/ContactButton'
+import EnrollButton from '../components/buttons/EnrollButton'
 interface pageProps {
 
 }
@@ -12,17 +14,17 @@ const page: React.FC<pageProps> = ({ }) => {
     <div className='py-14 lg:py-24'>
       <div className='gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row'>
         <div className='flex flex-col gap-5'>
-          <h3 className='text-lg font-bold text-blue-600'>Ages from 7 - 11</h3>
-          <h1 className='text-5xl font-bold text-blue-900'>
+          <h3 className='text-h3 font-bold text-blue-600'>Ages from 7 - 11</h3>
+          <h1 className='text-h1 font-bold text-blue-900'>
             Cambridge Primary
           </h1>
-          <p className='text-lg leading-8 text-gray-900'>
+          <p className='text-p leading-8 text-gray-900'>
             Discover IWS Online School, your gateway to a comprehensive Cambridge Primary International Curriculum tailored for primary students. Our accredited UK-based virtual school is currently undergoing the authorization process with Cambridge Assessment International Education.
           </p>
 
           <div className="flex flex-wrap gap-5">
-            <button className=" border-blue-600 hover:text-white hover:bg-blue-600 transition-all duration-300 border-[3px] rounded-lg px-6 py-2 text-gray-900 font-semibold text-lg">Enrol now</button>
-            <button className="bg-blue-600 rounded-lg px-6 py-2 text-white hover:bg-blue-700 transition-all duration-300 font-semibold text-lg">Contact Us</button>
+            <EnrollButton />
+            <ContactButton />
           </div>
         </div>
         <Image width={1000} height={1000} className="max-w-lg w-3/4 lg:w-[450px] xl:w-auto object-contain" src="/Hero2.webp" alt="Hero Image width={1000} height={1000}" />
@@ -33,7 +35,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className='pt-20 flex flex-col gap-14'>
         <div className='container flex flex-col gap-5'>
-          <h1 className='text-center text-4xl text-blue-900 font-bold tracking-tight'>{"Empowering Young Minds: IWS Online School's Comprehensive Primary Curriculum"}</h1>
+          <h1 className='text-center text-h1 text-blue-900 font-bold tracking-tight'>{"Empowering Young Minds: IWS Online School's Comprehensive Primary Curriculum"}</h1>
         </div>
 
 
@@ -44,9 +46,9 @@ const page: React.FC<pageProps> = ({ }) => {
 
             </div>
             <div className='container lg:col-span-3 flex flex-col gap-5 py-10 justify-center'>
-              <h1 className='text-4xl font-bold text-blue-900'>Accessible Quality Education for Every Child</h1>
-              <p className='text-lg text-blue-600'>Cambridge Primary at IWS Online School</p>
-              <p className='text-xl leading-10 text-gray-800 pt-4'>IWS Online School is committed to providing high-quality primary education that is accessible and affordable for all families. By offering various budget-friendly options and eliminating commuting costs through online learning, we ensure that quality education is a right for every child.</p>
+              <h1 className='text-h1 font-bold text-blue-900'>Accessible Quality Education for Every Child</h1>
+              <p className='text-p text-blue-600'>Cambridge Primary at IWS Online School</p>
+              <p className='text-p leading-10 text-gray-800 pt-4'>IWS Online School is committed to providing high-quality primary education that is accessible and affordable for all families. By offering various budget-friendly options and eliminating commuting costs through online learning, we ensure that quality education is a right for every child.</p>
             </div>
           </div>
 
@@ -70,11 +72,11 @@ const page: React.FC<pageProps> = ({ }) => {
 
             </div>
             <div className='container flex flex-col gap-5 py-10 justify-center'>
-              <h1 className='text-4xl font-bold text-gray-900'>Fostering Inquisitive, Globally-Aware Citizens</h1>
-              <h2 className='text-lg text-green-600'>
+              <h1 className='text-h1 font-bold text-gray-900'>Fostering Inquisitive, Globally-Aware Citizens</h1>
+              <h2 className='text-h2 text-green-600'>
                 Comprehensive Online A Level Support at IWS Online School
               </h2>
-              <p className='text-xl leading-10 text-gray-800'>Our holistic curriculum, featuring subjects like Mathematics, English, Science, and more, is designed to produce well-rounded global citizens. We prioritise learning experiences over grades, emphasising the application of knowledge in real-world scenarios. Our dedicated teachers empower students to excel academically and prepare them for future educational challenges.</p>
+              <p className='text-p leading-10 text-gray-800'>Our holistic curriculum, featuring subjects like Mathematics, English, Science, and more, is designed to produce well-rounded global citizens. We prioritise learning experiences over grades, emphasising the application of knowledge in real-world scenarios. Our dedicated teachers empower students to excel academically and prepare them for future educational challenges.</p>
             </div>
           </div>
 
@@ -85,10 +87,10 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className='pt-20 container'>
         <div className='flex flex-col gap-6'>
-          <h1 className='text-3xl text-center text-blue-900 font-bold'>
+          <h1 className='text-h1 text-center text-blue-900 font-bold'>
             Primary Subjects
           </h1>
-          <p className='text-lg text-center text-blue-900 leading-10'>
+          <p className='text-p text-center text-blue-900 leading-10'>
             Maximise your academic potential with IWS Online School. Explore our Primary subjects here and combine current studies with IWS courses for exam preparation or further study.
           </p>
         </div>
@@ -101,8 +103,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -111,8 +114,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -121,8 +125,8 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>Biology</h4>
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -131,8 +135,53 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+            </div>
+          </div>
+
+          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
+            <div className='bg-[#DAE1FF] '>
+              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
+            </div>
+            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+            </div>
+          </div>
+
+          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
+            <div className='bg-[#DAE1FF] '>
+              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
+            </div>
+            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+            </div>
+          </div>
+
+          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
+            <div className='bg-[#DAE1FF] '>
+              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
+            </div>
+            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+            </div>
+          </div>
+
+          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
+            <div className='bg-[#DAE1FF] '>
+              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
+            </div>
+            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -142,8 +191,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -152,8 +202,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -162,8 +213,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -172,52 +224,10 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
+              <h4 className='text-h4 font-bold text-blue-900 text-nowrap'>English Literature</h4>
+              <p className='text-p font-semibold text-blue-600'>Learn more</p>
             </div>
           </div>
-
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>Biology</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className='text-xl font-bold text-blue-900 text-nowrap'>English Literature</h3>
-              <p className='text-base font-semibold text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
         </div>
 
 
@@ -235,16 +245,16 @@ const page: React.FC<pageProps> = ({ }) => {
       </div>
 
       <div className='pt-20 container flex flex-col gap-4'>
-        <h1 className='text-center text-4xl text-blue-900 font-bold'>
+        <h1 className='text-center text-h1 text-blue-900 font-bold'>
           Cambridge A Level
           Course Tuition Fees
         </h1>
-        <p className='text-center text-xl'>
+        <p className='text-center text-p'>
           Our initial meeting is free with no obligations. If you decide to enroll, our flexible fee structure includes a £200 one-time fee covering comprehensive tests to tailor your child’s education. For pricing details, visit our tuition fees page.
         </p>
 
         <div className='mt-6'>
-          <h3 className='border-b text-xl font-semibold text-blue-900 border-blue-900 pb-3'>
+          <h3 className='border-b text-h3 font-semibold text-blue-900 border-blue-900 pb-3'>
             Accredited by
           </h3>
 

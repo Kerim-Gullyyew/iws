@@ -12,6 +12,7 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, RectangleGroupIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import Image from 'next/image'
+import EnrollButton from './buttons/EnrollButton'
 
 const products = [
   {
@@ -149,12 +150,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </Popover> */}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="https://iws-register.iwsonlineschool.co.uk/"
-            className="rounded-md bg-indigo-600 px-5 py-2 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            Enrol Now
-          </a>
+          <EnrollButton />
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
