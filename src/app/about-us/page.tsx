@@ -20,7 +20,7 @@ const page: React.FC<pageProps> = ({ }) => {
           </p>
 
         </div>
-        <img className='object-cover h-full' src="./about.png" alt="about page" />
+        <Image height={1000} width={1000} className='object-cover h-full' src="./about.png" alt="about page" />
         <div className='absolute inset-0 bg-primary opacity-70'></div>
 
       </div>
