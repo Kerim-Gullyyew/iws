@@ -7,6 +7,7 @@ import Carousel from './components/ui/Carousel';
 import Image from 'next/image';
 import Link from 'next/link';
 import EnrollButton from './components/buttons/EnrollButton';
+import ContactButton from './components/buttons/ContactButton';
 export default function Home() {
 
 
@@ -34,8 +35,8 @@ export default function Home() {
           </p>
 
           <div className="flex flex-wrap gap-5">
-            <button className=" border-blue-600 hover:text-white hover:bg-blue-600 transition-all duration-300 border-[3px] rounded-lg px-6 py-2 text-gray-900 font-semibold text-lg">Enrol now</button>
             <EnrollButton />
+            <ContactButton />
 
           </div>
 
