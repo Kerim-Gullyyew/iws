@@ -11,7 +11,7 @@ interface pageProps {
 
 const page: React.FC<pageProps> = ({ }) => {
   return (
-    <div className='py-14 lg:py-24'>
+    <div className='py-14 lg:py-24 animate-fade-in'>
       <div className='gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row'>
         <div className='flex flex-col gap-5'>
           <h3 className='text-h3 font-bold text-blue-600'>Ages from 11 - 14</h3>

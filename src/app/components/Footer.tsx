@@ -99,7 +99,7 @@ const Footer: React.FC<FooterProps> = ({ }) => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 lg:px-8">
+      <div className="mx-auto container px-6 pb-8 lg:px-8">
 
         <div className="mt-16 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
           <div>

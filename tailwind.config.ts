@@ -15,6 +15,16 @@ const config: Config = {
       },
     },
     extend: {
+      animation: {
+        'fade-in': 'fadeIn 0.8s ease-out'
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+
       fontSize: {
         'h1': '2em',
         'h2': '1.5em',
@@ -33,6 +43,7 @@ const config: Config = {
       },
       backgroundImage: {
         'asset-2': "url('/Asset-2.svg')",
+        'asset-3': "url('/Compass-star-1.png')",
 
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

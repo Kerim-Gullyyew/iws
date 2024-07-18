@@ -12,18 +12,18 @@ export default function Home() {
 
 
   return (
-    <div className="py-14 lg:py-24 ">
+    <div className="py-14 lg:py-24 animate-fade-in">
       <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
 
         <div className="gap-10 sm:gap-14 flex-col flex justify-center">
           <div className='flex'>
             <div className="relative">
-              <h1 className="bg-blue-100 text-center text-nowrap text-h1 font-bold text-blue-600 px-2 py-1 -rotate-2">
+              <h3 className="bg-blue-100 text-center text-nowrap text-h3 font-bold text-blue-600 px-2 py-1 -rotate-2">
                 BRITISH ONLINE SCHOOL
-              </h1>
-              <h1 className="bg-yellow-200 text-center text-nowrap z-10 text-h1 font-bold text-amber-500 px-2 py-1">
+              </h3>
+              <h3 className="bg-yellow-200 text-center text-nowrap z-10 text-h3 font-bold text-amber-500 px-2 py-1">
                 EDUCATION FOR EVERY STAGE
-              </h1>
+              </h3>
             </div>
 
           </div>
@@ -53,7 +53,7 @@ export default function Home() {
           <Link href={'#'} className='relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl'>
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
-                <h3 className='text-h3 font-semibold text-gray-900'>Ages 7-11</h3>
+                <h4 className='text-h4 font-semibold text-gray-900'>Ages 7-11</h4>
 
               </div>
               <Image width={1000} height={1000} className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="/programm/Primary@2x.webp" alt="Hero Image width={1000} height={1000}" />
@@ -79,7 +79,7 @@ export default function Home() {
 
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
-                <h3 className='text-h3 font-semibold text-gray-900'>Ages 11-14</h3>
+                <h4 className='text-h4 font-semibold text-gray-900'>Ages 11-14</h4>
 
               </div>
               <Image width={1000} height={1000} className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="/programm/Primary@2x.webp" alt="Hero Image width={1000} height={1000}" />
@@ -104,7 +104,7 @@ export default function Home() {
           <Link href={'#'} className='relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl'>
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
-                <h3 className='text-h3 font-semibold text-gray-900'>Ages 14-16</h3>
+                <h4 className='text-h4 font-semibold text-gray-900'>Ages 14-16</h4>
 
               </div>
               <Image width={1000} height={1000} className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="/programm/Primary@2x.webp" alt="Hero Image width={1000} height={1000}" />
@@ -129,7 +129,7 @@ export default function Home() {
           <Link href={'#'} className='relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl'>
             <div className='relative'>
               <div className='bg-white absolute bottom-4 left-4 px-8 py-2 rounded'>
-                <h3 className='text-h3 font-semibold text-gray-900'>Ages 16-18</h3>
+                <h4 className='text-h4 font-semibold text-gray-900'>Ages 16-18</h4>
 
               </div>
               <Image width={1000} height={1000} className="max-w-lg w-11/12 object-contain -mt-14 self-center" src="/programm/Primary@2x.webp" alt="Hero Image width={1000} height={1000}" />
@@ -362,7 +362,7 @@ export default function Home() {
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
             <Image width={1000} height={1000} className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="/await/3.webp" alt="Hero Image width={1000} height={1000}" />
-            <div className='flex flex-col gap-14'>
+            <div className='flex h-full justify-between flex-col gap-14'>
               <div className='flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0'>
                 <h2 className='text-h2 font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl'>Hybrid
                   Model</h2>
@@ -371,7 +371,7 @@ export default function Home() {
                 </p>
                 <p className='text-p leading-6 text-gray-900 font-semibold'>From September to June, students join live online classes, then attend a 4-week summer camp in the UK.</p>
               </div>
-              <div className="flex flex-1 bg-white shadow-sm rounded-full px-8 py-4 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+              <div className="flex bg-white shadow-sm rounded-full px-8 py-4 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                 <h2 className="text-h2 tracking-wide font-semibold">Learn more</h2>
                 <ArrowRightCircleIcon className="h-12 w-12 -rotate-45" aria-hidden="true" />
 
@@ -381,37 +381,38 @@ export default function Home() {
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
             <Image width={1000} height={1000} className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="/await/3.webp" alt="Hero Image width={1000} height={1000}" />
-            <div className='flex flex-col gap-14'>
-              <div className='flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0'>
-                <h2 className='text-h2 font-bold text-gray-900 tracking-wide'>Hybrid
-                  Model</h2>
-                <p className='text-p leading-6 text-gray-900 font-semibold'>
-                  Blend online learning with hands-on experience.
-                </p>
-                <p className='text-p leading-6 text-gray-900 font-semibold'>Every child is unique. Our personalized assessments and Success Coaching ensure tailored educational paths for every student.</p>
-              </div>
-              <div className="flex flex-1 bg-white shadow-sm rounded-full px-8 py-4 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <h2 className="text-h2 tracking-wide font-semibold">Learn more</h2>
-                <ArrowRightCircleIcon className="h-12 w-12 -rotate-45" aria-hidden="true" />
-
-              </div>
-            </div>
-          </div>
-
-          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
-            <Image width={1000} height={1000} className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="/await/3.webp" alt="Hero Image width={1000} height={1000}" />
-            <div className='flex flex-col gap-14'>
+            <div className='flex h-full justify-between flex-col gap-14'>
               <div className='flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0'>
                 <h2 className='text-h2 font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl'>Hybrid
                   Model</h2>
                 <p className='text-p leading-6 text-gray-900 font-semibold'>
                   Blend online learning with hands-on experience.
                 </p>
-                <p className='text-p leading-6 text-gray-900 font-semibold'>Every child is unique. Our personalized assessments and Success Coaching ensure tailored educational paths for every student.</p>
+                <p className='text-p leading-6 text-gray-900 font-semibold'>From September to June, students join live online classes, then attend a 4-week summer camp in the UK.</p>
               </div>
-              <div className="flex flex-1 bg-white shadow-sm rounded-full px-8 py-4 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+              <div className="flex bg-white shadow-sm rounded-full px-8 py-4 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                 <h2 className="text-h2 tracking-wide font-semibold">Learn more</h2>
                 <ArrowRightCircleIcon className="h-12 w-12 -rotate-45" aria-hidden="true" />
+
+              </div>
+            </div>
+          </div>
+
+          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
+            <Image width={1000} height={1000} className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30" src="/await/3.webp" alt="Hero Image width={1000} height={1000}" />
+            <div className='flex h-full justify-between flex-col gap-14'>
+              <div className='flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0'>
+                <h2 className='text-h2 font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl'>Hybrid
+                  Model</h2>
+                <p className='text-p leading-6 text-gray-900 font-semibold'>
+                  Blend online learning with hands-on experience.
+                </p>
+                <p className='text-p leading-6 text-gray-900 font-semibold'>From September to June, students join live online classes, then attend a 4-week summer camp in the UK.</p>
+              </div>
+              <div className="flex bg-white shadow-sm rounded-full px-8 py-4 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+                <h2 className="text-h2 tracking-wide font-semibold">Learn more</h2>
+                <ArrowRightCircleIcon className="h-12 w-12 -rotate-45" aria-hidden="true" />
+
               </div>
             </div>
           </div>

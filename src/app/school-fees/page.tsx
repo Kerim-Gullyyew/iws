@@ -10,7 +10,7 @@ interface pageProps {
 
 const page: React.FC<pageProps> = ({ }) => {
   return (
-    <div className='py-14 lg:py-24 container'>
+    <div className='py-14 lg:py-24 container animate-fade-in'>
       <h1 className='text-center text-h1 font-bold text-sky-500'>School Fees</h1>
       <h2 className='text-center text-h2 font-bold mt-14'>
         Give your child the best education at the most reasonable rates at IWS.

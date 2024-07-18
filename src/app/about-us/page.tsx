@@ -1,7 +1,5 @@
 'use client'
 import React from 'react'
-import TabSection from '../components/ui/TabSection'
-import AccordionSecondary from '../components/ui/AccordionSecondary'
 import Image from 'next/image'
 interface pageProps {
 
