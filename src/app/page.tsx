@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import EnrollButton from './components/buttons/EnrollButton';
 import ContactButton from './components/buttons/ContactButton';
+import CardChildren from './components/card/CardChildren';
 export default function Home() {
 
 
@@ -42,7 +43,7 @@ export default function Home() {
 
         </div>
 
-        <Image width={1000} height={1000} className="max-w-lg w-3/4 lg:w-[450px] xl:w-auto object-contain" src="/Hero.webp" alt="Hero Image width={1000} height={1000}" />
+        <Image width={1000} height={1000} className="max-w-lg hidden xs:flex w-3/4 lg:w-[450px] xl:w-auto object-contain" src="/Hero.webp" alt="Hero Image width={1000} height={1000}" />
       </div>
 
       <div className="pt-20 container">
@@ -218,141 +219,21 @@ export default function Home() {
       </div>
 
 
-      {/* <div className='pt-20 container'>
+      <div className='pt-20 container'>
         <h1 className="text-gray-900 text-3xl text-center xs:text-4xl sm:text-5xl font-bold">Who can benefit from our school?</h1>
         <div className='pt-8 sm:pt-12'>
 
           <div className="flex flex-wrap gap-5 justify-center ">
 
-            <div className='group relative min-h-[560px] h-[560px] rounded-xl overflow-hidden bg-[#F4F5F8] w-[430px] cursor-pointer'>
-              <div className='flex flex-col group-hover:hidden justify-between'>
-                <div className='p-8'>
-                  <h1 className="font-dmserif text-3xl font-bold text-gray-900">
-                    For those who are not satisfied with a regular school
-                  </h1>
-                </div>
-                <Image width={1000} height={1000} className="h-full w-full object-cover" src="/benefit/4_1.webp" alt="" />
-
-              </div>
-
-              <div className='hidden group-hover:flex group-hover:transition-all duration-300 z-20 absolute bg-[#EBF0FE] w-full h-full'>
-                <h1 className='text-center'>
-                  sdfsdf
-                </h1>
-              </div>
-
-            </div>
-
-            <div className="group cursor-pointer w-[430px] bg-[#F4F5F8] relative items-center justify-center overflow-hidden">
-              <div className="">
-                <Image width={1000} height={1000} className="h-full w-full object-cover" src="/benefit/4_1.webp" alt="" />
-              </div>
-              <div className=" absolute z-30 w-full h-full hidden bg-[#EBF0FE] group-hover:flex flex-col justify-center px-3 xs:px-9 py-4 xs:py-10 gap-3 xs:gap-10">
-                <h1 className="font-dmserif text-xl font-bold text-gray-900">For those who are not satisfied with a regular school</h1>
-                <div className='flex flex-col gap-2 xs:gap-5'>
-                  <h3 className='text-gray-900 text-lg font-semibold'>Is this about you?</h3>
-
-                  <ul className='list-disc gap-2 xs:gap-5 flex flex-col ml-10'>
-                    <li className='text-gray-900 text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-gray-900 text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-gray-900 text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-gray-900 text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                  </ul>
-
-                  <h3 className='text-gray-900 text-lg font-semibold'>Then our school is right for you!</h3>
-
-                </div>
-              </div>
-            </div>
-
-            <div className="group w-[430px] relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div className="">
-                <Image width={1000} height={1000} className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/benefit/4_2.webp" alt="" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              <div className="absolute inset-0 flex translate-y-3/4 xs:translate-y-[70%] flex-col justify-center px-3 xs:px-9 py-4 xs:py-10 transition-all duration-500 group-hover:translate-y-0 gap-3 xs:gap-10">
-
-
-                <h1 className="font-dmserif text-xl font-bold text-white">For those who are not satisfied with a regular school</h1>
-
-                <div className='flex flex-col gap-2 xs:gap-5'>
-                  <h3 className='text-white text-lg font-semibold'>Is this about you?</h3>
-
-                  <ul className='list-disc gap-2 xs:gap-5 flex flex-col ml-10'>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                  </ul>
-
-                  <h3 className='text-white text-lg font-semibold'>Then our school is right for you!</h3>
-
-                </div>
-
-
-              </div>
-            </div>
-
-            <div className="group w-[430px] relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div className="">
-                <Image width={1000} height={1000} className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/benefit/4_3.webp" alt="" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              <div className="absolute inset-0 flex translate-y-3/4 xs:translate-y-[70%] flex-col justify-center px-3 xs:px-9 py-4 xs:py-10 transition-all duration-500 group-hover:translate-y-0 gap-3 xs:gap-10">
-
-
-                <h1 className="font-dmserif text-xl font-bold text-white">For those who are not satisfied with a regular school</h1>
-
-                <div className='flex flex-col gap-2 xs:gap-5'>
-                  <h3 className='text-white text-lg font-semibold'>Is this about you?</h3>
-
-                  <ul className='list-disc gap-2 xs:gap-5 flex flex-col ml-10'>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                  </ul>
-
-                  <h3 className='text-white text-lg font-semibold'>Then our school is right for you!</h3>
-
-                </div>
-
-
-              </div>
-            </div>
-
-            <div className="group w-[430px] relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div className="">
-                <Image width={1000} height={1000} className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/benefit/4_1.webp" alt="" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              <div className="absolute inset-0 flex translate-y-3/4 xs:translate-y-[70%] flex-col justify-center px-3 xs:px-9 py-4 xs:py-10 transition-all duration-500 group-hover:translate-y-0 gap-3 xs:gap-10">
-
-
-                <h1 className="font-dmserif text-xl font-bold text-white">For those who are not satisfied with a regular school</h1>
-
-                <div className='flex flex-col gap-2 xs:gap-5'>
-                  <h3 className='text-white text-lg font-semibold'>Is this about you?</h3>
-
-                  <ul className='list-disc gap-2 xs:gap-5 flex flex-col ml-10'>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                    <li className='text-white text-base font-normal'>Lorem ipsum dolor sit amet consectetur elit? </li>
-                  </ul>
-
-                  <h3 className='text-white text-lg font-semibold'>Then our school is right for you!</h3>
-
-                </div>
-
-
-              </div>
-            </div>
+            <CardChildren />
+            <CardChildren />
+            <CardChildren />
+            <CardChildren />
 
           </div>
 
         </div>
-      </div> */}
+      </div>
 
 
       <div className='pt-20 container'>
