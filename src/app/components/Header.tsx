@@ -60,17 +60,12 @@ const Header: React.FC<HeaderProps> = ({ }) => {
         <div className="flex lg:flex-1">
           <Link className="-m-1.5 p-1.5" href={"/"} >
             <span className="sr-only">IWS Online School</span>
-            <Image width={1000} height={1000} className="h-10 w-auto" src="/IWS_Logo.webp" alt="IWS Online School Icon" />
+            <Image width={1000} height={1000} className="h-[3rem] w-auto" src="/IWS_Logo.webp" alt="IWS Online School Icon" />
           </Link>
         </div>
         <div className="flex lg:hidden xs:items-center xs:gap-4">
           <div className="hidden xs:flex">
-            <a
-              href="https://iws-register.iwsonlineschool.co.uk/"
-              className="rounded-md bg-indigo-600 px-5 py-2 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Sign up
-            </a>
+            <EnrollButton />
           </div>
           <button
             type="button"
@@ -150,7 +145,11 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </Popover> */}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          {/* <div className='flex'> */}
           <EnrollButton />
+
+          {/* </div> */}
+
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
