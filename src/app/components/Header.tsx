@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
         <div className="flex lg:flex-1">
           <Link className="-m-1.5 p-1.5" href={"/"} >
             <span className="sr-only">IWS Online School</span>
-            <Image width={1000} height={1000} className="h-[3rem] w-auto" src="/IWS_Logo.webp" alt="IWS Online School Icon" />
+            <Image priority={true} width={1000} height={1000} className="h-[3rem] w-auto" src="/IWS_Logo.webp" alt="IWS Online School Icon" />
           </Link>
         </div>
         <div className="flex lg:hidden xs:items-center xs:gap-4">
