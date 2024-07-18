@@ -23,7 +23,7 @@ export default function Home() {
           </div>
 
           <h1 className=" text-gray-900 text-h1 font-bold">
-            Accreddited, Holistic Online Schooling
+            Accredited, Holistic Online Schooling
           </h1>
 
           <p className="leading-[26px] text-gray-900 font-semibold text-p">
