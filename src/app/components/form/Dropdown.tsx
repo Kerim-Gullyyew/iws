@@ -10,6 +10,8 @@ interface DropdownProps {
   label: string;
   isSearch?: boolean;
   isError?: boolean;
+  country: string | number;
+  setCountry: React.Dispatch<React.SetStateAction<string | number>>;
 }
 
 export interface CountryData {
@@ -17,11 +19,10 @@ export interface CountryData {
   value: string
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ label, isSearch, isError }) => {
+const Dropdown: React.FC<DropdownProps> = ({ label, isSearch, country, setCountry, isError }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState<string>('');
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const [country, setCountry] = useState<string | number>('');
 
   const options = useMemo(() => {
     return countryList().getData().map(country => ({
@@ -61,7 +62,7 @@ const Dropdown: React.FC<DropdownProps> = ({ label, isSearch, isError }) => {
         className="w-full flex justify-between items-center rounded-md border-0 py-3 text-[#b1b1b1] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
         onClick={toggleDropdown}
       >
-        <div className='text-[16px] text-[#b1b1b1] bg-inputBg focus:outline-none'>{country === '' || country === null || country === undefined ? label : country.toString()}</div>
+        <div className={`text-[16px] ${country ? 'text-gray-900' : 'text-[#b1b1b1]'} bg-inputBg focus:outline-none`}>{country === '' || country === null || country === undefined ? label : country.toString()}</div>
         <div className='flex justify-center items-center'>
           <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-2 -mr-1 text-textLight" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
