@@ -30,7 +30,7 @@ const config: Config = {
         'h2': '2em',
         'h3': '1.3em',
         'h4': '1em',
-        'h5': '0.8em',
+        'h5': '0.8em',  
         'h6': '0.7em',
         'p': '1em',
       },
