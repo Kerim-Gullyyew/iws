@@ -4,6 +4,7 @@ import PhoneNumber from '../form/PhoneNumber'
 import Dropdown from '../form/Dropdown'
 import * as Yup from 'yup';
 import axios from 'axios'
+import { useRouter } from 'next/navigation';
 interface TabSectionProps {
 }
 
@@ -28,6 +29,9 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
   const [country, setCountry] = useState<string | number>('');
   const [message, setMessage] = useState<string>('');
   const [validationErrors, setValidationErrors] = useState<ValidationErrors>({});
+  const router = useRouter()
+
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleFirstName = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFirstName(event.target.value);
@@ -52,6 +56,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
 
   const handleSubmit: React.MouseEventHandler<HTMLButtonElement> = async (event) => {
     event.preventDefault();
+    setLoading(true);
     try {
       await validationSchema.validate({
         firstName,
@@ -61,27 +66,20 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
         country,
         message,
       }, { abortEarly: false });
-      const json = {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        phone_number: phoneNumber,
-        country: country,
-        message: message
-      }
-      //send backend
       try {
         const response = await axios.post('https://api.main.iwsonlineschool.co.uk/iws-contact', {
-          json: json
+          firstName,
+          lastName,
+          email,
+          phone_number: phoneNumber,
+          country,
+          message
         });
-        //Navigate to thank you page
+        router.push('/thank-you');
       } catch (error) {
         console.error('Payment Error:', error);
       }
-
-
     } catch (err) {
-      // Handle validation errors
       if (err instanceof Yup.ValidationError) {
         const errors = err.inner.reduce((acc, error) => {
           if (typeof error.path === 'string') {
@@ -95,6 +93,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
         setValidationErrors(errors);
       }
     }
+    setLoading(false);
   };
 
 
@@ -296,14 +295,25 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
       </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
+        {
+          loading ? (
+            <button
+              type="submit"
+              className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Loading...
+            </button>
+          ) : (
+            <button
+              type="submit"
+              onClick={handleSubmit}
+              className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              SEND A MESSAGE
+            </button>
+          )
+        }
 
-        <button
-          type="submit"
-          onClick={handleSubmit}
-          className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-        >
-          SEND A MESSAGE
-        </button>
       </div>
       <p className='text-center text-p text-blue-900'>
         Simply fill out the form below, and one of our friendly team members will get back to you as soon as possible. Let’s start your journey with IWS Online School together!
