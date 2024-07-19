@@ -12,7 +12,7 @@ const Accordion: React.FC<AccordionProps> = ({ }) => {
         <>
           <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
             <h3 className="text-h3 font-bold">
-              Is team pricing available?
+            Why us?
             </h3>
             {open ? (
               <MinusIcon className="h-8 w-8" aria-hidden="true" />

@@ -55,7 +55,7 @@ export default function Home() {
 
         <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-4 xl:gap-7 gap-y-14">
           <Link
-            href={"#"}
+            href={"/cambridge-primary"}
             className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
@@ -96,7 +96,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href={"#"}
+            href={"/cambridge-secondary"}
             className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
@@ -137,7 +137,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href={"#"}
+            href={"/cambridge-igcse"}
             className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
@@ -177,7 +177,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href={"#"}
+            href={"/cambridge-a-level"}
             className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
