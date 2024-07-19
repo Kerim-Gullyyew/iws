@@ -1,34 +1,13 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
-
+import { PlusIcon, MinusIcon } from '@heroicons/react/24/solid';
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { AnimatePresence, motion } from 'framer-motion'
 interface FooterProps {
 
 }
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
-  ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
-  ],
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
-  ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-  ],
   social: [
     {
       name: 'Facebook',
@@ -95,52 +74,231 @@ const navigation = {
 }
 const Footer: React.FC<FooterProps> = ({ }) => {
   return (
-    <footer className="bg-primary" aria-labelledby="footer-heading">
+    <footer className="bg-gray-50 pt-5" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto container px-6 pb-8 lg:px-8">
+      <div className='container py-5 flex flex-col justify-center items-center gap-8'>
+        <div className='w-full flex flex-col justify-center items-center gap-8 md:flex-row md:justify-between md:items-start'>
+          <div className='flex flex-col justify-center items-center gap-8'>
+            <img className='w-36 object-contain' src="./IWS_Logo.webp" alt="logo" />
 
-        <div className="mt-16 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
-          <div>
-            <Image width={1000} height={1000} className="h-10 w-auto" src="/footer.png" alt="IWS Online School Icon" />
-          </div>
-          {/* <form className="mt-6 sm:flex sm:max-w-md lg:mt-0">
-            <label htmlFor="email-address" className="sr-only">
-              Email address
-            </label>
-            <input
-              type="email"
-              name="email-address"
-              id="email-address"
-              autoComplete="email"
-              required
-              className="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:w-56 sm:text-sm sm:leading-6"
-              placeholder="Enter your email"
-            />
-            <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-              <button
-                type="submit"
-                className="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Subscribe
-              </button>
+            <div className='flex w-full flex-col gap-3 justify-center items-center'>
+              <p>Follow us on social media</p>
+              <div className="flex justify-center space-x-4 md:order-2">
+                {navigation.social.map((item) => (
+                  <a key={item.name} href={item.href} className="text-gray-400 hover:text-[#593C97]">
+                    <span className="sr-only">{item.name}</span>
+                    <item.icon className="h-8 w-8" aria-hidden="true" />
+                  </a>
+                ))}
+              </div>
+
             </div>
-          </form> */}
-        </div>
-        <div className="mt-8 border-t border-white/70 pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2">
-            {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-white">
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
+
           </div>
-          <p className="mt-8 text-xs leading-5 text-white md:order-1 md:mt-0">
-            &copy; 2024 IWS Online School LTD
-          </p>
+
+          <div className='w-full flex flex-col mt-3 md:w-1/2 lg:hidden'>
+            <Disclosure as="div" className="w-full border-b border-gray-300 ">
+              {({ open }) => (
+                <>
+                  <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
+                    <h4 className="text-h4 text-gray-900 font-bold">
+                      ACADEMICS
+                    </h4>
+                    {open ? (
+                      <MinusIcon className="h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <PlusIcon className="h-6 w-6" aria-hidden="true" />
+                    )}
+                  </DisclosureButton>
+                  <div className="overflow-hidden py-2">
+                    <AnimatePresence>
+                      {open && (
+                        <DisclosurePanel
+                          static
+                          as={motion.div}
+                          initial={{ opacity: 0, y: -24 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -24 }}
+                          transition
+                          className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+                        >
+                          <ul className='space-y-2 pb-2'>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>Primary School</li>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>Middle School</li>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>I/GCSE</li>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>A Level</li>
+                          </ul>
+                        </DisclosurePanel>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </>
+              )}
+            </Disclosure>
+
+            <Disclosure as="div" className="w-full border-b border-gray-300 mt-3">
+              {({ open }) => (
+                <>
+                  <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
+                    <h4 className="text-h4 text-gray-900 font-bold">
+                      ADMISSIONS
+                    </h4>
+                    {open ? (
+                      <MinusIcon className="h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <PlusIcon className="h-6 w-6" aria-hidden="true" />
+                    )}
+                  </DisclosureButton>
+                  <div className="overflow-hidden py-2">
+                    <AnimatePresence>
+                      {open && (
+                        <DisclosurePanel
+                          static
+                          as={motion.div}
+                          initial={{ opacity: 0, y: -24 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -24 }}
+                          transition
+                          className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+                        >
+                          <ul className='space-y-2 pb-2'>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>Overview</li>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>School Fees</li>
+                          </ul>
+                        </DisclosurePanel>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </>
+              )}
+            </Disclosure>
+
+            <Disclosure as="div" className="w-full border-b border-gray-300 mt-3">
+              {({ open }) => (
+                <>
+                  <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
+                    <h4 className="text-h4 text-gray-900 font-bold">
+                      ABOUT IWS
+                    </h4>
+                    {open ? (
+                      <MinusIcon className="h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <PlusIcon className="h-6 w-6" aria-hidden="true" />
+                    )}
+                  </DisclosureButton>
+                  <div className="overflow-hidden py-2">
+                    <AnimatePresence>
+                      {open && (
+                        <DisclosurePanel
+                          static
+                          as={motion.div}
+                          initial={{ opacity: 0, y: -24 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -24 }}
+                          transition
+                          className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+                        >
+                          <ul className='space-y-2 pb-2'>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>About IWS</li>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>Our Team</li>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>Careers</li>
+                          </ul>
+                        </DisclosurePanel>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </>
+              )}
+            </Disclosure>
+
+            <Disclosure as="div" className="w-full border-b border-gray-300 mt-3">
+              {({ open }) => (
+                <>
+                  <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
+                    <h4 className="text-h4 text-gray-900 font-bold">
+                      RESOURCES
+                    </h4>
+                    {open ? (
+                      <MinusIcon className="h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <PlusIcon className="h-6 w-6" aria-hidden="true" />
+                    )}
+                  </DisclosureButton>
+                  <div className="overflow-hidden py-2">
+                    <AnimatePresence>
+                      {open && (
+                        <DisclosurePanel
+                          static
+                          as={motion.div}
+                          initial={{ opacity: 0, y: -24 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -24 }}
+                          transition
+                          className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+                        >
+                          <ul className='space-y-2 pb-2'>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>Blogs</li>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>School Calendar</li>
+                            <li className='text-h5 text-gray-600 cursor-pointer hover:text-gray-900'>FAQs</li>
+                          </ul>
+                        </DisclosurePanel>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </>
+              )}
+            </Disclosure>
+
+          </div>
+
+          <div className='hidden w-full ml-5 lg:grid grid-cols-4'>
+            <div>
+              <h6 className='text-h6 font-semibold text-gray-400'>ACADEMICS</h6>
+              <ul className='mt-3 space-y-2'>
+                <li className='text-h4'>Primary School</li>
+                <li className='text-h4'>Middle School</li>
+                <li className='text-h4'>I/GCSE</li>
+                <li className='text-h4'>A Level</li>
+              </ul>
+            </div>
+            <div>
+              <h6 className='text-h6 font-semibold text-gray-400'>ADMISSIONS</h6>
+              <ul className='mt-3 space-y-2'>
+                <li className='text-h4'>Overview</li>
+                <li className='text-h4'>School Fees</li>
+              </ul>
+            </div>
+            <div>
+              <h6 className='text-h6 font-semibold text-gray-400'>ABOUT IWS</h6>
+              <ul className='mt-3 space-y-2'>
+                <li className='text-h4'>About IWS</li>
+                <li className='text-h4'>Our Team</li>
+                <li className='text-h4'>Careers</li>
+              </ul>
+            </div>
+            <div>
+              <h6 className='text-h6 font-semibold text-gray-400'>RESOURCES</h6>
+              <ul className='mt-3 space-y-2'>
+                <li className='text-h4'>Blogs</li>
+                <li className='text-h4'>School Calendar</li>
+                <li className='text-h4'>I/GCSE</li>
+                <li className='text-h4'>FAQs</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
+
+        <div className=' border-t border-gray-400 space-y-3 pt-5 mt-3 flex flex-col justify-center items-center w-full lg:grid lg:grid-cols-3 lg:space-y-0'>
+          <p className='text-p text-center'>&copy; {2024} IWS Online School LTD.</p>
+          <p className='text-p text-center'>
+            All rights reserved.
+          </p>
+          <p className='text-p text-center'>Privacy Policy</p>
+        </div>
+
       </div>
     </footer>
   )
