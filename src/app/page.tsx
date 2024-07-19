@@ -346,7 +346,7 @@ export default function Home() {
           Who can benefit from our school?
         </h2>
         <div className="pt-8 sm:pt-12">
-          <div className="flex flex-wrap gap-5 justify-center ">
+          <div className="flex flex-wrap gap-5 justify-between ">
             <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
               <h3 className="text-h3 container pt-8 leading-tight font-bold">
                 For those who are not satisfied with a regular school
