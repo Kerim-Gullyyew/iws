@@ -80,10 +80,10 @@ const Footer: React.FC<FooterProps> = ({ }) => {
       </h2>
       <div className='container py-5 flex flex-col justify-center items-center gap-8'>
         <div className='w-full flex flex-col justify-center items-center gap-8 md:flex-row md:justify-between md:items-start'>
-          <div className='flex flex-col justify-center items-center gap-8'>
+          <div className='flex flex-col justify-center items-center gap-8 lg:items-start'>
             <Image width={1000} height={1000} className='w-36 object-contain' src="/IWS_Logo.webp" alt="logo" />
 
-            <div className='flex w-full flex-col gap-3 justify-center items-center'>
+            <div className='flex w-full flex-col gap-3 justify-center items-center lg:items-start'>
               <p>Follow us on social media</p>
               <div className="flex justify-center space-x-4 md:order-2">
                 {navigation.social.map((item) => (
