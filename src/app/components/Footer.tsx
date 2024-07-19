@@ -253,7 +253,7 @@ const Footer: React.FC<FooterProps> = ({ }) => {
 
           </div>
 
-          <div className='hidden w-full ml-5 lg:grid grid-cols-4'>
+          <div className='hidden ml-5 lg:ml-24 xl:ml-44 lg:grid lg:grid-cols-4 lg:w-full '>
             <div>
               <h6 className='text-h6 font-semibold text-gray-400'>ACADEMICS</h6>
               <ul className='mt-3 space-y-2'>
