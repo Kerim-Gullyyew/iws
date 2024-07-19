@@ -1,15 +1,23 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import TabSection from '../components/ui/TabSection'
 import AccordionSecondary from '../components/ui/AccordionSecondary'
 import Image from 'next/image'
 import ContactButton from '../components/buttons/ContactButton'
 import EnrollButton from '../components/buttons/EnrollButton'
+
+import {
+  PlusIcon,
+  MinusIcon
+} from '@heroicons/react/24/solid'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 interface pageProps {
 
 }
 
 const page: React.FC<pageProps> = ({ }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className='py-14 lg:py-24 animate-fade-in'>
       <div className='gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row'>
@@ -237,9 +245,83 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className='pt-20 container'>
         <div className='pt-8 sm:pt-12 flex flex-col gap-8'>
+          <Disclosure as="div" className="w-full border-b border-gray-300" onChange={() => setIsOpen(!isOpen)}>
+            <DisclosureButton className="w-full  pb-2 flex items-center justify-between">
+              <h2 className='text-h2 text-blue-900 font-semibold'>
+                Personalised Instruction in Private, Virtual Classrooms
+              </h2>
+              {isOpen ? (
+                <MinusIcon className="h-8 w-8" aria-hidden="true" />
+              ) : (
+                <PlusIcon className="h-8 w-8" aria-hidden="true" />
+              )}
 
-          <AccordionSecondary />
-          <AccordionSecondary />
+            </DisclosureButton>
+            <div className="overflow-hidden py-2">
+              <DisclosurePanel
+                transition
+                className="origin-top transition duration-300 px-3 pb-5 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+              >
+                <p className='text-p text-blue-900 tracking-wide leading-8'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eligendi repellendus nostrum, accusantium harum, sunt voluptates, nemo enim doloribus ullam hic odit cum eveniet itaque fugiat? Debitis ut obcaecati facilis.
+
+                </p>
+
+              </DisclosurePanel>
+            </div>
+          </Disclosure>
+
+          <Disclosure as="div" className="w-full border-b border-gray-300" onChange={() => setIsOpen(!isOpen)}>
+            <DisclosureButton className="w-full  pb-2 flex items-center justify-between">
+              <h2 className='text-h2 text-blue-900 font-semibold'>
+                Personalised Instruction in Private, Virtual Classrooms
+              </h2>
+              {isOpen ? (
+                <MinusIcon className="h-8 w-8" aria-hidden="true" />
+              ) : (
+                <PlusIcon className="h-8 w-8" aria-hidden="true" />
+              )}
+
+            </DisclosureButton>
+            <div className="overflow-hidden py-2">
+              <DisclosurePanel
+                transition
+                className="origin-top transition duration-300 px-3 pb-5 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+              >
+                <p className='text-p text-blue-900 tracking-wide leading-8'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eligendi repellendus nostrum, accusantium harum, sunt voluptates, nemo enim doloribus ullam hic odit cum eveniet itaque fugiat? Debitis ut obcaecati facilis.
+
+                </p>
+
+              </DisclosurePanel>
+            </div>
+          </Disclosure>
+
+          <Disclosure as="div" className="w-full border-b border-gray-300" onChange={() => setIsOpen(!isOpen)}>
+            <DisclosureButton className="w-full  pb-2 flex items-center justify-between">
+              <h2 className='text-h2 text-blue-900 font-semibold'>
+                Personalised Instruction in Private, Virtual Classrooms
+              </h2>
+              {isOpen ? (
+                <MinusIcon className="h-8 w-8" aria-hidden="true" />
+              ) : (
+                <PlusIcon className="h-8 w-8" aria-hidden="true" />
+              )}
+
+            </DisclosureButton>
+            <div className="overflow-hidden py-2">
+              <DisclosurePanel
+                transition
+                className="origin-top transition duration-300 px-3 pb-5 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+              >
+                <p className='text-p text-blue-900 tracking-wide leading-8'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eligendi repellendus nostrum, accusantium harum, sunt voluptates, nemo enim doloribus ullam hic odit cum eveniet itaque fugiat? Debitis ut obcaecati facilis.
+
+                </p>
+
+              </DisclosurePanel>
+            </div>
+          </Disclosure>
 
         </div>
       </div>
