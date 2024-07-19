@@ -1,5 +1,9 @@
 "use client";
-import { ArrowRightCircleIcon, PlusIcon, MinusIcon } from "@heroicons/react/24/solid";
+import {
+  ArrowRightCircleIcon,
+  PlusIcon,
+  MinusIcon,
+} from "@heroicons/react/24/solid";
 import Accordion from "./components/ui/Accordion";
 import Carousel from "./components/ui/Carousel";
 import Image from "next/image";
@@ -8,8 +12,12 @@ import EnrollButton from "./components/buttons/EnrollButton";
 import ContactButton from "./components/buttons/ContactButton";
 import CardChildren from "./components/card/CardChildren";
 
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
-import { AnimatePresence, motion } from 'framer-motion'
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/react";
+import { AnimatePresence, motion } from "framer-motion";
 export default function Home() {
   return (
     <div className="py-14 lg:py-24 animate-fade-in">
@@ -89,9 +97,7 @@ export default function Home() {
               </div>
 
               <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">
-                  Learn more
-                </p>
+                <p className="text-p tracking-wide font-semibold">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-10 w-10 -rotate-45"
                   aria-hidden="true"
@@ -130,9 +136,7 @@ export default function Home() {
               </div>
 
               <div className="flex  bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">
-                  Learn more
-                </p>
+                <p className="text-p tracking-wide font-semibold">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-10 w-10 -rotate-45"
                   aria-hidden="true"
@@ -170,9 +174,7 @@ export default function Home() {
               </div>
 
               <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">
-                  Learn more
-                </p>
+                <p className="text-p tracking-wide font-semibold">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-10 w-10 -rotate-45"
                   aria-hidden="true"
@@ -209,9 +211,7 @@ export default function Home() {
               </div>
 
               <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">
-                  Learn more
-                </p>
+                <p className="text-p tracking-wide font-semibold">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-10 w-10 -rotate-45"
                   aria-hidden="true"
@@ -538,9 +538,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">
-                  Learn more
-                </p>
+                <p className="text-p tracking-wide font-semibold">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-12 w-12 -rotate-45"
                   aria-hidden="true"
@@ -573,9 +571,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">
-                  Learn more
-                </p>
+                <p className="text-p tracking-wide font-semibold">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-12 w-12 -rotate-45"
                   aria-hidden="true"
@@ -607,9 +603,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">
-                  Learn more
-                </p>
+                <p className="text-p tracking-wide font-semibold">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-12 w-12 -rotate-45"
                   aria-hidden="true"
@@ -621,17 +615,13 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900 text-h2 text-center font-bold">
-          FAQs
-        </h2>
+        <h2 className="text-gray-900 text-h2 text-center font-bold">FAQs</h2>
         <div className="pt-8 sm:pt-12 flex flex-col gap-8">
           <Disclosure as="div" className="w-full border-b border-gray-300">
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-h3 font-bold">
-                    Why us?
-                  </h3>
+                  <h3 className="text-h3 font-bold">Why us?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -651,10 +641,14 @@ export default function Home() {
                         className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                       >
                         <div className=" space-y-5">
-                          <p className="text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, autem tempore delectus accusantium dolor et numquam necessitatibus odit veritatis fugit earum, doloribus soluta quae aspernatur recusandae eos! Officia, harum voluptatum.</p>
                           <p className="text-p">
-                            drgdfgdfg
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Ex, autem tempore delectus accusantium dolor
+                            et numquam necessitatibus odit veritatis fugit
+                            earum, doloribus soluta quae aspernatur recusandae
+                            eos! Officia, harum voluptatum.
                           </p>
+                          <p className="text-p">drgdfgdfg</p>
                         </div>
                       </DisclosurePanel>
                     )}
@@ -668,9 +662,7 @@ export default function Home() {
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-h3 font-bold">
-                    Why us?
-                  </h3>
+                  <h3 className="text-h3 font-bold">Why us?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -690,10 +682,14 @@ export default function Home() {
                         className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                       >
                         <div className=" space-y-5">
-                          <p className="text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, autem tempore delectus accusantium dolor et numquam necessitatibus odit veritatis fugit earum, doloribus soluta quae aspernatur recusandae eos! Officia, harum voluptatum.</p>
                           <p className="text-p">
-                            drgdfgdfg
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Ex, autem tempore delectus accusantium dolor
+                            et numquam necessitatibus odit veritatis fugit
+                            earum, doloribus soluta quae aspernatur recusandae
+                            eos! Officia, harum voluptatum.
                           </p>
+                          <p className="text-p">drgdfgdfg</p>
                         </div>
                       </DisclosurePanel>
                     )}
@@ -706,7 +702,6 @@ export default function Home() {
       </div>
 
       <div className="mt-20 lg:container">
-
         <div className=" bg-blue-900 lg:rounded-xl mt-8 flex flex-col md:flex-row">
           <div className="py-12 px-8 lg:px-16 flex flex-col gap-10">
             <h2 className="text-[62px] text-white/90 tracking-tighter font-bold leading-[60px]">
