@@ -15,7 +15,7 @@ export default function Home() {
           <div className="flex">
             <div className="relative">
               <img
-                className="w-[576px] min-w-[250px]"
+                className="w-[400px] object-contain min-w-[250px]"
                 src="/Tag.webp"
                 alt="Tag photo"
               />
@@ -109,7 +109,7 @@ export default function Home() {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain -mt-14 self-center"
-                src="/programm/Primary@2x.webp"
+                src="/programm/Middle@2x.webp"
                 alt="Hero Image width={1000} height={1000}"
               />
             </div>
@@ -150,7 +150,7 @@ export default function Home() {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain -mt-14 self-center"
-                src="/programm/Primary@2x.webp"
+                src="/programm/IGCSE@2x.webp"
                 alt="Hero Image width={1000} height={1000}"
               />
             </div>
@@ -190,7 +190,7 @@ export default function Home() {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain -mt-14 self-center"
-                src="/programm/Primary@2x.webp"
+                src="/programm/A-Level@2x.webp"
                 alt="Hero Image width={1000} height={1000}"
               />
             </div>
@@ -342,7 +342,7 @@ export default function Home() {
         </h1>
         <div className="pt-8 sm:pt-12">
           <div className="flex flex-wrap gap-5 justify-center ">
-            <div className="group relative w-[310px] h-[480px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+            <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
               <h3 className="text-h3 container pt-8 leading-tight font-bold">
                 For those who are not satisfied with a regular school
               </h3>
@@ -363,16 +363,17 @@ export default function Home() {
                   </h4>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
                     <li className="text-gray-900 text-base font-normal">
-                    Feeling uneasy in your current school environment?
+                      Feeling uneasy in your current school environment?
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Facing ongoing conflicts with peers?
+                      Facing ongoing conflicts with peers?
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Dissatisfied with nearby education options?
+                      Dissatisfied with nearby education options?
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Unable to attend traditional schools due to personal beliefs?
+                      Unable to attend traditional schools due to personal
+                      beliefs?
                     </li>
                   </ul>
                   <h4 className="text-gray-900 text-h4 font-semibold">
@@ -381,16 +382,16 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-[310px] h-[480px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+            <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
               <h3 className="text-h3 container pt-8 leading-tight font-bold">
-              For students who often miss school.
+                For students who often miss school.
               </h3>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
                 <Image
                   width={1000}
                   height={1000}
                   className=" object-cover"
-                  src="/benefit/4_1.webp"
+                  src="/benefit/4_2.webp"
                   alt=""
                 />
               </div>
@@ -398,38 +399,40 @@ export default function Home() {
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 xs:gap-3">
                   <h4 className="text-gray-900 text-h4 font-semibold">
-                  Does this sound like you?
+                    Does this sound like you?
                   </h4>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
                     <li className="text-gray-900 text-base font-normal">
-                    Struggling to balance school with extracurricular activities?
+                      Struggling to balance school with extracurricular
+                      activities?
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Feeling overwhelmed as difficulties in certain subjects escalate?
+                      Feeling overwhelmed as difficulties in certain subjects
+                      escalate?
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Frequently missing school due to illness?
+                      Frequently missing school due to illness?
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Finding some subjects challenging to understand?
+                      Finding some subjects challenging to understand?
                     </li>
                   </ul>
                   <h4 className="text-gray-900 text-h4 font-semibold">
-                  Then our school is right for you!
+                    Then our school is right for you!
                   </h4>
                 </div>
               </div>
             </div>
-            <div className="group relative w-[310px] h-[480px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+            <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
               <h3 className="text-h3 container pt-8 leading-tight font-bold">
-              For those who live abroad or the family travels a lot
+                For those who live abroad or the family travels a lot
               </h3>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
                 <Image
                   width={1000}
                   height={1000}
                   className=" object-cover"
-                  src="/benefit/4_1.webp"
+                  src="/benefit/4_3.webp"
                   alt=""
                 />
               </div>
@@ -441,15 +444,17 @@ export default function Home() {
                   </h4>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
                     <li className="text-gray-900 text-base font-normal">
-                    Frequent relocation due to parental work or lifestyle choices.
+                      Frequent relocation due to parental work or lifestyle
+                      choices.
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Desire for continuity in education despite changing locations.
+                      Desire for continuity in education despite changing
+                      locations.
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Need for a supportive learning environment that transcends geographical boundaries.
+                      Need for a supportive learning environment that transcends
+                      geographical boundaries.
                     </li>
-                    
                   </ul>
                   <h4 className="text-gray-900 text-h4 font-semibold">
                     Then our school is right for you!
@@ -457,16 +462,16 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-[310px] h-[480px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+            <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
               <h3 className="text-h3 container pt-8 leading-tight font-bold">
-              For students preparing to enter a prestigious university
+                For students preparing to enter a prestigious university
               </h3>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
                 <Image
                   width={1000}
                   height={1000}
                   className=" object-cover"
-                  src="/benefit/4_1.webp"
+                  src="/benefit/4_4.webp"
                   alt=""
                 />
               </div>
@@ -478,16 +483,17 @@ export default function Home() {
                   </h4>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
                     <li className="text-gray-900 text-base font-normal">
-                    Aiming for top-tier university admissions.
+                      Aiming for top-tier university admissions.
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Seeking academic rigor and personalized exam prep.
+                      Seeking academic rigor and personalized exam prep.
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Craving extracurricular opportunities and leadership development.
+                      Craving extracurricular opportunities and leadership
+                      development.
                     </li>
                     <li className="text-gray-900 text-base font-normal">
-                    Needing guidance for application processes.
+                      Needing guidance for application processes.
                     </li>
                   </ul>
                   <h4 className="text-gray-900 text-h4 font-semibold">
@@ -506,13 +512,13 @@ export default function Home() {
         </h1>
         <div className="pt-8 sm:pt-12 grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-5">
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
-            <Image
+            {/* <Image
               width={1000}
               height={1000}
               className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
               src="/await/3.webp"
               alt="Hero Image width={1000} height={1000}"
-            />
+            /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
                 <h2 className="text-h2 font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
@@ -526,10 +532,10 @@ export default function Home() {
                   then attend a 4-week summer camp in the UK.
                 </p>
               </div>
-              <div className="flex bg-white shadow-sm rounded-full px-8 py-4 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <h2 className="text-h2 tracking-wide font-semibold">
+              <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+                <h3 className="text-h3 tracking-wide font-semibold">
                   Learn more
-                </h2>
+                </h3>
                 <ArrowRightCircleIcon
                   className="h-12 w-12 -rotate-45"
                   aria-hidden="true"
@@ -539,30 +545,32 @@ export default function Home() {
           </div>
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
-            <Image
+            {/* <Image
               width={1000}
               height={1000}
               className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
               src="/await/3.webp"
               alt="Hero Image width={1000} height={1000}"
-            />
+            /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
                 <h2 className="text-h2 font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
-                  Hybrid Model
+                  Fully Online
                 </h2>
                 <p className="text-p leading-6 text-gray-900 font-semibold">
-                  Blend online learning with hands-on experience.
+                  From September to June with classes from 09:00 to 15:00 UK
+                  time.
                 </p>
                 <p className="text-p leading-6 text-gray-900 font-semibold">
-                  From September to June, students join live online classes,
-                  then attend a 4-week summer camp in the UK.
+                  {
+                    "It's structured, flexible, and taught by qualified teachers to keep your child engaged and progressing."
+                  }
                 </p>
               </div>
-              <div className="flex bg-white shadow-sm rounded-full px-8 py-4 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <h2 className="text-h2 tracking-wide font-semibold">
+              <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+                <h3 className="text-h3 tracking-wide font-semibold">
                   Learn more
-                </h2>
+                </h3>
                 <ArrowRightCircleIcon
                   className="h-12 w-12 -rotate-45"
                   aria-hidden="true"
@@ -572,30 +580,31 @@ export default function Home() {
           </div>
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
-            <Image
+            {/* <Image
               width={1000}
               height={1000}
               className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
               src="/await/3.webp"
               alt="Hero Image width={1000} height={1000}"
-            />
+            /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
                 <h2 className="text-h2 font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
-                  Hybrid Model
+                  Self Paced
                 </h2>
                 <p className="text-p leading-6 text-gray-900 font-semibold">
-                  Blend online learning with hands-on experience.
+                  Our Flexible Learning Model offers students the freedom to
+                  learn at their own pace and schedule.
                 </p>
                 <p className="text-p leading-6 text-gray-900 font-semibold">
-                  From September to June, students join live online classes,
-                  then attend a 4-week summer camp in the UK.
+                  This is ideal for independent learners or those with time
+                  constraints.
                 </p>
               </div>
-              <div className="flex bg-white shadow-sm rounded-full px-8 py-4 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <h2 className="text-h2 tracking-wide font-semibold">
+              <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+                <h3 className="text-h3 tracking-wide font-semibold">
                   Learn more
-                </h2>
+                </h3>
                 <ArrowRightCircleIcon
                   className="h-12 w-12 -rotate-45"
                   aria-hidden="true"
@@ -634,20 +643,17 @@ export default function Home() {
               to us today
             </p>
 
-            <div className="flex flex-wrap gap-5">
-              <button className="bg-blue-600 rounded-lg hover:border hover:border-inherit hover:border-blue-600 px-8 py-2 text-white hover:bg-blue-700 transition-colors duration-300 font-semibold text-lg">
-                Book a Call
-              </button>
-              <button className=" border-blue-600  hover:bg-blue-600 transition-all duration-300 border-[3px] rounded-lg px-8 py-2 text-white font-semibold text-lg">
-                Contact Us
-              </button>
+            <div className="flex items-center flex-wrap gap-5">
+              <EnrollButton />
+
+              <ContactButton textColor="text-white" />
             </div>
           </div>
           <Image
             width={1000}
             height={1000}
             className="object-contain md:w-1/2 self-end"
-            src="/Brochure.png"
+            src="/Brochure.webp"
             alt="Hero Image width={1000} height={1000}"
           />
         </div>

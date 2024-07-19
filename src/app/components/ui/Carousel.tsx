@@ -15,7 +15,7 @@ const Carousel: React.FC<CarouselProps> = ({ }) => {
     <>
       <Swiper
         slidesPerView={2}
-        spaceBetween={30}
+        spaceBetween={100}
         freeMode={true}
         modules={[FreeMode, Pagination]}
         breakpoints={{
@@ -26,35 +26,36 @@ const Carousel: React.FC<CarouselProps> = ({ }) => {
             slidesPerView: 4,
           },
           1200: {
-            slidesPerView: 5,
+            slidesPerView: 6,
           }
         }}
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image width={1000} height={1000} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={1000} height={1000} className='' src="/carousel/GOC.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={1000} height={1000} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={1000} height={1000} className='' src="/carousel/HighEdu_logo.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={1000} height={1000} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={1000} height={1000} className='' src="/carousel/Artizy_logo.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={1000} height={1000} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={1000} height={1000} className='' src="/carousel/Eduland.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={1000} height={1000} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={1000} height={1000} className='' src="/carousel/GOC.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={1000} height={1000} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={1000} height={1000} className='' src="/carousel/HighEdu_logo.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={1000} height={1000} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={1000} height={1000} className='' src="/carousel/Artizy_logo.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={1000} height={1000} className='' src="/carousel/GOC-1024x1024.webp" alt="" />
+          <Image width={1000} height={1000} className='' src="/carousel/Eduland.webp" alt="" />
         </SwiperSlide>
+        
 
 
       </Swiper>
