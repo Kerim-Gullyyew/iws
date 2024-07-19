@@ -238,8 +238,16 @@ const page: React.FC<pageProps> = ({ }) => {
       <div className='pt-20 container'>
         <div className='pt-8 sm:pt-12 flex flex-col gap-8'>
 
-          <AccordionSecondary />
-          <AccordionSecondary />
+          <AccordionSecondary title='sdfsdjfkl'>
+            <p className='text-p text-blue-900 tracking-wide leading-8'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eligendi repellendus nostrum, accusantium harum, sunt voluptates, nemo enim doloribus ullam hic odit cum eveniet itaque fugiat? Debitis ut obcaecati facilis.
+            </p>
+          </AccordionSecondary>
+          <AccordionSecondary title='sdfsdjfkl'>
+            <p className='text-p text-blue-900 tracking-wide leading-8'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eligendi repellendus nostrum, accusantium harum, sunt voluptates, nemo enim doloribus ullam hic odit cum eveniet itaque fugiat? Debitis ut obcaecati facilis.
+            </p>
+          </AccordionSecondary>
 
         </div>
       </div>

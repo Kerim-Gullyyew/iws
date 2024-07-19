@@ -17,7 +17,9 @@ export default function Home() {
         <div className="gap-10 sm:gap-14 flex-col flex justify-center">
           <div className="flex">
             <div className="relative">
-              <img
+              <Image
+                width={1000}
+                height={1000}
                 className="w-[400px] object-contain min-w-[250px]"
                 src="/Tag.webp"
                 alt="Tag photo"
