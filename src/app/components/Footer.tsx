@@ -292,11 +292,11 @@ const Footer: React.FC<FooterProps> = ({ }) => {
         </div>
 
         <div className=' border-t border-gray-400 space-y-3 pt-5 mt-3 flex flex-col justify-center items-center w-full lg:grid lg:grid-cols-3 lg:space-y-0'>
-          <p className='text-p text-center'>&copy; {2024} IWS Online School LTD.</p>
-          <p className='text-p text-center'>
+          <p className='text-p text-left'>&copy; {2024} IWS Online School LTD.</p>
+          <p className='text-p text-left'>
             All rights reserved.
           </p>
-          <p className='text-p text-center'>Privacy Policy</p>
+          <p className='text-p text-left'>Privacy Policy</p>
         </div>
 
       </div>
