@@ -11,9 +11,9 @@ const Accordion: React.FC<AccordionProps> = ({ }) => {
       {({ open }) => (
         <>
           <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-            <h2 className="text-h2 font-bold">
+            <h3 className="text-h3 font-bold">
               Is team pricing available?
-            </h2>
+            </h3>
             {open ? (
               <MinusIcon className="h-8 w-8" aria-hidden="true" />
             ) : (
@@ -32,7 +32,7 @@ const Accordion: React.FC<AccordionProps> = ({ }) => {
                   transition
                   className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                 >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, autem tempore delectus accusantium dolor et numquam necessitatibus odit veritatis fugit earum, doloribus soluta quae aspernatur recusandae eos! Officia, harum voluptatum.
+                  <p className="text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, autem tempore delectus accusantium dolor et numquam necessitatibus odit veritatis fugit earum, doloribus soluta quae aspernatur recusandae eos! Officia, harum voluptatum.</p>
                 </DisclosurePanel>
               )}
             </AnimatePresence>
