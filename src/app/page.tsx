@@ -35,7 +35,7 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 className=" text-gray-900 text-[62px] font-bold">
+          <h1 className=" text-gray-900 text-[30px] lg:text-[62px] font-bold sm:text-[40px] md:text-[40px]">
             Accredited, Holistic Online Schooling
           </h1>
 
@@ -53,9 +53,9 @@ export default function Home() {
         </div>
 
         <Image
-          width={1000}
-          height={1000}
-          className="max-w-lg hidden xs:flex w-3/4 lg:w-[450px] xl:w-auto object-contain"
+          width={450}
+          height={450}
+          className="w-[250px] md:w-[450px] xs:flex lg:w-[450px] xl:w-auto object-contain"
           src="/Hero.webp"
           alt="Hero Image width={1000} height={1000}"
         />
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-4 xl:gap-7 gap-y-14">
           <Link
             href={"/cambridge-primary"}
-            className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl"
+            className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#D9DFFB] flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
@@ -86,7 +86,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
+            <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
                 <h3 className="text-[35px] text-gray-900 font-bold">
                   Primary School
@@ -108,7 +108,7 @@ export default function Home() {
 
           <Link
             href={"/cambridge-secondary"}
-            className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl"
+            className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#E6F2DB] flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
@@ -125,7 +125,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
+            <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
                 <h3 className="text-[35px] text-gray-900 font-bold">
                   Middle School
@@ -147,7 +147,7 @@ export default function Home() {
 
           <Link
             href={"/cambridge-igcse"}
-            className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl"
+            className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#FCE8D6] flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
@@ -164,7 +164,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
+            <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
                 <h3 className="text-[35px] text-gray-900 font-bold">I/GCSE</h3>
                 <p className="text-p font-semibold">
@@ -185,7 +185,7 @@ export default function Home() {
 
           <Link
             href={"/cambridge-a-level"}
-            className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-sky-100 flex flex-col justify-between rounded-xl"
+            className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#FBD9D5] flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
@@ -202,7 +202,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="bg-white flex flex-1 gap-10 justify-between flex-col m-1 p-4 rounded-b-xl">
+            <div className="bg-white flex flex-1 gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
                 <h3 className="text-[35px] text-gray-900 font-bold">A Level</h3>
                 <p className="text-p font-semibold">
@@ -228,7 +228,7 @@ export default function Home() {
         </h2>
 
         <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
-          <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-green-100">
+          <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F1F9EC]">
             <h2 className="text-h2 font-bold text-gray-900 tracking-wide">
               Visionary Educators of IWS Online School
             </h2>
@@ -238,7 +238,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="overflow-hidden gap-10 md:gap-0 flex flex-col md:flex-row-reverse md:items-center rounded-xl col-span-6 md:col-span-4 bg-sky-100">
+          <div className="overflow-hidden gap-10 md:gap-0 flex flex-col md:flex-row-reverse md:items-center rounded-xl col-span-6 md:col-span-4 bg-[#EBF0FE]">
             <Image
               width={1000}
               height={1000}
@@ -258,7 +258,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-violet-100">
+          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F5EDFF]">
             <Image
               width={1000}
               height={1000}
@@ -278,7 +278,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-pink-100">
+          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#FFF0FF]">
             <Image
               width={1000}
               height={1000}
@@ -298,7 +298,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-amber-100">
+          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#FFE5E7]">
             <Image
               width={1000}
               height={1000}
@@ -318,7 +318,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-hidden gap-10 md:gap-0 flex flex-col md:flex-row-reverse md:items-center rounded-xl col-span-6  bg-sky-100">
+          <div className="overflow-hidden gap-10 md:gap-0 flex flex-col md:flex-row-reverse md:items-center rounded-xl col-span-6  bg-[#FDF6EB]">
             <Image
               width={1000}
               height={1000}
@@ -363,25 +363,25 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 xs:gap-3">
-                  <p className="text-gray-900 text-p font-semibold">
+                  <p className="text-gray-900 text-[16px] font-semibold">
                     Is this about you?
                   </p>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Feeling uneasy in your current school environment?
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[15px] font-normal">
                       Facing ongoing conflicts with peers?
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[15px] font-normal">
                       Dissatisfied with nearby education options?
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[15px] font-normal">
                       Unable to attend traditional schools due to personal
                       beliefs?
                     </li>
                   </ul>
-                  <p className="text-gray-900 text-p font-semibold">
+                  <p className="text-gray-900 text-[16px] font-semibold">
                     Then our school is right for you!
                   </p>
                 </div>
@@ -403,26 +403,26 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 xs:gap-3">
-                  <p className="text-gray-900 text-p font-semibold">
+                  <p className="text-gray-900 text-[16px] font-semibold">
                     Does this sound like you?
                   </p>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Struggling to balance school with extracurricular
                       activities?
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Feeling overwhelmed as difficulties in certain subjects
                       escalate?
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Frequently missing school due to illness?
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Finding some subjects challenging to understand?
                     </li>
                   </ul>
-                  <p className="text-gray-900 text-p font-semibold">
+                  <p className="text-gray-900 text-[16px] font-semibold">
                     Then our school is right for you!
                   </p>
                 </div>
@@ -444,24 +444,24 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 xs:gap-3">
-                  <p className="text-gray-900 text-p font-semibold">
+                  <p className="text-gray-900 text-[16px] font-semibold">
                     Is this about you?
                   </p>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Frequent relocation due to parental work or lifestyle
                       choices.
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Desire for continuity in education despite changing
                       locations.
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Need for a supportive learning environment that transcends
                       geographical boundaries.
                     </li>
                   </ul>
-                  <p className="text-gray-900 text-p font-semibold">
+                  <p className="text-gray-900 text-[16px] font-semibold">
                     Then our school is right for you!
                   </p>
                 </div>
@@ -483,25 +483,25 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 xs:gap-3">
-                  <p className="text-gray-900 text-p font-semibold">
+                  <p className="text-gray-900 text-[16px] font-semibold">
                     Is this about you?
                   </p>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Aiming for top-tier university admissions.
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Seeking academic rigor and personalized exam prep.
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Craving extracurricular opportunities and leadership
                       development.
                     </li>
-                    <li className="text-gray-900 text-p font-normal">
+                    <li className="text-gray-900 text-[16px] font-normal">
                       Needing guidance for application processes.
                     </li>
                   </ul>
-                  <p className="text-gray-900 text-p font-semibold">
+                  <p className="text-gray-900 text-[16px] font-semibold">
                     Then our school is right for you!
                   </p>
                 </div>
@@ -516,7 +516,7 @@ export default function Home() {
           Choose your education model
         </h2>
         <div className="pt-8 sm:pt-12 grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-5">
-          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
+          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-[#F2F4F7]">
             {/* <Image
               width={1000}
               height={1000}
@@ -547,7 +547,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
+          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-[#F2F4F7]">
             {/* <Image
               width={1000}
               height={1000}
@@ -580,7 +580,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-gray-50">
+          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-[#F2F4F7]">
             {/* <Image
               width={1000}
               height={1000}
@@ -642,13 +642,43 @@ export default function Home() {
                       >
                         <div className=" space-y-5">
                           <p className="text-p">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Ex, autem tempore delectus accusantium dolor
-                            et numquam necessitatibus odit veritatis fugit
-                            earum, doloribus soluta quae aspernatur recusandae
-                            eos! Officia, harum voluptatum.
+                            Our British online school revolutionises remote
+                            education. With an easy-to-use platform, flexible
+                            academic programmes, and adaptable schedules, we
+                            provide a learning experience that can often exceed
+                            that of traditional schools.
                           </p>
-                          <p className="text-p">drgdfgdfg</p>
+                          <p className="text-p">
+                            Globally, schools are embracing technology to meet
+                            evolving educational standards. It is anticipated
+                            that within the next few decades, online education
+                            will become commonplace. At IWS, we lead by
+                            prioritising online teaching.
+                          </p>
+                          <p className="text-p">
+                            Our teachers are adept at delivering Live Online
+                            Lessons with great enthusiasm and proficiency. We
+                            also employ sophisticated and reliable technology to
+                            ensure our virtual classrooms meet every need of our
+                            pupils, including round-the-clock access to recorded
+                            lessons to support independent study.
+                          </p>
+                          <p className="text-p">
+                            In this respect, we are advancing faster than many
+                            educational institutions that are just beginning to
+                            embark on this digital transition.
+                          </p>
+                          <p className="text-p">
+                            IWS places great value on the educational
+                            experiences that occur beyond the classroom walls.
+                            Thus, we offer numerous opportunities for group
+                            interaction through a variety of clubs,
+                            extracurricular activities, and online social
+                            gatherings. This approach allows each student to
+                            connect with others across the globe, fostering a
+                            sense of belonging to a vibrant community that
+                            extends beyond the end of the school day.
+                          </p>
                         </div>
                       </DisclosurePanel>
                     )}
@@ -662,7 +692,7 @@ export default function Home() {
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-h3 font-bold">Why us?</h3>
+                  <h3 className="text-h3 font-bold">Are you accredited?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -683,13 +713,8 @@ export default function Home() {
                       >
                         <div className=" space-y-5">
                           <p className="text-p">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Ex, autem tempore delectus accusantium dolor
-                            et numquam necessitatibus odit veritatis fugit
-                            earum, doloribus soluta quae aspernatur recusandae
-                            eos! Officia, harum voluptatum.
+                          Yes, we offer Cambridge Assessment International Education. We are registered as UK Learner Providers and are in the process of obtaining our membership with the Council of International Schools (CIS).
                           </p>
-                          <p className="text-p">drgdfgdfg</p>
                         </div>
                       </DisclosurePanel>
                     )}
@@ -702,7 +727,7 @@ export default function Home() {
       </div>
 
       <div className="mt-20 lg:container">
-        <div className=" bg-blue-900 lg:rounded-xl mt-8 flex flex-col md:flex-row">
+        <div className=" bg-[#003372] lg:rounded-xl mt-8 flex flex-col md:flex-row">
           <div className="py-12 px-8 lg:px-16 flex flex-col gap-10">
             <h2 className="text-[62px] text-white/90 tracking-tighter font-bold leading-[60px]">
               Looking to learn more?
@@ -730,7 +755,7 @@ export default function Home() {
       </div>
 
       <div className="mt-20 container">
-        <h3 className="text-blue-900 font-semibold text-h3 ">Partnered by</h3>
+        <h3 className="text-[#003372] font-semibold text-h3 ">Partnered by</h3>
         <div className="h-[2px] my-10 w-full bg-blue-900"></div>
         <Carousel />
       </div>

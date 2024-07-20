@@ -32,13 +32,13 @@ const config: Config = {
         'h4': '1em',
         'h5': '0.8em',  
         'h6': '0.7em',
-        'p': '1em',
+        'p': '1.125em',
       },
       screens: {
         xs: '500px',
         sm: "576px",
         md: "768px",
-        lg: "992px",
+        lg: "1025px",
         xl: "1200px",
       },
       backgroundImage: {
