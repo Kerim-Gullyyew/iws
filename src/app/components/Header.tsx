@@ -63,8 +63,8 @@ const Header: React.FC<HeaderProps> = ({ }) => {
             <Image priority={true} width={1000} height={1000} className="h-[3rem] w-auto" src="/IWS_Logo.webp" alt="IWS Online School Icon" />
           </Link>
         </div>
-        <div className="flex lg:hidden xs:items-center xs:gap-4">
-          <div className="hidden xs:flex">
+        <div className="flex lg:hidden sm:items-center sm:gap-4">
+          <div className="hidden sm:flex">
             <EnrollButton />
           </div>
           <button

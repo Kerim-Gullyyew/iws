@@ -55,7 +55,7 @@ export default function Home() {
         <Image
           width={450}
           height={450}
-          className="w-[250px] md:w-[450px] xs:flex lg:w-[450px] lg:w-auto object-contain"
+          className="w-[250px] md:w-[450px] sm:flex lg:w-auto object-contain"
           src="/Hero.webp"
           alt="Hero Image width={1000} height={1000}"
         />
@@ -361,12 +361,12 @@ export default function Home() {
                 />
               </div>
 
-              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                <div className="flex flex-col gap-2 xs:gap-3">
+              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <div className="flex flex-col gap-2 sm:gap-3">
                   <p className=" text-[16px] font-semibold">
                     Is this about you?
                   </p>
-                  <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
+                  <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Feeling uneasy in your current school environment?
                     </li>
@@ -401,12 +401,12 @@ export default function Home() {
                 />
               </div>
 
-              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                <div className="flex flex-col gap-2 xs:gap-3">
+              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <div className="flex flex-col gap-2 sm:gap-3">
                   <p className=" text-[16px] font-semibold">
                     Does this sound like you?
                   </p>
-                  <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
+                  <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Struggling to balance school with extracurricular
                       activities?
@@ -442,12 +442,12 @@ export default function Home() {
                 />
               </div>
 
-              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                <div className="flex flex-col gap-2 xs:gap-3">
+              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <div className="flex flex-col gap-2 sm:gap-3">
                   <p className=" text-[16px] font-semibold">
                     Is this about you?
                   </p>
-                  <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
+                  <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Frequent relocation due to parental work or lifestyle
                       choices.
@@ -481,12 +481,12 @@ export default function Home() {
                 />
               </div>
 
-              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                <div className="flex flex-col gap-2 xs:gap-3">
+              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <div className="flex flex-col gap-2 sm:gap-3">
                   <p className=" text-[16px] font-semibold">
                     Is this about you?
                   </p>
-                  <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
+                  <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Aiming for top-tier university admissions.
                     </li>
