@@ -35,11 +35,11 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 className=" text-gray-900 text-[30px] lg:text-[62px] font-bold sm:text-[40px] md:text-[40px]">
+          <h1 className="  text-[30px] lg:text-[62px] font-bold sm:text-[40px] md:text-[40px]">
             Accredited, Holistic Online Schooling
           </h1>
 
-          <p className="leading-[26px] text-gray-900 font-semibold text-p">
+          <p className="leading-[26px]  font-semibold text-p">
             IWS Online School – Your compass in the digital realm of learning.
             Discover new horizons, Create lasting memories, and Lead the future
             with our live lessons.
@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900  text-center font-bold">
+        <h2 className="  text-center font-bold">
           The right study programme for you
         </h2>
 
@@ -73,7 +73,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold text-gray-900">
+                <h4 className=" font-semibold ">
                   Ages 7-11
                 </h4>
               </div>
@@ -88,7 +88,7 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px] text-gray-900 font-bold">
+                <h3 className="text-[35px]  font-bold">
                   Primary School
                 </h3>
                 <p className="text-p font-semibold">
@@ -112,7 +112,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold text-gray-900">
+                <h4 className=" font-semibold ">
                   Ages 11-14
                 </h4>
               </div>
@@ -127,7 +127,7 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px] text-gray-900 font-bold">
+                <h3 className="text-[35px]  font-bold">
                   Middle School
                 </h3>
                 <p className="text-p font-semibold">
@@ -151,7 +151,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold text-gray-900">
+                <h4 className=" font-semibold ">
                   Ages 14-16
                 </h4>
               </div>
@@ -166,7 +166,7 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px] text-gray-900 font-bold">I/GCSE</h3>
+                <h3 className="text-[35px]  font-bold">I/GCSE</h3>
                 <p className="text-p font-semibold">
                   Unlock your teen’s full potential and prepare for future
                   success.
@@ -189,7 +189,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold text-gray-900">
+                <h4 className=" font-semibold ">
                   Ages 16-18
                 </h4>
               </div>
@@ -204,7 +204,7 @@ export default function Home() {
 
             <div className="bg-white flex flex-1 gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px] text-gray-900 font-bold">A Level</h3>
+                <h3 className="text-[35px]  font-bold">A Level</h3>
                 <p className="text-p font-semibold">
                   Prepare teens for university with advanced studies.
                 </p>
@@ -223,16 +223,16 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900  text-center font-bold">
+        <h2 className="  text-center font-bold">
           What awaits you at IWS Online School?
         </h2>
 
         <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
           <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F1F9EC]">
-            <h2 className=" font-bold text-gray-900 tracking-wide">
+            <h2 className=" font-bold  tracking-wide">
               Visionary Educators of IWS Online School
             </h2>
-            <p className="text-p leading-6 text-gray-900 font-semibold">
+            <p className="text-p leading-6  font-semibold">
               Explore the difference our passionate and committed teachers make
               in every student’s learning journey.
             </p>
@@ -248,10 +248,10 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8">
-              <h2 className=" font-bold text-gray-900 tracking-wide">
+              <h2 className=" font-bold  tracking-wide">
                 Our teachers are always in touch
               </h2>
-              <p className="text-p leading-6 text-gray-900 font-semibold">
+              <p className="text-p leading-6  font-semibold">
                 Our teachers and mentors are ready to help with lesson queries
                 and platform guidance.
               </p>
@@ -268,10 +268,10 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
-              <h2 className=" font-bold text-gray-900 tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold  tracking-wide xl:w-[250px]">
                 Individual Programmes
               </h2>
-              <p className="text-p leading-6 text-gray-900 font-semibold">
+              <p className="text-p leading-6  font-semibold">
                 Every child is unique. Our personalized assessments and Success
                 Coaching ensure tailored educational paths for every student.
               </p>
@@ -288,10 +288,10 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
-              <h2 className=" font-bold text-gray-900 tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold  tracking-wide xl:w-[250px]">
                 Dynamic Live Lessons
               </h2>
-              <p className="text-p leading-6 text-gray-900 font-semibold">
+              <p className="text-p leading-6  font-semibold">
                 Experience structured sessions for active participation,
                 collaboration, and growth in academics and personal development.
               </p>
@@ -308,10 +308,10 @@ export default function Home() {
             />
 
             <div className="flex flex-col h-full justify-between gap-6 pt-44 md:pt-20 lg:pt-0">
-              <h2 className=" font-bold text-gray-900 tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold  tracking-wide xl:w-[250px]">
                 Accredited Curriculum
               </h2>
-              <p className="text-p leading-6 text-gray-900 font-semibold">
+              <p className="text-p leading-6  font-semibold">
                 We prioritize holistic education, combining academic excellence
                 with skill development for a comprehensive learning experience.
               </p>
@@ -328,10 +328,10 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8 md:w-1/2">
-              <h2 className=" font-bold text-gray-900 tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold  tracking-wide xl:w-[250px]">
                 Taking care of parents
               </h2>
-              <p className="text-p leading-6 text-gray-900 font-semibold">
+              <p className="text-p leading-6  font-semibold">
                 Our support specialists are always ready to assist, and our
                 bi-weekly parent assemblies offer a platform to discuss any
                 topic and connect with like-minded families worldwide.
@@ -342,7 +342,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900  text-center font-bold">
+        <h2 className="  text-center font-bold">
           Who can benefit from our school?
         </h2>
         <div className="pt-8 sm:pt-12">
@@ -363,25 +363,25 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 xs:gap-3">
-                  <p className="text-gray-900 text-[16px] font-semibold">
+                  <p className=" text-[16px] font-semibold">
                     Is this about you?
                   </p>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Feeling uneasy in your current school environment?
                     </li>
-                    <li className="text-gray-900 text-[15px] font-normal">
+                    <li className=" text-[15px] font-normal">
                       Facing ongoing conflicts with peers?
                     </li>
-                    <li className="text-gray-900 text-[15px] font-normal">
+                    <li className=" text-[15px] font-normal">
                       Dissatisfied with nearby education options?
                     </li>
-                    <li className="text-gray-900 text-[15px] font-normal">
+                    <li className=" text-[15px] font-normal">
                       Unable to attend traditional schools due to personal
                       beliefs?
                     </li>
                   </ul>
-                  <p className="text-gray-900 text-[16px] font-semibold">
+                  <p className=" text-[16px] font-semibold">
                     Then our school is right for you!
                   </p>
                 </div>
@@ -403,26 +403,26 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 xs:gap-3">
-                  <p className="text-gray-900 text-[16px] font-semibold">
+                  <p className=" text-[16px] font-semibold">
                     Does this sound like you?
                   </p>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Struggling to balance school with extracurricular
                       activities?
                     </li>
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Feeling overwhelmed as difficulties in certain subjects
                       escalate?
                     </li>
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Frequently missing school due to illness?
                     </li>
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Finding some subjects challenging to understand?
                     </li>
                   </ul>
-                  <p className="text-gray-900 text-[16px] font-semibold">
+                  <p className=" text-[16px] font-semibold">
                     Then our school is right for you!
                   </p>
                 </div>
@@ -444,24 +444,24 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 xs:gap-3">
-                  <p className="text-gray-900 text-[16px] font-semibold">
+                  <p className=" text-[16px] font-semibold">
                     Is this about you?
                   </p>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Frequent relocation due to parental work or lifestyle
                       choices.
                     </li>
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Desire for continuity in education despite changing
                       locations.
                     </li>
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Need for a supportive learning environment that transcends
                       geographical boundaries.
                     </li>
                   </ul>
-                  <p className="text-gray-900 text-[16px] font-semibold">
+                  <p className=" text-[16px] font-semibold">
                     Then our school is right for you!
                   </p>
                 </div>
@@ -483,25 +483,25 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 xs:gap-3">
-                  <p className="text-gray-900 text-[16px] font-semibold">
+                  <p className=" text-[16px] font-semibold">
                     Is this about you?
                   </p>
                   <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Aiming for top-tier university admissions.
                     </li>
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Seeking academic rigor and personalized exam prep.
                     </li>
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Craving extracurricular opportunities and leadership
                       development.
                     </li>
-                    <li className="text-gray-900 text-[16px] font-normal">
+                    <li className=" text-[16px] font-normal">
                       Needing guidance for application processes.
                     </li>
                   </ul>
-                  <p className="text-gray-900 text-[16px] font-semibold">
+                  <p className=" text-[16px] font-semibold">
                     Then our school is right for you!
                   </p>
                 </div>
@@ -512,7 +512,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900  text-center font-bold">
+        <h2 className="  text-center font-bold">
           Choose your education model
         </h2>
         <div className="pt-8 sm:pt-12 grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-5">
@@ -526,13 +526,13 @@ export default function Home() {
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className=" font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className=" font-bold  tracking-wide lg:w-1/2 lg:text-4xl">
                   Hybrid Model
                 </h3>
-                <p className="text-p leading-6 text-gray-900 font-semibold">
+                <p className="text-p leading-6  font-semibold">
                   Blend online learning with hands-on experience.
                 </p>
-                <p className="text-p leading-6 text-gray-900 font-semibold">
+                <p className="text-p leading-6  font-semibold">
                   From September to June, students join live online classes,
                   then attend a 4-week summer camp in the UK.
                 </p>
@@ -557,14 +557,14 @@ export default function Home() {
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className=" font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className=" font-bold  tracking-wide lg:w-1/2 lg:text-4xl">
                   Fully Online
                 </h3>
-                <p className="text-p leading-6 text-gray-900 font-semibold">
+                <p className="text-p leading-6  font-semibold">
                   From September to June with classes from 09:00 to 15:00 UK
                   time.
                 </p>
-                <p className="text-p leading-6 text-gray-900 font-semibold">
+                <p className="text-p leading-6  font-semibold">
                   {
                     "It's structured, flexible, and taught by qualified teachers to keep your child engaged and progressing."
                   }
@@ -590,14 +590,14 @@ export default function Home() {
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className=" font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className=" font-bold  tracking-wide lg:w-1/2 lg:text-4xl">
                   Self Paced
                 </h3>
-                <p className="text-p leading-6 text-gray-900 font-semibold">
+                <p className="text-p leading-6  font-semibold">
                   Our Flexible Learning Model offers students the freedom to
                   learn at their own pace and schedule.
                 </p>
-                <p className="text-p leading-6 text-gray-900 font-semibold">
+                <p className="text-p leading-6  font-semibold">
                   This is ideal for independent learners or those with time
                   constraints.
                 </p>
@@ -615,7 +615,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900  text-center font-bold">FAQs</h2>
+        <h2 className="  text-center font-bold">FAQs</h2>
         <div className="pt-8 sm:pt-12 flex flex-col gap-8">
           <Disclosure as="div" className="w-full border-b border-gray-300">
             {({ open }) => (

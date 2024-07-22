@@ -16,7 +16,7 @@ const page: React.FC<pageProps> = ({}) => {
           <h1 className=" font-bold text-blue-900">
             Cambridge Secondary
           </h1>
-          <p className="text-p leading-8 text-gray-900">
+          <p className="text-p leading-8 ">
             At IWS Online School, Middle level Education commences at age 11,
             culminating with students undertaking the prestigious Cambridge
             I/GCSE exams. This educational journey encompasses two distinct
@@ -94,7 +94,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="container flex flex-col gap-5 py-10 justify-center">
-              <h1 className=" font-bold text-gray-900">
+              <h1 className=" font-bold ">
                 Empowering Students for Academic Excellence
               </h1>
               <h2 className=" text-green-600">
@@ -356,13 +356,13 @@ const page: React.FC<pageProps> = ({}) => {
         <div className="pt-8 sm:pt-12 flex flex-col gap-8">
           <AccordionSecondary title="sdfsdjfkl">
             <div className="space-y-4">
-              <p className="text-p text-gray-900 tracking-wide leading-8">
+              <p className="text-p  tracking-wide leading-8">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                 eligendi repellendus nostrum, accusantium harum, sunt
                 voluptates, nemo enim doloribus ullam hic odit cum eveniet
                 itaque fugiat? Debitis ut obcaecati facilis.
               </p>
-              <p className="text-p text-gray-900 tracking-wide leading-8">
+              <p className="text-p  tracking-wide leading-8">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                 eligendi repellendus nostrum, accusantium harum, sunt
                 voluptates, nemo enim doloribus ullam hic odit cum eveniet

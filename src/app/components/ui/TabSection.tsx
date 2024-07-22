@@ -210,7 +210,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
             id="first-name"
             placeholder='First Name *'
             autoComplete="given-name"
-            className="block w-full rounded-md border-0 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+            className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
           />
           {
             validationErrors.firstName && (
@@ -227,7 +227,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
             id="last-name"
             placeholder='Last Name *'
             autoComplete="family-name"
-            className="block w-full rounded-md border-0 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+            className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
           />
           {
             validationErrors.lastName && (
@@ -245,7 +245,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
             type="email"
             autoComplete="email"
             placeholder='Email'
-            className="block w-full rounded-md border-0 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+            className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
           />
           {
             validationErrors.email && (
@@ -281,7 +281,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
               name="message"
               rows={6}
               placeholder='Write your message here...'
-              className="block w-full rounded-md border-0 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+              className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
               defaultValue={''}
             />
             {

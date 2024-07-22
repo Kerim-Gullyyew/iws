@@ -20,7 +20,7 @@ const page: React.FC<pageProps> = ({ }) => {
           <h1 className=' font-bold text-blue-900'>
             Cambridge Primary
           </h1>
-          <p className='text-p leading-8 text-gray-900'>
+          <p className='text-p leading-8 '>
             Discover IWS Online School, your gateway to a comprehensive Cambridge Primary International Curriculum tailored for primary students. Our accredited UK-based virtual school is currently undergoing the authorization process with Cambridge Assessment International Education.
           </p>
 
@@ -74,7 +74,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
             </div>
             <div className='container flex flex-col gap-5 py-10 justify-center'>
-              <h1 className=' font-bold text-gray-900'>Fostering Inquisitive, Globally-Aware Citizens</h1>
+              <h1 className=' font-bold '>Fostering Inquisitive, Globally-Aware Citizens</h1>
               <h2 className=' text-green-600'>
                 Comprehensive Online A Level Support at IWS Online School
               </h2>

@@ -18,7 +18,7 @@ const page: React.FC<pageProps> = ({ }) => {
           <h1 className=' font-bold text-blue-900'>
             Cambridge Online A Level Course
           </h1>
-          <p className='text-p leading-8 text-gray-900'>
+          <p className='text-p leading-8 '>
             A Levels at IWS Online School hold global recognition from esteemed universities and leading employers, significantly enhancing our students’ prospects of gaining admission to their desired institutions and securing positions in top organisations. We deliver top-quality A Level Online teaching  to successfully prepare students to achieve their academic goals.
           </p>
 
@@ -72,7 +72,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
             </div>
             <div className='container flex flex-col gap-5 py-10 justify-center'>
-              <h1 className=' font-bold text-gray-900'>Empowering Your Future</h1>
+              <h1 className=' font-bold '>Empowering Your Future</h1>
               <h2 className=' text-green-600'>
                 Comprehensive Online A Level Support at IWS Online School
               </h2>

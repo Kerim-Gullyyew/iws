@@ -127,7 +127,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className=" text-gray-900 font-bold">
+                    <h4 className="  font-bold">
                       ACADEMICS
                     </h4>
                     {open ? (
@@ -149,16 +149,16 @@ const Footer: React.FC<FooterProps> = ({}) => {
                           className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                         >
                           <ul className="space-y-2 pb-2">
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               Primary School
                             </li>
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               Middle School
                             </li>
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               I/GCSE
                             </li>
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               A Level
                             </li>
                           </ul>
@@ -177,7 +177,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className=" text-gray-900 font-bold">
+                    <h4 className="  font-bold">
                       ADMISSIONS
                     </h4>
                     {open ? (
@@ -199,10 +199,10 @@ const Footer: React.FC<FooterProps> = ({}) => {
                           className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                         >
                           <ul className="space-y-2 pb-2">
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               Overview
                             </li>
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               School Fees
                             </li>
                           </ul>
@@ -221,7 +221,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className=" text-gray-900 font-bold">
+                    <h4 className="  font-bold">
                       ABOUT IWS
                     </h4>
                     {open ? (
@@ -243,13 +243,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
                           className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                         >
                           <ul className="space-y-2 pb-2">
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               About IWS
                             </li>
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               Our Team
                             </li>
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               Careers
                             </li>
                           </ul>
@@ -268,7 +268,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className=" text-gray-900 font-bold">
+                    <h4 className="  font-bold">
                       RESOURCES
                     </h4>
                     {open ? (
@@ -290,13 +290,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
                           className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                         >
                           <ul className="space-y-2 pb-2">
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               Blogs
                             </li>
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               School Calendar
                             </li>
-                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:">
                               FAQs
                             </li>
                           </ul>

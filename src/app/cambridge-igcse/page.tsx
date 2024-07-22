@@ -18,7 +18,7 @@ const page: React.FC<pageProps> = ({ }) => {
           <h1 className=' font-bold text-blue-900'>
             Cambridge I/GCSE
           </h1>
-          <p className='text-p leading-8 text-gray-900'>
+          <p className='text-p leading-8 '>
             The two-year IWS Online School I/GCSE programme sets your child on the path to obtaining globally recognised and accredited Cambridge certifications. The I/GCSE is an esteemed qualification widely accepted by renowned universities and employers worldwide, serving as a powerful catalyst for both academic and professional advancement, ensuring future success on a global scale. Enrol in our I/GCSE online courses today!
           </p>
 

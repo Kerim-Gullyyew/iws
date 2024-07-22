@@ -5,7 +5,7 @@ interface ContactButtonProps {
   textColor?: string;
 }
 
-const ContactButton: React.FC<ContactButtonProps> = ({ textColor = 'text-gray-900' }) => {
+const ContactButton: React.FC<ContactButtonProps> = ({ textColor = '' }) => {
   const router = useRouter()
   return (
     <button

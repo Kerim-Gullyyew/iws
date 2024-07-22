@@ -15,7 +15,7 @@ const page: React.FC<pageProps> = ({ }) => {
       <h2 className='text-center  font-bold mt-14'>
         Give your child the best education at the most reasonable rates at IWS.
       </h2>
-      <p className='text-center text-p text-gray-900 tracking-wide mt-5'>
+      <p className='text-center text-p  tracking-wide mt-5'>
         Our initial meeting is free. If you decide to enrol, our flexible fee structure includes a £200 one-time registration
         fee. This covers tests to assess your child’s abilities and interests, shaping their education for success.
       </p>
@@ -42,7 +42,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2  border-gray-600'>
               Included subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
@@ -61,7 +61,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2  border-gray-600'>
               Additional subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
@@ -102,7 +102,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2  border-gray-600'>
               Included subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
@@ -121,7 +121,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px] font-bold pb-2  text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px] font-bold pb-2   border-gray-600'>
               Additional subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
@@ -162,7 +162,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2  border-gray-600'>
               Included subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
@@ -181,7 +181,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px] font-bold pb-2  text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px] font-bold pb-2   border-gray-600'>
               Additional subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
@@ -222,7 +222,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2  border-gray-600'>
               Included subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
@@ -241,7 +241,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2  border-gray-600'>
               Additional subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>

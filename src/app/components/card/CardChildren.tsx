@@ -17,14 +17,14 @@ const CardChildren: React.FC<CardChildrenProps> = ({ }) => {
 
       <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 xs:px-9 py-4 xs:py-8 gap-3 xs:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
         <div className="flex flex-col gap-2 xs:gap-3">
-          <h4 className="text-gray-900 text-h4 font-semibold">Is this about you?</h4>
+          <h4 className=" text-h4 font-semibold">Is this about you?</h4>
           <ul className="list-disc gap-2 xs:gap-3 flex flex-col ml-10">
-            <li className="text-gray-900 text-base font-normal">Lorem ipsum dolor sit amet</li>
-            <li className="text-gray-900 text-base font-normal">Lorem ipsum dolor sit amet</li>
-            <li className="text-gray-900 text-base font-normal">Lorem ipsum dolor sit amet</li>
-            <li className="text-gray-900 text-base font-normal">Lorem ipsum dolor sit amet</li>
+            <li className=" text-base font-normal">Lorem ipsum dolor sit amet</li>
+            <li className=" text-base font-normal">Lorem ipsum dolor sit amet</li>
+            <li className=" text-base font-normal">Lorem ipsum dolor sit amet</li>
+            <li className=" text-base font-normal">Lorem ipsum dolor sit amet</li>
           </ul>
-          <h4 className="text-gray-900 text-h4 font-semibold">Then our school is right for you!</h4>
+          <h4 className=" text-h4 font-semibold">Then our school is right for you!</h4>
         </div>
       </div>
     </div>
