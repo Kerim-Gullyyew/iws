@@ -57,7 +57,7 @@ export default function Home() {
           height={450}
           className="w-[250px] md:w-[450px] sm:flex lg:w-auto object-contain"
           src="/Hero.webp"
-          alt="Hero Image width={1000} height={1000}"
+          alt=""
         />
       </div>
 
@@ -66,7 +66,7 @@ export default function Home() {
           The right study programme for you
         </h2>
 
-        <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-4 lg:gap-7 gap-y-14">
+        <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-6 gap-y-14">
           <Link
             href={"/cambridge-primary"}
             className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#D9DFFB] flex flex-col justify-between rounded-xl"
@@ -82,7 +82,7 @@ export default function Home() {
                 height={1000}
                 className="max-w-lg w-11/12 object-contain -mt-14 self-center"
                 src="/programm/Primary@2x.webp"
-                alt="Hero Image width={1000} height={1000}"
+                alt=""
               />
             </div>
 
@@ -121,7 +121,7 @@ export default function Home() {
                 height={1000}
                 className="max-w-lg w-11/12 object-contain -mt-14 self-center"
                 src="/programm/Middle@2x.webp"
-                alt="Hero Image width={1000} height={1000}"
+                alt=""
               />
             </div>
 
@@ -160,7 +160,7 @@ export default function Home() {
                 height={1000}
                 className="max-w-lg w-11/12 object-contain -mt-14 self-center"
                 src="/programm/IGCSE@2x.webp"
-                alt="Hero Image width={1000} height={1000}"
+                alt=""
               />
             </div>
 
@@ -198,7 +198,7 @@ export default function Home() {
                 height={1000}
                 className="max-w-lg w-11/12 object-contain -mt-14 self-center"
                 src="/programm/A-Level@2x.webp"
-                alt="Hero Image width={1000} height={1000}"
+                alt=""
               />
             </div>
 
@@ -244,7 +244,7 @@ export default function Home() {
               height={1000}
               className="object-contain self-center md:w-3/5 max-w-sm"
               src="/await/2-1-1024x589.webp"
-              alt="Hero Image width={1000} height={1000}"
+              alt=""
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8">
@@ -264,7 +264,7 @@ export default function Home() {
               height={1000}
               className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
               src="/await/3.webp"
-              alt="Hero Image width={1000} height={1000}"
+              alt=""
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
@@ -284,7 +284,7 @@ export default function Home() {
               height={1000}
               className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
               src="/await/4.webp"
-              alt="Hero Image width={1000} height={1000}"
+              alt=""
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
@@ -304,7 +304,7 @@ export default function Home() {
               height={1000}
               className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
               src="/await/5.webp"
-              alt="Hero Image width={1000} height={1000}"
+              alt=""
             />
 
             <div className="flex flex-col h-full justify-between gap-6 pt-44 md:pt-20 lg:pt-0">
@@ -324,7 +324,7 @@ export default function Home() {
               height={1000}
               className="object-contain self-center md:w-1/2"
               src="/await/6-1024x399.webp"
-              alt="Hero Image width={1000} height={1000}"
+              alt=""
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8 md:w-1/2">
@@ -522,7 +522,7 @@ export default function Home() {
               height={1000}
               className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
               src="/await/3.webp"
-              alt="Hero Image width={1000} height={1000}"
+              alt=""
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
@@ -553,7 +553,7 @@ export default function Home() {
               height={1000}
               className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
               src="/await/3.webp"
-              alt="Hero Image width={1000} height={1000}"
+              alt=""
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
@@ -586,7 +586,7 @@ export default function Home() {
               height={1000}
               className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
               src="/await/3.webp"
-              alt="Hero Image width={1000} height={1000}"
+              alt=""
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
@@ -749,7 +749,7 @@ export default function Home() {
             height={1000}
             className="object-contain md:w-1/2 self-end"
             src="/Brochure.webp"
-            alt="Hero Image width={1000} height={1000}"
+            alt=""
           />
         </div>
       </div>
