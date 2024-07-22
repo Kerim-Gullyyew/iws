@@ -2,18 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import type { Viewport } from 'next'
+import type { Viewport } from "next";
 import "@fontsource/sora";
 import "@fontsource/inter";
 
 
 export const viewport: Viewport = {
-  colorScheme: 'normal',
-  themeColor: '#4169E1',
+  colorScheme: "normal",
+  themeColor: "#4169E1",
   width: "device-width",
   initialScale: 1,
-}
-
+};
 
 export const metadata: Metadata = {
   // metadataBase: new URL("https://www.iwsonlineschool.co.uk/"),
