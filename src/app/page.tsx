@@ -73,9 +73,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold ">
-                  Ages 7-11
-                </h4>
+                <h4 className=" font-semibold ">Ages 7-11</h4>
               </div>
               <Image
                 width={1000}
@@ -88,9 +86,7 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px]  font-bold">
-                  Primary School
-                </h3>
+                <h3 className="text-[35px]  font-bold">Primary School</h3>
                 <p className="text-p font-semibold">
                   A strong foundation and a love for learning for your child.
                 </p>
@@ -112,9 +108,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold ">
-                  Ages 11-14
-                </h4>
+                <h4 className=" font-semibold ">Ages 11-14</h4>
               </div>
               <Image
                 width={1000}
@@ -127,9 +121,7 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px]  font-bold">
-                  Middle School
-                </h3>
+                <h3 className="text-[35px]  font-bold">Middle School</h3>
                 <p className="text-p font-semibold">
                   Foster your child’s growth and academic success.
                 </p>
@@ -151,9 +143,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold ">
-                  Ages 14-16
-                </h4>
+                <h4 className=" font-semibold ">Ages 14-16</h4>
               </div>
               <Image
                 width={1000}
@@ -189,9 +179,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold ">
-                  Ages 16-18
-                </h4>
+                <h4 className=" font-semibold ">Ages 16-18</h4>
               </div>
               <Image
                 width={1000}
@@ -512,9 +500,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="  text-center font-bold">
-          Choose your education model
-        </h2>
+        <h2 className="  text-center font-bold">Choose your education model</h2>
         <div className="pt-8 sm:pt-12 grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-5">
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-[#F2F4F7]">
             {/* <Image
@@ -713,7 +699,10 @@ export default function Home() {
                       >
                         <div className=" space-y-5">
                           <p className="text-p">
-                          Yes, we offer Cambridge Assessment International Education. We are registered as UK Learner Providers and are in the process of obtaining our membership with the Council of International Schools (CIS).
+                            Yes, we offer Cambridge Assessment International
+                            Education. We are registered as UK Learner Providers
+                            and are in the process of obtaining our membership
+                            with the Council of International Schools (CIS).
                           </p>
                         </div>
                       </DisclosurePanel>

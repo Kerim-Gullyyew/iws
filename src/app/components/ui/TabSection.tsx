@@ -196,7 +196,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
 
 
     <div className='flex flex-col gap-5 mt-10 max-w-4xl w-full container'>
-      <h1 className='text-h1 text-center font-bold text-blue-900'>Would you like to send us a message?</h1>
+      <h2 className=' text-center font-bold text-blue-900'>Would you like to send us a message?</h2>
       <p className='text-center text-p text-gray-500'>Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we’re here to help!</p>
 
 

@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
             Primary
           </Link>
           <Link className='font-semibold leading-6 ' href={"/cambridge-secondary/"} >
-            Middle
+            Secondary
           </Link>
           <Link className='font-semibold leading-6 ' href={"/cambridge-igcse/"} >
             I/GCSE

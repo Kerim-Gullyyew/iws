@@ -16,9 +16,9 @@ const AccordionSecondary: React.FC<AccordionSecondaryProps> = ({ title, children
   return (
     <Disclosure as="div" className="w-full border-b border-gray-300" onChange={() => setIsOpen(!isOpen)}>
       <DisclosureButton className="w-full  pb-2 flex items-center justify-between">
-        <h2 className=' text-blue-900 font-semibold'>
+        <h3 className=' text-blue-900 font-semibold'>
           {title}
-        </h2>
+        </h3>
         {isOpen ? (
           <MinusIcon className="h-8 w-8" aria-hidden="true" />
         ) : (
