@@ -17,7 +17,7 @@ const page: React.FC<pageProps> = ({ }) => {
       <div className='gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row'>
         <div className='flex flex-col gap-5'>
           <h3 className=' font-bold text-blue-600'>Ages from 7 - 11</h3>
-          <h1 className=' font-bold text-blue-900'>
+          <h1 className=' text-blue-900'>
             Cambridge Primary
           </h1>
           <p className='text-p leading-8 '>
