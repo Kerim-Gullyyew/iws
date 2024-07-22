@@ -26,13 +26,7 @@ const config: Config = {
       },
 
       fontSize: {
-        'h1': '3em',
-        'h2': '2em',
-        'h3': '1.3em',
-        'h4': '1em',
-        'h5': '0.8em',  
-        'h6': '0.7em',
-        'p': '1.125em',
+       
       },
       screens: {
         xs: '500px',

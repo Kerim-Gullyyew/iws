@@ -11,8 +11,8 @@ interface pageProps {
 const page: React.FC<pageProps> = ({ }) => {
   return (
     <div className='py-14 lg:py-24 container animate-fade-in'>
-      <h1 className='text-center text-h1 font-bold text-sky-500'>School Fees</h1>
-      <h2 className='text-center text-h2 font-bold mt-14'>
+      <h1 className='text-center  font-bold text-sky-500'>School Fees</h1>
+      <h2 className='text-center  font-bold mt-14'>
         Give your child the best education at the most reasonable rates at IWS.
       </h2>
       <p className='text-center text-p text-gray-900 tracking-wide mt-5'>
@@ -25,13 +25,13 @@ const page: React.FC<pageProps> = ({ }) => {
         <div className='w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300 grid grid-cols-1 overflow-hidden rounded-lg gap-14 px-8 pt-10 py-6'>
 
           <div className='flex flex-col gap-8'>
-            <h1 className='text-h1 font-bold text-sky-500'>
+            <h1 className=' font-bold text-sky-500'>
               Primary School
             </h1>
 
             <div className=' flex flex-wrap gap-5 items-end'>
-              <h2 className='text-h2 font-semibold'>£5000</h2>
-              <h3 className='text-gray-400 text-h3'>/year</h3>
+              <h2 className=' font-semibold'>£5000</h2>
+              <h3 className='text-gray-400 '>/year</h3>
             </div>
 
             <p className='text-p'>
@@ -42,18 +42,18 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px] text-h3 font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
               Included subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>English</h3>
+                <h3 className='text-white '>English</h3>
               </div>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>Mathematics</h3>
+                <h3 className='text-white '>Mathematics</h3>
               </div>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>Global Perspectives</h3>
+                <h3 className='text-white '>Global Perspectives</h3>
               </div>
 
             </div>
@@ -61,37 +61,37 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px] text-h3 font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
               Additional subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>French</h3>
+                <h3 className='text-gray-600 '>French</h3>
               </div>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>Spanish</h3>
+                <h3 className='text-gray-600 '>Spanish</h3>
               </div>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>German</h3>
+                <h3 className='text-gray-600 '>German</h3>
               </div>
 
             </div>
           </div>
 
           <div className='w-full bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden'>
-            <h3 className='text-center text-h3'>Enrol Now</h3>
+            <h3 className='text-center '>Enrol Now</h3>
           </div>
         </div>
         <div className='w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300 grid grid-cols-1 overflow-hidden rounded-lg gap-14 px-8 pt-10 py-6'>
 
           <div className='flex flex-col gap-8'>
-            <h1 className='text-h1 font-bold text-green-500'>
+            <h1 className=' font-bold text-green-500'>
               Primary School
             </h1>
 
             <div className=' flex flex-wrap gap-5 items-end'>
-              <h2 className='text-h2 font-semibold'>£5000</h2>
-              <h3 className='text-gray-400 text-h3'>/year</h3>
+              <h2 className=' font-semibold'>£5000</h2>
+              <h3 className='text-gray-400 '>/year</h3>
             </div>
 
             <p className='text-p'>
@@ -102,18 +102,18 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px] text-h3 font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
               Included subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>English</h3>
+                <h3 className='text-white '>English</h3>
               </div>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>Mathematics</h3>
+                <h3 className='text-white '>Mathematics</h3>
               </div>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>Global Perspectives</h3>
+                <h3 className='text-white '>Global Perspectives</h3>
               </div>
 
             </div>
@@ -121,37 +121,37 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px] font-bold pb-2 text-h3 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px] font-bold pb-2  text-gray-900 border-gray-600'>
               Additional subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>French</h3>
+                <h3 className='text-gray-600 '>French</h3>
               </div>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>Spanish</h3>
+                <h3 className='text-gray-600 '>Spanish</h3>
               </div>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>German</h3>
+                <h3 className='text-gray-600 '>German</h3>
               </div>
 
             </div>
           </div>
 
           <div className='w-full bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden'>
-            <h3 className='text-center text-h3'>Enrol Now</h3>
+            <h3 className='text-center '>Enrol Now</h3>
           </div>
         </div>
         <div className='w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300 grid grid-cols-1 overflow-hidden rounded-lg gap-14 px-8 pt-10 py-6'>
 
           <div className='flex flex-col gap-8'>
-            <h1 className='text-h1 font-bold text-orange-500'>
+            <h1 className=' font-bold text-orange-500'>
               Primary School
             </h1>
 
             <div className=' flex flex-wrap gap-5 items-end'>
-              <h2 className='text-h2 font-semibold'>£5000</h2>
-              <h3 className='text-gray-400 text-h3'>/year</h3>
+              <h2 className=' font-semibold'>£5000</h2>
+              <h3 className='text-gray-400 '>/year</h3>
             </div>
 
             <p className='text-p'>
@@ -162,18 +162,18 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px] text-h3 font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
               Included subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>English</h3>
+                <h3 className='text-white '>English</h3>
               </div>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>Mathematics</h3>
+                <h3 className='text-white '>Mathematics</h3>
               </div>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>Global Perspectives</h3>
+                <h3 className='text-white '>Global Perspectives</h3>
               </div>
 
             </div>
@@ -181,37 +181,37 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px] font-bold pb-2 text-h3 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px] font-bold pb-2  text-gray-900 border-gray-600'>
               Additional subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>French</h3>
+                <h3 className='text-gray-600 '>French</h3>
               </div>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>Spanish</h3>
+                <h3 className='text-gray-600 '>Spanish</h3>
               </div>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>German</h3>
+                <h3 className='text-gray-600 '>German</h3>
               </div>
 
             </div>
           </div>
 
           <div className='w-full bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden'>
-            <h3 className='text-center text-h3'>Enrol Now</h3>
+            <h3 className='text-center '>Enrol Now</h3>
           </div>
         </div>
         <div className='w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300 grid grid-cols-1 overflow-hidden rounded-lg gap-14 px-8 pt-10 py-6'>
 
           <div className='flex flex-col gap-8'>
-            <h1 className='text-h1 font-bold text-red-500'>
+            <h1 className=' font-bold text-red-500'>
               Primary School
             </h1>
 
             <div className=' flex flex-wrap gap-5 items-end'>
-              <h2 className='text-h2 font-semibold'>£5000</h2>
-              <h3 className='text-gray-400 text-h3'>/year</h3>
+              <h2 className=' font-semibold'>£5000</h2>
+              <h3 className='text-gray-400 '>/year</h3>
             </div>
 
             <p className='text-p'>
@@ -222,18 +222,18 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px] text-h3 font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
               Included subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>English</h3>
+                <h3 className='text-white '>English</h3>
               </div>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>Mathematics</h3>
+                <h3 className='text-white '>Mathematics</h3>
               </div>
               <div className='px-3.5 bg-blue-600 rounded-lg py-1.5'>
-                <h3 className='text-white text-h3'>Global Perspectives</h3>
+                <h3 className='text-white '>Global Perspectives</h3>
               </div>
 
             </div>
@@ -241,25 +241,25 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
           <div className='flex flex-col gap-5'>
-            <h3 className='border-b-[0.5px] text-h3 font-bold pb-2 text-gray-900 border-gray-600'>
+            <h3 className='border-b-[0.5px]  font-bold pb-2 text-gray-900 border-gray-600'>
               Additional subjects
             </h3>
             <div className='flex flex-wrap gap-2 items-center'>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>French</h3>
+                <h3 className='text-gray-600 '>French</h3>
               </div>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>Spanish</h3>
+                <h3 className='text-gray-600 '>Spanish</h3>
               </div>
               <div className='px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5'>
-                <h3 className='text-gray-600 text-h3'>German</h3>
+                <h3 className='text-gray-600 '>German</h3>
               </div>
 
             </div>
           </div>
 
           <div className='w-full bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden'>
-            <h3 className='text-center text-h3'>Enrol Now</h3>
+            <h3 className='text-center '>Enrol Now</h3>
           </div>
         </div>
       </div>
@@ -269,7 +269,7 @@ const page: React.FC<pageProps> = ({ }) => {
       <div className='pt-20 flex flex-col md:flex-row lg:flex-row-reverse gap-5'>
         <Image width={1000} height={1000} className=' object-cover md:w-1/2' src="/IWS_fees_1.webp" alt="" />
         <div className='flex flex-col gap-5 justify-center'>
-          <h1 className='text-h1 text-sky-500 font-bold'>
+          <h1 className=' text-sky-500 font-bold'>
             What our fees include
           </h1>
 

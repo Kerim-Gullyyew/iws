@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900 text-h2 text-center font-bold">
+        <h2 className="text-gray-900  text-center font-bold">
           The right study programme for you
         </h2>
 
@@ -73,7 +73,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className="text-h4 font-semibold text-gray-900">
+                <h4 className=" font-semibold text-gray-900">
                   Ages 7-11
                 </h4>
               </div>
@@ -112,7 +112,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className="text-h4 font-semibold text-gray-900">
+                <h4 className=" font-semibold text-gray-900">
                   Ages 11-14
                 </h4>
               </div>
@@ -151,7 +151,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className="text-h4 font-semibold text-gray-900">
+                <h4 className=" font-semibold text-gray-900">
                   Ages 14-16
                 </h4>
               </div>
@@ -189,7 +189,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className="text-h4 font-semibold text-gray-900">
+                <h4 className=" font-semibold text-gray-900">
                   Ages 16-18
                 </h4>
               </div>
@@ -223,13 +223,13 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900 text-h2 text-center font-bold">
+        <h2 className="text-gray-900  text-center font-bold">
           What awaits you at IWS Online School?
         </h2>
 
         <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
           <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F1F9EC]">
-            <h2 className="text-h2 font-bold text-gray-900 tracking-wide">
+            <h2 className=" font-bold text-gray-900 tracking-wide">
               Visionary Educators of IWS Online School
             </h2>
             <p className="text-p leading-6 text-gray-900 font-semibold">
@@ -248,7 +248,7 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8">
-              <h2 className="text-h2 font-bold text-gray-900 tracking-wide">
+              <h2 className=" font-bold text-gray-900 tracking-wide">
                 Our teachers are always in touch
               </h2>
               <p className="text-p leading-6 text-gray-900 font-semibold">
@@ -268,7 +268,7 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
-              <h2 className="text-h2 font-bold text-gray-900 tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold text-gray-900 tracking-wide xl:w-[250px]">
                 Individual Programmes
               </h2>
               <p className="text-p leading-6 text-gray-900 font-semibold">
@@ -288,7 +288,7 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
-              <h2 className="text-h2 font-bold text-gray-900 tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold text-gray-900 tracking-wide xl:w-[250px]">
                 Dynamic Live Lessons
               </h2>
               <p className="text-p leading-6 text-gray-900 font-semibold">
@@ -308,7 +308,7 @@ export default function Home() {
             />
 
             <div className="flex flex-col h-full justify-between gap-6 pt-44 md:pt-20 lg:pt-0">
-              <h2 className="text-h2 font-bold text-gray-900 tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold text-gray-900 tracking-wide xl:w-[250px]">
                 Accredited Curriculum
               </h2>
               <p className="text-p leading-6 text-gray-900 font-semibold">
@@ -328,7 +328,7 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8 md:w-1/2">
-              <h2 className="text-h2 font-bold text-gray-900 tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold text-gray-900 tracking-wide xl:w-[250px]">
                 Taking care of parents
               </h2>
               <p className="text-p leading-6 text-gray-900 font-semibold">
@@ -342,13 +342,13 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900 text-h2 text-center font-bold">
+        <h2 className="text-gray-900  text-center font-bold">
           Who can benefit from our school?
         </h2>
         <div className="pt-8 sm:pt-12">
           <div className="flex flex-wrap gap-5 justify-between ">
             <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h3 className="text-h3 container pt-8 leading-tight font-bold">
+              <h3 className=" container pt-8 leading-tight font-bold">
                 For those who are not satisfied with a regular school
               </h3>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
@@ -388,7 +388,7 @@ export default function Home() {
               </div>
             </div>
             <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h3 className="text-h3 container pt-8 leading-tight font-bold">
+              <h3 className=" container pt-8 leading-tight font-bold">
                 For students who often miss school.
               </h3>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
@@ -429,7 +429,7 @@ export default function Home() {
               </div>
             </div>
             <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h3 className="text-h3 container pt-8 leading-tight font-bold">
+              <h3 className=" container pt-8 leading-tight font-bold">
                 For those who live abroad or the family travels a lot
               </h3>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
@@ -468,7 +468,7 @@ export default function Home() {
               </div>
             </div>
             <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h3 className="text-h3 container pt-8 leading-tight font-bold">
+              <h3 className=" container pt-8 leading-tight font-bold">
                 For students preparing to enter a prestigious university
               </h3>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
@@ -512,7 +512,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900 text-h2 text-center font-bold">
+        <h2 className="text-gray-900  text-center font-bold">
           Choose your education model
         </h2>
         <div className="pt-8 sm:pt-12 grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-5">
@@ -526,7 +526,7 @@ export default function Home() {
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className="text-h3 font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className=" font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
                   Hybrid Model
                 </h3>
                 <p className="text-p leading-6 text-gray-900 font-semibold">
@@ -557,7 +557,7 @@ export default function Home() {
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className="text-h3 font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className=" font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
                   Fully Online
                 </h3>
                 <p className="text-p leading-6 text-gray-900 font-semibold">
@@ -590,7 +590,7 @@ export default function Home() {
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className="text-h3 font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className=" font-bold text-gray-900 tracking-wide lg:w-1/2 lg:text-4xl">
                   Self Paced
                 </h3>
                 <p className="text-p leading-6 text-gray-900 font-semibold">
@@ -615,13 +615,13 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="text-gray-900 text-h2 text-center font-bold">FAQs</h2>
+        <h2 className="text-gray-900  text-center font-bold">FAQs</h2>
         <div className="pt-8 sm:pt-12 flex flex-col gap-8">
           <Disclosure as="div" className="w-full border-b border-gray-300">
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-h3 font-bold">Why us?</h3>
+                  <h3 className=" font-bold">Why us?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -692,7 +692,7 @@ export default function Home() {
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-h3 font-bold">Are you accredited?</h3>
+                  <h3 className=" font-bold">Are you accredited?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -755,7 +755,7 @@ export default function Home() {
       </div>
 
       <div className="mt-20 container">
-        <h3 className="text-[#003372] font-semibold text-h3 ">Partnered by</h3>
+        <h3 className="text-[#003372] font-semibold  ">Partnered by</h3>
         <div className="h-[2px] my-10 w-full bg-blue-900"></div>
         <Carousel />
       </div>

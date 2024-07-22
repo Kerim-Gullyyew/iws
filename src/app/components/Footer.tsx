@@ -127,7 +127,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="text-h4 text-gray-900 font-bold">
+                    <h4 className=" text-gray-900 font-bold">
                       ACADEMICS
                     </h4>
                     {open ? (
@@ -149,16 +149,16 @@ const Footer: React.FC<FooterProps> = ({}) => {
                           className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                         >
                           <ul className="space-y-2 pb-2">
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               Primary School
                             </li>
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               Middle School
                             </li>
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               I/GCSE
                             </li>
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               A Level
                             </li>
                           </ul>
@@ -177,7 +177,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="text-h4 text-gray-900 font-bold">
+                    <h4 className=" text-gray-900 font-bold">
                       ADMISSIONS
                     </h4>
                     {open ? (
@@ -199,10 +199,10 @@ const Footer: React.FC<FooterProps> = ({}) => {
                           className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                         >
                           <ul className="space-y-2 pb-2">
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               Overview
                             </li>
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               School Fees
                             </li>
                           </ul>
@@ -221,7 +221,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="text-h4 text-gray-900 font-bold">
+                    <h4 className=" text-gray-900 font-bold">
                       ABOUT IWS
                     </h4>
                     {open ? (
@@ -243,13 +243,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
                           className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                         >
                           <ul className="space-y-2 pb-2">
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               About IWS
                             </li>
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               Our Team
                             </li>
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               Careers
                             </li>
                           </ul>
@@ -268,7 +268,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="text-h4 text-gray-900 font-bold">
+                    <h4 className=" text-gray-900 font-bold">
                       RESOURCES
                     </h4>
                     {open ? (
@@ -290,13 +290,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
                           className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                         >
                           <ul className="space-y-2 pb-2">
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               Blogs
                             </li>
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               School Calendar
                             </li>
-                            <li className="text-h5 text-gray-600 cursor-pointer hover:text-gray-900">
+                            <li className=" text-gray-600 cursor-pointer hover:text-gray-900">
                               FAQs
                             </li>
                           </ul>
@@ -311,38 +311,38 @@ const Footer: React.FC<FooterProps> = ({}) => {
 
           <div className="hidden ml-5 lg:ml-24 xl:ml-36 lg:grid lg:grid-cols-4 lg:w-full ">
             <div>
-              <h5 className="text-h5 font-semibold text-gray-400">ACADEMICS</h5>
+              <h5 className=" font-semibold text-gray-400">ACADEMICS</h5>
               <ul className="mt-3 space-y-2">
-                <li className="text-h4">Primary School</li>
-                <li className="text-h4">Middle School</li>
-                <li className="text-h4">I/GCSE</li>
-                <li className="text-h4">A Level</li>
+                <li className="">Primary School</li>
+                <li className="">Middle School</li>
+                <li className="">I/GCSE</li>
+                <li className="">A Level</li>
               </ul>
             </div>
             <div>
-              <h5 className="text-h5 font-semibold text-gray-400">
+              <h5 className=" font-semibold text-gray-400">
                 ADMISSIONS
               </h5>
               <ul className="mt-3 space-y-2">
-                <li className="text-h4">Overview</li>
-                <li className="text-h4">School Fees</li>
+                <li className="">Overview</li>
+                <li className="">School Fees</li>
               </ul>
             </div>
             <div>
-              <h5 className="text-h5 font-semibold text-gray-400">ABOUT IWS</h5>
+              <h5 className=" font-semibold text-gray-400">ABOUT IWS</h5>
               <ul className="mt-3 space-y-2">
-                <li className="text-h4">About IWS</li>
-                <li className="text-h4">Our Team</li>
-                <li className="text-h4">Careers</li>
+                <li className="">About IWS</li>
+                <li className="">Our Team</li>
+                <li className="">Careers</li>
               </ul>
             </div>
             <div>
-              <h5 className="text-h5 font-semibold text-gray-400">RESOURCES</h5>
+              <h5 className=" font-semibold text-gray-400">RESOURCES</h5>
               <ul className="mt-3 space-y-2">
-                <li className="text-h4">Blogs</li>
-                <li className="text-h4">School Calendar</li>
-                <li className="text-h4">I/GCSE</li>
-                <li className="text-h4">FAQs</li>
+                <li className="">Blogs</li>
+                <li className="">School Calendar</li>
+                <li className="">I/GCSE</li>
+                <li className="">FAQs</li>
               </ul>
             </div>
           </div>

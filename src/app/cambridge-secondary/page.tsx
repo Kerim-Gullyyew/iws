@@ -12,8 +12,8 @@ const page: React.FC<pageProps> = ({}) => {
     <div className="py-14 lg:py-24 animate-fade-in">
       <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
         <div className="flex flex-col gap-5">
-          <h3 className="text-h3 font-bold text-blue-600">Ages from 11 - 14</h3>
-          <h1 className="text-h1 font-bold text-blue-900">
+          <h3 className=" font-bold text-blue-600">Ages from 11 - 14</h3>
+          <h1 className=" font-bold text-blue-900">
             Cambridge Secondary
           </h1>
           <p className="text-p leading-8 text-gray-900">
@@ -41,7 +41,7 @@ const page: React.FC<pageProps> = ({}) => {
 
       <div className="pt-20 flex flex-col gap-14">
         <div className="container flex flex-col gap-5">
-          <h1 className="text-center text-h1 text-blue-900 font-bold tracking-tight">
+          <h1 className="text-center  text-blue-900 font-bold tracking-tight">
             {
               "Guiding Students to Success: IWS Online School's Middle Cambridge Programme"
             }
@@ -60,7 +60,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="container lg:col-span-3 flex flex-col gap-5 py-10 justify-center">
-              <h1 className="text-h1 font-bold text-blue-900">
+              <h1 className=" font-bold text-blue-900">
                 Structured Learning Journey from Age 11
               </h1>
               <p className="text-p text-blue-600">
@@ -94,10 +94,10 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="container flex flex-col gap-5 py-10 justify-center">
-              <h1 className="text-h1 font-bold text-gray-900">
+              <h1 className=" font-bold text-gray-900">
                 Empowering Students for Academic Excellence
               </h1>
-              <h2 className="text-h2 text-green-600">
+              <h2 className=" text-green-600">
                 Comprehensive Secondary Support at IWS Online School
               </h2>
               <p className="text-p leading-10 text-gray-800">
@@ -114,7 +114,7 @@ const page: React.FC<pageProps> = ({}) => {
 
       <div className="pt-20 container">
         <div className="flex flex-col gap-6">
-          <h1 className="text-h1 text-center text-blue-900 font-bold">
+          <h1 className=" text-center text-blue-900 font-bold">
             Secondary Subjects
           </h1>
           <p className="text-p text-center text-blue-900 leading-10">
@@ -136,7 +136,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
 
@@ -155,7 +155,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
 
@@ -174,7 +174,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 Biology
               </h4>
               <p className="text-p font-semibold text-blue-600">Learn more</p>
@@ -192,7 +192,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
 
@@ -211,7 +211,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
 
@@ -230,7 +230,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
 
@@ -249,7 +249,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
 
@@ -268,7 +268,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
 
@@ -287,7 +287,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
 
@@ -306,7 +306,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
 
@@ -325,7 +325,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
 
@@ -344,7 +344,7 @@ const page: React.FC<pageProps> = ({}) => {
               />
             </div>
             <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-              <h4 className="text-h4 font-bold text-blue-900 text-nowrap">
+              <h4 className=" font-bold text-blue-900 text-nowrap">
                 English Literature
               </h4>
               <p className="text-p font-semibold text-blue-600">Learn more</p>
@@ -382,7 +382,7 @@ const page: React.FC<pageProps> = ({}) => {
       </div>
 
       <div className="pt-20 container flex flex-col gap-4">
-        <h1 className="text-center text-h1 text-blue-900 font-bold">
+        <h1 className="text-center  text-blue-900 font-bold">
           Cambridge Secondary Tuition Fees
         </h1>
         <p className="text-center text-p">
@@ -393,7 +393,7 @@ const page: React.FC<pageProps> = ({}) => {
         </p>
 
         <div className="mt-6">
-          <h3 className="border-b text-h3 font-semibold text-blue-900 border-blue-900 pb-3">
+          <h3 className="border-b  font-semibold text-blue-900 border-blue-900 pb-3">
             Accredited by
           </h3>
 
