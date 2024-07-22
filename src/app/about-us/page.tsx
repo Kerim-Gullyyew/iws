@@ -1,68 +1,58 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-interface pageProps {}
+interface pageProps { }
 
-const page: React.FC<pageProps> = ({}) => {
+const page: React.FC<pageProps> = ({ }) => {
   return (
-    <div>
-      <div className="container gap-2">
-        <div className="text-center rounded-3xl py-9 px-36 bg-blue-500 bg-[url('/Compass-star-1.png')] bg-cover bg-center bg-no-repeat">
-          <h1 className="text-white">We are a revolution in learning.</h1>
-          <p className="text-white">
-            IWS is a Cambridge Assessment International accredited online
-            school. Our mission is to offer a globally esteemed Cambridge
-            education, making it accessible to remote learners with exceptional
-            academic potential worldwide.
-          </p>
-          <p className="text-white">
-            Thereby creating a global community of ambitious learners who wish
-            to achieve their full potential, both inside and outside of the
-            classroom.
-          </p>
-          <button className="bg-white rounded-md py-2 px-5 mt-9 text-blue-400">
-            Join our next event
-          </button>
-        </div>
-        <div className="bg-blue-900 p-[1.5px] mt-3"></div>
-        <div className="flex">
-          <div className=" w-1/3">
-            <h1 className="">Our Approach to Teaching and Learning</h1>
+    <div className=" container pt-3 pb-10">
+      <div className="pt-16 pb-14 bg-asset-3 px-6 bg-cover bg-no-repeat bg-center bg-blue-500 flex items-center justify-center bg-blend-soft-light overflow-hidden rounded-lg w-full ">
+        <div className="flex flex-col justify-center items-center max-w-[700px]">
+          <h1 className="text-center text-white font-bold">We are a revolution</h1>
+          <div className="pt-8">
+            <p className="text-center text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia error a cum ratione harum quaerat ab similique repudiandae ducimus quidem? At culpa veritatis in placeat voluptatum omnis aut voluptates corrupti.
+            </p>
+
           </div>
-          <div className=" w-2/3">
-            <p>
-              At IWS Online School, we believe in harnessing the spirit of
-              exploration, creativity and leadership to empower our students for
-              a world of limitless possibilities. Our mission is to provide a
-              transformative educational experience, guiding them towards a
-              future where they actively Discover, Create and Lead.
+          <div className="pt-6">
+            <p className="text-center text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quidem maiores vitae aliquid expedita fuga nisi ipsum labore repellat. Et maiores rerum facere excepturi quidem quia praesentium quasi, qui fugiat.
             </p>
-            <p>
-              {
-                "Step into the world of Infinite Wisdom School, where the radiant blue compass serves as a powerful symbol of our ethos. More than a mere guide, it embodies our unwavering faith in each student's boundless potential and our dedication to illuminating their brightest path. Here, education transcends traditional boundaries, stretching horizons beyond imagination. At IWS, every student is not just a learner, but a visionary, creator, and leader. We ignite flames of passion, fostering a realm where discovery, creation, and leadership intertwine seamlessly. This is more than education; it's an odyssey - a dynamic dance of growth and enlightenment."
-              }
-            </p>
+
+          </div>
+
+          <div className="pt-14">
+            <button className="bg-white px-6 py-2 rounded-lg cursor-pointer text-blue-600 hover:bg-gray-100 ">
+              Join our next event
+            </button>
+          </div>
+
+        </div>
+      </div>
+      <div className="mt-20 space-y-24">
+        <div className="w-full flex flex-col lg:flex-row gap-10 border-t-4 pt-6 border-blue-400">
+          <div className="lg:w-5/12">
+            <h1 className=" leading-tight">
+              Our Approach To Teaching and Learning
+            </h1>
+          </div>
+          <div className="flex flex-col gap-4 lg:w-7/12 lg:pr-6">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed sint sapiente, fugit quisquam facilis porro mollitia eaque modi alias, odio tempore numquam quos temporibus. Recusandae repellendus enim cum ipsam!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos atque nihil quo, pariatur doloribus facere quaerat corrupti molestiae culpa vero unde deleniti laboriosam maxime non veniam laudantium. Voluptas, quam sit.</p>
           </div>
         </div>
-        <div className="bg-blue-900 p-[1.5px] mt-3"></div>
-        <div className="flex">
-          <h1>Our Mission</h1>
-          <div>
-            <p>
-              {
-                "Discover - Beneath the boundless sky, at IWS, each student's voyage commences within. Pioneering assessments map strengths, passions, and potential, guiding them to their true north. Understanding their unique traits, we provide an invaluable compass for their educational journey."
-              }
-            </p>
-            <p>
-              {
-                "Create - At IWS, armed with self-awareness, students embark on a journey of immense potential. They forge unique paths, conceiving innovative projects and orchestrating vibrant events. Here, knowledge and imagination merge, giving birth to a realm of endless creation."
-              }
-            </p>
-            <p>
-              {
-                "Lead - Leadership is a harmonious blend of vision and action in IWS. Empowered with their voice, every student resonates in the world. Whether in clubs, Student Council, communities, or programmes like The Duke of Edinburgh, they shine as guiding lights, paving the way for others to follow."
-              }
-            </p>
+
+
+        <div className="w-full flex flex-col lg:flex-row gap-10 border-t-4 pt-6 border-blue-400">
+          <div className="lg:w-5/12">
+            <h1 className=" leading-tight">
+              Our Approach To Teaching and Learning
+            </h1>
+          </div>
+          <div className="flex flex-col gap-4 lg:w-7/12 lg:pr-6">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed sint sapiente, fugit quisquam facilis porro mollitia eaque modi alias, odio tempore numquam quos temporibus. Recusandae repellendus enim cum ipsam!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos atque nihil quo, pariatur doloribus facere quaerat corrupti molestiae culpa vero unde deleniti laboriosam maxime non veniam laudantium. Voluptas, quam sit.</p>
           </div>
         </div>
       </div>
