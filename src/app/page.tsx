@@ -55,7 +55,7 @@ export default function Home() {
         <Image
           width={450}
           height={450}
-          className="w-[250px] md:w-[450px] xs:flex lg:w-[450px] xl:w-auto object-contain"
+          className="w-[250px] md:w-[450px] xs:flex lg:w-[450px] lg:w-auto object-contain"
           src="/Hero.webp"
           alt="Hero Image width={1000} height={1000}"
         />
@@ -66,7 +66,7 @@ export default function Home() {
           The right study programme for you
         </h2>
 
-        <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-4 xl:gap-7 gap-y-14">
+        <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-4 lg:gap-7 gap-y-14">
           <Link
             href={"/cambridge-primary"}
             className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#D9DFFB] flex flex-col justify-between rounded-xl"
@@ -268,7 +268,7 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
-              <h2 className=" font-bold  tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold  tracking-wide lg:w-[250px]">
                 Individual Programmes
               </h2>
               <p className="text-p leading-6  font-semibold">
@@ -288,7 +288,7 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
-              <h2 className=" font-bold  tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold  tracking-wide lg:w-[250px]">
                 Dynamic Live Lessons
               </h2>
               <p className="text-p leading-6  font-semibold">
@@ -308,7 +308,7 @@ export default function Home() {
             />
 
             <div className="flex flex-col h-full justify-between gap-6 pt-44 md:pt-20 lg:pt-0">
-              <h2 className=" font-bold  tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold  tracking-wide lg:w-[250px]">
                 Accredited Curriculum
               </h2>
               <p className="text-p leading-6  font-semibold">
@@ -328,7 +328,7 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8 md:w-1/2">
-              <h2 className=" font-bold  tracking-wide xl:w-[250px]">
+              <h2 className=" font-bold  tracking-wide lg:w-[250px]">
                 Taking care of parents
               </h2>
               <p className="text-p leading-6  font-semibold">

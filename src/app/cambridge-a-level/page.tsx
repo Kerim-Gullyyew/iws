@@ -27,7 +27,7 @@ const page: React.FC<pageProps> = ({ }) => {
             <ContactButton />
           </div>
         </div>
-        <Image width={1000} height={1000} className="max-w-lg w-3/4 lg:w-[450px] xl:w-auto object-contain" src="/Hero2.webp" alt="Hero Image width={1000} height={1000}" />
+        <Image width={1000} height={1000} className="max-w-lg w-3/4 lg:w-[450px] lg:w-auto object-contain" src="/Hero2.webp" alt="Hero Image width={1000} height={1000}" />
 
       </div>
 
@@ -96,7 +96,7 @@ const page: React.FC<pageProps> = ({ }) => {
         </div>
 
 
-        <div className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
+        <div className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 gap-6'>
 
           <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
             <div className='bg-[#DAE1FF] '>

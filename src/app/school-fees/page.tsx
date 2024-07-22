@@ -21,7 +21,7 @@ const page: React.FC<pageProps> = ({ }) => {
       </p>
 
 
-      <div className='pt-20 grid grid-cols-1 md:grid-cols-2 gap-5 xl:grid-cols-4'>
+      <div className='pt-20 grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4'>
         <div className='w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300 grid grid-cols-1 overflow-hidden rounded-lg gap-14 px-8 pt-10 py-6'>
 
           <div className='flex flex-col gap-8'>
