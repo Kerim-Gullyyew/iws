@@ -6,7 +6,7 @@ interface pageProps { }
 const page: React.FC<pageProps> = ({ }) => {
   return (
     <div className=" container pt-3 pb-10">
-      <div className="pt-16 pb-14 bg-asset-3 px-6 bg-cover bg-no-repeat bg-center bg-blue-500 flex items-center justify-center bg-blend-soft-light overflow-hidden rounded-lg w-full ">
+      <div className="pt-16 pb-14 bg-asset-3 px-6 bg-cover bg-no-repeat bg-center bg-blue-500 flex items-center justify-center bg-blend-soft-light overflow-hidden rounded-[40px] w-full ">
         <div className="flex flex-col justify-center items-center max-w-[700px]">
           <h1 className="text-center text-white font-bold">We are a revolution</h1>
           <div className="pt-8">
@@ -33,9 +33,9 @@ const page: React.FC<pageProps> = ({ }) => {
       <div className="mt-20 space-y-24">
         <div className="w-full flex flex-col lg:flex-row gap-10 border-t-4 pt-6 border-blue-400">
           <div className="lg:w-5/12">
-            <h1 className=" leading-tight">
+            <h2 className=" leading-tight font-bold">
               Our Approach To Teaching and Learning
-            </h1>
+            </h2>
           </div>
           <div className="flex flex-col gap-4 lg:w-7/12 lg:pr-6">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed sint sapiente, fugit quisquam facilis porro mollitia eaque modi alias, odio tempore numquam quos temporibus. Recusandae repellendus enim cum ipsam!</p>
@@ -46,9 +46,9 @@ const page: React.FC<pageProps> = ({ }) => {
 
         <div className="w-full flex flex-col lg:flex-row gap-10 border-t-4 pt-6 border-blue-400">
           <div className="lg:w-5/12">
-            <h1 className=" leading-tight">
+            <h2 className=" leading-tight font-bold">
               Our Approach To Teaching and Learning
-            </h1>
+            </h2>
           </div>
           <div className="flex flex-col gap-4 lg:w-7/12 lg:pr-6">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed sint sapiente, fugit quisquam facilis porro mollitia eaque modi alias, odio tempore numquam quos temporibus. Recusandae repellendus enim cum ipsam!</p>
