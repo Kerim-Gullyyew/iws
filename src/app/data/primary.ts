@@ -5,6 +5,7 @@ export interface Primary {
   image_url: string;
   icon: string;
   description: string;
+  description2?: string;
   key_objective: string;
   what_learn: {
     id: string,
