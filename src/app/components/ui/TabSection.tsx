@@ -191,7 +191,7 @@ const TabSection: React.FC<TabSectionProps> = ({ incourse }) => {
               rows={6}
               placeholder='Write your message here...'
               className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
-              defaultValue={''}
+
             />
             {
               validationErrors.message && (
