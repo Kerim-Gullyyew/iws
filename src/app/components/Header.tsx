@@ -95,7 +95,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
 
 
           {/* <Popover>
-            <Popover.Button className="flex items-center gap-x-1 font-semibold leading-6 ">
+            <Popover.Button className="flex items-center gap-x-1  leading-6 ">
               About Us
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
@@ -116,7 +116,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
                       <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                       </div>
-                      <a href={item.href} className="mt-6 block font-semibold ">
+                      <a href={item.href} className="mt-6 block  ">
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
@@ -131,7 +131,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6  hover:bg-gray-100"
+                          className="flex items-center justify-center gap-x-2.5 p-3 text-sm  leading-6  hover:bg-gray-100"
                         >
                           <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                           {item.name}
@@ -178,7 +178,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
                 {/* <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base  leading-7 hover:bg-gray-50">
                         Product
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
@@ -191,7 +191,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7  hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm  leading-7  hover:bg-gray-50"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -201,32 +201,32 @@ const Header: React.FC<HeaderProps> = ({ }) => {
                   )}
                 </Disclosure> */}
 
-                <Link onClick={() => setMobileMenuOpen(false)} href={"/cambridge-primary/"} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"> Primary</Link>
+                <Link onClick={() => setMobileMenuOpen(false)} href={"/cambridge-primary/"} className="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7  hover:bg-gray-50"> Primary</Link>
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
                   href={"/cambridge-secondary/"}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7  hover:bg-gray-50"
                 >
                   Middle
                 </Link>
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
                   href={"/cambridge-igcse/"}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7  hover:bg-gray-50"
                 >
                   I/GCSE
                 </Link>
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
                   href={"/cambridge-a-level/"}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7  hover:bg-gray-50"
                 >
                   A Level
                 </Link>
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
                   href={"/school-fees/"}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7  hover:bg-gray-50"
                 >
                   School Fees
                 </Link>
@@ -234,7 +234,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7  hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base  leading-7  hover:bg-gray-50"
                 >
                   Log in
                 </a>

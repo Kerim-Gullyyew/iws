@@ -16,7 +16,7 @@ const page: React.FC<pageProps> = ({ }) => {
     <div className='py-14 lg:py-24 animate-fade-in'>
       <div className='gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row'>
         <div className='flex flex-col gap-5'>
-          <h3 className=' font-bold text-blue-600'>Ages from 7 - 11</h3>
+          <h3 className='  text-blue-600'>Ages from 7 - 11</h3>
           <h1 className=' text-blue-900'>
             Cambridge Primary
           </h1>
@@ -37,7 +37,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className='pt-20 flex flex-col gap-14'>
         <div className='container flex flex-col gap-5'>
-          <h2 className='text-center  text-blue-900 font-bold tracking-tight'>{"Empowering Young Minds: IWS Online School's Comprehensive Primary Curriculum"}</h2>
+          <h2 className='text-center  text-blue-900  tracking-tight'>{"Empowering Young Minds: IWS Online School's Comprehensive Primary Curriculum"}</h2>
         </div>
 
 
@@ -48,7 +48,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
             </div>
             <div className='container lg:col-span-3 flex flex-col gap-5 py-10 justify-center'>
-              <h3 className=' font-bold text-blue-900'>Accessible Quality Education for Every Child</h3>
+              <h3 className='  text-blue-900'>Accessible Quality Education for Every Child</h3>
               <p className='text-p text-blue-600'>Cambridge Primary at IWS Online School</p>
               <p className='text-p leading-10 text-gray-800 pt-4'>IWS Online School is committed to providing high-quality primary education that is accessible and affordable for all families. By offering various budget-friendly options and eliminating commuting costs through online learning, we ensure that quality education is a right for every child.</p>
             </div>
@@ -74,7 +74,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
             </div>
             <div className='container flex flex-col gap-5 py-10 justify-center'>
-              <h3 className=' font-bold '>Fostering Inquisitive, Globally-Aware Citizens</h3>
+              <h3 className='  '>Fostering Inquisitive, Globally-Aware Citizens</h3>
               <p className=' text-green-600'>
                 Comprehensive Online A Level Support at IWS Online School
               </p>
@@ -89,7 +89,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className='pt-20 container'>
         <div className='flex flex-col gap-6'>
-          <h2 className=' text-center text-blue-900 font-bold'>
+          <h2 className=' text-center text-blue-900 '>
             Primary Subjects
           </h2>
           <p className='text-p text-center text-blue-900 leading-10'>
@@ -105,9 +105,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
 
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -116,9 +116,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
 
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -127,8 +127,8 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>Biology</h3>
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <h3 className='  text-blue-900 text-nowrap'>Biology</h3>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -137,9 +137,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
 
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -148,9 +148,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
 
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -159,9 +159,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
 
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -170,9 +170,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
 
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -181,9 +181,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
 
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -193,9 +193,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
 
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -204,9 +204,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
 
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -215,9 +215,9 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
 
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
 
@@ -226,8 +226,8 @@ const page: React.FC<pageProps> = ({ }) => {
               <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
             </div>
             <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h3 className=' font-bold text-blue-900 text-nowrap'>English Literature</h3>
-              <p className='text-p font-semibold text-blue-600'>Learn more</p>
+              <h3 className='  text-blue-900 text-nowrap'>English Literature</h3>
+              <p className='text-p  text-blue-600'>Learn more</p>
             </div>
           </div>
         </div>
@@ -238,7 +238,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
       <div className='pt-20 container'>
-        <h2 className=' text-center text-blue-900 font-bold'>
+        <h2 className=' text-center text-blue-900 '>
             FAQs
           </h2>
         <div className='pt-8 sm:pt-12 flex flex-col gap-8'>
@@ -263,7 +263,7 @@ const page: React.FC<pageProps> = ({ }) => {
       </div>
 
       <div className='pt-20 container flex flex-col gap-4'>
-        <h2 className='text-center  text-blue-900 font-bold'>
+        <h2 className='text-center  text-blue-900 '>
           Cambridge A Level
           Course Tuition Fees
         </h2>
@@ -272,7 +272,7 @@ const page: React.FC<pageProps> = ({ }) => {
         </p>
 
         <div className='mt-6'>
-          <h3 className='border-b  font-semibold text-blue-900 border-blue-900 pb-3'>
+          <h3 className='border-b   text-blue-900 border-blue-900 pb-3'>
             Accredited by
           </h3>
 

@@ -35,11 +35,11 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 className="  text-[30px] lg:text-[62px] font-bold sm:text-[40px] md:text-[40px]">
+          <h1 className="  text-[30px] lg:text-[62px]  sm:text-[40px] md:text-[40px]">
             Accredited, Holistic Online Schooling
           </h1>
 
-          <p className="leading-[26px]  font-semibold text-p">
+          <p className="leading-[26px]   text-p">
             IWS Online School – Your compass in the digital realm of learning.
             Discover new horizons, Create lasting memories, and Lead the future
             with our live lessons.
@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="  text-center font-bold">
+        <h2 className="  text-center ">
           The right study programme for you
         </h2>
 
@@ -73,7 +73,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold ">Ages 7-11</h4>
+                <h4 className="  ">Ages 7-11</h4>
               </div>
               <Image
                 width={1000}
@@ -86,14 +86,14 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px]  font-bold">Primary School</h3>
-                <p className="text-p font-semibold">
+                <h3 className="text-[35px]  ">Primary School</h3>
+                <p className="text-p ">
                   A strong foundation and a love for learning for your child.
                 </p>
               </div>
 
               <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">Learn more</p>
+                <p className="text-p tracking-wide ">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-10 w-10 -rotate-45"
                   aria-hidden="true"
@@ -108,7 +108,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold ">Ages 11-14</h4>
+                <h4 className="  ">Ages 11-14</h4>
               </div>
               <Image
                 width={1000}
@@ -121,14 +121,14 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px]  font-bold">Middle School</h3>
-                <p className="text-p font-semibold">
+                <h3 className="text-[35px]  ">Middle School</h3>
+                <p className="text-p ">
                   Foster your child’s growth and academic success.
                 </p>
               </div>
 
               <div className="flex  bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">Learn more</p>
+                <p className="text-p tracking-wide ">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-10 w-10 -rotate-45"
                   aria-hidden="true"
@@ -143,7 +143,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold ">Ages 14-16</h4>
+                <h4 className="  ">Ages 14-16</h4>
               </div>
               <Image
                 width={1000}
@@ -156,15 +156,15 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px]  font-bold">I/GCSE</h3>
-                <p className="text-p font-semibold">
+                <h3 className="text-[35px]  ">I/GCSE</h3>
+                <p className="text-p ">
                   Unlock your teen’s full potential and prepare for future
                   success.
                 </p>
               </div>
 
               <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">Learn more</p>
+                <p className="text-p tracking-wide ">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-10 w-10 -rotate-45"
                   aria-hidden="true"
@@ -179,7 +179,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className=" font-semibold ">Ages 16-18</h4>
+                <h4 className="  ">Ages 16-18</h4>
               </div>
               <Image
                 width={1000}
@@ -192,14 +192,14 @@ export default function Home() {
 
             <div className="bg-white flex flex-1 gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px]  font-bold">A Level</h3>
-                <p className="text-p font-semibold">
+                <h3 className="text-[35px]  ">A Level</h3>
+                <p className="text-p ">
                   Prepare teens for university with advanced studies.
                 </p>
               </div>
 
               <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">Learn more</p>
+                <p className="text-p tracking-wide ">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-10 w-10 -rotate-45"
                   aria-hidden="true"
@@ -211,16 +211,16 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="  text-center font-bold">
+        <h2 className="  text-center ">
           What awaits you at IWS Online School?
         </h2>
 
         <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
           <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F1F9EC]">
-            <h2 className=" font-bold  tracking-wide">
+            <h2 className="   tracking-wide">
               Visionary Educators of IWS Online School
             </h2>
-            <p className="text-p leading-6  font-semibold">
+            <p className="text-p leading-6  ">
               Explore the difference our passionate and committed teachers make
               in every student’s learning journey.
             </p>
@@ -236,10 +236,10 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8">
-              <h2 className=" font-bold  tracking-wide">
+              <h2 className="   tracking-wide">
                 Our teachers are always in touch
               </h2>
-              <p className="text-p leading-6  font-semibold">
+              <p className="text-p leading-6  ">
                 Our teachers and mentors are ready to help with lesson queries
                 and platform guidance.
               </p>
@@ -256,10 +256,10 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
-              <h2 className=" font-bold  tracking-wide lg:w-[250px]">
+              <h2 className="   tracking-wide lg:w-[250px]">
                 Individual Programmes
               </h2>
-              <p className="text-p leading-6  font-semibold">
+              <p className="text-p leading-6  ">
                 Every child is unique. Our personalized assessments and Success
                 Coaching ensure tailored educational paths for every student.
               </p>
@@ -276,10 +276,10 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
-              <h2 className=" font-bold  tracking-wide lg:w-[250px]">
+              <h2 className="   tracking-wide lg:w-[250px]">
                 Dynamic Live Lessons
               </h2>
-              <p className="text-p leading-6  font-semibold">
+              <p className="text-p leading-6  ">
                 Experience structured sessions for active participation,
                 collaboration, and growth in academics and personal development.
               </p>
@@ -296,10 +296,10 @@ export default function Home() {
             />
 
             <div className="flex flex-col h-full justify-between gap-6 pt-44 md:pt-20 lg:pt-0">
-              <h2 className=" font-bold  tracking-wide lg:w-[250px]">
+              <h2 className="   tracking-wide lg:w-[250px]">
                 Accredited Curriculum
               </h2>
-              <p className="text-p leading-6  font-semibold">
+              <p className="text-p leading-6  ">
                 We prioritize holistic education, combining academic excellence
                 with skill development for a comprehensive learning experience.
               </p>
@@ -316,10 +316,10 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8 md:w-1/2">
-              <h2 className=" font-bold  tracking-wide lg:w-[250px]">
+              <h2 className="   tracking-wide lg:w-[250px]">
                 Taking care of parents
               </h2>
-              <p className="text-p leading-6  font-semibold">
+              <p className="text-p leading-6  ">
                 Our support specialists are always ready to assist, and our
                 bi-weekly parent assemblies offer a platform to discuss any
                 topic and connect with like-minded families worldwide.
@@ -330,13 +330,13 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="  text-center font-bold">
+        <h2 className="  text-center ">
           Who can benefit from our school?
         </h2>
         <div className="pt-8 sm:pt-12">
           <div className="flex flex-wrap gap-5 justify-between ">
             <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" container pt-8 leading-tight font-bold">
+              <h4 className=" container pt-8 leading-tight ">
                 For those who are not satisfied with a regular school
               </h4>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
@@ -351,7 +351,7 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 sm:gap-3">
-                  <p className=" text-[16px] font-semibold">
+                  <p className=" text-[16px] ">
                     Is this about you?
                   </p>
                   <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
@@ -369,14 +369,14 @@ export default function Home() {
                       beliefs?
                     </li>
                   </ul>
-                  <p className=" text-[16px] font-semibold">
+                  <p className=" text-[16px] ">
                     Then our school is right for you!
                   </p>
                 </div>
               </div>
             </div>
             <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" container pt-8 leading-tight font-bold">
+              <h4 className=" container pt-8 leading-tight ">
                 For students who often miss school.
               </h4>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
@@ -391,7 +391,7 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 sm:gap-3">
-                  <p className=" text-[16px] font-semibold">
+                  <p className=" text-[16px] ">
                     Does this sound like you?
                   </p>
                   <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
@@ -410,14 +410,14 @@ export default function Home() {
                       Finding some subjects challenging to understand?
                     </li>
                   </ul>
-                  <p className=" text-[16px] font-semibold">
+                  <p className=" text-[16px] ">
                     Then our school is right for you!
                   </p>
                 </div>
               </div>
             </div>
             <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" container pt-8 leading-tight font-bold">
+              <h4 className=" container pt-8 leading-tight ">
                 For those who live abroad or the family travels a lot
               </h4>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
@@ -432,7 +432,7 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 sm:gap-3">
-                  <p className=" text-[16px] font-semibold">
+                  <p className=" text-[16px] ">
                     Is this about you?
                   </p>
                   <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
@@ -449,14 +449,14 @@ export default function Home() {
                       geographical boundaries.
                     </li>
                   </ul>
-                  <p className=" text-[16px] font-semibold">
+                  <p className=" text-[16px] ">
                     Then our school is right for you!
                   </p>
                 </div>
               </div>
             </div>
             <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" container pt-8 leading-tight font-bold">
+              <h4 className=" container pt-8 leading-tight ">
                 For students preparing to enter a prestigious university
               </h4>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
@@ -471,7 +471,7 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 sm:gap-3">
-                  <p className=" text-[16px] font-semibold">
+                  <p className=" text-[16px] ">
                     Is this about you?
                   </p>
                   <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
@@ -489,7 +489,7 @@ export default function Home() {
                       Needing guidance for application processes.
                     </li>
                   </ul>
-                  <p className=" text-[16px] font-semibold">
+                  <p className=" text-[16px] ">
                     Then our school is right for you!
                   </p>
                 </div>
@@ -500,7 +500,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="  text-center font-bold">Choose your education model</h2>
+        <h2 className="  text-center ">Choose your education model</h2>
         <div className="pt-8 sm:pt-12 grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-5">
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-[#F2F4F7]">
             {/* <Image
@@ -512,19 +512,19 @@ export default function Home() {
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className=" font-bold  tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className="   tracking-wide lg:w-1/2 lg:text-4xl">
                   Hybrid Model
                 </h3>
-                <p className="text-p leading-6  font-semibold">
+                <p className="text-p leading-6  ">
                   Blend online learning with hands-on experience.
                 </p>
-                <p className="text-p leading-6  font-semibold">
+                <p className="text-p leading-6  ">
                   From September to June, students join live online classes,
                   then attend a 4-week summer camp in the UK.
                 </p>
               </div>
               <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">Learn more</p>
+                <p className="text-p tracking-wide ">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-12 w-12 -rotate-45"
                   aria-hidden="true"
@@ -543,21 +543,21 @@ export default function Home() {
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className=" font-bold  tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className="   tracking-wide lg:w-1/2 lg:text-4xl">
                   Fully Online
                 </h3>
-                <p className="text-p leading-6  font-semibold">
+                <p className="text-p leading-6  ">
                   From September to June with classes from 09:00 to 15:00 UK
                   time.
                 </p>
-                <p className="text-p leading-6  font-semibold">
+                <p className="text-p leading-6  ">
                   {
                     "It's structured, flexible, and taught by qualified teachers to keep your child engaged and progressing."
                   }
                 </p>
               </div>
               <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">Learn more</p>
+                <p className="text-p tracking-wide ">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-12 w-12 -rotate-45"
                   aria-hidden="true"
@@ -576,20 +576,20 @@ export default function Home() {
             /> */}
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className=" font-bold  tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className="   tracking-wide lg:w-1/2 lg:text-4xl">
                   Self Paced
                 </h3>
-                <p className="text-p leading-6  font-semibold">
+                <p className="text-p leading-6  ">
                   Our Flexible Learning Model offers students the freedom to
                   learn at their own pace and schedule.
                 </p>
-                <p className="text-p leading-6  font-semibold">
+                <p className="text-p leading-6  ">
                   This is ideal for independent learners or those with time
                   constraints.
                 </p>
               </div>
               <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide font-semibold">Learn more</p>
+                <p className="text-p tracking-wide ">Learn more</p>
                 <ArrowRightCircleIcon
                   className="h-12 w-12 -rotate-45"
                   aria-hidden="true"
@@ -601,13 +601,13 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="  text-center font-bold">FAQs</h2>
+        <h2 className="  text-center ">FAQs</h2>
         <div className="pt-8 sm:pt-12 flex flex-col gap-8">
           <Disclosure as="div" className="w-full border-b border-gray-300">
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className=" font-bold">Why us?</h3>
+                  <h3 className=" ">Why us?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -678,7 +678,7 @@ export default function Home() {
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className=" font-bold">Are you accredited?</h3>
+                  <h3 className=" ">Are you accredited?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -718,7 +718,7 @@ export default function Home() {
       <div className="mt-20 lg:container">
         <div className=" bg-[#003372] lg:rounded-xl mt-8 flex flex-col md:flex-row">
           <div className="py-12 px-8 lg:px-16 flex flex-col gap-10">
-            <h2 className="text-[62px] text-white/90 tracking-tighter font-bold leading-[60px]">
+            <h2 className="text-[62px] text-white/90 tracking-tighter  leading-[60px]">
               Looking to learn more?
             </h2>
 
@@ -744,7 +744,7 @@ export default function Home() {
       </div>
 
       <div className="mt-20 container">
-        <h3 className="text-[#003372] font-semibold  ">Partnered by</h3>
+        <h3 className="text-[#003372]   ">Partnered by</h3>
         <div className="h-[2px] my-10 w-full bg-blue-900"></div>
         <Carousel />
       </div>

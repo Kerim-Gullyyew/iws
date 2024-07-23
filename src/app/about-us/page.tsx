@@ -8,7 +8,7 @@ const page: React.FC<pageProps> = ({ }) => {
     <div className=" container pt-3 pb-10">
       <div className="pt-16 pb-14 bg-asset-3 px-6 bg-cover bg-no-repeat bg-center bg-blue-500 flex items-center justify-center bg-blend-soft-light overflow-hidden rounded-[40px] w-full ">
         <div className="flex flex-col justify-center items-center max-w-[700px]">
-          <h1 className="text-center text-white font-bold">We are a revolution</h1>
+          <h1 className="text-center text-white ">We are a revolution</h1>
           <div className="pt-8">
             <p className="text-center text-white">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia error a cum ratione harum quaerat ab similique repudiandae ducimus quidem? At culpa veritatis in placeat voluptatum omnis aut voluptates corrupti.
@@ -33,7 +33,7 @@ const page: React.FC<pageProps> = ({ }) => {
       <div className="mt-20 space-y-24">
         <div className="w-full flex flex-col lg:flex-row gap-10 border-t-4 pt-6 border-blue-400">
           <div className="lg:w-5/12">
-            <h2 className=" leading-tight font-bold">
+            <h2 className=" leading-tight ">
               Our Approach To Teaching and Learning
             </h2>
           </div>
@@ -46,7 +46,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
         <div className="w-full flex flex-col lg:flex-row gap-10 border-t-4 pt-6 border-blue-400">
           <div className="lg:w-5/12">
-            <h2 className=" leading-tight font-bold">
+            <h2 className=" leading-tight ">
               Our Approach To Teaching and Learning
             </h2>
           </div>

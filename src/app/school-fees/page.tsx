@@ -9,8 +9,8 @@ interface pageProps {}
 const page: React.FC<pageProps> = ({}) => {
   return (
     <div className="py-14 lg:py-24 container animate-fade-in">
-      <h1 className="text-center  font-bold text-sky-500">School Fees</h1>
-      <h2 className="text-center  font-bold mt-14">
+      <h1 className="text-center   text-sky-500">School Fees</h1>
+      <h2 className="text-center   mt-14">
         Give your child the best education at the most reasonable rates at IWS.
       </h2>
       <p className="text-center text-p  tracking-wide mt-5">
@@ -23,10 +23,10 @@ const page: React.FC<pageProps> = ({}) => {
       <div className="pt-20 grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4">
         <div className="w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300 grid grid-cols-1 overflow-hidden rounded-lg gap-14 px-8 pt-10 py-6">
           <div className="flex flex-col gap-8">
-            <h1 className=" font-bold text-sky-500">Primary School</h1>
+            <h1 className="  text-sky-500">Primary School</h1>
 
             <div className=" flex flex-wrap gap-5 items-end">
-              <h2 className=" font-semibold">£5000</h2>
+              <h2 className=" ">£5000</h2>
               <h3 className="text-gray-400 ">/year</h3>
             </div>
 
@@ -39,7 +39,7 @@ const page: React.FC<pageProps> = ({}) => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="border-b-[0.5px]  font-bold pb-2  border-gray-600">
+            <h3 className="border-b-[0.5px]   pb-2  border-gray-600">
               Included subjects
             </h3>
             <div className="flex flex-wrap gap-2 items-center">
@@ -56,7 +56,7 @@ const page: React.FC<pageProps> = ({}) => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="border-b-[0.5px]  font-bold pb-2  border-gray-600">
+            <h3 className="border-b-[0.5px]   pb-2  border-gray-600">
               Additional subjects
             </h3>
             <div className="flex flex-wrap gap-2 items-center">
@@ -78,10 +78,10 @@ const page: React.FC<pageProps> = ({}) => {
         </div>
         <div className="w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300 grid grid-cols-1 overflow-hidden rounded-lg gap-14 px-8 pt-10 py-6">
           <div className="flex flex-col gap-8">
-            <h1 className=" font-bold text-green-500">Primary School</h1>
+            <h1 className="  text-green-500">Primary School</h1>
 
             <div className=" flex flex-wrap gap-5 items-end">
-              <h2 className=" font-semibold">£5000</h2>
+              <h2 className=" ">£5000</h2>
               <h3 className="text-gray-400 ">/year</h3>
             </div>
 
@@ -94,7 +94,7 @@ const page: React.FC<pageProps> = ({}) => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="border-b-[0.5px]  font-bold pb-2  border-gray-600">
+            <h3 className="border-b-[0.5px]   pb-2  border-gray-600">
               Included subjects
             </h3>
             <div className="flex flex-wrap gap-2 items-center">
@@ -111,7 +111,7 @@ const page: React.FC<pageProps> = ({}) => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="border-b-[0.5px] font-bold pb-2   border-gray-600">
+            <h3 className="border-b-[0.5px]  pb-2   border-gray-600">
               Additional subjects
             </h3>
             <div className="flex flex-wrap gap-2 items-center">
@@ -133,10 +133,10 @@ const page: React.FC<pageProps> = ({}) => {
         </div>
         <div className="w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300 grid grid-cols-1 overflow-hidden rounded-lg gap-14 px-8 pt-10 py-6">
           <div className="flex flex-col gap-8">
-            <h1 className=" font-bold text-orange-500">Primary School</h1>
+            <h1 className="  text-orange-500">Primary School</h1>
 
             <div className=" flex flex-wrap gap-5 items-end">
-              <h2 className=" font-semibold">£5000</h2>
+              <h2 className=" ">£5000</h2>
               <h3 className="text-gray-400 ">/year</h3>
             </div>
 
@@ -149,7 +149,7 @@ const page: React.FC<pageProps> = ({}) => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="border-b-[0.5px]  font-bold pb-2  border-gray-600">
+            <h3 className="border-b-[0.5px]   pb-2  border-gray-600">
               Included subjects
             </h3>
             <div className="flex flex-wrap gap-2 items-center">
@@ -166,7 +166,7 @@ const page: React.FC<pageProps> = ({}) => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="border-b-[0.5px] font-bold pb-2   border-gray-600">
+            <h3 className="border-b-[0.5px]  pb-2   border-gray-600">
               Additional subjects
             </h3>
             <div className="flex flex-wrap gap-2 items-center">
@@ -188,10 +188,10 @@ const page: React.FC<pageProps> = ({}) => {
         </div>
         <div className="w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300 grid grid-cols-1 overflow-hidden rounded-lg gap-14 px-8 pt-10 py-6">
           <div className="flex flex-col gap-8">
-            <h1 className=" font-bold text-red-500">Primary School</h1>
+            <h1 className="  text-red-500">Primary School</h1>
 
             <div className=" flex flex-wrap gap-5 items-end">
-              <h2 className=" font-semibold">£5000</h2>
+              <h2 className=" ">£5000</h2>
               <h3 className="text-gray-400 ">/year</h3>
             </div>
 
@@ -204,7 +204,7 @@ const page: React.FC<pageProps> = ({}) => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="border-b-[0.5px]  font-bold pb-2  border-gray-600">
+            <h3 className="border-b-[0.5px]   pb-2  border-gray-600">
               Included subjects
             </h3>
             <div className="flex flex-wrap gap-2 items-center">
@@ -221,7 +221,7 @@ const page: React.FC<pageProps> = ({}) => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="border-b-[0.5px]  font-bold pb-2  border-gray-600">
+            <h3 className="border-b-[0.5px]   pb-2  border-gray-600">
               Additional subjects
             </h3>
             <div className="flex flex-wrap gap-2 items-center">
@@ -252,7 +252,7 @@ const page: React.FC<pageProps> = ({}) => {
           alt=""
         />
         <div className="flex flex-col gap-5 justify-center">
-          <h1 className=" text-sky-500 font-bold">What our fees include</h1>
+          <h1 className=" text-sky-500 ">What our fees include</h1>
 
           <div className="flex flex-col gap-8">
             <p className="text-p">

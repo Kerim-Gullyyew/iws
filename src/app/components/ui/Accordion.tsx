@@ -11,7 +11,7 @@ const Accordion: React.FC<AccordionProps> = ({ }) => {
       {({ open }) => (
         <>
           <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-            <h3 className=" font-bold">
+            <h3 className=" ">
             Why us?
             </h3>
             {open ? (

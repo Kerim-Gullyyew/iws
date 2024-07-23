@@ -127,7 +127,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="  font-bold">
+                    <h4 className="  ">
                       ACADEMICS
                     </h4>
                     {open ? (
@@ -177,7 +177,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="  font-bold">
+                    <h4 className="  ">
                       ADMISSIONS
                     </h4>
                     {open ? (
@@ -221,7 +221,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="  font-bold">
+                    <h4 className="  ">
                       ABOUT IWS
                     </h4>
                     {open ? (
@@ -268,7 +268,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="  font-bold">
+                    <h4 className="  ">
                       RESOURCES
                     </h4>
                     {open ? (
@@ -311,7 +311,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
 
           <div className="hidden ml-5 lg:ml-24 lg:ml-36 lg:grid lg:grid-cols-4 lg:w-full ">
             <div>
-              <h5 className=" font-semibold text-gray-400">ACADEMICS</h5>
+              <h5 className="  text-gray-400">ACADEMICS</h5>
               <ul className="mt-3 space-y-2">
                 <li className="">Primary School</li>
                 <li className="">Middle School</li>
@@ -320,7 +320,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               </ul>
             </div>
             <div>
-              <h5 className=" font-semibold text-gray-400">
+              <h5 className="  text-gray-400">
                 ADMISSIONS
               </h5>
               <ul className="mt-3 space-y-2">
@@ -329,7 +329,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               </ul>
             </div>
             <div>
-              <h5 className=" font-semibold text-gray-400">ABOUT IWS</h5>
+              <h5 className="  text-gray-400">ABOUT IWS</h5>
               <ul className="mt-3 space-y-2">
                 <li className="">About IWS</li>
                 <li className="">Our Team</li>
@@ -337,7 +337,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               </ul>
             </div>
             <div>
-              <h5 className=" font-semibold text-gray-400">RESOURCES</h5>
+              <h5 className="  text-gray-400">RESOURCES</h5>
               <ul className="mt-3 space-y-2">
                 <li className="">Blogs</li>
                 <li className="">School Calendar</li>

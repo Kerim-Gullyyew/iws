@@ -10,7 +10,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({ textColor = '' }) => {
   return (
     <button
       onClick={() => router.push('/contact-us')}
-      className={`border-[#4366F6] hover:text-white hover:bg-[#3867FF] transition-all duration-300 border-[3px] rounded-xl px-7 py-2.5 ${textColor} font-semibold text-lg box-border`}
+      className={`border-[#4366F6] hover:text-white hover:bg-[#3867FF] transition-all duration-300 border-[3px] rounded-xl px-7 py-2.5 ${textColor}  text-lg box-border`}
     >
       Contact Us
     </button>

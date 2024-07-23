@@ -106,7 +106,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
     //   <TabPanels className={"mt-10 max-w-4xl w-full"}>
     //     <TabPanel >
     //       <div className='flex flex-col gap-5'>
-    //         <h1 className='text-4xl text-center font-bold text-blue-900'>Would you like to send us a message?</h1>
+    //         <h1 className='text-4xl text-center  text-blue-900'>Would you like to send us a message?</h1>
     //         <p className='text-center text-xl text-gray-500'>Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we’re here to help!</p>
 
     //         <div className="space-y-12">
@@ -175,7 +175,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
 
     //           <button
     //             type="submit"
-    //             className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+    //             className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
     //           >
     //             SEND A MESSAGE
     //           </button>
@@ -196,7 +196,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
 
 
     <div className='flex flex-col gap-5 mt-10 max-w-4xl w-full container'>
-      <h2 className=' text-center font-bold text-blue-900'>Would you like to send us a message?</h2>
+      <h2 className=' text-center  text-blue-900'>Would you like to send us a message?</h2>
       <p className='text-center text-p text-gray-500'>Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we’re here to help!</p>
 
 
@@ -299,7 +299,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
           loading ? (
             <button
               type="submit"
-              className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Loading...
             </button>
@@ -307,7 +307,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
             <button
               type="submit"
               onClick={handleSubmit}
-              className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               SEND A MESSAGE
             </button>
