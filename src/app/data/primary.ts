@@ -16,11 +16,11 @@ export interface Primary {
 export const courses: Primary[] = [
   {
     id: "1",
-    subject_name: "Mathematics",
-    url: "mathematics",
+    subject_name: "Mathematics1",
+    url: "mathematics1",
     image_url: "/images/mathematics.jpg",
     icon: "/images/mathematics.jpg",
-    description: "Mathematics covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
+    description: "Mathematics  dcdscx covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
     key_objective: "Lorem",
     what_learn: [
       {
