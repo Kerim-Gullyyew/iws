@@ -71,7 +71,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className="py-14 mt-20 px-6 bg-center bg-blue-500 flex items-center justify-center bg-blend-soft-light overflow-hidden rounded-[40px] w-full ">
         <div className="max-w-[700px]">
-          <h4 className="text-white text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur impedit dolorem cumque obcaecati ratione odio nesciunt maiores saepe veritatis beatae..</h4>
+          <p className="text-white text-center text-[26px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur impedit dolorem cumque obcaecati ratione odio nesciunt maiores saepe veritatis beatae..</p>
 
         </div>
       </div>
