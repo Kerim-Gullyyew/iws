@@ -77,19 +77,19 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link className='font-semibold leading-6 text-[18px] ' href={"/cambridge-primary/"} >
+          <Link className=' leading-6 text-[18px] ' href={"/cambridge-primary/"} >
             Primary
           </Link>
-          <Link className='font-semibold leading-6 text-[18px] ' href={"/cambridge-secondary/"} >
+          <Link className=' leading-6 text-[18px] ' href={"/cambridge-secondary/"} >
             Secondary
           </Link>
-          <Link className='font-semibold leading-6 text-[18px] ' href={"/cambridge-igcse/"} >
+          <Link className=' leading-6 text-[18px] ' href={"/cambridge-igcse/"} >
             I/GCSE
           </Link>
-          <Link className='font-semibold leading-6 text-[18px] ' href={"/cambridge-a-level/"} >
+          <Link className=' leading-6 text-[18px] ' href={"/cambridge-a-level/"} >
             A Level
           </Link>
-          <Link className='font-semibold leading-6 text-[18px] ' href={"/school-fees/"} >
+          <Link className=' leading-6 text-[18px] ' href={"/school-fees/"} >
             School Fees
           </Link>
 
