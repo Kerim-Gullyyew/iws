@@ -77,72 +77,23 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link className=' leading-6 text-[18px] ' href={"/cambridge-primary/"} >
+          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-primary/"} >
             Primary
           </Link>
-          <Link className=' leading-6 text-[18px] ' href={"/cambridge-secondary/"} >
+          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-secondary/"} >
             Secondary
           </Link>
-          <Link className=' leading-6 text-[18px] ' href={"/cambridge-igcse/"} >
+          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-igcse/"} >
             I/GCSE
           </Link>
-          <Link className=' leading-6 text-[18px] ' href={"/cambridge-a-level/"} >
+          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-a-level/"} >
             A Level
           </Link>
-          <Link className=' leading-6 text-[18px] ' href={"/school-fees/"} >
+          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/school-fees/"} >
             School Fees
           </Link>
 
 
-          {/* <Popover>
-            <Popover.Button className="flex items-center gap-x-1  leading-6 ">
-              About Us
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-            </Popover.Button>
-
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 -translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 -translate-y-1"
-            >
-              <Popover.Panel className="absolute inset-x-0 top-0 -z-10 bg-white pt-14 shadow-lg ring-1 ring-gray-900/5">
-                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 lg:gap-x-8">
-                  {products.map((item) => (
-                    <div key={item.name} className="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
-                      </div>
-                      <a href={item.href} className="mt-6 block  ">
-                        {item.name}
-                        <span className="absolute inset-0" />
-                      </a>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
-                    </div>
-                  ))}
-                </div>
-                <div className="bg-gray-50">
-                  <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5">
-                      {callsToAction.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className="flex items-center justify-center gap-x-2.5 p-3 text-sm  leading-6  hover:bg-gray-100"
-                        >
-                          <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                          {item.name}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </Popover.Panel>
-            </Transition>
-          </Popover> */}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {/* <div className='flex'> */}

@@ -6,7 +6,7 @@ export interface Primary {
   icon: string;
   description: string;
   description2?: string;
-  key_objective: string;
+  key_objective: string[];
   what_learn: {
     id: string,
     title: string,
@@ -19,10 +19,13 @@ export const courses: Primary[] = [
     id: "1",
     subject_name: "Mathematics1",
     url: "mathematics1",
-    image_url: "/images/mathematics.jpg",
-    icon: "/images/mathematics.jpg",
+    image_url: "",
+    icon: "",
     description: "Mathematics  dcdscx covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
-    key_objective: "Lorem",
+    key_objective: [
+      "Lorem",
+      "Lorem asfsdas as asf",
+    ],
     what_learn: [
       {
         id: "1",
@@ -35,10 +38,10 @@ export const courses: Primary[] = [
     id: "2",
     subject_name: "Mathematics",
     url: "mathematics",
-    image_url: "/images/mathematics.jpg",
-    icon: "/images/mathematics.jpg",
+    image_url: "",
+    icon: "",
     description: "Mathematics covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
-    key_objective: "Lorem",
+    key_objective: ["Lorem"],
     what_learn: [
       {
         id: "1",
@@ -51,10 +54,10 @@ export const courses: Primary[] = [
     id: "3",
     subject_name: "Mathematics",
     url: "mathematics",
-    image_url: "/images/mathematics.jpg",
-    icon: "/images/mathematics.jpg",
+    image_url: "",
+    icon: "",
     description: "Mathematics covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
-    key_objective: "Lorem",
+    key_objective: ["Lorem"],
     what_learn: [
       {
         id: "1",
@@ -67,10 +70,10 @@ export const courses: Primary[] = [
     id: "4",
     subject_name: "Mathematics",
     url: "mathematics",
-    image_url: "/images/mathematics.jpg",
-    icon: "/images/mathematics.jpg",
+    image_url: "",
+    icon: "",
     description: "Mathematics covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
-    key_objective: "Lorem",
+    key_objective: ["Lorem"],
     what_learn: [
       {
         id: "1",

@@ -16,9 +16,9 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
-interface pageProps {}
+interface pageProps { }
 
-const page: React.FC<pageProps> = ({}) => {
+const page: React.FC<pageProps> = ({ }) => {
   return (
     <div className="py-14 lg:py-24 animate-fade-in">
       <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
@@ -85,9 +85,7 @@ const page: React.FC<pageProps> = ({}) => {
         </div>
       </div>
 
-      <div className="pt-20 flex flex-col justify-center items-center">
-        <TabSection />
-      </div>
+
 
       <div className="pt-20">
         <div className="bg-white lg:container">
@@ -471,6 +469,11 @@ const page: React.FC<pageProps> = ({}) => {
         </div>
       </div>
 
+      <div className="pt-20 flex flex-col justify-center items-center">
+        <TabSection />
+      </div>
+
+
       <div className="pt-20 container flex flex-col gap-4">
         <h2 className="text-center  text-blue-900 ">
           Cambridge A Level Course Tuition Fees
@@ -481,6 +484,7 @@ const page: React.FC<pageProps> = ({}) => {
           covering comprehensive tests to tailor your child’s education. For
           pricing details, visit our tuition fees page.
         </p>
+
 
         <div className="mt-6">
           <h3 className="border-b   text-blue-900 border-blue-900 pb-3">

@@ -89,9 +89,7 @@ const page: React.FC<pageProps> = ({ }) => {
         </div>
       </div>
 
-      <div className="pt-20 flex flex-col justify-center items-center">
-        <TabSection />
-      </div>
+
 
       <div className="pt-20">
         <div className="bg-white lg:container">
@@ -478,6 +476,10 @@ const page: React.FC<pageProps> = ({ }) => {
             )}
           </Disclosure>
         </div>
+      </div>
+
+      <div className="pt-20 flex flex-col justify-center items-center">
+        <TabSection />
       </div>
 
       <div className="pt-20 container flex flex-col gap-4">

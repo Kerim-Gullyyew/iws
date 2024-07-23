@@ -5,7 +5,8 @@ export interface ALevel {
   image_url: string;
   icon: string;
   description: string;
-  key_objective: string;
+  description2?: string;
+  key_objective: string[];
   what_learn: {
     id: string,
     title: string,
@@ -16,12 +17,15 @@ export interface ALevel {
 export const courses: ALevel[] = [
   {
     id: "1",
-    subject_name: "Mathematics",
-    url: "mathematics",
-    image_url: "/images/mathematics.jpg",
-    icon: "/images/mathematics.jpg",
-    description: "Mathematics covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
-    key_objective: "Lorem",
+    subject_name: "Mathematics1",
+    url: "mathematics1",
+    image_url: "",
+    icon: "",
+    description: "Mathematics  dcdscx covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
+    key_objective: [
+      "Lorem",
+      "Lorem asfsdas as asf",
+    ],
     what_learn: [
       {
         id: "1",
@@ -34,10 +38,10 @@ export const courses: ALevel[] = [
     id: "2",
     subject_name: "Mathematics",
     url: "mathematics",
-    image_url: "/images/mathematics.jpg",
-    icon: "/images/mathematics.jpg",
+    image_url: "",
+    icon: "",
     description: "Mathematics covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
-    key_objective: "Lorem",
+    key_objective: ["Lorem"],
     what_learn: [
       {
         id: "1",
@@ -50,10 +54,10 @@ export const courses: ALevel[] = [
     id: "3",
     subject_name: "Mathematics",
     url: "mathematics",
-    image_url: "/images/mathematics.jpg",
-    icon: "/images/mathematics.jpg",
+    image_url: "",
+    icon: "",
     description: "Mathematics covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
-    key_objective: "Lorem",
+    key_objective: ["Lorem"],
     what_learn: [
       {
         id: "1",
@@ -66,10 +70,10 @@ export const courses: ALevel[] = [
     id: "4",
     subject_name: "Mathematics",
     url: "mathematics",
-    image_url: "/images/mathematics.jpg",
-    icon: "/images/mathematics.jpg",
+    image_url: "",
+    icon: "",
     description: "Mathematics covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
-    key_objective: "Lorem",
+    key_objective: ["Lorem"],
     what_learn: [
       {
         id: "1",
