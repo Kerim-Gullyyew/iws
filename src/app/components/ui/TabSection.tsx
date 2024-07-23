@@ -6,6 +6,7 @@ import * as Yup from 'yup';
 import axios from 'axios'
 import { useRouter } from 'next/navigation';
 interface TabSectionProps {
+  incourse?: boolean;
 }
 
 export interface CountryData {
@@ -21,7 +22,7 @@ interface ValidationErrors {
   message?: string;
 }
 
-const TabSection: React.FC<TabSectionProps> = ({ }) => {
+const TabSection: React.FC<TabSectionProps> = ({ incourse }) => {
   const [firstName, setFirstName] = useState<string>('');
   const [lastName, setLastName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
@@ -100,8 +101,12 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
   return (
 
     <div className='flex flex-col gap-5 max-w-4xl w-full'>
-      <h2 className=' text-center  text-blue-900'>Would you like to send us a message?</h2>
-      <p className='text-center text-p text-gray-500'>Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we’re here to help!</p>
+      {
+        !incourse && (
+          <h2 className=' text-center  text-blue-900'>Would you like to send us a message?</h2>
+        )
+      }
+      <p className={`text-p text-gray-500 ${!incourse ? 'text-center' : 'text-left'}`}>Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we’re here to help!</p>
 
 
       <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-6">
@@ -219,7 +224,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
         }
 
       </div>
-      <p className='text-center text-p text-blue-900'>
+      <p className={`text-p text-blue-900 ${!incourse ? 'text-center' : 'text-left'}`}>
         Simply fill out the form below, and one of our friendly team members will get back to you as soon as possible. Let’s start your journey with IWS Online School together!
       </p>
     </div>

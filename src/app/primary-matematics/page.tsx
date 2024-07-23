@@ -1,23 +1,17 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
-import WhatAwait from "@/app/components/ui/WhatAwait";
-import ContactUs from "@/app/components/ui/ContactUs";
-import { courses } from "@/app/data/primary";
-interface pageProps {
-  params: {
-    slug: string;
-  };
-}
+import WhatAwait from "../components/ui/WhatAwait";
+import ContactUs from "../components/ui/ContactUs";
+interface pageProps { }
 
-const page: React.FC<pageProps> = ({ params }: { params: { slug: string } }) => {
-  const course = courses.find((course) => course.url === params.slug);
-
+const page: React.FC<pageProps> = ({ }) => {
   return (
     <div className=" container pt-3 pb-24">
       <div className="pt-16 pb-14 bg-asset-3 px-6 bg-cover bg-no-repeat bg-center bg-blue-500 flex items-center justify-center bg-blend-soft-light overflow-hidden rounded-[40px] w-full ">
         <div className="flex flex-col justify-center items-center max-w-[700px]">
-          <h1 className="text-center text-white ">Primary{" " + course?.subject_name}</h1>
+          <h1 className="text-center text-white ">Primary Matematics</h1>
           <div className="pt-8">
             <p className="text-center text-white">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia error a cum ratione harum quaerat ab similique repudiandae ducimus quidem? At culpa veritatis in placeat voluptatum omnis aut voluptates corrupti.
@@ -73,6 +67,7 @@ const page: React.FC<pageProps> = ({ params }: { params: { slug: string } }) => 
 
           </div>
         </div>
+
 
         <div className="w-full flex flex-col lg:flex-row gap-10 border-t-4 pt-6 border-blue-400">
           <div className="lg:w-5/12">
