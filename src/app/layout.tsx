@@ -9,11 +9,13 @@ import { Sora, Inter } from 'next/font/google';
 const sora = Sora({
   subsets: ['latin'],
   variable: '--font-sora',
+  display: 'swap',
 })
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap',
 })
 
 export const viewport: Viewport = {
@@ -39,8 +41,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={sora.className}>
+    <html lang="en" className={`${inter.variable} ${sora.variable}`}>
+      <body>
         <header>
           <Header />
         </header>
