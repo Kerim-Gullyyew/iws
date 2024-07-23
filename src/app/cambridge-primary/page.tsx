@@ -5,6 +5,7 @@ import AccordionSecondary from '../components/ui/AccordionSecondary'
 import Image from 'next/image'
 import ContactButton from '../components/buttons/ContactButton'
 import EnrollButton from '../components/buttons/EnrollButton'
+import { courses } from '../data/primary'
 import {
   ArrowRightCircleIcon,
   PlusIcon,
@@ -16,6 +17,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from 'next/link'
 interface pageProps {
 
 }
@@ -103,138 +105,33 @@ const page: React.FC<pageProps> = ({ }) => {
         </div>
 
 
-        <div className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 gap-6'>
+        <div className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
 
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
+          {
+            courses.map((course) => (
+              <Link href={course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color">
+                <div className="bg-[#DAE1FF] ">
+                  <Image
+                    width={1000}
+                    height={1000}
+                    className="max-w-20"
+                    src={course.icon}
+                    alt={course.subject_name}
+                  />
+                </div>
+                <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
+                  <h4 className="  text-blue-900 text-nowrap">
+                    {course.subject_name}
+                  </h4>
 
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
+                  <p className="text-p  text-blue-600">Learn more</p>
+                </div>
+              </Link>
 
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
-
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>Biology</h4>
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
-
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
-
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
-
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
-
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
-
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
+            ))
+          }
 
 
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
-
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
-
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
-
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
-
-          <div className='flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color'>
-            <div className='bg-[#DAE1FF] '>
-              <Image width={1000} height={1000} className='max-w-20' src="/subjects/Biology.webp" alt="Biology" />
-            </div>
-            <div className='bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1'>
-              <h4 className='  text-blue-900 text-nowrap'>English Literature</h4>
-              <p className='text-p  text-blue-600'>Learn more</p>
-            </div>
-          </div>
         </div>
 
 
