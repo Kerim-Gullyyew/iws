@@ -3,9 +3,12 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import type { Viewport } from "next";
-import "@fontsource/sora";
-import "@fontsource/inter";
+import { Sora } from 'next/font/google';
 
+const sora = Sora({
+  subsets: ['latin'],
+  variable: '--font-sora',
+})
 
 export const viewport: Viewport = {
   colorScheme: "normal",
@@ -31,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={sora.className}>
         <header>
           <Header />
         </header>
