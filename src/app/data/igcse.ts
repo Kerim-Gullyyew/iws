@@ -18,7 +18,7 @@ export const courses: IGCSE[] = [
   {
     id: "1",
     subject_name: "Mathematics1",
-    url: "mathematics1",
+    url: "/igcse/mathematics1",
     image_url: "",
     icon: "",
     description: "Mathematics  dcdscx covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",

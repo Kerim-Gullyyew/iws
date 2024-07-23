@@ -37,7 +37,7 @@ export const courses: Primary[] = [
   {
     id: "2",
     subject_name: "Mathematics",
-    url: "mathematics",
+    url: "/primary/mathematics",
     image_url: "",
     icon: "",
     description: "Mathematics covers a variety of topics including algebra, geometry, calculus, and statistics. It develops problem-solving skills and logical reasoning.",
