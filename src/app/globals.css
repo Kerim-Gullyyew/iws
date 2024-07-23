@@ -3,20 +3,23 @@
 @tailwind utilities;
 
 html {
-  font-family: var(--font-sora);
+  font-family: var(--font-inter);
 }
 
 h1 {
   font-size: 3.5em;
   font-weight: 500;
+  font-family: var(--font-sora);
 }
 
 h2 {
   font-size: 2.5em;
+  font-family: var(--font-sora);
 }
 
 h3 {
   font-size: 2em;
+  font-family: var(--font-sora);
 }
 
 h4 {
@@ -33,5 +36,4 @@ h6 {
 
 p {
   font-size: 1.1250em;
-  font-family: var(--font-inter);
 }
