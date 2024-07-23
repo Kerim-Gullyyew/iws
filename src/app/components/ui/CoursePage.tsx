@@ -63,8 +63,8 @@ const CoursePage: React.FC<CoursePageProps> = ({ course }) => {
             </div>
             <div className="flex flex-col gap-y-8 lg:w-7/12 lg:pr-6">
               {
-                course.what_learn.map((learn) => (
-                  <div className="space-y-3">
+                course.what_learn.map((learn, index) => (
+                  <div key={index} className="space-y-3">
                     <h4 className="font-bold">{learn.title}</h4>
                     <p>{learn.description}</p>
                   </div>
@@ -83,8 +83,8 @@ const CoursePage: React.FC<CoursePageProps> = ({ course }) => {
             </div>
             <div className="flex flex-col gap-4 lg:w-7/12 lg:pr-6">
               {
-                course.key_objective.map((obj) => (
-                  <p>{obj}</p>
+                course.key_objective.map((obj, index) => (
+                  <p key={index}>{obj}</p>
                 ))
               }
             </div>

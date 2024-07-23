@@ -108,8 +108,8 @@ const page: React.FC<pageProps> = ({ }) => {
         <div className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
 
           {
-            courses.map((course) => (
-              <Link href={course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color">
+            courses.map((course, index) => (
+              <Link key={index} href={course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color">
                 <div className="bg-[#DAE1FF] ">
                   <Image
                     width={1000}
