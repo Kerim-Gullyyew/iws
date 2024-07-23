@@ -8,7 +8,6 @@ import { Sora } from 'next/font/google';
 const sora = Sora({
   subsets: ['latin'],
   variable: '--font-sora',
-  weight: ['400', '700', '800'],
 })
 
 export const viewport: Viewport = {
