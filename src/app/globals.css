@@ -24,14 +24,17 @@ h3 {
 
 h4 {
   font-size: 1.5em;
+  font-family: var(--font-sora);
 }
 
 h5 {
   font-size: 1.1250em;
+  font-family: var(--font-sora);
 }
 
 h6 {
   font-size: 1em;
+  font-family: var(--font-sora);
 }
 
 p, li {
