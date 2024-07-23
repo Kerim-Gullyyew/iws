@@ -73,7 +73,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className="  ">Ages 7-11</h4>
+                <p className="  ">Ages 7-11</p>
               </div>
               <Image
                 width={1000}
@@ -108,7 +108,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className="  ">Ages 11-14</h4>
+                <p className="  ">Ages 11-14</p>
               </div>
               <Image
                 width={1000}
@@ -143,7 +143,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className="  ">Ages 14-16</h4>
+                <p className="  ">Ages 14-16</p>
               </div>
               <Image
                 width={1000}
@@ -179,7 +179,7 @@ export default function Home() {
           >
             <div className="relative">
               <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <h4 className="  ">Ages 16-18</h4>
+                <p className="  ">Ages 16-18</p>
               </div>
               <Image
                 width={1000}
