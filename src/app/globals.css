@@ -27,13 +27,13 @@ h4 {
 }
 
 h5 {
-  font-size: 0.8em;
+  font-size: 1.1250em;
 }
 
 h6 {
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
-p {
+p, li {
   font-size: 1.1250em;
 }

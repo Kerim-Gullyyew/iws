@@ -24,7 +24,7 @@ const page: React.FC<pageProps> = ({ }) => {
     <div className="py-14 lg:py-24 animate-fade-in">
       <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
         <div className="flex flex-col gap-5">
-          <h3 className="  text-blue-600">Ages from 11 - 14</h3>
+          <h4 className="  text-blue-600">Ages from 11 - 14</h4>
           <h1 className="  text-blue-900">
             Cambridge Secondary
           </h1>
@@ -53,11 +53,11 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className="pt-20 flex flex-col gap-14">
         <div className="container flex flex-col gap-5">
-          <h1 className="text-center  text-blue-900  tracking-tight">
+          <h2 className="text-center  text-blue-900  tracking-tight">
             {
               "Guiding Students to Success: IWS Online School's Middle Cambridge Programme"
             }
-          </h1>
+          </h2>
         </div>
 
         <div className="bg-white lg:container">
@@ -72,9 +72,9 @@ const page: React.FC<pageProps> = ({ }) => {
               />
             </div>
             <div className="container lg:col-span-3 flex flex-col gap-5 py-10 justify-center">
-              <h1 className="  text-blue-900">
+              <h3 className="  text-blue-900">
                 Structured Learning Journey from Age 11
-              </h1>
+              </h3>
               <p className="text-p text-blue-600">
                 Cambridge Secondary at IWS Online School
               </p>
@@ -106,12 +106,12 @@ const page: React.FC<pageProps> = ({ }) => {
               />
             </div>
             <div className="container flex flex-col gap-5 py-10 justify-center">
-              <h1 className="  ">
+              <h3 className="  ">
                 Empowering Students for Academic Excellence
-              </h1>
-              <h2 className=" text-green-600">
+              </h3>
+              <p className=" text-green-600">
                 Comprehensive Secondary Support at IWS Online School
-              </h2>
+              </p>
               <p className="text-p leading-10 text-gray-800">
                 Our Middle Education program equips students with the knowledge
                 and skills needed to excel in the Cambridge I/GCSE examinations.
@@ -126,9 +126,9 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className="pt-20 container">
         <div className="flex flex-col gap-6">
-          <h1 className=" text-center text-blue-900 ">
+          <h2 className=" text-center text-blue-900 ">
             Secondary Subjects
-          </h1>
+          </h2>
           <p className="text-p text-center text-blue-900 leading-10">
             Maximise your academic potential with IWS Online School. Explore our
             Secondary subjects here and combine current studies with IWS courses
@@ -481,9 +481,9 @@ const page: React.FC<pageProps> = ({ }) => {
       </div>
 
       <div className="pt-20 container flex flex-col gap-4">
-        <h1 className="text-center  text-blue-900 ">
+        <h2 className="text-center  text-blue-900 ">
           Cambridge Secondary Tuition Fees
-        </h1>
+        </h2>
         <p className="text-center text-p">
           Our initial meeting is free with no obligations. If you decide to
           enroll, our flexible fee structure includes a £200 one-time fee
