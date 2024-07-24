@@ -6,11 +6,11 @@ interface pageProps {
 
 const page: React.FC<pageProps> = ({ }) => {
   return (
-    <div>
+    <div className='container'>
       <div className='flex justify-center items-center py-14 lg:py-24'>
         <TabGroup>
-          <TabList className={"border"}>
-            <Tab>Get In Touch</Tab>
+          <TabList className={"border-2 p-3"}>
+            <Tab>Send a message</Tab>
             <Tab>Book a Call</Tab>
           </TabList>
           <TabPanels>
