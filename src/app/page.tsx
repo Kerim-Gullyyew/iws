@@ -487,17 +487,17 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-20 container">
+      {/* <div className="pt-20 container">
         <h2 className="  text-center ">Choose your education model</h2>
         <div className="pt-8 sm:pt-12 grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-5">
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-[#F2F4F7]">
-            {/* <Image
+            <Image
               width={1000}
               height={1000}
               className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
               src="/await/3.webp"
               alt=""
-            /> */}
+            />
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
                 <h3 className="   tracking-wide lg:w-1/2 lg:text-4xl">
@@ -522,13 +522,13 @@ export default function Home() {
           </div>
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-[#F2F4F7]">
-            {/* <Image
+            <Image
               width={1000}
               height={1000}
               className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
               src="/await/3.webp"
               alt=""
-            /> */}
+            />
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
                 <h3 className="   tracking-wide lg:w-1/2 lg:text-4xl">
@@ -555,13 +555,13 @@ export default function Home() {
           </div>
 
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-[#F2F4F7]">
-            {/* <Image
+            <Image
               width={1000}
               height={1000}
               className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
               src="/await/3.webp"
               alt=""
-            /> */}
+            />
             <div className="flex h-full justify-between flex-col gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
                 <h3 className="   tracking-wide lg:w-1/2 lg:text-4xl">
@@ -586,7 +586,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="pt-20 container">
         <h2 className="  text-center ">FAQs</h2>
