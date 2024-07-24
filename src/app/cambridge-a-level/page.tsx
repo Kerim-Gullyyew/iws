@@ -18,6 +18,7 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import { courses } from "../data/alevel";
 import Link from "next/link";
+import ContactUsSection from "../components/sections/ContactUsSection";
 interface pageProps { }
 
 const page: React.FC<pageProps> = ({ }) => {
@@ -272,9 +273,11 @@ const page: React.FC<pageProps> = ({ }) => {
         </div>
       </div>
 
-      <div className="pt-20 flex flex-col justify-center items-center">
-        <TabSection />
+      <div className='pt-20'>
+        <ContactUsSection />
+
       </div>
+
 
 
       <div className="pt-20 container flex flex-col gap-4">

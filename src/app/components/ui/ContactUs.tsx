@@ -14,7 +14,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ }) => {
         </h2>
       </div>
       <div className="lg:w-7/12 lg:pr-6">
-        <TabSection incourse={true} />
+        <TabSection  />
       </div>
     </div>
   )

@@ -18,6 +18,7 @@ import {
 } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from 'next/link'
+import ContactUsSection from '../components/sections/ContactUsSection'
 
 interface pageProps {
 
@@ -246,9 +247,11 @@ const page: React.FC<pageProps> = ({ }) => {
         </div>
       </div>
 
-      <div className='pt-20 flex flex-col justify-center items-center'>
-        <TabSection />
+      <div className='pt-20'>
+        <ContactUsSection />
+
       </div>
+
 
       <div className='pt-20 container flex flex-col gap-4'>
         <h2 className='text-center  text-blue-900 '>

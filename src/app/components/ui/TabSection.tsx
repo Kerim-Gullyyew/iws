@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import axios from 'axios'
 import { useRouter } from 'next/navigation';
 interface TabSectionProps {
-  incourse?: boolean;
+
 }
 
 export interface CountryData {
@@ -22,7 +22,7 @@ interface ValidationErrors {
   message?: string;
 }
 
-const TabSection: React.FC<TabSectionProps> = ({ incourse }) => {
+const TabSection: React.FC<TabSectionProps> = ({ }) => {
   const [firstName, setFirstName] = useState<string>('');
   const [lastName, setLastName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
@@ -101,15 +101,13 @@ const TabSection: React.FC<TabSectionProps> = ({ incourse }) => {
   return (
 
     <div className='flex flex-col gap-5 max-w-4xl w-full'>
-      {
-        !incourse && (
-          <h2 className=' text-center  text-blue-900'>Would you like to send us a message?</h2>
-        )
-      }
-      <p className={`text-p text-gray-500 ${!incourse ? 'text-center' : 'text-left'}`}>Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we’re here to help!</p>
+
+      <p className={`text-p text-blue-900 text-left`}>
+        Simply fill out the form below, and one of our friendly team members will get back to you as soon as possible. Let’s start your journey with IWS Online School together!
+      </p>
 
 
-      <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-6">
+      <div className="mt-5 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-6">
         <div className="sm:col-span-3">
           <input
             value={firstName}
@@ -119,7 +117,7 @@ const TabSection: React.FC<TabSectionProps> = ({ incourse }) => {
             id="first-name"
             placeholder='First Name *'
             autoComplete="given-name"
-            className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+            className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
           {
             validationErrors.firstName && (
@@ -136,7 +134,7 @@ const TabSection: React.FC<TabSectionProps> = ({ incourse }) => {
             id="last-name"
             placeholder='Last Name *'
             autoComplete="family-name"
-            className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+            className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
           {
             validationErrors.lastName && (
@@ -154,7 +152,7 @@ const TabSection: React.FC<TabSectionProps> = ({ incourse }) => {
             type="email"
             autoComplete="email"
             placeholder='Email'
-            className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+            className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
           {
             validationErrors.email && (
@@ -190,7 +188,7 @@ const TabSection: React.FC<TabSectionProps> = ({ incourse }) => {
               name="message"
               rows={6}
               placeholder='Write your message here...'
-              className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#f4f4f4] sm:leading-6 outline-none px-4"
+              className="block w-full rounded-md border-0 py-3  shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
 
             />
             {
@@ -224,9 +222,7 @@ const TabSection: React.FC<TabSectionProps> = ({ incourse }) => {
         }
 
       </div>
-      <p className={`text-p text-blue-900 ${!incourse ? 'text-center' : 'text-left'}`}>
-        Simply fill out the form below, and one of our friendly team members will get back to you as soon as possible. Let’s start your journey with IWS Online School together!
-      </p>
+
     </div>
   )
 }

@@ -1,13 +1,10 @@
 'use client'
 import React from 'react'
-import TabSection from '../components/ui/TabSection'
-import AccordionSecondary from '../components/ui/AccordionSecondary'
 import Image from 'next/image'
 import ContactButton from '../components/buttons/ContactButton'
 import EnrollButton from '../components/buttons/EnrollButton'
 import { courses } from '../data/primary'
 import {
-  ArrowRightCircleIcon,
   PlusIcon,
   MinusIcon,
 } from "@heroicons/react/24/solid";
@@ -18,6 +15,7 @@ import {
 } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from 'next/link'
+import ContactUsSection from '../components/sections/ContactUsSection'
 interface pageProps {
 
 }
@@ -254,8 +252,9 @@ const page: React.FC<pageProps> = ({ }) => {
         </div>
       </div>
 
-      <div className='pt-20 flex flex-col justify-center items-center'>
-        <TabSection />
+      <div className='pt-20'>
+        <ContactUsSection />
+
       </div>
 
 

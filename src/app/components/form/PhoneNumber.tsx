@@ -19,7 +19,7 @@ const PhoneNumber: React.FC<PhoneNumberProps> = ({ value, onChange, isError }) =
         fontSize: '16px',
         width: '100%',
         color: '#111827',
-        backgroundColor: '#F6F6F6',
+        backgroundColor: '#ebecee',
         outline: 'none',
         borderColor: isError ? '#EF4444' : "#E6E6E6",
         borderWidth: 1,
