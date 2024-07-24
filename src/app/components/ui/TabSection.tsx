@@ -107,7 +107,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
       </p>
 
 
-      <div className="mt-5 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-6">
+      <div className="mt-1 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-6">
         <div className="sm:col-span-3">
           <input
             value={firstName}
@@ -201,7 +201,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
 
       </div>
 
-      <div className="mt-6 flex items-center justify-end gap-x-6">
+      <div className="mt-1 flex items-center justify-end gap-x-6">
         {
           loading ? (
             <button
@@ -214,7 +214,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
             <button
               type="submit"
               onClick={handleSubmit}
-              className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-4 text-2xl  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               SEND A MESSAGE
             </button>
