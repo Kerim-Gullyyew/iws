@@ -18,7 +18,7 @@ export const courses: Primary[] = [
   {
     id: "1",
     subject_name: "Primary Mathematics",
-    url: "/cambridge-primary/mathematics",
+    url: "mathematics",
     image_url: "",
     icon: "/subjects/Math.webp",
     description: "Online programme transforms primary students into proficient mathematicians.",
@@ -53,7 +53,7 @@ export const courses: Primary[] = [
   {
     id: "2",
     subject_name: "Primary English",
-    url: "/cambridge-primary/english",
+    url: "english",
     image_url: "",
     icon: "/subjects/English.webp",
     description: "Enhancing the Literacy and Communication Abilities of Children.",
@@ -88,7 +88,7 @@ export const courses: Primary[] = [
   {
     id: "3",
     subject_name: "Primary Science",
-    url: "/cambridge-primary/science",
+    url: "science",
     image_url: "",
     icon: "/subjects/Physics.webp",
     description: "A creative approach for high school students to explore their natural surroundings.",
@@ -123,7 +123,7 @@ export const courses: Primary[] = [
   {
     id: "4",
     subject_name: "Primary Computing",
-    url: "/cambridge-primary/computing",
+    url: "computing",
     image_url: "",
     icon: "/subjects/Computer.webp",
     description: "Empowering students with in-depth computer knowledge.",
@@ -158,7 +158,7 @@ export const courses: Primary[] = [
   {
     id: "5",
     subject_name: "Primary Global Perspectives",
-    url: "/cambridge-primary/global-perspectives",
+    url: "global-perspectives",
     image_url: "",
     icon: "/subjects/Global.webp",
     description: "Promoting a sense of unity and equality among students.",
@@ -193,7 +193,7 @@ export const courses: Primary[] = [
   {
     id: "6",
     subject_name: "Primary French as 2nd Language",
-    url: "/cambridge-primary/french-as-2nd-language",
+    url: "french-as-2nd-language",
     image_url: "",
     icon: "/subjects/Sociology.webp",
     description: "Embark on a French Adventure: Primary Level Homeschooling Course.",
@@ -228,7 +228,7 @@ export const courses: Primary[] = [
   {
     id: "7",
     subject_name: "Primary Spanish as 2nd Language",
-    url: "/cambridge-primary/spanish-as-2nd-language",
+    url: "spanish-as-2nd-language",
     image_url: "",
     icon: "/subjects/English.webp",
     description: "A Multifaceted Spanish Language Adventure for Young Learners (Ages 7-11).",
@@ -263,7 +263,7 @@ export const courses: Primary[] = [
   {
     id: "8",
     subject_name: "Primary German as 2nd Language",
-    url: "/cambridge-primary/german-as-2nd-language",
+    url: "german-as-2nd-language",
     image_url: "",
     icon: "/subjects/English.webp",
     description: "Engaging Primary German programme for Young Learners (Ages 7-11).",

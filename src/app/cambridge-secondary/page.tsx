@@ -140,7 +140,7 @@ const page: React.FC<pageProps> = ({ }) => {
 
           {
             courses.map((course, index) => (
-              <Link key={index} href={course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color">
+              <Link key={index} href={'cambridge-secondary/' + course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color">
                 <div className="bg-[#DAE1FF] ">
                   <Image
                     width={1000}
