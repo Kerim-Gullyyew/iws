@@ -62,9 +62,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="  text-center ">
-          The right study programme for you
-        </h2>
+        <h2 className="  text-center ">The right study programme for you</h2>
 
         <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-6 gap-y-14">
           <Link
@@ -330,9 +328,7 @@ export default function Home() {
       </div>
 
       <div className="pt-20 container">
-        <h2 className="  text-center ">
-          Who can benefit from our school?
-        </h2>
+        <h2 className="  text-center ">Who can benefit from our school?</h2>
         <div className="pt-8 sm:pt-12">
           <div className="flex flex-wrap gap-5 justify-between ">
             <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
@@ -351,9 +347,7 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 sm:gap-3">
-                  <p className=" text-[16px] ">
-                    Is this about you?
-                  </p>
+                  <p className=" text-[16px] ">Is this about you?</p>
                   <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Feeling uneasy in your current school environment?
@@ -391,9 +385,7 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 sm:gap-3">
-                  <p className=" text-[16px] ">
-                    Does this sound like you?
-                  </p>
+                  <p className=" text-[16px] ">Does this sound like you?</p>
                   <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Struggling to balance school with extracurricular
@@ -432,9 +424,7 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 sm:gap-3">
-                  <p className=" text-[16px] ">
-                    Is this about you?
-                  </p>
+                  <p className=" text-[16px] ">Is this about you?</p>
                   <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Frequent relocation due to parental work or lifestyle
@@ -471,9 +461,7 @@ export default function Home() {
 
               <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 sm:gap-3">
-                  <p className=" text-[16px] ">
-                    Is this about you?
-                  </p>
+                  <p className=" text-[16px] ">Is this about you?</p>
                   <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Aiming for top-tier university admissions.
@@ -703,6 +691,269 @@ export default function Home() {
                             Education. We are registered as UK Learner Providers
                             and are in the process of obtaining our membership
                             with the Council of International Schools (CIS).
+                          </p>
+                        </div>
+                      </DisclosurePanel>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </>
+            )}
+          </Disclosure>
+          <Disclosure as="div" className="w-full border-b border-gray-300">
+            {({ open }) => (
+              <>
+                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
+                  <h3 className=" ">Are you accredited?</h3>
+                  {open ? (
+                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
+                  ) : (
+                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
+                  )}
+                </DisclosureButton>
+                <div className="overflow-hidden py-2">
+                  <AnimatePresence>
+                    {open && (
+                      <DisclosurePanel
+                        static
+                        as={motion.div}
+                        initial={{ opacity: 0, y: -24 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -24 }}
+                        transition
+                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+                      >
+                        <div className=" space-y-5">
+                          <p className="text-p">
+                            Yes, we offer Cambridge Assessment International
+                            Education. We are registered as UK Learner Providers
+                            and are in the process of obtaining our membership
+                            with the Council of International Schools (CIS).
+                          </p>
+                        </div>
+                      </DisclosurePanel>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </>
+            )}
+          </Disclosure>
+          <Disclosure as="div" className="w-full border-b border-gray-300">
+            {({ open }) => (
+              <>
+                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
+                  <h3 className=" ">Where are you based?</h3>
+                  {open ? (
+                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
+                  ) : (
+                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
+                  )}
+                </DisclosureButton>
+                <div className="overflow-hidden py-2">
+                  <AnimatePresence>
+                    {open && (
+                      <DisclosurePanel
+                        static
+                        as={motion.div}
+                        initial={{ opacity: 0, y: -24 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -24 }}
+                        transition
+                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+                      >
+                        <div className=" space-y-5">
+                          <p className="text-p">
+                            We are based in the UK, our headquarters are
+                            registered at 31 Long Acre Covent Garden, London
+                            England WC2E 9LA
+                          </p>
+                        </div>
+                      </DisclosurePanel>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </>
+            )}
+          </Disclosure>
+          <Disclosure as="div" className="w-full border-b border-gray-300">
+            {({ open }) => (
+              <>
+                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
+                  <h3 className=" ">How does your online school work?</h3>
+                  {open ? (
+                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
+                  ) : (
+                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
+                  )}
+                </DisclosureButton>
+                <div className="overflow-hidden py-2">
+                  <AnimatePresence>
+                    {open && (
+                      <DisclosurePanel
+                        static
+                        as={motion.div}
+                        initial={{ opacity: 0, y: -24 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -24 }}
+                        transition
+                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+                      >
+                        <div className=" space-y-5">
+                          <p className="text-p">
+                            Our trained teachers employ a range of teaching aids
+                            to support learning, such as high-quality video
+                            cameras, interactive whiteboards, screen sharing,
+                            live presentations, and lesson recordings. Students
+                            at IWS can join classes through a safe online link.
+                            Teachers use various methods and activities,
+                            including quizzes, presentations, and group work, in
+                            their lessons. The use of modern technology makes
+                            learning enjoyable for students and enhances their
+                            educational journey compared to conventional
+                            methods. This also boosts their learning as they
+                            study from home.
+                          </p>
+                        </div>
+                      </DisclosurePanel>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </>
+            )}
+          </Disclosure>
+          <Disclosure as="div" className="w-full border-b border-gray-300">
+            {({ open }) => (
+              <>
+                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
+                  <h3 className=" ">
+                    Does online learning isolate students from their peers?
+                  </h3>
+                  {open ? (
+                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
+                  ) : (
+                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
+                  )}
+                </DisclosureButton>
+                <div className="overflow-hidden py-2">
+                  <AnimatePresence>
+                    {open && (
+                      <DisclosurePanel
+                        static
+                        as={motion.div}
+                        initial={{ opacity: 0, y: -24 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -24 }}
+                        transition
+                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+                      >
+                        <div className=" space-y-5">
+                          <p className="text-p">
+                            Many parents worry about whether online learning
+                            will allow their child to socialise properly. At
+                            IWS, we encourage our international students to
+                            interact with one another by holding various clubs,
+                            social gatherings, and events throughout the school
+                            year. We also offer a summer camp, a student
+                            council, and additional activities for students to
+                            enjoy in their spare time. Furthermore, students
+                            enrolled in the same courses often work together on
+                            group tasks and projects. These collaborative
+                            efforts help develop communication skills and
+                            leadership abilities. All activities in our online
+                            classrooms are recorded and supervised to ensure the
+                            safety of our students online. We also provide
+                            training on how to use social media responsibly to
+                            maintain a safe environment for all student
+                            interactions.
+                          </p>
+                        </div>
+                      </DisclosurePanel>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </>
+            )}
+          </Disclosure>
+          <Disclosure as="div" className="w-full border-b border-gray-300">
+            {({ open }) => (
+              <>
+                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
+                  <h3 className="text-left ">
+                    I reside outside the UK; is this educational approach
+                    acknowledged in my country?
+                  </h3>
+                  {open ? (
+                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
+                  ) : (
+                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
+                  )}
+                </DisclosureButton>
+                <div className="overflow-hidden py-2">
+                  <AnimatePresence>
+                    {open && (
+                      <DisclosurePanel
+                        static
+                        as={motion.div}
+                        initial={{ opacity: 0, y: -24 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -24 }}
+                        transition
+                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+                      >
+                        <div className=" space-y-5">
+                          <p className="text-p">
+                            Every country has different rules about what kinds
+                            of education can take the place of traditional
+                            classroom learning. So, we suggest that parents
+                            check if homeschooling is allowed in the country
+                            where they plan to live or work before applying to
+                            our school. Please also remember that our lessons
+                            follow the standards of the English education
+                            system, and our staff are experts only in this
+                            system.
+                          </p>
+                        </div>
+                      </DisclosurePanel>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </>
+            )}
+          </Disclosure>
+          <Disclosure as="div" className="w-full border-b border-gray-300">
+            {({ open }) => (
+              <>
+                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
+                  <h3 className=" ">
+                    Are lessons taught in any other languages, other than
+                    English?
+                  </h3>
+                  {open ? (
+                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
+                  ) : (
+                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
+                  )}
+                </DisclosureButton>
+                <div className="overflow-hidden py-2">
+                  <AnimatePresence>
+                    {open && (
+                      <DisclosurePanel
+                        static
+                        as={motion.div}
+                        initial={{ opacity: 0, y: -24 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -24 }}
+                        transition
+                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+                      >
+                        <div className=" space-y-5">
+                          <p className="text-p">
+                            Currently, all our subjects are taught in English,
+                            in line with a British curriculum. We do, however,
+                            teach several foreign languages, including French,
+                            German, and Chinese, where teachers and students
+                            frequently engage in conversations in the language
+                            of study.
                           </p>
                         </div>
                       </DisclosurePanel>
