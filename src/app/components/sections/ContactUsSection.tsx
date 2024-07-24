@@ -11,7 +11,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({ }) => {
     <div className='flex flex-col gap-14'>
       <div className='container flex flex-col gap-5'>
         <h2 className='text-center  text-blue-900  tracking-tight'>{"Get in touch with us"}</h2>
-        <p className='text-center text-blue-900'>Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we're here to help!</p>
+        <p className='text-center text-blue-900'>{"Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we're here to help!"}</p>
       </div>
 
 
