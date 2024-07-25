@@ -332,26 +332,24 @@ export default function Home() {
 
       <div className="pt-20 container">
         <h2 className="  text-center ">Who can benefit from our school?</h2>
-        <div className="pt-8 sm:pt-12">
-          <div className="flex flex-wrap gap-5 justify-between">
-            <div className="group relative w-auto sm:w-[310px] h-[500px] sm:h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" container pt-8 leading-tight ">
+        <div className="pt-8 sm:pt-12 flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-10 xl:gap-3">
+            <div className="group max-w-[380px] relative bg-[#F4F5F8] flex justify-between flex-col cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+              <h4 className=" px-4 py-6 z-20 leading-tight ">
                 For those who are not satisfied with a regular school
               </h4>
-              <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
+              <div className="h-full">
                 <Image
                   width={1000}
                   height={1000}
-                  className=" object-cover"
+                  className="object-cover w-full pt-20 h-full transition-opacity absolute duration-500 ease-in-out opacity-100 group-hover:hidden bottom-0"
                   src="/benefit/4_1.webp"
                   alt=""
                 />
-              </div>
 
-              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-9 sm:px-9 py-3 sm:pb-8 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                <div className="flex flex-col gap-2 sm:gap-3">
+                <div className="relative bottom-0 inset-0 flex h-full flex-col justify-between px-9 sm:px-9 py-3 sm:pb-8 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                   <p className=" text-[16px] ">Is this about you?</p>
-                  <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
+                  <ul className="list-disc  flex-1 justify-between flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Feeling uneasy in your current school environment?
                     </li>
@@ -371,25 +369,25 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
             </div>
-            <div className="group relative w-auto md:w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" container pt-8 leading-tight ">
+
+            <div className="group max-w-[380px] relative bg-[#F4F5F8] flex justify-between flex-col cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+              <h4 className=" px-4 py-6 z-20 leading-tight ">
                 For students who often miss school.
               </h4>
-              <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
+              <div className="h-full">
                 <Image
                   width={1000}
                   height={1000}
-                  className=" object-cover"
+                  className="object-cover w-full pt-20 h-full transition-opacity absolute duration-500 ease-in-out opacity-100 group-hover:hidden bottom-0"
                   src="/benefit/4_2.webp"
                   alt=""
                 />
-              </div>
 
-              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                <div className="flex flex-col gap-2 sm:gap-3">
+                <div className="relative bottom-0 inset-0 flex h-full flex-col justify-between px-9 sm:px-9 py-3 sm:pb-8 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                   <p className=" text-[16px] ">Does this sound like you?</p>
-                  <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
+                  <ul className="list-disc  flex-1 justify-between flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Struggling to balance school with extracurricular
                       activities?
@@ -410,25 +408,25 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
+
             </div>
-            <div className="group relative w-auto md:w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" container pt-8 leading-tight ">
+            <div className="group max-w-[380px] relative bg-[#F4F5F8] flex justify-between flex-col cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+              <h4 className=" px-4 py-6 z-20 leading-tight ">
                 For those who live abroad or the family travels a lot
               </h4>
-              <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
+              <div className="h-full">
                 <Image
                   width={1000}
                   height={1000}
-                  className=" object-cover"
+                  className="object-cover w-full pt-20 h-full transition-opacity absolute duration-500 ease-in-out opacity-100 group-hover:hidden bottom-0"
                   src="/benefit/4_3.webp"
                   alt=""
                 />
-              </div>
 
-              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                <div className="flex flex-col gap-2 sm:gap-3">
+                <div className="relative bottom-0 inset-0 flex h-full flex-col justify-between px-9 sm:px-9 py-3 sm:pb-8 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                   <p className=" text-[16px] ">Is this about you?</p>
-                  <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
+                  <ul className="list-disc  flex-1 justify-between flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Frequent relocation due to parental work or lifestyle
                       choices.
@@ -447,25 +445,25 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
+
             </div>
-            <div className="group relative w-auto md:w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" px-5 pt-8 leading-tight">
+            <div className="group max-w-[380px] relative bg-[#F4F5F8] flex justify-between flex-col cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+              <h4 className=" px-4 py-6 z-20 leading-tight ">
                 For students preparing to enter a prestigious university
               </h4>
-              <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
+              <div className="h-full">
                 <Image
                   width={1000}
                   height={1000}
-                  className=" object-cover"
+                  className="object-cover w-full pt-20 h-full transition-opacity absolute duration-500 ease-in-out opacity-100 group-hover:hidden bottom-0"
                   src="/benefit/4_4.webp"
                   alt=""
                 />
-              </div>
 
-              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                <div className="flex flex-col gap-2 sm:gap-3">
+                <div className="relative bottom-0 inset-0 flex h-full flex-col justify-between px-9 sm:px-9 py-3 sm:pb-8 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                   <p className=" text-[16px] ">Is this about you?</p>
-                  <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
+                  <ul className="list-disc  flex-1 justify-between flex flex-col ml-10">
                     <li className=" text-[16px] font-normal">
                       Aiming for top-tier university admissions.
                     </li>
@@ -485,6 +483,8 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
+
             </div>
           </div>
         </div>
@@ -970,7 +970,7 @@ export default function Home() {
       </div>
 
       <div className="mt-20 lg:container">
-      <ContactUsSection />
+        <ContactUsSection />
         {/* <div className=" bg-[#003372] lg:rounded-xl mt-8 flex flex-col md:flex-row">
           <div className="py-12 px-8 lg:px-16 flex flex-col gap-10">
             <h2 className="text-[62px] text-white/90 tracking-tighter  leading-[60px]">
