@@ -187,7 +187,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base  leading-7  hover:bg-gray-50"
                 >
-                  Log in
+                  Enrol Now
                 </a>
               </div>
             </div>

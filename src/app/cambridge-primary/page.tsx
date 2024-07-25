@@ -22,7 +22,7 @@ const page: React.FC<pageProps> = ({}) => {
         <div className="flex flex-col gap-5">
           <h4 className="  text-blue-600">Ages from 7 - 11</h4>
           <h1 className=" text-blue-900">Cambridge Primary</h1>
-          <p className="text-p ">
+          <p className=" ">
             Discover IWS Online School, your gateway to a comprehensive
             Cambridge Primary International Curriculum tailored for primary
             students. Our accredited UK-based virtual school is currently
@@ -68,10 +68,10 @@ const page: React.FC<pageProps> = ({}) => {
               <h3 className="  text-blue-900">
                 Accessible Quality Education for Every Child
               </h3>
-              <p className="text-p text-blue-600">
+              <p className=" text-blue-600">
                 Cambridge Primary at IWS Online School
               </p>
-              <p className="text-p text-gray-800 pt-4">
+              <p className=" text-gray-800 pt-4">
                 IWS Online School is committed to providing high-quality primary
                 education that is accessible and affordable for all families. By
                 offering various budget-friendly options and eliminating
@@ -102,7 +102,7 @@ const page: React.FC<pageProps> = ({}) => {
               <p className=" text-green-600">
                 Comprehensive Online A Level Support at IWS Online School
               </p>
-              <p className="text-p text-gray-800">
+              <p className=" text-gray-800">
                 Our holistic curriculum, featuring subjects like Mathematics,
                 English, Science, and more, is designed to produce well-rounded
                 global citizens. We prioritise learning experiences over grades,
@@ -118,39 +118,43 @@ const page: React.FC<pageProps> = ({}) => {
       <div className="pt-20 container">
         <div className="flex flex-col gap-6">
           <h2 className=" text-center ">Primary Subjects</h2>
-          <p className="text-p text-center">
+          <p className=" text-center">
             Maximise your academic potential with IWS Online School. Explore our
             Primary subjects here and combine current studies with IWS courses
             for exam preparation or further study.
           </p>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {courses.map((course, index) => (
-            <Link
-              key={index}
-              href={"cambridge-primary/" + course.url}
-              className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color"
-            >
-              <div className="bg-[#DAE1FF] ">
-                <Image
-                  width={1000}
-                  height={1000}
-                  className="max-w-20"
-                  src={course.icon}
-                  alt={course.subject_name}
-                />
-              </div>
-              <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-                <h4 className="  text-blue-900 text-nowrap">
-                  {course.subject_name}
-                </h4>
 
-                <p className="text-p  text-blue-600">Learn more</p>
-              </div>
-            </Link>
-          ))}
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {
+            courses.map((course, index) => (
+              <Link key={index} href={'cambridge-primary/' + course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 border hover:shadow-custom-color">
+                <div className="bg-white border-r">
+                  <Image
+                    width={1000}
+                    height={1000}
+                    className="max-w-20"
+                    src={course.icon}
+                    alt={course.subject_name}
+                  />
+                </div>
+                <div className="bg-white flex flex-1 flex-col justify-center pl-5 gap-1">
+                  <h4 className="  text-blue-900 text-base font-semibold leading-1">
+                    {course.subject_name}
+                  </h4>
+
+                  <p className=" text-sm  text-blue-600">Learn more</p>
+                </div>
+              </Link>
+
+            ))
+          }
+
         </div>
+
+
+
       </div>
 
       <div className="pt-20 container">
@@ -180,21 +184,21 @@ const page: React.FC<pageProps> = ({}) => {
                         className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                       >
                         <div className=" space-y-5">
-                          <p className="text-p">
+                          <p className="">
                             Our British online school revolutionises remote
                             education. With an easy-to-use platform, flexible
                             academic programmes, and adaptable schedules, we
                             provide a learning experience that can often exceed
                             that of traditional schools.
                           </p>
-                          <p className="text-p">
+                          <p className="">
                             Globally, schools are embracing technology to meet
                             evolving educational standards. It is anticipated
                             that within the next few decades, online education
                             will become commonplace. At IWS, we lead by
                             prioritising online teaching.
                           </p>
-                          <p className="text-p">
+                          <p className="">
                             Our teachers are adept at delivering Live Online
                             Lessons with great enthusiasm and proficiency. We
                             also employ sophisticated and reliable technology to
@@ -202,12 +206,12 @@ const page: React.FC<pageProps> = ({}) => {
                             pupils, including round-the-clock access to recorded
                             lessons to support independent study.
                           </p>
-                          <p className="text-p">
+                          <p className="">
                             In this respect, we are advancing faster than many
                             educational institutions that are just beginning to
                             embark on this digital transition.
                           </p>
-                          <p className="text-p">
+                          <p className="">
                             IWS places great value on the educational
                             experiences that occur beyond the classroom walls.
                             Thus, we offer numerous opportunities for group
@@ -251,7 +255,7 @@ const page: React.FC<pageProps> = ({}) => {
                         className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                       >
                         <div className=" space-y-5">
-                          <p className="text-p">
+                          <p className="">
                             Yes, we offer Cambridge Assessment International
                             Education. We are registered as UK Learner Providers
                             and are in the process of obtaining our membership
@@ -273,10 +277,10 @@ const page: React.FC<pageProps> = ({}) => {
       </div>
 
       <div className="pt-20 container flex flex-col gap-4">
-        <h2 className="text-center  text-blue-900 ">
-          Cambridge A Level Course Tuition Fees
+        <h2 className="text-center   ">
+          Cambridge Primary Course Tuition Fees
         </h2>
-        <p className="text-center text-p">
+        <p className="text-center ">
           Our initial meeting is free with no obligations. If you decide to
           enroll, our flexible fee structure includes a £200 one-time fee
           covering comprehensive tests to tailor your child’s education. For

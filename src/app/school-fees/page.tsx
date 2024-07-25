@@ -9,11 +9,11 @@ interface pageProps { }
 const page: React.FC<pageProps> = ({ }) => {
   return (
     <div className="py-14 lg:py-24 container animate-fade-in">
-      <h1 className="text-center   text-sky-500">School Fees</h1>
-      <h2 className="text-center   mt-14">
+      <h1 className="text-center   text-[#349AFE]">School Fees</h1>
+      <p className="text-center font-semibold  mt-14">
         Give your child the best education at the most reasonable rates at IWS.
-      </h2>
-      <p className="text-center   tracking-wide mt-5">
+      </p>
+      <p className="text-center  mt-5">
         Our initial meeting is free. If you decide to enrol, our flexible fee
         structure includes a £200 one-time registration fee. This covers tests
         to assess your child’s abilities and interests, shaping their education
@@ -366,7 +366,7 @@ const page: React.FC<pageProps> = ({ }) => {
           alt=""
         />
         <div className="flex flex-col gap-5 justify-center">
-          <h2 className=" text-sky-500 ">What our fees include</h2>
+          <h2 className=" text-[#349AFE]">What our fees include</h2>
 
           <div className="flex flex-col gap-8">
             <p className="">

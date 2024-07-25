@@ -33,7 +33,7 @@ const page: React.FC<pageProps> = ({ }) => {
           <h1 className='  text-blue-900'>
             Cambridge I/GCSE
           </h1>
-          <p className='text-p '>
+          <p className='  '>
             The two-year IWS Online School I/GCSE programme sets your child on the path to obtaining globally recognised and accredited Cambridge certifications. The I/GCSE is an esteemed qualification widely accepted by renowned universities and employers worldwide, serving as a powerful catalyst for both academic and professional advancement, ensuring future success on a global scale. Enrol in our I/GCSE online courses today!
           </p>
 
@@ -50,8 +50,8 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className='pt-20 flex flex-col gap-14'>
         <div className='container flex flex-col gap-5'>
-          <h2 className='text-center  text-blue-900  tracking-tight'>Fulfilling Potential</h2>
-          <h3 className='text-blue-900  text-center'>{"Shaping Future Success: IWS Online School's I/GCSE Courses"}</h3>
+          <h2 className='text-center '>Fulfilling Potential</h2>
+          <h3 className='text-center'>{"Shaping Future Success: IWS Online School's I/GCSE Courses"}</h3>
         </div>
 
 
@@ -63,7 +63,7 @@ const page: React.FC<pageProps> = ({ }) => {
             </div>
             <div className='container lg:col-span-3 flex flex-col gap-5 py-10 justify-center items-center'>
               <h3 className='  text-blue-900'>Personalised Instruction in Private, Virtual Classrooms</h3>
-              <p className='text-p  text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
+              <p className='   text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ const page: React.FC<pageProps> = ({ }) => {
             </div>
             <div className='container flex flex-col gap-5 py-10 justify-center items-center'>
               <h3 className=' text-green-800'>Comprehensive I/GCSE Courses for Academic Excellence</h3>
-              <p className='text-p  text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
+              <p className='   text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
             </div>
           </div>
 
@@ -91,21 +91,20 @@ const page: React.FC<pageProps> = ({ }) => {
 
       <div className='pt-20 container'>
         <div className='flex flex-col gap-6'>
-          <h2 className=' text-center text-blue-900 '>
+          <h2 className=' text-center '>
             I/GCSE Curriculum Packages
           </h2>
-          <p className='text-p text-center text-blue-900 '>
+          <p className='  text-center '>
             Find your perfect combination of I/GCSE online subjects.
           </p>
         </div>
 
 
-        <div className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
-
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {
             courses.map((course, index) => (
-              <Link key={index} href={'cambridge-igcse/' + course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color">
-                <div className="bg-[#DAE1FF] ">
+              <Link key={index} href={'cambridge-igcse/' + course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 border hover:shadow-custom-color">
+                <div className="bg-white border-r">
                   <Image
                     width={1000}
                     height={1000}
@@ -114,17 +113,18 @@ const page: React.FC<pageProps> = ({ }) => {
                     alt={course.subject_name}
                   />
                 </div>
-                <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-                  <h4 className="  text-blue-900 text-nowrap">
+                <div className="bg-white flex flex-1 flex-col justify-center pl-5 gap-1">
+                  <h4 className="  text-blue-900 text-base font-semibold leading-1">
                     {course.subject_name}
                   </h4>
 
-                  <p className="text-p  text-blue-600">Learn more</p>
+                  <p className=" text-sm  text-blue-600">Learn more</p>
                 </div>
               </Link>
 
             ))
           }
+
         </div>
 
 
@@ -159,21 +159,21 @@ const page: React.FC<pageProps> = ({ }) => {
                         className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                       >
                         <div className=" space-y-5">
-                          <p className="text-p">
+                          <p className=" ">
                             Our British online school revolutionises remote
                             education. With an easy-to-use platform, flexible
                             academic programmes, and adaptable schedules, we
                             provide a learning experience that can often exceed
                             that of traditional schools.
                           </p>
-                          <p className="text-p">
+                          <p className=" ">
                             Globally, schools are embracing technology to meet
                             evolving educational standards. It is anticipated
                             that within the next few decades, online education
                             will become commonplace. At IWS, we lead by
                             prioritising online teaching.
                           </p>
-                          <p className="text-p">
+                          <p className=" ">
                             Our teachers are adept at delivering Live Online
                             Lessons with great enthusiasm and proficiency. We
                             also employ sophisticated and reliable technology to
@@ -181,12 +181,12 @@ const page: React.FC<pageProps> = ({ }) => {
                             pupils, including round-the-clock access to recorded
                             lessons to support independent study.
                           </p>
-                          <p className="text-p">
+                          <p className=" ">
                             In this respect, we are advancing faster than many
                             educational institutions that are just beginning to
                             embark on this digital transition.
                           </p>
-                          <p className="text-p">
+                          <p className=" ">
                             IWS places great value on the educational
                             experiences that occur beyond the classroom walls.
                             Thus, we offer numerous opportunities for group
@@ -230,7 +230,7 @@ const page: React.FC<pageProps> = ({ }) => {
                         className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
                       >
                         <div className=" space-y-5">
-                          <p className="text-p">
+                          <p className=" ">
                             Yes, we offer Cambridge Assessment International
                             Education. We are registered as UK Learner Providers
                             and are in the process of obtaining our membership
@@ -254,10 +254,10 @@ const page: React.FC<pageProps> = ({ }) => {
 
 
       <div className='pt-20 container flex flex-col gap-4'>
-        <h2 className='text-center  text-blue-900 '>
+        <h2 className='text-center '>
           Cambridge I/GCSE Tuition Fees
         </h2>
-        <p className='text-center text-p'>
+        <p className='text-center  '>
           Our initial meeting is free with no obligations. If you decide to enroll, our flexible fee structure includes a £200 one-time fee covering comprehensive tests to tailor your child’s education. For pricing details, visit our tuition fees page.
         </p>
 
