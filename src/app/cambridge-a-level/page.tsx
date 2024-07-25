@@ -28,7 +28,7 @@ const page: React.FC<pageProps> = ({ }) => {
         <div className="flex flex-col gap-5">
           <h4 className="  text-blue-600">Ages from 16 - 19</h4>
           <h1 className="  text-blue-900">Cambridge Online A Level Course</h1>
-          <p className="text-p leading-8 ">
+          <p className="text-p  ">
             A Levels at IWS Online School hold global recognition from esteemed
             universities and leading employers, significantly enhancing our
             students’ prospects of gaining admission to their desired
@@ -77,7 +77,7 @@ const page: React.FC<pageProps> = ({ }) => {
               <p className="text-p text-blue-600">
                 A Level 6th Form Excellence at IWS Online School
               </p>
-              <p className="text-p leading-10 text-gray-800 pt-4">
+              <p className="text-p text-gray-800 pt-4">
                 Experience a seamless transition from I/GCSE to A Level with our
                 flexible online studies. Our dedicated teachers foster
                 independent learning in small class settings, ensuring every
@@ -107,7 +107,7 @@ const page: React.FC<pageProps> = ({ }) => {
               <p className=" text-green-600">
                 Comprehensive Online A Level Support at IWS Online School
               </p>
-              <p className="text-p leading-10 text-gray-800">
+              <p className="text-p text-gray-800">
                 Benefit from 24/7 access to resources for A Level revision and
                 exam preparations. Our recorded classes allow for personalised
                 pacing, while after-school clubs offer opportunities for social
@@ -123,7 +123,7 @@ const page: React.FC<pageProps> = ({ }) => {
           <h2 className=" text-center text-blue-900 ">
             Study A Level Online Subjects
           </h2>
-          <p className="text-p text-center text-blue-900 leading-10">
+          <p className="text-p text-center text-blue-900">
             Maximise your academic potential with IWS Online School. Explore our
             A Level subjects here and combine current studies with IWS courses
             for exam preparation or distance learning.

@@ -31,7 +31,7 @@ const page: React.FC<pageProps> = ({ }) => {
           <h1 className="  text-blue-900">
             Cambridge Secondary
           </h1>
-          <p className="text-p leading-8 ">
+          <p className="text-p ">
             At IWS Online School, Middle level Education commences at age 11,
             culminating with students undertaking the prestigious Cambridge
             I/GCSE exams. This educational journey encompasses two distinct
@@ -81,7 +81,7 @@ const page: React.FC<pageProps> = ({ }) => {
               <p className="text-p text-blue-600">
                 Cambridge Secondary at IWS Online School
               </p>
-              <p className="text-p leading-10 text-gray-800 pt-4">
+              <p className="text-p  text-gray-800 pt-4">
                 Embark on a well-defined path of Middle Education, commencing at
                 age 11 and culminating in the prestigious Cambridge I/GCSE
                 examinations. This educational journey is divided into Middle (3
@@ -113,7 +113,7 @@ const page: React.FC<pageProps> = ({ }) => {
               <p className=" text-green-600">
                 Comprehensive Secondary Support at IWS Online School
               </p>
-              <p className="text-p leading-10 text-gray-800">
+              <p className="text-p  text-gray-800">
                 Our Middle Education program equips students with the knowledge
                 and skills needed to excel in the Cambridge I/GCSE examinations.
                 With a carefully crafted curriculum spanning both Middle and
@@ -130,7 +130,7 @@ const page: React.FC<pageProps> = ({ }) => {
           <h2 className=" text-center text-blue-900 ">
             Secondary Subjects
           </h2>
-          <p className="text-p text-center text-blue-900 leading-10">
+          <p className="text-p text-center text-blue-900 ">
             Maximise your academic potential with IWS Online School. Explore our
             Secondary subjects here and combine current studies with IWS courses
             for exam preparation or further study.

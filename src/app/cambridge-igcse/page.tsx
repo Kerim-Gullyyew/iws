@@ -33,7 +33,7 @@ const page: React.FC<pageProps> = ({ }) => {
           <h1 className='  text-blue-900'>
             Cambridge I/GCSE
           </h1>
-          <p className='text-p leading-8 '>
+          <p className='text-p '>
             The two-year IWS Online School I/GCSE programme sets your child on the path to obtaining globally recognised and accredited Cambridge certifications. The I/GCSE is an esteemed qualification widely accepted by renowned universities and employers worldwide, serving as a powerful catalyst for both academic and professional advancement, ensuring future success on a global scale. Enrol in our I/GCSE online courses today!
           </p>
 
@@ -63,7 +63,7 @@ const page: React.FC<pageProps> = ({ }) => {
             </div>
             <div className='container lg:col-span-3 flex flex-col gap-5 py-10 justify-center items-center'>
               <h3 className='  text-blue-900'>Personalised Instruction in Private, Virtual Classrooms</h3>
-              <p className='text-p leading-10 text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
+              <p className='text-p  text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ const page: React.FC<pageProps> = ({ }) => {
             </div>
             <div className='container flex flex-col gap-5 py-10 justify-center items-center'>
               <h3 className=' text-green-800'>Comprehensive I/GCSE Courses for Academic Excellence</h3>
-              <p className='text-p leading-10 text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
+              <p className='text-p  text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
             </div>
           </div>
 
@@ -94,7 +94,7 @@ const page: React.FC<pageProps> = ({ }) => {
           <h2 className=' text-center text-blue-900 '>
             I/GCSE Curriculum Packages
           </h2>
-          <p className='text-p text-center text-blue-900 leading-10'>
+          <p className='text-p text-center text-blue-900 '>
             Find your perfect combination of I/GCSE online subjects.
           </p>
         </div>
