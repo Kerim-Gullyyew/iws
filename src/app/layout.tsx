@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import type { Viewport } from "next";
 import { Sora, Inter } from 'next/font/google';
-
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const sora = Sora({
   subsets: ['latin'],
@@ -108,6 +108,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${sora.variable}`}>
+      <GoogleTagManager gtmId="GTM-KQK64CKD" />
       <body>
         <header>
           <Header />
