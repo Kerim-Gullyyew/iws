@@ -320,7 +320,7 @@ export default function Home() {
               <h3 className="   tracking-wide lg:w-[250px]">
                 Taking care of parents
               </h3>
-              <p className="text-p leading-6  ">
+              <p className="text-p leading-6">
                 Our support specialists are always ready to assist, and our
                 bi-weekly parent assemblies offer a platform to discuss any
                 topic and connect with like-minded families worldwide.

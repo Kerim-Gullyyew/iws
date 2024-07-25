@@ -38,7 +38,7 @@ const page: React.FC<pageProps> = ({}) => {
         <Image
           width={1000}
           height={1000}
-          className="max-w-lg w-3/4 lg:w-[450px] lg:w-auto object-contain"
+          className="max-w-lg w-3/4 lg:w-auto object-contain"
           src="/Hero2.webp"
           alt=""
         />
