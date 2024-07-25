@@ -133,8 +133,8 @@ const page: React.FC<pageProps> = ({ }) => {
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {
             courses.map((course, index) => (
-              <Link key={index} href={'cambridge-a-level/' + course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-custom-color">
-                <div className="bg-[#DAE1FF] ">
+              <Link key={index} href={'cambridge-a-level/' + course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 border hover:shadow-custom-color">
+                <div className="bg-white border-r">
                   <Image
                     width={1000}
                     height={1000}
@@ -143,12 +143,12 @@ const page: React.FC<pageProps> = ({ }) => {
                     alt={course.subject_name}
                   />
                 </div>
-                <div className="bg-[#EBEFFF] flex flex-1 flex-col justify-center pl-6 gap-1">
-                  <h4 className="  text-blue-900 text-nowrap">
+                <div className="bg-white flex flex-1 flex-col justify-center pl-6 gap-1">
+                  <h4 className="  text-blue-900 text-base font-bold">
                     {course.subject_name}
                   </h4>
 
-                  <p className="text-p  text-blue-600">Learn more</p>
+                  <p className="text-p text-sm  text-blue-600">Learn more</p>
                 </div>
               </Link>
 
