@@ -180,7 +180,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
         </div>
 
         <div className="col-span-full">
-          <div className="mt-2">
+          <div className="mt-1">
             <textarea
               value={message}
               onChange={handleMessage}
@@ -201,7 +201,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
 
       </div>
 
-      <div className="mt-1 flex items-center justify-end gap-x-6">
+      <div className="mt-1 flex items-center justify-center md:justify-end gap-x-6">
         {
           loading ? (
             <button
