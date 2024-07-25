@@ -334,7 +334,7 @@ export default function Home() {
         <h2 className="  text-center ">Who can benefit from our school?</h2>
         <div className="pt-8 sm:pt-12">
           <div className="flex flex-wrap gap-5 justify-between">
-            <div className="group relative w-auto md:w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+            <div className="group relative w-auto sm:w-[310px] h-[500px] sm:h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
               <h4 className=" container pt-8 leading-tight ">
                 For those who are not satisfied with a regular school
               </h4>
@@ -348,7 +348,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-3 sm:px-9 py-4 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+              <div className="absolute bottom-0 inset-0 flex flex-col justify-end px-9 sm:px-9 py-3 sm:pb-8 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                 <div className="flex flex-col gap-2 sm:gap-3">
                   <p className=" text-[16px] ">Is this about you?</p>
                   <ul className="list-disc gap-2 sm:gap-3 flex flex-col ml-10">
