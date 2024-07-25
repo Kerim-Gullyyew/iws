@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Testimonial from "../components/ui/Testimonial";
-import TabSection from "../components/ui/TabSection";
 import Image from "next/image";
 import ContactUsSection from "../components/sections/ContactUsSection";
 
