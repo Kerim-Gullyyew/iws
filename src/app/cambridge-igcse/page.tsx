@@ -42,7 +42,7 @@ const page: React.FC<pageProps> = ({ }) => {
             <ContactButton />
           </div>
         </div>
-        <Image width={1000} height={1000} className="max-w-lg w-3/4 lg:w-[450px] lg:w-auto object-contain" src="/Hero.webp" alt="" />
+        <Image width={1000} height={1000} className="max-w-lg w-3/4 lg:w-auto object-contain" src="/Hero.webp" alt="" />
 
       </div>
 
