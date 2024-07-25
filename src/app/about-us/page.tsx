@@ -1,8 +1,6 @@
-"use client";
+"use client"
 import React from "react";
-import Image from "next/image";
 import {
-  ArrowRightCircleIcon,
   PlusIcon,
   MinusIcon,
 } from "@heroicons/react/24/solid";
