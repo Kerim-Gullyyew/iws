@@ -102,7 +102,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
 
     <div className='flex flex-col gap-5 max-w-4xl w-full'>
 
-      <p className={`text-p text-blue-900 text-left`}>
+      <p className={`text-p  text-left`}>
         Simply fill out the form below, and one of our friendly team members will get back to you as soon as possible. Let’s start your journey with IWS Online School together!
       </p>
 
@@ -214,9 +214,10 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
             <button
               type="submit"
               onClick={handleSubmit}
-              className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-4 text-2xl  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              // className="rounded-md flex flex-3 font-[26px] items-center justify-center bg-indigo-600 px-3 py-4 text-2xl  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className='bg-[#4366F6] rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300  text-lg'
             >
-              SEND A MESSAGE
+              Send a Message
             </button>
           )
         }

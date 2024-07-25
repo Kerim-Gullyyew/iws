@@ -11,6 +11,8 @@ import Link from "next/link";
 import EnrollButton from "./components/buttons/EnrollButton";
 import ContactButton from "./components/buttons/ContactButton";
 import CardChildren from "./components/card/CardChildren";
+import TabSection from './components/ui/TabSection'
+import ContactUsSection from './components/sections/ContactUsSection'
 
 import {
   Disclosure,
@@ -28,24 +30,24 @@ export default function Home() {
               <Image
                 width={1000}
                 height={1000}
-                className="w-[400px] object-contain min-w-[250px]"
+                className="w-[300px] min-w-[250px] lg:w-[400px] object-contain lg:min-w-[250px]"
                 src="/Tag.webp"
                 alt="Tag photo"
               />
             </div>
           </div>
 
-          <h1 className="  text-[30px] lg:text-[62px]  sm:text-[40px] md:text-[40px]">
+          <h1 className=" leading-[50px] lg:leading-[70px]  text-[42px] lg:text-[62px]  sm:text-[40px]  md:text-[40px]">
             Accredited, Holistic Online Schooling
           </h1>
 
-          <p className="leading-[26px]   text-p">
+          <p className="leading-[32px] text-[20px] lg:text-[1.5em]">
             IWS Online School – Your compass in the digital realm of learning.
             Discover new horizons, Create lasting memories, and Lead the future
             with our live lessons.
           </p>
 
-          <div className="flex items-center flex-wrap gap-5">
+          <div className="flex items-center justify-center flex-wrap gap-5 lg:justify-start">
             <EnrollButton />
 
             <ContactButton />
@@ -55,7 +57,7 @@ export default function Home() {
         <Image
           width={450}
           height={450}
-          className="w-[250px] md:w-[450px] sm:flex lg:w-auto object-contain"
+          className="w-auto md:w-[450px] sm:flex lg:w-auto object-contain"
           src="/Hero.webp"
           alt=""
         />
@@ -63,6 +65,7 @@ export default function Home() {
 
       <div className="pt-20 container">
         <h2 className="  text-center ">The right study programme for you</h2>
+
 
         <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-6 gap-y-14">
           <Link
@@ -84,7 +87,7 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px]  ">Primary School</h3>
+                <h3 className="text-[32px] font-[500]">Primary School</h3>
                 <p className="text-p ">
                   A strong foundation and a love for learning for your child.
                 </p>
@@ -119,7 +122,7 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px]  ">Middle School</h3>
+                <h3 className="text-[32px] font-[500]  ">Middle School</h3>
                 <p className="text-p ">
                   Foster your child’s growth and academic success.
                 </p>
@@ -154,7 +157,7 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px]  ">I/GCSE</h3>
+                <h3 className="text-[32px] font-[500]  ">I/GCSE</h3>
                 <p className="text-p ">
                   Unlock your teen’s full potential and prepare for future
                   success.
@@ -190,7 +193,7 @@ export default function Home() {
 
             <div className="bg-white flex flex-1 gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[35px]  ">A Level</h3>
+                <h3 className="text-[32px] font-[500]  ">A Level</h3>
                 <p className="text-p ">
                   Prepare teens for university with advanced studies.
                 </p>
@@ -215,9 +218,9 @@ export default function Home() {
 
         <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
           <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F1F9EC]">
-            <h2 className="   tracking-wide">
+            <h3 className="   tracking-wide">
               Visionary Educators of IWS Online School
-            </h2>
+            </h3>
             <p className="text-p leading-6  ">
               Explore the difference our passionate and committed teachers make
               in every student’s learning journey.
@@ -234,9 +237,9 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8">
-              <h2 className="   tracking-wide">
-                Our teachers are always in touch
-              </h2>
+              <h3 className="   tracking-wide">
+                Our teachers are <br /> always in touch
+              </h3>
               <p className="text-p leading-6  ">
                 Our teachers and mentors are ready to help with lesson queries
                 and platform guidance.
@@ -254,9 +257,9 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
-              <h2 className="   tracking-wide lg:w-[250px]">
+              <h3 className="   tracking-wide lg:w-[250px]">
                 Individual Programmes
-              </h2>
+              </h3>
               <p className="text-p leading-6  ">
                 Every child is unique. Our personalized assessments and Success
                 Coaching ensure tailored educational paths for every student.
@@ -274,9 +277,9 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
-              <h2 className="   tracking-wide lg:w-[250px]">
+              <h3 className="   tracking-wide lg:w-[250px]">
                 Dynamic Live Lessons
-              </h2>
+              </h3>
               <p className="text-p leading-6  ">
                 Experience structured sessions for active participation,
                 collaboration, and growth in academics and personal development.
@@ -294,9 +297,9 @@ export default function Home() {
             />
 
             <div className="flex flex-col h-full justify-between gap-6 pt-44 md:pt-20 lg:pt-0">
-              <h2 className="   tracking-wide lg:w-[250px]">
+              <h3 className="   tracking-wide lg:w-[250px]">
                 Accredited Curriculum
-              </h2>
+              </h3>
               <p className="text-p leading-6  ">
                 We prioritize holistic education, combining academic excellence
                 with skill development for a comprehensive learning experience.
@@ -314,9 +317,9 @@ export default function Home() {
             />
 
             <div className="flex flex-col gap-6 h-full justify-between px-6 py-8 md:w-1/2">
-              <h2 className="   tracking-wide lg:w-[250px]">
+              <h3 className="   tracking-wide lg:w-[250px]">
                 Taking care of parents
-              </h2>
+              </h3>
               <p className="text-p leading-6  ">
                 Our support specialists are always ready to assist, and our
                 bi-weekly parent assemblies offer a platform to discuss any
@@ -330,8 +333,8 @@ export default function Home() {
       <div className="pt-20 container">
         <h2 className="  text-center ">Who can benefit from our school?</h2>
         <div className="pt-8 sm:pt-12">
-          <div className="flex flex-wrap gap-5 justify-between ">
-            <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+          <div className="flex flex-wrap gap-5 justify-between">
+            <div className="group relative w-auto md:w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
               <h4 className=" container pt-8 leading-tight ">
                 For those who are not satisfied with a regular school
               </h4>
@@ -369,7 +372,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+            <div className="group relative w-auto md:w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
               <h4 className=" container pt-8 leading-tight ">
                 For students who often miss school.
               </h4>
@@ -408,7 +411,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+            <div className="group relative w-auto md:w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
               <h4 className=" container pt-8 leading-tight ">
                 For those who live abroad or the family travels a lot
               </h4>
@@ -445,8 +448,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="group relative w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" container pt-8 leading-tight ">
+            <div className="group relative w-auto md:w-[310px] h-[530px] bg-[#F4F5F8] cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
+              <h4 className=" px-5 pt-8 leading-tight">
                 For students preparing to enter a prestigious university
               </h4>
               <div className="transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 absolute bottom-0">
@@ -967,7 +970,8 @@ export default function Home() {
       </div>
 
       <div className="mt-20 lg:container">
-        <div className=" bg-[#003372] lg:rounded-xl mt-8 flex flex-col md:flex-row">
+      <ContactUsSection />
+        {/* <div className=" bg-[#003372] lg:rounded-xl mt-8 flex flex-col md:flex-row">
           <div className="py-12 px-8 lg:px-16 flex flex-col gap-10">
             <h2 className="text-[62px] text-white/90 tracking-tighter  leading-[60px]">
               Looking to learn more?
@@ -991,8 +995,9 @@ export default function Home() {
             src="/Brochure.webp"
             alt=""
           />
-        </div>
+        </div> */}
       </div>
+
 
       <div className="mt-20 container">
         <h3 className="text-[#003372]   ">Partnered by</h3>

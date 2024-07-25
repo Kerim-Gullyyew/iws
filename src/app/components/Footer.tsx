@@ -90,7 +90,7 @@ const navigation = {
 };
 const Footer: React.FC<FooterProps> = ({}) => {
   return (
-    <footer className="bg-[#f4f5f8] pt-5" aria-labelledby="footer-heading">
+    <footer className="bg-[#f4f5f8] pt-12" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -100,13 +100,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
             <Image
               width={1000}
               height={1000}
-              className="w-36 object-contain"
+              className="w-52 object-contain"
               src="/IWS_Logo.webp"
               alt="logo"
             />
 
-            <div className="flex w-full flex-col gap-3 justify-center items-center lg:items-start md:items-start">
-              <p className="text-[14px]">FOLLOW US ON SOCIAL MEDIA</p>
+            <div className="flex w-full mt-5 flex-col gap-3 justify-center items-center lg:items-start md:items-start">
+              <p className="text-[14px] text-gray-400">FOLLOW US ON SOCIAL MEDIA</p>
               <div className="flex justify-center space-x-4 md:order-2">
                 {navigation.social.map((item) => (
                   <a
@@ -311,8 +311,8 @@ const Footer: React.FC<FooterProps> = ({}) => {
 
           <div className="hidden ml-5 lg:ml-24 lg:ml-36 lg:grid lg:grid-cols-4 lg:w-full ">
             <div>
-              <h5 className="  text-gray-400">ACADEMICS</h5>
-              <ul className="mt-3 space-y-2">
+              <h5 className="  text-gray-400 text-[14px]">ACADEMICS</h5>
+              <ul className="mt-3 space-y-4">
                 <li className="">Primary School</li>
                 <li className="">Middle School</li>
                 <li className="">I/GCSE</li>
@@ -320,25 +320,25 @@ const Footer: React.FC<FooterProps> = ({}) => {
               </ul>
             </div>
             <div>
-              <h5 className="  text-gray-400">
+              <h5 className="  text-gray-400 text-[14px]">
                 ADMISSIONS
               </h5>
-              <ul className="mt-3 space-y-2">
+              <ul className="mt-3 space-y-4">
                 <li className="">Overview</li>
                 <li className="">School Fees</li>
               </ul>
             </div>
             <div>
-              <h5 className="  text-gray-400">ABOUT IWS</h5>
-              <ul className="mt-3 space-y-2">
+              <h5 className="  text-gray-400 text-[14px]">ABOUT IWS</h5>
+              <ul className="mt-3 space-y-4">
                 <li className="">About IWS</li>
                 <li className="">Our Team</li>
                 <li className="">Careers</li>
               </ul>
             </div>
             <div>
-              <h5 className="  text-gray-400">RESOURCES</h5>
-              <ul className="mt-3 space-y-2">
+              <h5 className="  text-gray-400 text-[14px]">RESOURCES</h5>
+              <ul className="mt-3 space-y-4">
                 <li className="">Blogs</li>
                 <li className="">School Calendar</li>
                 <li className="">I/GCSE</li>
@@ -348,7 +348,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </div>
         </div>
 
-        <div className=" border-t border-gray-400 space-y-3 pt-5 mt-3 flex flex-col justify-center items-center w-full lg:grid lg:grid-cols-3 lg:space-y-0">
+        <div className=" border-t border-gray-400 space-y-3 pt-5 mt-24 flex flex-col justify-center items-center w-full lg:grid lg:grid-cols-3 lg:space-y-0">
           <p className="text-p text-left">
             &copy; {2024} IWS Online School LTD
           </p>
