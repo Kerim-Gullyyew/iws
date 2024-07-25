@@ -17,17 +17,17 @@ const page: React.FC<pageProps> = ({ }) => {
   return (
     <div className=" container pt-3 pb-24">
       <div className="pt-16 pb-14 bg-asset-3 px-6 bg-cover bg-no-repeat bg-center bg-blue-500 flex items-center justify-center bg-blend-soft-light overflow-hidden rounded-[40px] w-full ">
-        <div className="flex flex-col justify-center items-center max-w-[700px]">
-          <h1 className="text-center text-white ">We are a revolution</h1>
+        <div className="flex flex-col justify-center items-center max-w-[1000px]">
+          <h1 className="text-center text-white ">We are a revolution in learning.</h1>
           <div className="pt-8">
             <p className="text-center text-white">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia error a cum ratione harum quaerat ab similique repudiandae ducimus quidem? At culpa veritatis in placeat voluptatum omnis aut voluptates corrupti.
+            IWS is a Cambridge Assessment International accredited online school. Our mission is to ofter a globally esteemed Cambridge education, making it accessible to remote learners with exceptional academic potential worldwide.
             </p>
 
           </div>
           <div className="pt-6">
             <p className="text-center text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quidem maiores vitae aliquid expedita fuga nisi ipsum labore repellat. Et maiores rerum facere excepturi quidem quia praesentium quasi, qui fugiat.
+            Thereby creating a global community of ambitious learners who wish to achieve their full potential, both inside and outside of the classroom.
             </p>
 
           </div>
@@ -48,8 +48,8 @@ const page: React.FC<pageProps> = ({ }) => {
             </h2>
           </div>
           <div className="flex flex-col gap-4 lg:w-7/12 lg:pr-6">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed sint sapiente, fugit quisquam facilis porro mollitia eaque modi alias, odio tempore numquam quos temporibus. Recusandae repellendus enim cum ipsam!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos atque nihil quo, pariatur doloribus facere quaerat corrupti molestiae culpa vero unde deleniti laboriosam maxime non veniam laudantium. Voluptas, quam sit.</p>
+            <p>At IWS Online School, we believe in harnessina the spirit of exploration, creativitv and leadership to embower our students for a world of limitless possibilities. Our mission is to provide a transformative educational experience, guiding them towards a future where they actively Discover, Create and Lead.</p>
+            <p>{"Step into the world of Infinite Wisdom School, where the radiant blue compass serves as a powerful symbol of our ethos. More than a mere quide, it embodies our unwavering taith in each student's boundless potential and our dedication to illuminatina their briahtest oath. Here education transcends traditional boundaries, stretching horizons beyond imagination. At IWS, every student is not junst a learner, but a visionary, creator, and leader. We ignite flames of passion, fostering a realm where discovery, creation, and leadership intertwine seamlessly. This is more than education; it's an oaysseya aynamie aance of growin ana enigntenment."}</p>
           </div>
         </div>
 
@@ -57,19 +57,20 @@ const page: React.FC<pageProps> = ({ }) => {
         <div className="w-full flex flex-col lg:flex-row gap-10 border-t-4 pt-6 border-blue-400">
           <div className="lg:w-5/12">
             <h2 className=" leading-tight ">
-              Our Approach To Teaching and Learning
+              Our Mission
             </h2>
           </div>
           <div className="flex flex-col gap-4 lg:w-7/12 lg:pr-6">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed sint sapiente, fugit quisquam facilis porro mollitia eaque modi alias, odio tempore numquam quos temporibus. Recusandae repellendus enim cum ipsam!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos atque nihil quo, pariatur doloribus facere quaerat corrupti molestiae culpa vero unde deleniti laboriosam maxime non veniam laudantium. Voluptas, quam sit.</p>
+            <p>{"Discover - Beneath the boundless sky. at IWS, each student's vovage commences within. Pioneering assessments map strengths, passions, and potential, guiding them to their true north. Understanding their unique traits, we provide an invaluable compass for their educational journey."}</p>
+            <p>{"Create - At IWS, armed with self-awareness, students embark on a journey of immense potential. They forge unique paths, conceiving innovative projects and orchestrating vibrant events. Here, knowledge and imagination merge, giving birth to a realm of endless creation"}</p>
+            <p>{"Lead - Leadership is a harmonious blend of vision and action in IWS. Empowered with their voice, every student resonates in the world. Whether in clubs, Student Council, communities, or programmes like The Duke of Edinburgh, they shine as guiding lights, paving the way for others to follow."}</p>
           </div>
         </div>
       </div>
 
       <div className="py-14 mt-20 px-6 bg-center bg-blue-500 flex items-center justify-center bg-blend-soft-light overflow-hidden rounded-[40px] w-full ">
         <div className="max-w-[700px]">
-          <p className="text-white text-center text-[26px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur impedit dolorem cumque obcaecati ratione odio nesciunt maiores saepe veritatis beatae..</p>
+          <p className="text-white text-center sm:text-[26px]">Regardless of geographic location, your child can access the renowned British education system through IWS, joining a close-knit community of global learners.</p>
 
         </div>
       </div>

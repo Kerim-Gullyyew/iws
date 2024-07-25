@@ -21,9 +21,9 @@ const page: React.FC<pageProps> = ({ }) => {
           <TabPanel className={"animate-fade-in"}>
             <ContactUsSection />
           </TabPanel>
-          <TabPanel className={"animate-fade-in"}>
+          <TabPanel className={" "}>
 
-            <InlineWidget styles={{ height: '1000px' }} url="https://calendly.com/admissions-iws/book-a-call" />
+            <InlineWidget styles={{ height: '1030px' }} url="https://calendly.com/admissions-iws/book-a-call" />
 
           </TabPanel>
         </TabPanels>
