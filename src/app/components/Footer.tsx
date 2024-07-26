@@ -8,7 +8,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
-interface FooterProps {}
+interface FooterProps { }
 const navigation = {
   social: [
     {
@@ -88,7 +88,7 @@ const navigation = {
     },
   ],
 };
-const Footer: React.FC<FooterProps> = ({}) => {
+const Footer: React.FC<FooterProps> = ({ }) => {
   return (
     <footer className="bg-[#f4f5f8] pt-12" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -123,190 +123,95 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </div>
 
           <div className="w-full flex flex-col mt-3 md:w-1/2 lg:hidden">
-            <Disclosure as="div" className="w-full border-b border-gray-300 ">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="  ">
-                      ACADEMICS
-                    </h4>
-                    {open ? (
-                      <MinusIcon className="h-6 w-6" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-6 w-6" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <ul className="space-y-2 pb-2">
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              Primary School
-                            </li>
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              Middle School
-                            </li>
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              I/GCSE
-                            </li>
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              A Level
-                            </li>
-                          </ul>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
+            <div className="w-full border-b border-gray-300 ">
+              <h4 className="">
+                ACADEMICS
+              </h4>
+              <div className="overflow-hidden py-2">
 
-            <Disclosure
-              as="div"
-              className="w-full border-b border-gray-300 mt-3"
-            >
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="  ">
-                      ADMISSIONS
-                    </h4>
-                    {open ? (
-                      <MinusIcon className="h-6 w-6" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-6 w-6" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <ul className="space-y-2 pb-2">
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              Overview
-                            </li>
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              School Fees
-                            </li>
-                          </ul>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
+                <div className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0">
+                  <ul className="space-y-2 pb-2">
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      Primary School
+                    </li>
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      Middle School
+                    </li>
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      I/GCSE
+                    </li>
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      A Level
+                    </li>
+                  </ul>
+                </div>
 
-            <Disclosure
-              as="div"
-              className="w-full border-b border-gray-300 mt-3"
-            >
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="  ">
-                      ABOUT IWS
-                    </h4>
-                    {open ? (
-                      <MinusIcon className="h-6 w-6" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-6 w-6" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <ul className="space-y-2 pb-2">
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              About IWS
-                            </li>
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              Our Team
-                            </li>
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              Careers
-                            </li>
-                          </ul>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
+              </div>
+            </div>
 
-            <Disclosure
-              as="div"
-              className="w-full border-b border-gray-300 mt-3"
-            >
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full flex items-center justify-between focus:outline-none">
-                    <h4 className="  ">
-                      RESOURCES
-                    </h4>
-                    {open ? (
-                      <MinusIcon className="h-6 w-6" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-6 w-6" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <ul className="space-y-2 pb-2">
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              Blogs
-                            </li>
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              School Calendar
-                            </li>
-                            <li className=" text-gray-600 cursor-pointer hover:">
-                              FAQs
-                            </li>
-                          </ul>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
+            <div className="w-full border-b border-gray-300 ">
+              <h4 className="">
+                ADMISSIONS
+              </h4>
+              <div className="overflow-hidden py-2">
+
+                <div className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0">
+                  <ul className="space-y-2 pb-2">
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      Overview
+                    </li>
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      School Fees
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full border-b border-gray-300 ">
+              <h4 className="">
+                ABOUT IWS
+              </h4>
+              <div className="overflow-hidden py-2">
+
+                <div className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0">
+                  <ul className="space-y-2 pb-2">
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      About IWS
+                    </li>
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      Our Team
+                    </li>
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      Careers
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full border-b border-gray-300 ">
+              <h4 className="">
+                RESOURCES
+              </h4>
+              <div className="overflow-hidden py-2">
+
+                <div className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0">
+                  <ul className="space-y-2 pb-2">
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      Blogs
+                    </li>
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      School Calendar
+                    </li>
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      FAQs
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <div className="hidden ml-5 lg:ml-36 lg:grid lg:grid-cols-4 lg:w-full ">
