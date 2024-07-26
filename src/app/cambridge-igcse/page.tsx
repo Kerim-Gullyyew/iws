@@ -45,6 +45,7 @@ const page: React.FC<pageProps> = ({}) => {
             height={1000}
             className="max-w-lg w-full lg:w-auto object-contain"
             src="/Hero.webp"
+            priority={true} // {false} | {true}
             alt=""
           />
         </div>

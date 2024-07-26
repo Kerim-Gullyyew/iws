@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
   alternates: { canonical: "https://kingsinterhigh.co.uk/" },
   icons: "./icon.ico",
-  manifest: "manifest",
+  // manifest: "manifest",
   // openGraph: {
   //   determiner: 'auto',
   //   title: "My Website",

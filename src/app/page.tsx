@@ -32,22 +32,24 @@ export default function Home() {
                 height={1000}
                 className="w-[300px] min-w-[250px] lg:w-[400px] object-contain lg:min-w-[250px]"
                 src="/Tag.webp"
+                priority={true} // {false} | {true}
+                sizes="(max-width: 576px) 50vw"
                 alt="Tag photo"
               />
             </div>
           </div>
 
-          <h1 className=" leading-[50px] lg:leading-[70px]  text-[42px] lg:text-[62px]  sm:text-[40px]  md:text-[40px]">
+          <h1 className=" leading-[50px] lg:leading-[70px] text-[35px] lg:text-[62px] sm:text-[40px] ">
             Accredited, Holistic Online Schooling
           </h1>
 
-          <p className="leading-[32px] text-[20px] lg:text-[1.5em]">
+          <p className="leading-[32px] text-[18px] sm:text-[24px]">
             IWS Online School – Your compass in the digital realm of learning.
             Discover new horizons, Create lasting memories, and Lead the future
             with our live lessons.
           </p>
 
-          <div className="flex items-center justify-center flex-wrap gap-5 lg:justify-start">
+          <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
             <EnrollButton />
 
             <ContactButton />
@@ -57,8 +59,10 @@ export default function Home() {
         <Image
           width={450}
           height={450}
-          className="w-auto md:w-[450px] sm:flex lg:w-auto object-contain"
+          className="w-[300px] max-w-[90%] min-w-[280px] sm:w-[450px] sm:min-w-[50%] sm:flex lg:w-auto object-contain"
           src="/Hero.webp"
+          priority={true} // {false} | {true}
+          sizes="(max-width: 576px) 40vw"
           alt=""
         />
       </div>
