@@ -27,14 +27,14 @@ export const keyStages: KeyStageProps[] = [
     name: "Primary School",
     price: 5000,
     url: "cambridge-primary",
-    description: "sdfdsfdsfdsfsdfsdf",
+    description: "IWS Online School offers the Cambridge Primary International Curriculum for primary students. Our UK-based online school is proudly accredited by Cambridge Assessment International Education.",
     includedSubjects: [
       {
         id: "1",
         subject_name: "Primary Mathematics",
         url: "cambridge-primary/mathematics",
         image_url: "",
-        icon: "/subjects/Math.webp",
+        icon: "/subjects/Math@2x.png",
         description: "Online programme transforms primary students into proficient mathematicians.",
         description2: "Boost analytical thinking with our foundational Primary Mathematics curriculum. Foster keen interest and essential concepts for young minds. Explore our engaging approach to enhance your child's Maths skills.",
         key_objective: [
@@ -69,7 +69,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Primary English",
         url: "cambridge-primary/english",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/English@2x.png",
         description: "Enhancing the Literacy and Communication Abilities of Children.",
         description2: "Elevate language skills with our tailored English Curriculum, empowering confident communicators and skilled writers. Expert British instructors support first and second language learners, ensuring proficiency and inclusivity.",
         key_objective: [
@@ -104,7 +104,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Primary Science",
         url: "cambridge-primary/science",
         image_url: "",
-        icon: "/subjects/Physics.webp",
+        icon: "/subjects/Physics@2x.png",
         description: "A creative approach for high school students to explore their natural surroundings.",
         description2: "Embark on an explorative learning journey at IWS Online School, exploring the world and beyond. Our international school uses Cambridge Science curriculum, sparking curiosity through detailed discussions and engaging activities for middle education students.",
         key_objective: [
@@ -134,14 +134,12 @@ export const keyStages: KeyStageProps[] = [
           },
         ]
       },
-    ],
-    additionalSubjects: [
       {
         id: "4",
         subject_name: "Primary Computing",
         url: "cambridge-primary/computing",
         image_url: "",
-        icon: "/subjects/Computer.webp",
+        icon: "/subjects/Computer@2x.png",
         description: "Empowering students with in-depth computer knowledge.",
         description2: "Cambridge Primary Computing Curriculum sharpens coding skills and explores computer components. Master visual programming, empowering students for advanced education.",
         key_objective: [
@@ -176,7 +174,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Primary Global Perspectives",
         url: "cambridge-primary/global-perspectives",
         image_url: "",
-        icon: "/subjects/Global.webp",
+        icon: "/subjects/Global@2x.png",
         description: "Promoting a sense of unity and equality among students.",
         description2: "Prepare for Cambridge I/GCSE with our skill-based programme, integrating personal, local, and international perspectives. Enhance understanding of core primary subjects, ensuring a smooth transition for students.",
         key_objective: [
@@ -206,12 +204,15 @@ export const keyStages: KeyStageProps[] = [
           },
         ]
       },
+    ],
+    additionalSubjects: [
+      
       {
         id: "6",
         subject_name: "Primary French as 2nd Language",
         url: "cambridge-primary/french-as-2nd-language",
         image_url: "",
-        icon: "/subjects/Sociology.webp",
+        icon: "/subjects/French@2x.png",
         description: "Embark on a French Adventure: Primary Level Homeschooling Course.",
         description2: "Our Primary French is an engaging, interactive programme designed not only to teach a new language but also to immerse your child in the rich tapestry of French culture. Whether starting from Level 1 or beyond, this course cultivates confidence and proficiency in French language skills.",
         key_objective: [
@@ -246,7 +247,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Primary Spanish as 2nd Language",
         url: "cambridge-primary/spanish-as-2nd-language",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Spanish@2x.png",
         description: "A Multifaceted Spanish Language Adventure for Young Learners (Ages 7-11).",
         description2: "Our Primary Spanish as a Second Language course provides an interactive and engaging learning experience, establishing a solid foundation in Spanish language skills. Through a blend of immersive activities and structured lessons, students embark on an enriching linguistic journey.",
         key_objective: [
@@ -281,7 +282,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Primary German as 2nd Language",
         url: "cambridge-primary/german-as-2nd-language",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/German@2x.png",
         description: "Engaging Primary German programme for Young Learners (Ages 7-11).",
         description2: "Our Primary German as a Second Language course offers an engaging and interactive learning experience, fostering a strong foundation in German language skills. Through a blend of fun activities and structured lessons, students embark on an enriching linguistic journey.",
         key_objective: [
@@ -317,14 +318,14 @@ export const keyStages: KeyStageProps[] = [
     name: "Secondary School",
     price: 6000,
     url: "cambridge-secondary",
-    description: "sdfdsfdsfdsfsdfsdf",
+    description: "At IWS Online School, Middle Education starts at age 11, leading to the Cambridge I/GCSE exams over five years—three years of Middle Education followed by two years of I/GCSE. Graduates are ready for A-Level studies.",
     includedSubjects: [
       {
         id: "1",
         subject_name: "Secondary Mathematics",
         url: "mathematics",
         image_url: "",
-        icon: "/subjects/Math.webp",
+        icon: "/subjects/Math@2x.png",
         description: "Igniting the Spark of Mathematical Passion in Middle School Students.",
         description2: "At IWS, our STEM programmes foster a love for Math through engaging online activities. Tailored to middle level students, our Cambridge Mathematics Curriculum inspires critical thinking and curiosity.",
         key_objective: [
@@ -359,7 +360,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Secondary English",
         url: "english",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/English@2x.png",
         description: "Embracing the Cambridge Curriculum for English Excellence.",
         description2: "At our international online school, we follow the Cambridge Middle English curriculum, prioritising self-expression and context-driven communication. We actively develop the core communication capabilities for effective language mastery.",
         key_objective: [
@@ -394,7 +395,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Secondary Science",
         url: "science",
         image_url: "",
-        icon: "/subjects/Physics.webp",
+        icon: "/subjects/Physics@2x.png",
         description: "Explore natural wonders at IWS International Middle School.",
         description2: "IWS offers innovative science education with the Cambridge Science Curriculum. Explore natural and physical world concepts through in-depth discussions, real-life examples, and engaging activities.",
         key_objective: [
@@ -429,7 +430,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Secondary Computing",
         url: "computing",
         image_url: "",
-        icon: "/subjects/Computer.webp",
+        icon: "/subjects/Computer@2x.png",
         description: "Real-World Application: Discover Computing at Our Online UK School.",
         description2: "Gain core scientific understanding, fostering curiosity and critical thinking. Engage in online experiments and independent learning for academic success. Prepare for future scientific contributions in our flexible educational environment.",
         key_objective: [
@@ -464,7 +465,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Secondary Global Perspectives",
         url: "global-perspectives",
         image_url: "",
-        icon: "/subjects/Global.webp",
+        icon: "/subjects/Global@2x.png",
         description: "Inclusive Inquiry: Empowering 11-14 Year-Olds at Our Online UK School.",
         description2: "Our online course fosters self-reflection, critical analysis, research, collaboration, and communication. We warmly welcome our middle level students, including those with special needs, encouraging them to explore diverse perspectives.",
         key_objective: [
@@ -501,7 +502,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Secondary French as 2nd Language",
         url: "french-as-2nd-language",
         image_url: "",
-        icon: "/subjects/Sociology.webp",
+        icon: "/subjects/French@2x.png",
         description: "Explore, Learn, and Communicate: Middle French Homeschooling Course.",
         description2: "Our Middle French course provides an excellent foundation for future I/GCSE French studies. Beyond language proficiency, this curriculum fosters cultural understanding and opens young minds to new perspectives.",
         key_objective: [
@@ -536,7 +537,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Secondary Spanish as 2nd Language",
         url: "spanish-as-2nd-language",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Spanish@2x.png",
         description: "Unlock Opportunities with Middle Spanish Homeschooling Course.",
         description2: "Our Middle Spanish course is a stepping stone towards I/GCSE Spanish studies. This course not only acquaints your child with Spanish-speaking countries, but also delves into their cultures and societies. Learning Spanish broadens their perspectives, opening doors for travel and future international endeavors.",
         key_objective: [
@@ -571,7 +572,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "Secondary German as 2nd Language",
         url: "german-as-2nd-language",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/German@2x.png",
         description: "Explore, Learn, and Connect: Middle German Homeschooling Course.",
         description2: "Studying our middle German not only prepares your child for I/GCSE German studies but also provides a gateway to understanding the German people and their rich culture. Learning German opens your child’s mind to fresh perspectives and novel ways of viewing the world.",
         key_objective: [
@@ -608,14 +609,14 @@ export const keyStages: KeyStageProps[] = [
     name: "I/GCSE",
     price: 7200,
     url: "cambridge-igcse",
-    description: "sdfdsfdsfdsfsdfsdf",
+    description: "Enrol in our two-year program for globally recognised Cambridge certifications, accepted by top universities and employers worldwide, enhancing your academic and career prospects globally.",
     includedSubjects: [
       {
         id: "1",
         subject_name: "I/GCSE Biology",
         url: "biology",
         image_url: "",
-        icon: "/subjects/Math.webp",
+        icon: "/subjects/Biology@2x.png",
         description: "I/GCSE Biology students apply fundamental science concepts in the real world.",
         description2: "At IWS Online School, we use the Cambridge I/GCSE Biology (0610) syllabi to craft a structured curriculum. Students learn the importance of scientific theories and their relevance to human anatomy and the environment.",
         key_objective: [
@@ -650,7 +651,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE Business Studies",
         url: "business-studies",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Business@2x.png",
         description: "I/GCSE course: Emphasises business creation, continuity, change, and innovation.",
         description2: "IWS Online School offers the Cambridge I/GCSE Business Studies (0450) course online to global students. Our experienced UK-qualified teachers provide engaging materials, preparing students for Cambridge International A-level studies and future careers in business.",
         key_objective: [
@@ -685,7 +686,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE Chemistry",
         url: "chemistry",
         image_url: "",
-        icon: "/subjects/Physics.webp",
+        icon: "/subjects/Chemistry@2x.png",
         description: "I/GCSE Chemistry: Blend of theory, experiments, and engaging lessons.",
         description2: "As a British online school, we align our curriculum with the Cambridge I/GCSE Chemistry (0620) course outline. Our focus is on providing students with top-notch learning resources and essential tools to enhance their scientific knowledge and skills.",
         key_objective: [
@@ -720,7 +721,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE Computer Science",
         url: "computer-science",
         image_url: "",
-        icon: "/subjects/Computer.webp",
+        icon: "/subjects/Computer@2x.png",
         description: "Digital awareness programme enhances I/GCSE students' digital literacy.",
         description2: "Our certified UK teachers utilise the Cambridge International I/GCSE Computer Science syllabus to create dynamic lesson plans, reinforcing middle school concepts and honing computational skills.",
         key_objective: [
@@ -755,7 +756,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE Economics",
         url: "economics",
         image_url: "",
-        icon: "/subjects/Global.webp",
+        icon: "/subjects/Economics@2x.png",
         description: "Engaging I/GCSE course: Equips students with vital economic concepts for future careers.",
         description2: "Explore Cambridge I/GCSE Business Studies (0455) at IWS Online School. Delve into economic concepts like supply, demand, and opportunity cost. Our expert teachers help students understand global economic dynamics. Enrol for comprehensive learning!",
         key_objective: [
@@ -792,7 +793,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE English",
         url: "cambridge-igcse/english",
         image_url: "",
-        icon: "/subjects/Sociology.webp",
+        icon: "/subjects/English@2x.png",
         description: "Exploring space and time through the magic of reading and imagination.",
         description2: "IWS Online School provides comprehensive I/GCSE English Literature. Diverse prose, poetry, and drama. Authorised Cambridge Curriculum for quality virtual lessons, preparing students for advanced studies.",
         key_objective: [
@@ -827,7 +828,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "IGCSE English Literature",
         url: "english-literature",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/English@2x.png",
         description: "Elevated IGCSE English Literature Education.",
         description2: "Embark on a transformative educational journey with our IGCSE English Literature courses. Dive deep into literary texts following the Cambridge International English – Literature syllabus.",
         key_objective: [
@@ -862,7 +863,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE Geography",
         url: "geography",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Geography@2x.png",
         description: "Online I/GCSE Geography: Explores connections between individuals and locations.",
         description2: "IWS Online School employs the Cambridge I/GCSE Geography (0460) syllabus to create an enriching course, encouraging students' analytical thinking about societal changes and their geographical impact.",
         key_objective: [
@@ -897,7 +898,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE History",
         url: "history",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/History@2x.png",
         description: "Our online I/GCSE History courses analyse historical events from a critical perspective.",
         description2: "IWS Online School offers an engaging course based on the Cambridge I/GCSE History (0470) curriculum. Students explore significant global events from the 19th and 20th centuries, discussing their historical impact on the present day.",
         key_objective: [
@@ -932,7 +933,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE Mathematics",
         url: "mathematics",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Math@2x.png",
         description: "Encouraging curiosity and mathematical proficiency as vital life skills.",
         description2: "At IWS Online School, we offer a dynamic online I/GCSE Mathematics course. Students can tackle diverse problems, engage in interactive quizzes, and enhance their calculating skills for logical solutions.",
         key_objective: [
@@ -967,7 +968,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE Physics",
         url: "physics",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Physics@2x.png",
         description: "I/GCSE Physics online: Learn natural science fundamentals and universal laws' significance.",
         description2: "Our skilled educators develop detailed lesson plans adhering to Cambridge I/GCSE Physics (0625) standards. Our classes introduce intricate scientific concepts and practical learning, ensuring student engagement.",
         key_objective: [
@@ -1002,7 +1003,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE Sociology",
         url: "sociology",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Sociology@2x.png",
         description: "I/GCSE course: Analyse societal dynamics' impact through reflection.",
         description2: "Explore Cambridge I/GCSE Sociology (0495) with expert UK-qualified teachers on our online platform. Engaging materials enhance understanding of individual-community-institution dynamics. Join us for a comprehensive learning experience!",
         key_objective: [
@@ -1037,7 +1038,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "I/GCSE Spanish as Second Language",
         url: "spanish",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Spanish@2x.png",
         description: "Inclusive Spanish course for effective communication skills.",
         description2: "Explore our Cambridge I/GCSE Spanish – Foreign Language (0530) course for comprehensive language learning. Develop critical thinking, grammar, and vocabulary skills. Build a strong foundation with expert teachers. Enrol now for immersive Spanish education!  ",
         key_objective: [
@@ -1074,14 +1075,14 @@ export const keyStages: KeyStageProps[] = [
     name: "A Level",
     price: 7500,
     url: "cambridge-a-level",
-    description: "sdfdsfdsfdsfsdfsdf",
+    description: "The A-Levels we offer hold global recognition from esteemed universities and leading employers, significantly enhancing our students’ prospects of gaining admission to their desired institutions and securing positions in top organisations.",
     includedSubjects: [
       {
         id: "1",
         subject_name: "A Level Biology",
         url: "biology",
         image_url: "",
-        icon: "/subjects/Math.webp",
+        icon: "/subjects/Biology@2x.png",
         description: "Comprehensive STEM Biology Lessons for AS and A-Level Students Online.",
         description2: "Explore comprehensive Cambridge International AS and A Level Biology (9700) lessons in our virtual classrooms. Ideal for STEM enthusiasts, bridging I/GCSE foundations to prepare students for biology-related careers in STEM fields.",
         key_objective: [
@@ -1116,7 +1117,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Business",
         url: "business",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Business@2x.png",
         description: "Dynamic Business Studies for Sixth Formers.",
         description2: "Explore the dynamic world of business with our comprehensive course, immersing students in real-world scenarios and contemporary entrepreneurial trends. The Cambridge AS and A Level Business curriculum provides a solid understanding of business operations, fostering confidence for future studies in related disciplines.",
         key_objective: [
@@ -1151,7 +1152,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Chemistry",
         url: "chemistry",
         image_url: "",
-        icon: "/subjects/Physics.webp",
+        icon: "/subjects/Chemistry@2x.png",
         description: "Embracing the Significance of Chemistry in Practical Contexts.",
         description2: "IWS provides a comprehensive Sixth Form Chemistry curriculum, following Cambridge International AS and A Level Chemistry (9701) syllabus. UK-qualified educators blend theoretical and practical lessons for holistic learning, aligning with educational objectives.",
         key_objective: [
@@ -1188,7 +1189,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Computer Science",
         url: "computer-science",
         image_url: "",
-        icon: "/subjects/Computer.webp",
+        icon: "/subjects/Computer@2x.png",
         description: "Empowering Computational Proficiency for the Digital Age.",
         description2: "IWS offers hands-on learning in Cambridge International AS and A Level Computer Science (9618) syllabus. Equip Sixth Form students with programming, problem-solving, and algorithm design skills for confident digital navigation.",
         key_objective: [
@@ -1223,7 +1224,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Economics",
         url: "economics",
         image_url: "",
-        icon: "/subjects/Global.webp",
+        icon: "/subjects/Economics@2x.png",
         description: "Empowering Economists of Tomorrow",
         description2: "The IWS Cambridge A Level Economics Curriculum empowers students to tackle complex economic issues with confidence. Anchored in the globally recognised Cambridge International AS and A Level Economics (9708) framework, it provides a profound understanding of economic principles, spanning topics from international trade to government intervention.",
         key_objective: [
@@ -1255,10 +1256,10 @@ export const keyStages: KeyStageProps[] = [
       },
       {
         id: "6",
-        subject_name: "A – Level English Literature",
+        subject_name: "A Level English Literature",
         url: "english-literature",
         image_url: "",
-        icon: "/subjects/Sociology.webp",
+        icon: "/subjects/English@2x.png",
         description: "Elevated AS and A-Level English Literature Education.",
         description2: "Embark on a transformative educational journey with our AS and A-Level English Literature courses. Dive deep into literary texts following the Cambridge International AS and A Level English – Literature (9695) syllabus.",
         key_objective: [
@@ -1293,7 +1294,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level English Language",
         url: "english",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/English@2x.png",
         description: "Elevated English Language Online Courses for Emerging Leaders and Orators.",
         description2: "Elevate English proficiency with our AS-level and A-level programmes. Hone essential communication skills for fluent, impactful conversations. Prepare international students for academic and everyday English interactions.",
         key_objective: [
@@ -1328,7 +1329,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Geography",
         url: "geography",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Geography@2x.png",
         description: "Exploring Human-Physical Geography Dynamics in Depth.",
         description2: "At IWS, we explore the dynamic interplay of human and physical geography, guided by the Cambridge International AS and A Level Geography (9696) syllabus. Our Sixth Form curriculum emphasises how the environment influences socio economic progress. This course equips students with practical, analytical, and research skills for diverse academic and professional opportunities.",
         key_objective: [
@@ -1363,7 +1364,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Global Perspectives & Research",
         url: "global-perspectives-research",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Global@2x.png",
         description: "Mastering Critical Thinking and Global Engagement with Cambridge A Level Global Perspectives & Research.",
         description2: "This dynamic course empowers learners to analyse and reflect on global issues, fostering critical thinking, research proficiency, and effective communication through the innovative 'Critical Path' approach. Engage in collaborative team projects, enhancing valuable collaborative skills for the challenges of the twenty-first century.",
         key_objective: [
@@ -1398,7 +1399,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level History",
         url: "history",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/History@2x.png",
         description: "Exploring Key Historical Events: AS and A-Level History Online.",
         description2: "Our British online school provides dynamic AS and A-Level History classes, following the Cambridge International AS and A Level History (9489) syllabus. Students explore key global events, with emphasis on American, European, and international politics, gaining a comprehensive understanding of their global impact.",
         key_objective: [
@@ -1433,7 +1434,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Law",
         url: "law",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Law@2x.png",
         description: "Unlock the World of Law with Cambridge AS and A-Level Online Classes.",
         description2: "Join our dynamic online school and embark on a journey to explore the legal landscape that shaped modern society. Our British online school offers the esteemed Cambridge International A-Level Law programme, providing Sixth Form students with a flexible and comprehensive legal education.",
         key_objective: [
@@ -1468,7 +1469,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Mathematics",
         url: "mathematics",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Math@2x.png",
         description: "Elevated AS and A-Level English Literature Education.",
         description2: "Explore advanced Mathematics online courses for AS and A-level students, emphasising essential transferable skills. Aligned with the Cambridge International AS and A Level Mathematics (9709) framework, enhancing Sixth Form subject curriculum.",
         key_objective: [
@@ -1503,7 +1504,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Further Mathematics",
         url: "further-mathematics",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/MathFurther@2x.png",
         description: "Enhancing Comprehension in A-level Further Mathematics.",
         description2: "Elevate A-level Further Mathematics comprehension with our online course. Rooted in the Cambridge International AS and A Level Further Mathematics (9231) framework for a comprehensive Sixth Form curriculum.",
         key_objective: [
@@ -1538,7 +1539,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Media Studies",
         url: "media-studies",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Media@2x.png",
         description: "Unleash Your Creative Potential with Cambridge A Level Media Studies.",
         description2: "This course empowers learners to delve into the world of media through hands-on experiences. From planning to execution, students craft their own media creations, gaining a comprehensive understanding of production processes and technologies. They also dissect existing media examples, exploring their impact on society.",
         key_objective: [
@@ -1573,7 +1574,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Physics",
         url: "physics",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Physics@2x.png",
         description: "Engaging AS and A Level Physics Classes for Sixth Former.",
         description2: "Our online AS and A Level Physics courses provide a strong STEM foundation. This two-year programme adheres to global learning standards and is designed for students who have completed I/GCSE Physics, ensuring a smooth transition into advanced studies.",
         key_objective: [
@@ -1608,7 +1609,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Psychology",
         url: "psychology",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Psychology@2x.png",
         description: "Exploring Psychological Theories: A Comprehensive A-Level Course.",
         description2: "At IWS, our rigorous A-level Psychology course, based on the Cambridge International AS and A Level Psychology framework (9990), offers profound insights into psychological theories and research methodology. It empowers Sixth Form students to explore the intricacies of human behaviour and the mind.",
         key_objective: [
@@ -1643,7 +1644,7 @@ export const keyStages: KeyStageProps[] = [
         subject_name: "A Level Sociology",
         url: "sociology",
         image_url: "",
-        icon: "/subjects/English.webp",
+        icon: "/subjects/Sociology@2x.png",
         description: "Exploring Social Dynamics: IWS A Level Sociology programme.",
         description2: "The Cambridge International AS and A Level Sociology (9699) curriculum lays a strong foundation in understanding group dynamics and societal institutions like education, media, and religion. Students gain valuable insights into societal forces. The course fosters a passion for global issues, empowering students to think critically and embrace diversity in an evolving world.",
         key_objective: [

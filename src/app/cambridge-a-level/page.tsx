@@ -52,6 +52,8 @@ const page: React.FC<pageProps> = ({ }) => {
           />
         </div>
 
+        
+
         <div className="pt-20 container">
           <div className="flex flex-col gap-6">
             <h2 className=" text-center ">Explore Our A Level Subjects</h2>
@@ -113,6 +115,125 @@ const page: React.FC<pageProps> = ({ }) => {
             ))}
           </div>
         </div>
+
+        <div className="pt-20 container">
+        <h2 className="  text-center ">
+          What awaits you at IWS Online School?
+        </h2>
+
+        <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
+          <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F1F9EC]">
+            <h3 className="   tracking-wide">
+              Visionary Educators of IWS Online School
+            </h3>
+            <p className="text-p leading-6  ">
+              Explore the difference our passionate and committed teachers make
+              in every student’s learning journey.
+            </p>
+          </div>
+
+          <div className="overflow-hidden gap-10 md:gap-0 flex flex-col md:flex-row-reverse md:items-center rounded-xl col-span-6 md:col-span-4 bg-[#EBF0FE]">
+            <Image
+              width={1000}
+              height={1000}
+              className="object-contain self-center md:w-3/5 max-w-sm"
+              src="/await/2-1-1024x589.webp"
+              alt=""
+            />
+
+            <div className="flex flex-col gap-6 h-full justify-between px-6 py-8">
+              <h3 className="   tracking-wide">
+                Our teachers are <br /> always in touch
+              </h3>
+              <p className="text-p leading-6  ">
+                Our teachers and mentors are ready to help with lesson queries
+                and platform guidance.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F5EDFF]">
+            <Image
+              width={1000}
+              height={1000}
+              className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
+              src="/await/3.webp"
+              alt=""
+            />
+
+            <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
+              <h3 className="   tracking-wide lg:w-[250px]">
+                Individual Programmes
+              </h3>
+              <p className="text-p leading-6  ">
+                Every child is unique. Our personalized assessments and Success
+                Coaching ensure tailored educational paths for every student.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#FFF0FF]">
+            <Image
+              width={1000}
+              height={1000}
+              className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
+              src="/await/4.webp"
+              alt=""
+            />
+
+            <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
+              <h3 className="   tracking-wide lg:w-[250px]">
+                Dynamic Live Lessons
+              </h3>
+              <p className="text-p leading-6  ">
+                Experience structured sessions for active participation,
+                collaboration, and growth in academics and personal development.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#FFE5E7]">
+            <Image
+              width={1000}
+              height={1000}
+              className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
+              src="/await/5.webp"
+              alt=""
+            />
+
+            <div className="flex flex-col h-full justify-between gap-6 pt-44 md:pt-20 lg:pt-0">
+              <h3 className="   tracking-wide lg:w-[250px]">
+                Accredited Curriculum
+              </h3>
+              <p className="text-p leading-6  ">
+                We prioritize holistic education, combining academic excellence
+                with skill development for a comprehensive learning experience.
+              </p>
+            </div>
+          </div>
+
+          <div className="overflow-hidden gap-10 md:gap-0 flex flex-col md:flex-row-reverse md:items-center rounded-xl col-span-6  bg-[#FDF6EB]">
+            <Image
+              width={1000}
+              height={1000}
+              className="object-contain self-center md:w-1/2"
+              src="/await/6-1024x399.webp"
+              alt=""
+            />
+
+            <div className="flex flex-col gap-6 h-full justify-between px-6 py-8 md:w-1/2">
+              <h3 className="   tracking-wide lg:w-[250px]">
+                Taking care of parents
+              </h3>
+              <p className="text-p leading-6">
+                Our support specialists are always ready to assist, and our
+                bi-weekly parent assemblies offer a platform to discuss any
+                topic and connect with like-minded families worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
         <div className="pt-20 flex flex-col gap-14">
           <div className="container flex flex-col gap-5">

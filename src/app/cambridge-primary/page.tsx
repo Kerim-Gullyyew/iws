@@ -13,11 +13,10 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import ContactUsSection from "../components/sections/ContactUsSection";
-interface pageProps { }
+interface pageProps {}
 
-const page: React.FC<pageProps> = ({ }) => {
-
-  const course = keyStages.find((course) => course.name === "Primary School")
+const page: React.FC<pageProps> = ({}) => {
+  const course = keyStages.find((course) => course.name === "Primary School");
 
   if (course) {
     return (
@@ -52,9 +51,9 @@ const page: React.FC<pageProps> = ({ }) => {
           <div className="flex flex-col gap-6">
             <h2 className=" text-center ">Explore Our Primary Subjects</h2>
             <p className=" text-center">
-              Maximise your academic potential with IWS Online School. Explore our
-              Primary subjects here and combine current studies with IWS courses
-              for exam preparation or further study.
+              Maximise your academic potential with IWS Online School. Explore
+              our Primary subjects here and combine current studies with IWS
+              courses for exam preparation or further study.
             </p>
           </div>
 
@@ -107,7 +106,128 @@ const page: React.FC<pageProps> = ({ }) => {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
 
+        <div className="pt-20 container">
+          <h2 className="  text-center ">
+            What awaits you at IWS Online School?
+          </h2>
+
+          <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
+            <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F1F9EC]">
+              <h3 className="   tracking-wide">
+                Visionary Educators of IWS Online School
+              </h3>
+              <p className="text-p leading-6  ">
+                Explore the difference our passionate and committed teachers
+                make in every student’s learning journey.
+              </p>
+            </div>
+
+            <div className="overflow-hidden gap-10 md:gap-0 flex flex-col md:flex-row-reverse md:items-center rounded-xl col-span-6 md:col-span-4 bg-[#EBF0FE]">
+              <Image
+                width={1000}
+                height={1000}
+                className="object-contain self-center md:w-3/5 max-w-sm"
+                src="/await/2-1-1024x589.webp"
+                alt=""
+              />
+
+              <div className="flex flex-col gap-6 h-full justify-between px-6 py-8">
+                <h3 className="   tracking-wide">
+                  Our teachers are <br /> always in touch
+                </h3>
+                <p className="text-p leading-6  ">
+                  Our teachers and mentors are ready to help with lesson queries
+                  and platform guidance.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F5EDFF]">
+              <Image
+                width={1000}
+                height={1000}
+                className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
+                src="/await/3.webp"
+                alt=""
+              />
+
+              <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
+                <h3 className="   tracking-wide lg:w-[250px]">
+                  Individual Programmes
+                </h3>
+                <p className="text-p leading-6  ">
+                  Every child is unique. Our personalized assessments and
+                  Success Coaching ensure tailored educational paths for every
+                  student.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#FFF0FF]">
+              <Image
+                width={1000}
+                height={1000}
+                className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
+                src="/await/4.webp"
+                alt=""
+              />
+
+              <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
+                <h3 className="   tracking-wide lg:w-[250px]">
+                  Dynamic Live Lessons
+                </h3>
+                <p className="text-p leading-6  ">
+                  Experience structured sessions for active participation,
+                  collaboration, and growth in academics and personal
+                  development.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#FFE5E7]">
+              <Image
+                width={1000}
+                height={1000}
+                className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
+                src="/await/5.webp"
+                alt=""
+              />
+
+              <div className="flex flex-col h-full justify-between gap-6 pt-44 md:pt-20 lg:pt-0">
+                <h3 className="   tracking-wide lg:w-[250px]">
+                  Accredited Curriculum
+                </h3>
+                <p className="text-p leading-6  ">
+                  We prioritize holistic education, combining academic
+                  excellence with skill development for a comprehensive learning
+                  experience.
+                </p>
+              </div>
+            </div>
+
+            <div className="overflow-hidden gap-10 md:gap-0 flex flex-col md:flex-row-reverse md:items-center rounded-xl col-span-6  bg-[#FDF6EB]">
+              <Image
+                width={1000}
+                height={1000}
+                className="object-contain self-center md:w-1/2"
+                src="/await/6-1024x399.webp"
+                alt=""
+              />
+
+              <div className="flex flex-col gap-6 h-full justify-between px-6 py-8 md:w-1/2">
+                <h3 className="   tracking-wide lg:w-[250px]">
+                  Taking care of parents
+                </h3>
+                <p className="text-p leading-6">
+                  Our support specialists are always ready to assist, and our
+                  bi-weekly parent assemblies offer a platform to discuss any
+                  topic and connect with like-minded families worldwide.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -139,11 +259,11 @@ const page: React.FC<pageProps> = ({ }) => {
                   Cambridge Primary at IWS Online School
                 </p>
                 <p className=" text-gray-800 pt-4">
-                  IWS Online School is committed to providing high-quality primary
-                  education that is accessible and affordable for all families. By
-                  offering various budget-friendly options and eliminating
-                  commuting costs through online learning, we ensure that quality
-                  education is a right for every child.
+                  IWS Online School is committed to providing high-quality
+                  primary education that is accessible and affordable for all
+                  families. By offering various budget-friendly options and
+                  eliminating commuting costs through online learning, we ensure
+                  that quality education is a right for every child.
                 </p>
               </div>
             </div>
@@ -171,11 +291,12 @@ const page: React.FC<pageProps> = ({ }) => {
                 </p>
                 <p className=" text-gray-800">
                   Our holistic curriculum, featuring subjects like Mathematics,
-                  English, Science, and more, is designed to produce well-rounded
-                  global citizens. We prioritise learning experiences over grades,
-                  emphasising the application of knowledge in real-world
-                  scenarios. Our dedicated teachers empower students to excel
-                  academically and prepare them for future educational challenges.
+                  English, Science, and more, is designed to produce
+                  well-rounded global citizens. We prioritise learning
+                  experiences over grades, emphasising the application of
+                  knowledge in real-world scenarios. Our dedicated teachers
+                  empower students to excel academically and prepare them for
+                  future educational challenges.
                 </p>
               </div>
             </div>
@@ -213,8 +334,8 @@ const page: React.FC<pageProps> = ({ }) => {
                               Our British online school revolutionises remote
                               education. With an easy-to-use platform, flexible
                               academic programmes, and adaptable schedules, we
-                              provide a learning experience that can often exceed
-                              that of traditional schools.
+                              provide a learning experience that can often
+                              exceed that of traditional schools.
                             </p>
                             <p className="">
                               Globally, schools are embracing technology to meet
@@ -226,15 +347,15 @@ const page: React.FC<pageProps> = ({ }) => {
                             <p className="">
                               Our teachers are adept at delivering Live Online
                               Lessons with great enthusiasm and proficiency. We
-                              also employ sophisticated and reliable technology to
-                              ensure our virtual classrooms meet every need of our
-                              pupils, including round-the-clock access to recorded
-                              lessons to support independent study.
+                              also employ sophisticated and reliable technology
+                              to ensure our virtual classrooms meet every need
+                              of our pupils, including round-the-clock access to
+                              recorded lessons to support independent study.
                             </p>
                             <p className="">
                               In this respect, we are advancing faster than many
-                              educational institutions that are just beginning to
-                              embark on this digital transition.
+                              educational institutions that are just beginning
+                              to embark on this digital transition.
                             </p>
                             <p className="">
                               IWS places great value on the educational
@@ -282,9 +403,10 @@ const page: React.FC<pageProps> = ({ }) => {
                           <div className=" space-y-5">
                             <p className="">
                               Yes, we offer Cambridge Assessment International
-                              Education. We are registered as UK Learner Providers
-                              and are in the process of obtaining our membership
-                              with the Council of International Schools (CIS).
+                              Education. We are registered as UK Learner
+                              Providers and are in the process of obtaining our
+                              membership with the Council of International
+                              Schools (CIS).
                             </p>
                           </div>
                         </DisclosurePanel>
@@ -345,7 +467,6 @@ const page: React.FC<pageProps> = ({ }) => {
       </div>
     );
   }
-
 };
 
 export default page;
