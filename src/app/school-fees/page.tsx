@@ -5,10 +5,9 @@ import Image from "next/image";
 import ContactUsSection from "../components/sections/ContactUsSection";
 import Link from "next/link";
 import { keyStages } from "../data/keystage";
-interface pageProps { }
+interface pageProps {}
 
-const Page: React.FC<pageProps> = ({ }) => {
-
+const Page: React.FC<pageProps> = ({}) => {
   return (
     <div className="py-14 lg:py-24 container animate-fade-in">
       <h1 className="text-center   text-[#349AFE]">School Fees</h1>
@@ -57,7 +56,7 @@ const Page: React.FC<pageProps> = ({ }) => {
                         className="px-3.5 bg-blue-600 rounded-lg py-1.5"
                       >
                         <h6 className="text-white text-[12px]">
-                          {subject.subject_name}
+                          {subject.subject_name2}
                         </h6>
                       </Link>
                     ))}
@@ -76,7 +75,7 @@ const Page: React.FC<pageProps> = ({ }) => {
                         className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
                       >
                         <h6 className="text-gray-600 text-[12px]">
-                          {subject.subject_name}
+                          {subject.subject_name2}
                         </h6>
                       </Link>
                     ))}
@@ -84,14 +83,16 @@ const Page: React.FC<pageProps> = ({ }) => {
                 </div>
               </div>
               <div>
-                <div className="w-full bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden">
-                  <p className="text-center ">Enrol Now</p>
-                </div>
+                <Link
+                  href={"https://iws-register.iwsonlineschool.co.uk/"}
+                  className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
+                >
+                  Enrol Now
+                </Link>
               </div>
             </div>
           </div>
         ))}
-
       </div>
 
       <div className="pt-8 sm:pt-20 flex flex-col md:flex-row lg:flex-row-reverse gap-5">

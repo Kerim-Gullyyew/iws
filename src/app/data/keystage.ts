@@ -1111,7 +1111,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "1",
         subject_name: "A Level Biology",
-        subject_name2: " ",
+        subject_name2: "Biology",
         url: "cambridge-a-level/biology",
         image_url: "",
         icon: "/subjects/Biology@2x.png",
@@ -1147,7 +1147,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "2",
         subject_name: "A Level Business",
-        subject_name2: " ",
+        subject_name2: "Business",
         url: "cambridge-a-level/business",
         image_url: "",
         icon: "/subjects/Business@2x.png",
@@ -1183,7 +1183,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "3",
         subject_name: "A Level Chemistry",
-        subject_name2: " ",
+        subject_name2: "Chemistry",
         url: "cambridge-a-level/chemistry",
         image_url: "",
         icon: "/subjects/Chemistry@2x.png",
@@ -1221,7 +1221,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "4",
         subject_name: "A Level Computer Science",
-        subject_name2: " ",
+        subject_name2: "Computer Science",
         url: "cambridge-a-level/computer-science",
         image_url: "",
         icon: "/subjects/Computer@2x.png",
@@ -1257,7 +1257,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "5",
         subject_name: "A Level Economics",
-        subject_name2: " ",
+        subject_name2: "Economics",
         url: "cambridge-a-level/economics",
         image_url: "",
         icon: "/subjects/Economics@2x.png",
@@ -1293,7 +1293,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "6",
         subject_name: "A Level English Literature",
-        subject_name2: " ",
+        subject_name2: "English Literature",
         url: "cambridge-a-level/english-literature",
         image_url: "",
         icon: "/subjects/Literature@2x.png",
@@ -1329,7 +1329,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "7",
         subject_name: "A Level English Language",
-        subject_name2: " ",
+        subject_name2: "English Language",
         url: "cambridge-a-level/english",
         image_url: "",
         icon: "/subjects/English@2x.png",
@@ -1365,7 +1365,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "8",
         subject_name: "A Level Geography",
-        subject_name2: " ",
+        subject_name2: "Geography",
         url: "cambridge-a-level/geography",
         image_url: "",
         icon: "/subjects/Geography@2x.png",
@@ -1401,7 +1401,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "9",
         subject_name: "A Level Global Perspectives & Research",
-        subject_name2: " ",
+        subject_name2: "Global Perspectives & Research",
         url: "cambridge-a-level/global-perspectives-research",
         image_url: "",
         icon: "/subjects/Global@2x.png",
@@ -1437,7 +1437,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "10",
         subject_name: "A Level History",
-        subject_name2: " ",
+        subject_name2: "History",
         url: "cambridge-a-level/history",
         image_url: "",
         icon: "/subjects/History@2x.png",
@@ -1473,7 +1473,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "11",
         subject_name: "A Level Law",
-        subject_name2: " ",
+        subject_name2: "Law",
         url: "cambridge-a-level/law",
         image_url: "",
         icon: "/subjects/Law@2x.png",
@@ -1509,7 +1509,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "12",
         subject_name: "A Level Mathematics",
-        subject_name2: " ",
+        subject_name2: "Mathematics",
         url: "cambridge-a-level/mathematics",
         image_url: "",
         icon: "/subjects/Math@2x.png",
@@ -1545,7 +1545,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "13",
         subject_name: "A Level Further Mathematics",
-        subject_name2: " ",
+        subject_name2: "Further Mathematics",
         url: "cambridge-a-level/further-mathematics",
         image_url: "",
         icon: "/subjects/MathFurther@2x.png",
@@ -1581,7 +1581,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "14",
         subject_name: "A Level Media Studies",
-        subject_name2: " ",
+        subject_name2: "Media Studies",
         url: "cambridge-a-level/media-studies",
         image_url: "",
         icon: "/subjects/Media@2x.png",
@@ -1617,7 +1617,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "15",
         subject_name: "A Level Physics",
-        subject_name2: " ",
+        subject_name2: "Physics",
         url: "cambridge-a-level/physics",
         image_url: "",
         icon: "/subjects/Physics@2x.png",
@@ -1653,7 +1653,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "16",
         subject_name: "A Level Psychology",
-        subject_name2: " ",
+        subject_name2: "Psychology",
         url: "cambridge-a-level/psychology",
         image_url: "",
         icon: "/subjects/Psychology@2x.png",
@@ -1689,7 +1689,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "17",
         subject_name: "A Level Sociology",
-        subject_name2: " ",
+        subject_name2: "Sociology",
         url: "cambridge-a-level/sociology",
         image_url: "",
         icon: "/subjects/Sociology@2x.png",
