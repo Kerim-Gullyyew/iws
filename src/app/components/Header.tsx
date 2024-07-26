@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
             <Bars3Icon className="h-8 w-8" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-3">
+        <Popover.Group className="hidden lg:flex lg:gap-x-1">
           <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-primary/"} >
             Primary
           </Link>
@@ -91,6 +91,9 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </Link>
           <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/school-fees/"} >
             School Fees
+          </Link>
+          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/contact-us/"} >
+            Contact Us
           </Link>
 
 

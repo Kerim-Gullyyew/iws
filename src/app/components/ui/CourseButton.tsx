@@ -14,7 +14,7 @@ const CourseButton: React.FC<CourseButtonProps> = ({}) => {
         }
         className="bg-white px-6 py-2 rounded-lg cursor-pointer text-blue-600 hover:bg-gray-100 "
       >
-        Enroll now
+        Enrol now
       </button>
       <button
         onClick={() =>

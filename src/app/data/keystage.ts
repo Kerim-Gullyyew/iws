@@ -9,6 +9,7 @@ export interface KeyStageProps {
 interface SubjectModel {
   id: string;
   subject_name: string;
+  subject_name2: string;
   url: string;
   image_url: string;
   icon: string;
@@ -32,6 +33,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "1",
         subject_name: "Primary Mathematics",
+        subject_name2: "Mathematics",
         url: "cambridge-primary/mathematics",
         image_url: "",
         icon: "/subjects/Math@2x.png",
@@ -67,6 +69,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "2",
         subject_name: "Primary English",
+        subject_name2: "English",
         url: "cambridge-primary/english",
         image_url: "",
         icon: "/subjects/English@2x.png",
@@ -102,6 +105,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "3",
         subject_name: "Primary Science",
+        subject_name2: "Science",
         url: "cambridge-primary/science",
         image_url: "",
         icon: "/subjects/Physics@2x.png",
@@ -137,6 +141,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "4",
         subject_name: "Primary Computing",
+        subject_name2: "Computing",
         url: "cambridge-primary/computing",
         image_url: "",
         icon: "/subjects/Computer@2x.png",
@@ -172,6 +177,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "5",
         subject_name: "Primary Global Perspectives",
+        subject_name2: "Global Perspectives",
         url: "cambridge-primary/global-perspectives",
         image_url: "",
         icon: "/subjects/Global@2x.png",
@@ -210,6 +216,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "6",
         subject_name: "Primary French as 2nd Language",
+        subject_name2: "French as 2nd Language",
         url: "cambridge-primary/french-as-2nd-language",
         image_url: "",
         icon: "/subjects/French@2x.png",
@@ -245,6 +252,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "7",
         subject_name: "Primary Spanish as 2nd Language",
+        subject_name2: "Spanish as 2nd Language",
         url: "cambridge-primary/spanish-as-2nd-language",
         image_url: "",
         icon: "/subjects/Spanish@2x.png",
@@ -280,6 +288,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "8",
         subject_name: "Primary German as 2nd Language",
+        subject_name2: "German as 2nd Language",
         url: "cambridge-primary/german-as-2nd-language",
         image_url: "",
         icon: "/subjects/German@2x.png",
@@ -314,6 +323,7 @@ export const keyStages: KeyStageProps[] = [
       },
     ]
   },
+
   {
     name: "Secondary School",
     price: 6000,
@@ -323,6 +333,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "1",
         subject_name: "Secondary Mathematics",
+        subject_name2: "Mathematics",
         url: "cambridge-secondary/mathematics",
         image_url: "",
         icon: "/subjects/Math@2x.png",
@@ -358,6 +369,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "2",
         subject_name: "Secondary English",
+        subject_name2: "English",
         url: "cambridge-secondary/english",
         image_url: "",
         icon: "/subjects/English@2x.png",
@@ -393,6 +405,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "3",
         subject_name: "Secondary Science",
+        subject_name2: "Science",
         url: "cambridge-secondary/science",
         image_url: "",
         icon: "/subjects/Physics@2x.png",
@@ -428,6 +441,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "4",
         subject_name: "Secondary Computing",
+        subject_name2: "Computing",
         url: "cambridge-secondary/computing",
         image_url: "",
         icon: "/subjects/Computer@2x.png",
@@ -463,6 +477,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "5",
         subject_name: "Secondary Global Perspectives",
+        subject_name2: "Global Perspectives",
         url: "cambridge-secondary/global-perspectives",
         image_url: "",
         icon: "/subjects/Global@2x.png",
@@ -500,6 +515,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "6",
         subject_name: "Secondary French as 2nd Language",
+        subject_name2: "French as 2nd Language",
         url: "cambridge-secondary/french-as-2nd-language",
         image_url: "",
         icon: "/subjects/French@2x.png",
@@ -535,6 +551,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "7",
         subject_name: "Secondary Spanish as 2nd Language",
+        subject_name2: "Spanish as 2nd Language",
         url: "cambridge-secondary/spanish-as-2nd-language",
         image_url: "",
         icon: "/subjects/Spanish@2x.png",
@@ -570,6 +587,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "8",
         subject_name: "Secondary German as 2nd Language",
+        subject_name2: "German as 2nd Language",
         url: "cambridge-secondary/german-as-2nd-language",
         image_url: "",
         icon: "/subjects/German@2x.png",
@@ -614,6 +632,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "1",
         subject_name: "I/GCSE Biology",
+        subject_name2: "Biology",
         url: "cambridge-igcse/biology",
         image_url: "",
         icon: "/subjects/Biology@2x.png",
@@ -649,6 +668,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "2",
         subject_name: "I/GCSE Business Studies",
+        subject_name2: "Business Studies",
         url: "cambridge-igcse/business-studies",
         image_url: "",
         icon: "/subjects/Business@2x.png",
@@ -684,6 +704,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "3",
         subject_name: "I/GCSE Chemistry",
+        subject_name2: "Chemistry",
         url: "cambridge-igcse/chemistry",
         image_url: "",
         icon: "/subjects/Chemistry@2x.png",
@@ -719,6 +740,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "4",
         subject_name: "I/GCSE Computer Science",
+        subject_name2: "Computer Science",
         url: "cambridge-igcse/computer-science",
         image_url: "",
         icon: "/subjects/Computer@2x.png",
@@ -754,6 +776,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "5",
         subject_name: "I/GCSE Economics",
+        subject_name2: "Economics",
         url: "cambridge-igcse/economics",
         image_url: "",
         icon: "/subjects/Economics@2x.png",
@@ -791,6 +814,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "6",
         subject_name: "I/GCSE English",
+        subject_name2: "English",
         url: "cambridge-igcse/english",
         image_url: "",
         icon: "/subjects/English@2x.png",
@@ -826,6 +850,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "7",
         subject_name: "IGCSE English Literature",
+        subject_name2: "English Literature",
         url: "cambridge-igcse/english-literature",
         image_url: "",
         icon: "/subjects/Literature@2x.png",
@@ -861,6 +886,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "8",
         subject_name: "I/GCSE Geography",
+        subject_name2: "Geography",
         url: "cambridge-igcse/geography",
         image_url: "",
         icon: "/subjects/Geography@2x.png",
@@ -896,6 +922,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "9",
         subject_name: "I/GCSE History",
+        subject_name2: "History",
         url: "cambridge-igcse/history",
         image_url: "",
         icon: "/subjects/History@2x.png",
@@ -931,6 +958,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "10",
         subject_name: "I/GCSE Mathematics",
+        subject_name2: "Mathematics",
         url: "cambridge-igcse/mathematics",
         image_url: "",
         icon: "/subjects/Math@2x.png",
@@ -966,6 +994,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "11",
         subject_name: "I/GCSE Physics",
+        subject_name2: "Physics",
         url: "cambridge-igcse/physics",
         image_url: "",
         icon: "/subjects/Physics@2x.png",
@@ -1001,6 +1030,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "12",
         subject_name: "I/GCSE Sociology",
+        subject_name2: "Sociology",
         url: "cambridge-igcse/sociology",
         image_url: "",
         icon: "/subjects/Sociology@2x.png",
@@ -1036,6 +1066,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "13",
         subject_name: "I/GCSE Spanish as Second Language",
+        subject_name2: "Spanish as Second Language",
         url: "cambridge-igcse/spanish",
         image_url: "",
         icon: "/subjects/Spanish@2x.png",
@@ -1080,6 +1111,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "1",
         subject_name: "A Level Biology",
+        subject_name2: " ",
         url: "cambridge-a-level/biology",
         image_url: "",
         icon: "/subjects/Biology@2x.png",
@@ -1115,6 +1147,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "2",
         subject_name: "A Level Business",
+        subject_name2: " ",
         url: "cambridge-a-level/business",
         image_url: "",
         icon: "/subjects/Business@2x.png",
@@ -1150,6 +1183,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "3",
         subject_name: "A Level Chemistry",
+        subject_name2: " ",
         url: "cambridge-a-level/chemistry",
         image_url: "",
         icon: "/subjects/Chemistry@2x.png",
@@ -1187,6 +1221,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "4",
         subject_name: "A Level Computer Science",
+        subject_name2: " ",
         url: "cambridge-a-level/computer-science",
         image_url: "",
         icon: "/subjects/Computer@2x.png",
@@ -1222,6 +1257,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "5",
         subject_name: "A Level Economics",
+        subject_name2: " ",
         url: "cambridge-a-level/economics",
         image_url: "",
         icon: "/subjects/Economics@2x.png",
@@ -1257,6 +1293,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "6",
         subject_name: "A Level English Literature",
+        subject_name2: " ",
         url: "cambridge-a-level/english-literature",
         image_url: "",
         icon: "/subjects/Literature@2x.png",
@@ -1292,6 +1329,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "7",
         subject_name: "A Level English Language",
+        subject_name2: " ",
         url: "cambridge-a-level/english",
         image_url: "",
         icon: "/subjects/English@2x.png",
@@ -1327,6 +1365,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "8",
         subject_name: "A Level Geography",
+        subject_name2: " ",
         url: "cambridge-a-level/geography",
         image_url: "",
         icon: "/subjects/Geography@2x.png",
@@ -1362,6 +1401,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "9",
         subject_name: "A Level Global Perspectives & Research",
+        subject_name2: " ",
         url: "cambridge-a-level/global-perspectives-research",
         image_url: "",
         icon: "/subjects/Global@2x.png",
@@ -1397,6 +1437,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "10",
         subject_name: "A Level History",
+        subject_name2: " ",
         url: "cambridge-a-level/history",
         image_url: "",
         icon: "/subjects/History@2x.png",
@@ -1432,6 +1473,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "11",
         subject_name: "A Level Law",
+        subject_name2: " ",
         url: "cambridge-a-level/law",
         image_url: "",
         icon: "/subjects/Law@2x.png",
@@ -1467,6 +1509,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "12",
         subject_name: "A Level Mathematics",
+        subject_name2: " ",
         url: "cambridge-a-level/mathematics",
         image_url: "",
         icon: "/subjects/Math@2x.png",
@@ -1502,6 +1545,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "13",
         subject_name: "A Level Further Mathematics",
+        subject_name2: " ",
         url: "cambridge-a-level/further-mathematics",
         image_url: "",
         icon: "/subjects/MathFurther@2x.png",
@@ -1537,6 +1581,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "14",
         subject_name: "A Level Media Studies",
+        subject_name2: " ",
         url: "cambridge-a-level/media-studies",
         image_url: "",
         icon: "/subjects/Media@2x.png",
@@ -1572,6 +1617,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "15",
         subject_name: "A Level Physics",
+        subject_name2: " ",
         url: "cambridge-a-level/physics",
         image_url: "",
         icon: "/subjects/Physics@2x.png",
@@ -1607,6 +1653,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "16",
         subject_name: "A Level Psychology",
+        subject_name2: " ",
         url: "cambridge-a-level/psychology",
         image_url: "",
         icon: "/subjects/Psychology@2x.png",
@@ -1642,6 +1689,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "17",
         subject_name: "A Level Sociology",
+        subject_name2: " ",
         url: "cambridge-a-level/sociology",
         image_url: "",
         icon: "/subjects/Sociology@2x.png",

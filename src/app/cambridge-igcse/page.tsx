@@ -112,6 +112,50 @@ const Page: React.FC<pageProps> = ({}) => {
           </div>
         </div>
 
+        <div className="pt-20 container ">
+            <div className="relative w-full bg-blue-600 rounded-2xl">
+              <div className="absolute left-1/2 sm:top-1/2 sm:left-0 transform -translate-x-1/2 rounded-full -translate-y-1/2 w-16 h-16 bg-white" />
+              <div className="absolute left-1/2 sm:left-auto sm:top-1/2 sm:right-0 sm:-translate-y-1/2 sm:translate-x-1/2 bottom-0 transform -translate-x-1/2 rounded-full translate-y-1/2 w-16 h-16 bg-white" />
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 px-5 sm:px-10 py-14 sm:py-8">
+                <div className="flex flex-col md:flex-row col-span-2 gap-10">
+                  <div className="w-full flex gap-3">
+                    <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
+                      <p className="text-white text-[26px] font-bold">1</p>
+                    </div>
+                    <div className="space-y-5 mt-2">
+                      <p className="text-white text-[26px] font-semibold">Select core subjects</p>
+                      <p className="text-white ">
+                        Select your desired 5 core subjects. These subjects are
+                        included in I/GCSE Cambridge school fees.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="w-full flex gap-3 col-span-1">
+                    <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
+                    <p className="text-white text-[26px] font-bold">2</p>
+                    </div>
+                    <div className="space-y-5 mt-2">
+                      <p className="text-white text-[26px] font-semibold">Customise your study</p>
+                      <p className="text-white ">
+                      You can customise your study by adding your desired subjects for an extra cost.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full border-t-2 sm:border-l-2 sm:border-t-0 border-dashed flex flex-col gap-8 py-5 items-center justify-center">
+                  <div className="flex gap-4 items-end sm:flex-col lg:flex-row">
+                    <p className="text-white text-[50px] font-semibold">£7200</p>
+                    <p className="text-white text-[33px]">/year</p>
+                  </div>
+                  <button onClick={() => router.push('https://iws-register.iwsonlineschool.co.uk/')} className="bg-white rounded-full px-9 py-3 text-blue-600 font-semibold text-[18px]">
+                    Enrol now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <div className="pt-20 container">
           <h2 className="  text-center ">
             What awaits you at IWS Online School?
@@ -794,49 +838,7 @@ const Page: React.FC<pageProps> = ({}) => {
           </p>
 
 
-          <div className="pt-5 ">
-            <div className="relative w-full bg-blue-600 rounded-2xl">
-              <div className="absolute left-1/2 sm:top-1/2 sm:left-0 transform -translate-x-1/2 rounded-full -translate-y-1/2 w-16 h-16 bg-white" />
-              <div className="absolute left-1/2 sm:left-auto sm:top-1/2 sm:right-0 sm:-translate-y-1/2 sm:translate-x-1/2 bottom-0 transform -translate-x-1/2 rounded-full translate-y-1/2 w-16 h-16 bg-white" />
-
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 px-5 sm:px-10 py-14 sm:py-8">
-                <div className="flex flex-col md:flex-row col-span-2 gap-10">
-                  <div className="w-full flex gap-3">
-                    <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
-                      <p className="text-white text-[26px] font-bold">1</p>
-                    </div>
-                    <div className="space-y-5 mt-2">
-                      <p className="text-white text-[26px] font-semibold">Select core subjects</p>
-                      <p className="text-white ">
-                        Select your desired 5 core subjects. These subjects are
-                        included in I/GCSE Cambridge school fees.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full flex gap-3 col-span-1">
-                    <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
-                    <p className="text-white text-[26px] font-bold">2</p>
-                    </div>
-                    <div className="space-y-5 mt-2">
-                      <p className="text-white text-[26px] font-semibold">Customise your study</p>
-                      <p className="text-white ">
-                      You can customise your study by adding your desired subjects for an extra cost.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full border-t-2 sm:border-l-2 sm:border-t-0 border-dashed flex flex-col gap-8 py-5 items-center justify-center">
-                  <div className="flex gap-4 items-end sm:flex-col lg:flex-row">
-                    <p className="text-white text-[50px] font-semibold">£7200</p>
-                    <p className="text-white text-[33px]">/year</p>
-                  </div>
-                  <button onClick={() => router.push('https://iws-register.iwsonlineschool.co.uk/')} className="bg-white rounded-full px-9 py-3 text-blue-600 font-semibold text-[18px]">
-                    Enrol now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           <div className="mt-6">
             <h3 className="border-b   text-blue-900 border-blue-900 pb-3">
