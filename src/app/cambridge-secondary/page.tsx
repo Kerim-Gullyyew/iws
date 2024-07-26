@@ -791,7 +791,8 @@ const page: React.FC<pageProps> = ({}) => {
             Our initial meeting is free with no obligations. If you decide to
             enroll, our flexible fee structure includes a £200 one-time fee
             covering comprehensive tests to tailor your child’s education. For
-            pricing details, visit our tuition fees page.
+            pricing details, visit our
+            <Link href={"/school-fees"} className="text-blue-500"> tuition fees page.</Link>
           </p>
 
           <div className="mt-6">
