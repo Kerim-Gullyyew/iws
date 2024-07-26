@@ -13,9 +13,11 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import ContactUsSection from "../components/sections/ContactUsSection";
+import { useRouter } from 'next/navigation'
 interface pageProps {}
 
-const page: React.FC<pageProps> = ({}) => {
+const Page: React.FC<pageProps> = ({}) => {
+  const router = useRouter();
   const course = keyStages.find((course) => course.name === "Primary School");
 
   if (course) {
@@ -230,51 +232,6 @@ const page: React.FC<pageProps> = ({}) => {
             </div>
           </div>
         </div>
-
-
-        <div className="pt-20 container">
-          <div className="relative w-full bg-blue-600 rounded-2xl">
-            <div className="absolute left-1/2 sm:top-1/2 sm:left-0 transform -translate-x-1/2 rounded-full -translate-y-1/2 w-16 h-16 bg-white" />
-            <div className="absolute left-1/2 sm:left-auto sm:top-1/2 sm:right-0 sm:-translate-y-1/2 sm:translate-x-1/2 bottom-0 transform -translate-x-1/2 rounded-full translate-y-1/2 w-16 h-16 bg-white" />
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 px-5 sm:px-10 py-14 sm:py-8">
-              <div className="flex flex-col md:flex-row col-span-2 gap-10">
-                <div className="w-full flex gap-3">
-                  <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
-                    <h3 className="text-white">1</h3>
-                  </div>
-                  <div className="space-y-3 mt-2">
-                    <h3 className="text-white">Select core subjects</h3>
-                    <p className="text-white leading-tight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse culpa, minima, nostrum obcaecati qui commodi, quas quaerat quam enim velit </p>
-                  </div>
-                </div>
-                <div className="w-full flex gap-3 col-span-1">
-                  <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
-                    <h3 className="text-white">1</h3>
-                  </div>
-                  <div className="space-y-3 mt-2">
-                    <h3 className="text-white">Select core subjects</h3>
-                    <p className="text-white leading-tight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse culpa, minima, nostrum obcaecati qui commodi, quas quaerat quam enim velit </p>
-                  </div>
-                </div>
-
-              </div>
-              <div className="w-full border-t-2 sm:border-l-2 sm:border-t-0 border-dashed flex flex-col gap-5 py-5 items-center justify-center">
-                <div className="flex gap-1 items-end sm:flex-col lg:flex-row">
-                  <h2 className="text-white">$7500</h2>
-                  <h4 className="text-white">/year</h4>
-                </div>
-                <button className="bg-white rounded-full px-6 py-2">
-                  Enroll now
-                </button>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
 
         <div className="pt-20 flex flex-col gap-14">
           <div className="container flex flex-col gap-5">
@@ -706,8 +663,8 @@ const page: React.FC<pageProps> = ({}) => {
                             <ul className=" list-disc list-inside">
                               <li>An interactive student guide</li>
                               <li>
-                                A comprehensive framework covering the A and
-                                AS Levels curriculum
+                                A comprehensive framework covering the A and AS
+                                Levels curriculum
                               </li>
                               <li>
                                 Around-the-clock access to recorded English
@@ -807,16 +764,34 @@ const page: React.FC<pageProps> = ({}) => {
                           <div className=" space-y-5">
                             <ul className="list-disc list-inside">
                               <li>Extended exam time (25-50%)</li>
-                              <li>A scribe to transcribe answers based on student responses</li>
+                              <li>
+                                A scribe to transcribe answers based on student
+                                responses
+                              </li>
                               <li>A reader</li>
-                              <li>Enlarged print exam papers for improved visibility</li>
+                              <li>
+                                Enlarged print exam papers for improved
+                                visibility
+                              </li>
                               <li>A separate examination area</li>
                               <li>Supervised breaks to prevent fatigue</li>
                               <li>Laptop use</li>
                             </ul>
                             <p className="font-bold">Please Note</p>
-                            <p>Applications for access assistance should be submitted by February of the year the student takes the Cambridge Board Exam. Processing and approval of requests may take up to 18 months, with an additional assessment to validate the need for support.</p>
-                            <p>The evaluation will be conducted by an official board of examiners and relevant specialists such as educational psychologists, occupational therapists, etc.</p>
+                            <p>
+                              Applications for access assistance should be
+                              submitted by February of the year the student
+                              takes the Cambridge Board Exam. Processing and
+                              approval of requests may take up to 18 months,
+                              with an additional assessment to validate the need
+                              for support.
+                            </p>
+                            <p>
+                              The evaluation will be conducted by an official
+                              board of examiners and relevant specialists such
+                              as educational psychologists, occupational
+                              therapists, etc.
+                            </p>
                           </div>
                         </DisclosurePanel>
                       )}
@@ -840,9 +815,56 @@ const page: React.FC<pageProps> = ({}) => {
             Our initial meeting is free with no obligations. If you decide to
             enroll, our flexible fee structure includes a £200 one-time fee
             covering comprehensive tests to tailor your child’s education. For
-            pricing details, visit our 
-            <Link href={"/school-fees"} className="text-blue-500"> tuition fees page.</Link>
+            pricing details, visit our
+            <Link href={"/school-fees"} className="text-blue-500">
+              {" "}
+              tuition fees page.
+            </Link>
           </p>
+
+          <div className="pt-5 ">
+            <div className="relative w-full bg-blue-600 rounded-2xl">
+              <div className="absolute left-1/2 sm:top-1/2 sm:left-0 transform -translate-x-1/2 rounded-full -translate-y-1/2 w-16 h-16 bg-white" />
+              <div className="absolute left-1/2 sm:left-auto sm:top-1/2 sm:right-0 sm:-translate-y-1/2 sm:translate-x-1/2 bottom-0 transform -translate-x-1/2 rounded-full translate-y-1/2 w-16 h-16 bg-white" />
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 px-5 sm:px-10 py-14 sm:py-8">
+                <div className="flex flex-col md:flex-row col-span-2 gap-10">
+                  <div className="w-full flex gap-3">
+                    <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
+                      <p className="text-white text-[26px] font-bold">1</p>
+                    </div>
+                    <div className="space-y-5 mt-2">
+                      <p className="text-white text-[26px] font-semibold">Select core subjects</p>
+                      <p className="text-white ">
+                        Select your desired 5 core subjects. These subjects are
+                        included in Primary Cambridge school fees.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="w-full flex gap-3 col-span-1">
+                    <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
+                    <p className="text-white text-[26px] font-bold">2</p>
+                    </div>
+                    <div className="space-y-5 mt-2">
+                      <p className="text-white text-[26px] font-semibold">Customise your study</p>
+                      <p className="text-white ">
+                      You can customise your study by adding your desired subjects for an extra cost.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full border-t-2 sm:border-l-2 sm:border-t-0 border-dashed flex flex-col gap-8 py-5 items-center justify-center">
+                  <div className="flex gap-4 items-end sm:flex-col lg:flex-row">
+                    <p className="text-white text-[50px] font-semibold">£5000</p>
+                    <p className="text-white text-[33px]">/year</p>
+                  </div>
+                  <button onClick={() => router.push('https://iws-register.iwsonlineschool.co.uk/')} className="bg-white rounded-full px-9 py-3 text-blue-600 font-semibold text-[18px]">
+                    Enrol now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="mt-6">
             <h3 className="border-b   text-blue-900 border-blue-900 pb-3">
@@ -879,4 +901,4 @@ const page: React.FC<pageProps> = ({}) => {
   }
 };
 
-export default page;
+export default Page;
