@@ -5,9 +5,13 @@ import Image from "next/image";
 import ContactUsSection from "../components/sections/ContactUsSection";
 import Link from "next/link";
 import { keyStages } from "../data/keystage";
+import { useRouter } from 'next/navigation'
+
+
 interface pageProps {}
 
 const Page: React.FC<pageProps> = ({}) => {
+  const router = useRouter()
   return (
     <div className="py-14 lg:py-24 container animate-fade-in">
       <h1 className="text-center   text-[#349AFE]">School Fees</h1>
@@ -29,7 +33,7 @@ const Page: React.FC<pageProps> = ({}) => {
           >
             <div className="flex justify-between gap-4 flex-col h-full">
               <div className="flex flex-col gap-10">
-                <div className="flex flex-col gap-8">
+                <div onClick={() => router.push(keystage.url)} className="flex flex-col gap-8">
                   <h3
                     className={`text-[24px] ${index === 0 && "text-sky-500"}  ${index === 1 && "text-green-500"} ${index === 2 && "text-orange-500"} ${index === 3 && "text-red-500"}`}
                   >
