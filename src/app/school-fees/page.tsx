@@ -28,7 +28,7 @@ const page: React.FC<pageProps> = ({ }) => {
               <div className="flex justify-between gap-4 flex-col h-full">
                 <div className="flex flex-col gap-10">
                   <div className="flex flex-col gap-8">
-                    <h3 className=" text-[24px] text-sky-500">{keystage.name}</h3>
+                    <h3 className={`text-[24px] ${index === 0 && 'text-sky-500'}  ${index === 1 && 'text-green-500'} ${index === 2 && 'text-orange-500'} ${index === 3 && 'text-red-500'}`}>{keystage.name}</h3>
 
                     <div className=" flex flex-wrap gap-5 items-end">
                       <h4 className="text-[32px] ">£{keystage.price}</h4>
