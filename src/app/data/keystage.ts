@@ -1,6 +1,7 @@
 export interface KeyStageProps {
   name: string;
   price: number;
+  url: string;
   description: string;
   includedSubjects: SubjectModel[];
   additionalSubjects: SubjectModel[];
@@ -25,6 +26,7 @@ export const keyStages: KeyStageProps[] = [
   {
     name: "Primary School",
     price: 5000,
+    url: "cambridge-primary",
     description: "sdfdsfdsfdsfsdfsdf",
     includedSubjects: [
       {
@@ -314,6 +316,7 @@ export const keyStages: KeyStageProps[] = [
   {
     name: "Secondary School",
     price: 6000,
+    url: "cambridge-secondary",
     description: "sdfdsfdsfdsfsdfsdf",
     includedSubjects: [
       {
@@ -604,6 +607,7 @@ export const keyStages: KeyStageProps[] = [
   {
     name: "I/GCSE",
     price: 7200,
+    url: "cambridge-igcse",
     description: "sdfdsfdsfdsfsdfsdf",
     includedSubjects: [
       {
@@ -1069,6 +1073,7 @@ export const keyStages: KeyStageProps[] = [
   {
     name: "A Level",
     price: 7500,
+    url: "cambridge-a-level",
     description: "sdfdsfdsfdsfsdfsdf",
     includedSubjects: [
       {

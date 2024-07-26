@@ -8,7 +8,7 @@ import { keyStages } from "../data/keystage";
 import { useRouter } from 'next/navigation'
 interface pageProps { }
 
-const page: React.FC<pageProps> = ({ }) => {
+const Page: React.FC<pageProps> = ({ }) => {
 
   const router = useRouter()
   return (
@@ -28,7 +28,7 @@ const page: React.FC<pageProps> = ({ }) => {
         {keyStages.map((keystage, index) => (
           <div
             key={index}
-            onClick={() => router.push("/cambridge-primary")}
+            onClick={() => router.push(keystage.url)}
             className="w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6"
           >
             <div className="flex justify-between gap-4 flex-col h-full">
@@ -149,4 +149,4 @@ const page: React.FC<pageProps> = ({ }) => {
   );
 };
 
-export default page;
+export default Page;
