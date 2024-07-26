@@ -130,8 +130,8 @@ const Page: React.FC<pageProps> = ({ }) => {
 
       <div className="pt-20">
         <div className="relative">
-          <div className="relative w-full py-20 sm:py-28">
-            <div className="absolute inset-0 bg-asset-2 bg-cover bg-center opacity-20"></div>
+          <div className="relative w-full py-20 sm:py-28 rounded-3xl overflow-hidden">
+            <div className="absolute inset-0 bg-asset-2 bg-sky-300 bg-cover bg-center opacity-20"></div>
             <div className="relative z-30 self-center sm:container">
               <Testimonial />
             </div>
