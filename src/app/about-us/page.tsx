@@ -12,7 +12,7 @@ interface pageProps {}
 
 const page: React.FC<pageProps> = ({}) => {
   return (
-    <div className=" container pt-3 pb-24">
+    <div className=" container pt-3 pb-24 animate-fade-in">
       <div className="pt-16 pb-14 bg-asset-3 px-6 bg-cover bg-no-repeat bg-center bg-blue-500 flex items-center justify-center bg-blend-soft-light overflow-hidden rounded-[40px] w-full ">
         <div className="flex flex-col justify-center items-center max-w-[1000px]">
           <h1 className="text-center text-white ">

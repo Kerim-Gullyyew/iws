@@ -10,7 +10,7 @@ interface pageProps {
 
 const page: React.FC<pageProps> = ({ }) => {
   return (
-    <div className='container py-14 lg:py-24'>
+    <div className='container py-14 lg:py-24 animate-fade-in'>
 
       <TabGroup defaultIndex={0} className={'w-full flex flex-col justify-center items-center gap-10'}>
         <TabList className={"w-full border-2 px-2 py-2 rounded-xl flex  justify-center gap-5 max-w-[500px]"}>

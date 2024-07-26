@@ -4,7 +4,7 @@ interface pageProps {}
 
 const page: React.FC<pageProps> = ({}) => {
   return (
-    <div>
+    <div className="animate-fade-in">
       <div className="bg-asset-3 bg-primary bg-center bg-cover bg-blend-luminosity">
         <div className="container py-24">
           <h1 className=" text-white leading-tight font-medium text-[46px]">
