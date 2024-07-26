@@ -20,7 +20,7 @@ interface pageProps { }
 
 const page: React.FC<pageProps> = ({ }) => {
 
-  const course = keyStages.find((course) => course.name === "Primary School")
+  const course = keyStages.find((course) => course.name === "A Level")
 
   if (course) {
     return (

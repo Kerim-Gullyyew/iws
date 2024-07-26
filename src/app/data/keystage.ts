@@ -206,7 +206,7 @@ export const keyStages: KeyStageProps[] = [
       },
     ],
     additionalSubjects: [
-      
+
       {
         id: "6",
         subject_name: "Primary French as 2nd Language",
@@ -323,7 +323,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "1",
         subject_name: "Secondary Mathematics",
-        url: "mathematics",
+        url: "cambridge-secondary/mathematics",
         image_url: "",
         icon: "/subjects/Math@2x.png",
         description: "Igniting the Spark of Mathematical Passion in Middle School Students.",
@@ -358,7 +358,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "2",
         subject_name: "Secondary English",
-        url: "english",
+        url: "cambridge-secondary/english",
         image_url: "",
         icon: "/subjects/English@2x.png",
         description: "Embracing the Cambridge Curriculum for English Excellence.",
@@ -393,7 +393,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "3",
         subject_name: "Secondary Science",
-        url: "science",
+        url: "cambridge-secondary/science",
         image_url: "",
         icon: "/subjects/Physics@2x.png",
         description: "Explore natural wonders at IWS International Middle School.",
@@ -428,7 +428,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "4",
         subject_name: "Secondary Computing",
-        url: "computing",
+        url: "cambridge-secondary/computing",
         image_url: "",
         icon: "/subjects/Computer@2x.png",
         description: "Real-World Application: Discover Computing at Our Online UK School.",
@@ -463,7 +463,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "5",
         subject_name: "Secondary Global Perspectives",
-        url: "global-perspectives",
+        url: "cambridge-secondary/global-perspectives",
         image_url: "",
         icon: "/subjects/Global@2x.png",
         description: "Inclusive Inquiry: Empowering 11-14 Year-Olds at Our Online UK School.",
@@ -500,7 +500,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "6",
         subject_name: "Secondary French as 2nd Language",
-        url: "french-as-2nd-language",
+        url: "cambridge-secondary/french-as-2nd-language",
         image_url: "",
         icon: "/subjects/French@2x.png",
         description: "Explore, Learn, and Communicate: Middle French Homeschooling Course.",
@@ -535,7 +535,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "7",
         subject_name: "Secondary Spanish as 2nd Language",
-        url: "spanish-as-2nd-language",
+        url: "cambridge-secondary/spanish-as-2nd-language",
         image_url: "",
         icon: "/subjects/Spanish@2x.png",
         description: "Unlock Opportunities with Middle Spanish Homeschooling Course.",
@@ -570,7 +570,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "8",
         subject_name: "Secondary German as 2nd Language",
-        url: "german-as-2nd-language",
+        url: "cambridge-secondary/german-as-2nd-language",
         image_url: "",
         icon: "/subjects/German@2x.png",
         description: "Explore, Learn, and Connect: Middle German Homeschooling Course.",
@@ -614,7 +614,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "1",
         subject_name: "I/GCSE Biology",
-        url: "biology",
+        url: "cambridge-igcse/biology",
         image_url: "",
         icon: "/subjects/Biology@2x.png",
         description: "I/GCSE Biology students apply fundamental science concepts in the real world.",
@@ -649,7 +649,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "2",
         subject_name: "I/GCSE Business Studies",
-        url: "business-studies",
+        url: "cambridge-igcse/business-studies",
         image_url: "",
         icon: "/subjects/Business@2x.png",
         description: "I/GCSE course: Emphasises business creation, continuity, change, and innovation.",
@@ -684,7 +684,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "3",
         subject_name: "I/GCSE Chemistry",
-        url: "chemistry",
+        url: "cambridge-igcse/chemistry",
         image_url: "",
         icon: "/subjects/Chemistry@2x.png",
         description: "I/GCSE Chemistry: Blend of theory, experiments, and engaging lessons.",
@@ -719,7 +719,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "4",
         subject_name: "I/GCSE Computer Science",
-        url: "computer-science",
+        url: "cambridge-igcse/computer-science",
         image_url: "",
         icon: "/subjects/Computer@2x.png",
         description: "Digital awareness programme enhances I/GCSE students' digital literacy.",
@@ -754,7 +754,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "5",
         subject_name: "I/GCSE Economics",
-        url: "economics",
+        url: "cambridge-igcse/economics",
         image_url: "",
         icon: "/subjects/Economics@2x.png",
         description: "Engaging I/GCSE course: Equips students with vital economic concepts for future careers.",
@@ -826,9 +826,9 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "7",
         subject_name: "IGCSE English Literature",
-        url: "english-literature",
+        url: "cambridge-igcse/english-literature",
         image_url: "",
-        icon: "/subjects/English@2x.png",
+        icon: "/subjects/Literature@2x.png",
         description: "Elevated IGCSE English Literature Education.",
         description2: "Embark on a transformative educational journey with our IGCSE English Literature courses. Dive deep into literary texts following the Cambridge International English – Literature syllabus.",
         key_objective: [
@@ -861,7 +861,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "8",
         subject_name: "I/GCSE Geography",
-        url: "geography",
+        url: "cambridge-igcse/geography",
         image_url: "",
         icon: "/subjects/Geography@2x.png",
         description: "Online I/GCSE Geography: Explores connections between individuals and locations.",
@@ -896,7 +896,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "9",
         subject_name: "I/GCSE History",
-        url: "history",
+        url: "cambridge-igcse/history",
         image_url: "",
         icon: "/subjects/History@2x.png",
         description: "Our online I/GCSE History courses analyse historical events from a critical perspective.",
@@ -931,7 +931,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "10",
         subject_name: "I/GCSE Mathematics",
-        url: "mathematics",
+        url: "cambridge-igcse/mathematics",
         image_url: "",
         icon: "/subjects/Math@2x.png",
         description: "Encouraging curiosity and mathematical proficiency as vital life skills.",
@@ -966,7 +966,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "11",
         subject_name: "I/GCSE Physics",
-        url: "physics",
+        url: "cambridge-igcse/physics",
         image_url: "",
         icon: "/subjects/Physics@2x.png",
         description: "I/GCSE Physics online: Learn natural science fundamentals and universal laws' significance.",
@@ -1001,7 +1001,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "12",
         subject_name: "I/GCSE Sociology",
-        url: "sociology",
+        url: "cambridge-igcse/sociology",
         image_url: "",
         icon: "/subjects/Sociology@2x.png",
         description: "I/GCSE course: Analyse societal dynamics' impact through reflection.",
@@ -1036,7 +1036,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "13",
         subject_name: "I/GCSE Spanish as Second Language",
-        url: "spanish",
+        url: "cambridge-igcse/spanish",
         image_url: "",
         icon: "/subjects/Spanish@2x.png",
         description: "Inclusive Spanish course for effective communication skills.",
@@ -1080,7 +1080,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "1",
         subject_name: "A Level Biology",
-        url: "biology",
+        url: "cambridge-a-level/biology",
         image_url: "",
         icon: "/subjects/Biology@2x.png",
         description: "Comprehensive STEM Biology Lessons for AS and A-Level Students Online.",
@@ -1115,7 +1115,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "2",
         subject_name: "A Level Business",
-        url: "business",
+        url: "cambridge-a-level/business",
         image_url: "",
         icon: "/subjects/Business@2x.png",
         description: "Dynamic Business Studies for Sixth Formers.",
@@ -1150,7 +1150,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "3",
         subject_name: "A Level Chemistry",
-        url: "chemistry",
+        url: "cambridge-a-level/chemistry",
         image_url: "",
         icon: "/subjects/Chemistry@2x.png",
         description: "Embracing the Significance of Chemistry in Practical Contexts.",
@@ -1187,7 +1187,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "4",
         subject_name: "A Level Computer Science",
-        url: "computer-science",
+        url: "cambridge-a-level/computer-science",
         image_url: "",
         icon: "/subjects/Computer@2x.png",
         description: "Empowering Computational Proficiency for the Digital Age.",
@@ -1222,7 +1222,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "5",
         subject_name: "A Level Economics",
-        url: "economics",
+        url: "cambridge-a-level/economics",
         image_url: "",
         icon: "/subjects/Economics@2x.png",
         description: "Empowering Economists of Tomorrow",
@@ -1257,9 +1257,9 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "6",
         subject_name: "A Level English Literature",
-        url: "english-literature",
+        url: "cambridge-a-level/english-literature",
         image_url: "",
-        icon: "/subjects/English@2x.png",
+        icon: "/subjects/Literature@2x.png",
         description: "Elevated AS and A-Level English Literature Education.",
         description2: "Embark on a transformative educational journey with our AS and A-Level English Literature courses. Dive deep into literary texts following the Cambridge International AS and A Level English – Literature (9695) syllabus.",
         key_objective: [
@@ -1292,7 +1292,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "7",
         subject_name: "A Level English Language",
-        url: "english",
+        url: "cambridge-a-level/english",
         image_url: "",
         icon: "/subjects/English@2x.png",
         description: "Elevated English Language Online Courses for Emerging Leaders and Orators.",
@@ -1327,7 +1327,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "8",
         subject_name: "A Level Geography",
-        url: "geography",
+        url: "cambridge-a-level/geography",
         image_url: "",
         icon: "/subjects/Geography@2x.png",
         description: "Exploring Human-Physical Geography Dynamics in Depth.",
@@ -1362,7 +1362,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "9",
         subject_name: "A Level Global Perspectives & Research",
-        url: "global-perspectives-research",
+        url: "cambridge-a-level/global-perspectives-research",
         image_url: "",
         icon: "/subjects/Global@2x.png",
         description: "Mastering Critical Thinking and Global Engagement with Cambridge A Level Global Perspectives & Research.",
@@ -1397,7 +1397,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "10",
         subject_name: "A Level History",
-        url: "history",
+        url: "cambridge-a-level/history",
         image_url: "",
         icon: "/subjects/History@2x.png",
         description: "Exploring Key Historical Events: AS and A-Level History Online.",
@@ -1432,7 +1432,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "11",
         subject_name: "A Level Law",
-        url: "law",
+        url: "cambridge-a-level/law",
         image_url: "",
         icon: "/subjects/Law@2x.png",
         description: "Unlock the World of Law with Cambridge AS and A-Level Online Classes.",
@@ -1467,7 +1467,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "12",
         subject_name: "A Level Mathematics",
-        url: "mathematics",
+        url: "cambridge-a-level/mathematics",
         image_url: "",
         icon: "/subjects/Math@2x.png",
         description: "Elevated AS and A-Level English Literature Education.",
@@ -1502,7 +1502,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "13",
         subject_name: "A Level Further Mathematics",
-        url: "further-mathematics",
+        url: "cambridge-a-level/further-mathematics",
         image_url: "",
         icon: "/subjects/MathFurther@2x.png",
         description: "Enhancing Comprehension in A-level Further Mathematics.",
@@ -1537,7 +1537,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "14",
         subject_name: "A Level Media Studies",
-        url: "media-studies",
+        url: "cambridge-a-level/media-studies",
         image_url: "",
         icon: "/subjects/Media@2x.png",
         description: "Unleash Your Creative Potential with Cambridge A Level Media Studies.",
@@ -1572,7 +1572,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "15",
         subject_name: "A Level Physics",
-        url: "physics",
+        url: "cambridge-a-level/physics",
         image_url: "",
         icon: "/subjects/Physics@2x.png",
         description: "Engaging AS and A Level Physics Classes for Sixth Former.",
@@ -1607,7 +1607,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "16",
         subject_name: "A Level Psychology",
-        url: "psychology",
+        url: "cambridge-a-level/psychology",
         image_url: "",
         icon: "/subjects/Psychology@2x.png",
         description: "Exploring Psychological Theories: A Comprehensive A-Level Course.",
@@ -1642,7 +1642,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "17",
         subject_name: "A Level Sociology",
-        url: "sociology",
+        url: "cambridge-a-level/sociology",
         image_url: "",
         icon: "/subjects/Sociology@2x.png",
         description: "Exploring Social Dynamics: IWS A Level Sociology programme.",
