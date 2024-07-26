@@ -3,7 +3,8 @@ import React from "react";
 import Testimonial from "../components/ui/Testimonial";
 import Image from "next/image";
 import ContactUsSection from "../components/sections/ContactUsSection";
-
+import Link from "next/link";
+import { keyStages } from "../data/keystage";
 interface pageProps { }
 
 const page: React.FC<pageProps> = ({ }) => {
@@ -21,76 +22,68 @@ const page: React.FC<pageProps> = ({ }) => {
       </p>
 
       <div className="pt-10 sm:pt-20 grid grid-cols-1 md:grid-cols-2 gap-5 xl:grid-cols-4">
+        {
+          keyStages.map((keystage, index) => (
+            <Link key={index} href={"/cambridge-primary"} className="w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6">
+              <div className="flex justify-between gap-4 flex-col h-full">
+                <div className="flex flex-col gap-10">
+                  <div className="flex flex-col gap-8">
+                    <h3 className=" text-[24px] text-sky-500">{keystage.name}</h3>
 
-        <div className="w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6">
-          <div className="flex justify-between gap-4 flex-col h-full">
-            <div className="flex flex-col gap-10">
-              <div className="flex flex-col gap-8">
-                <h3 className=" text-[24px] text-sky-500">Primary School</h3>
+                    <div className=" flex flex-wrap gap-5 items-end">
+                      <h4 className="text-[32px] ">£{keystage.price}</h4>
+                      <h4 className="text-gray-400 ">/year</h4>
+                    </div>
 
-                <div className=" flex flex-wrap gap-5 items-end">
-                  <h4 className="text-[32px] ">£5000</h4>
-                  <h4 className="text-gray-400 ">/year</h4>
+                    <p className="text-[16px]">
+                      {keystage.description}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                    <h5 className="border-b-[0.5px]   pb-2  border-gray-600">
+                      Included subjects
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+
+                      {
+                        keystage.includedSubjects.map((subject) => (
+                          <Link href={subject.url} className="px-3.5 bg-blue-600 rounded-lg py-1.5">
+                            <h6 className="text-white text-[12px]">{subject.subject_name}</h6>
+                          </Link>
+                        ))
+                      }
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                    <h5 className="border-b-[0.5px]   pb-2  border-gray-600">
+                      Additional subjects
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+                      {
+                        keystage.additionalSubjects.map((subject) => (
+                          <Link href={subject.url} className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5">
+                            <h6 className="text-gray-600 text-[12px]">{subject.url}</h6>
+                          </Link>
+                        ))
+                      }
+                    </div>
+                  </div>
+
                 </div>
-
-                <p className="text-[16px]">
-                  IWS Online School offers the Cambridge Primary International
-                  Curriculum for primary students. Our UK-based online school is
-                  proudly accredited by Cambridge Assessment International
-                  Education.
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-5">
-                <h5 className="border-b-[0.5px]   pb-2  border-gray-600">
-                  Included subjects
-                </h5>
-                <div className="flex flex-wrap gap-2 items-center">
-                  <div className="px-3.5 bg-blue-600 rounded-lg py-1.5">
-                    <h6 className="text-white text-[12px]">English</h6>
-                  </div>
-                  <div className="px-3.5 bg-blue-600 rounded-lg py-1.5">
-                    <h6 className="text-white text-[12px]">Mathematics</h6>
-                  </div>
-                  <div className="px-3.5 bg-blue-600 rounded-lg py-1.5">
-                    <h6 className="text-white text-[12px]">Science</h6>
-                  </div>
-                  <div className="px-3.5 bg-blue-600 rounded-lg py-1.5">
-                    <h6 className="text-white text-[12px]">Computing</h6>
-                  </div>
-                  <div className="px-3.5 bg-blue-600 rounded-lg py-1.5">
-                    <h6 className="text-white text-[12px]">Global Perspectives</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-5">
-                <h5 className="border-b-[0.5px]   pb-2  border-gray-600">
-                  Additional subjects
-                </h5>
-                <div className="flex flex-wrap gap-2 items-center">
-                  <div className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5">
-                    <h6 className="text-gray-600 text-[12px]">French</h6>
-                  </div>
-                  <div className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5">
-                    <h6 className="text-gray-600 text-[12px]">Spanish</h6>
-                  </div>
-                  <div className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5">
-                    <h6 className="text-gray-600 text-[12px]">German</h6>
+                <div>
+                  <div className="w-full bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden">
+                    <p className="text-center ">Enrol Now</p>
                   </div>
                 </div>
               </div>
+            </Link>
+          ))
+        }
 
-            </div>
-            <div>
-              <div className="w-full bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden">
-                <p className="text-center ">Enrol Now</p>
-              </div>
+        {/* 
 
-            </div>
-
-          </div>
-        </div>
         <div className="w-full bg-[#f4f4f4] border-[#f4f4f4] border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6">
           <div className="flex justify-between gap-4 flex-col h-full">
             <div className="flex flex-col gap-10">
@@ -354,7 +347,7 @@ const page: React.FC<pageProps> = ({ }) => {
             </div>
 
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="pt-8 sm:pt-20 flex flex-col md:flex-row lg:flex-row-reverse gap-5">
