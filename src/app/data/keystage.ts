@@ -30,7 +30,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "1",
         subject_name: "Primary Mathematics",
-        url: "mathematics",
+        url: "cambridge-primary/mathematics",
         image_url: "",
         icon: "/subjects/Math.webp",
         description: "Online programme transforms primary students into proficient mathematicians.",
@@ -65,7 +65,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "2",
         subject_name: "Primary English",
-        url: "english",
+        url: "cambridge-primary/english",
         image_url: "",
         icon: "/subjects/English.webp",
         description: "Enhancing the Literacy and Communication Abilities of Children.",
@@ -100,7 +100,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "3",
         subject_name: "Primary Science",
-        url: "science",
+        url: "cambridge-primary/science",
         image_url: "",
         icon: "/subjects/Physics.webp",
         description: "A creative approach for high school students to explore their natural surroundings.",
@@ -137,7 +137,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "4",
         subject_name: "Primary Computing",
-        url: "computing",
+        url: "cambridge-primary/computing",
         image_url: "",
         icon: "/subjects/Computer.webp",
         description: "Empowering students with in-depth computer knowledge.",
@@ -172,7 +172,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "5",
         subject_name: "Primary Global Perspectives",
-        url: "global-perspectives",
+        url: "cambridge-primary/global-perspectives",
         image_url: "",
         icon: "/subjects/Global.webp",
         description: "Promoting a sense of unity and equality among students.",
@@ -207,7 +207,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "6",
         subject_name: "Primary French as 2nd Language",
-        url: "french-as-2nd-language",
+        url: "cambridge-primary/french-as-2nd-language",
         image_url: "",
         icon: "/subjects/Sociology.webp",
         description: "Embark on a French Adventure: Primary Level Homeschooling Course.",
@@ -242,7 +242,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "7",
         subject_name: "Primary Spanish as 2nd Language",
-        url: "spanish-as-2nd-language",
+        url: "cambridge-primary/spanish-as-2nd-language",
         image_url: "",
         icon: "/subjects/English.webp",
         description: "A Multifaceted Spanish Language Adventure for Young Learners (Ages 7-11).",
@@ -277,7 +277,7 @@ export const keyStages: KeyStageProps[] = [
       {
         id: "8",
         subject_name: "Primary German as 2nd Language",
-        url: "german-as-2nd-language",
+        url: "cambridge-primary/german-as-2nd-language",
         image_url: "",
         icon: "/subjects/English.webp",
         description: "Engaging Primary German programme for Young Learners (Ages 7-11).",
