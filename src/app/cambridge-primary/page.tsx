@@ -111,6 +111,51 @@ const page: React.FC<pageProps> = ({ }) => {
           </div>
         </div>
 
+
+        <div className="pt-20 container">
+          <div className="relative w-full bg-blue-600 rounded-2xl">
+            <div className="absolute left-1/2 sm:top-1/2 sm:left-0 transform -translate-x-1/2 rounded-full -translate-y-1/2 w-16 h-16 bg-white" />
+            <div className="absolute left-1/2 sm:left-auto sm:top-1/2 sm:right-0 sm:-translate-y-1/2 sm:translate-x-1/2 bottom-0 transform -translate-x-1/2 rounded-full translate-y-1/2 w-16 h-16 bg-white" />
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 px-5 sm:px-10 py-14 sm:py-8">
+              <div className="flex flex-col md:flex-row col-span-2 gap-10">
+                <div className="w-full flex gap-3">
+                  <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
+                    <h3 className="text-white">1</h3>
+                  </div>
+                  <div className="space-y-3 mt-2">
+                    <h3 className="text-white">Select core subjects</h3>
+                    <p className="text-white leading-tight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse culpa, minima, nostrum obcaecati qui commodi, quas quaerat quam enim velit </p>
+                  </div>
+                </div>
+                <div className="w-full flex gap-3 col-span-1">
+                  <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
+                    <h3 className="text-white">1</h3>
+                  </div>
+                  <div className="space-y-3 mt-2">
+                    <h3 className="text-white">Select core subjects</h3>
+                    <p className="text-white leading-tight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse culpa, minima, nostrum obcaecati qui commodi, quas quaerat quam enim velit </p>
+                  </div>
+                </div>
+
+              </div>
+              <div className="w-full border-t-2 sm:border-l-2 sm:border-t-0 border-dashed flex flex-col gap-5 py-5 items-center justify-center">
+                <div className="flex gap-1 items-end sm:flex-col lg:flex-row">
+                  <h2 className="text-white">$7500</h2>
+                  <h4 className="text-white">/year</h4>
+                </div>
+                <button className="bg-white rounded-full px-6 py-2">
+                  Enroll now
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
         <div className="pt-20 flex flex-col gap-14">
           <div className="container flex flex-col gap-5">
             <h2 className="text-center">
