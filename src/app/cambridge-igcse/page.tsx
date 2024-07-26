@@ -1,11 +1,11 @@
-'use client'
-import React from 'react'
-import TabSection from '../components/ui/TabSection'
-import AccordionSecondary from '../components/ui/AccordionSecondary'
-import Image from 'next/image'
-import ContactButton from '../components/buttons/ContactButton'
-import EnrollButton from '../components/buttons/EnrollButton'
-import { courses } from '../data/igcse'
+"use client";
+import React from "react";
+import TabSection from "../components/ui/TabSection";
+import AccordionSecondary from "../components/ui/AccordionSecondary";
+import Image from "next/image";
+import ContactButton from "../components/buttons/ContactButton";
+import EnrollButton from "../components/buttons/EnrollButton";
+import { courses } from "../data/igcse";
 import {
   ArrowRightCircleIcon,
   PlusIcon,
@@ -17,24 +17,26 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from 'next/link'
-import ContactUsSection from '../components/sections/ContactUsSection'
+import Link from "next/link";
+import ContactUsSection from "../components/sections/ContactUsSection";
 
-interface pageProps {
+interface pageProps {}
 
-}
-
-const page: React.FC<pageProps> = ({ }) => {
+const page: React.FC<pageProps> = ({}) => {
   return (
-    <div className='py-14 lg:py-24 animate-fade-in'>
-      <div className='gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row'>
-        <div className='flex flex-col gap-5'>
-          <h4 className='  text-blue-600'>Ages from 14 - 16</h4>
-          <h1 className='  text-blue-900'>
-            Cambridge I/GCSE
-          </h1>
-          <p className='  '>
-            The two-year IWS Online School I/GCSE programme sets your child on the path to obtaining globally recognised and accredited Cambridge certifications. The I/GCSE is an esteemed qualification widely accepted by renowned universities and employers worldwide, serving as a powerful catalyst for both academic and professional advancement, ensuring future success on a global scale. Enrol in our I/GCSE online courses today!
+    <div className="py-14 lg:py-24 animate-fade-in">
+      <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
+        <div className="flex flex-col gap-5">
+          <h4 className="  text-blue-600">Ages from 14 - 16</h4>
+          <h1 className="  text-blue-900">Cambridge I/GCSE</h1>
+          <p className="  ">
+            The two-year IWS Online School I/GCSE programme sets your child on
+            the path to obtaining globally recognised and accredited Cambridge
+            certifications. The I/GCSE is an esteemed qualification widely
+            accepted by renowned universities and employers worldwide, serving
+            as a powerful catalyst for both academic and professional
+            advancement, ensuring future success on a global scale. Enrol in our
+            I/GCSE online courses today!
           </p>
 
           <div className="flex flex-wrap gap-5">
@@ -42,95 +44,115 @@ const page: React.FC<pageProps> = ({ }) => {
             <ContactButton />
           </div>
         </div>
-        <Image width={1000} height={1000} className="max-w-lg w-full lg:w-auto object-contain" src="/Hero.webp" alt="" />
-
+        <Image
+          width={1000}
+          height={1000}
+          className="max-w-lg w-full lg:w-auto object-contain"
+          src="/Hero.webp"
+          alt=""
+        />
       </div>
 
-
-
-      <div className='pt-20 flex flex-col gap-14'>
-        <div className='container flex flex-col gap-5'>
-          <h2 className='text-center '>Fulfilling Potential</h2>
-          <h3 className='text-center'>{"Shaping Future Success: IWS Online School's I/GCSE Courses"}</h3>
-        </div>
-
-
-        <div className='bg-white lg:container'>
-          <div className='bg-indigo-50 grid grid-cols-1 lg:grid-cols-5 lg:gap-10 '>
-            <div className='lg:col-span-2'>
-              <Image width={1000} height={1000} className='h-full object-cover' src="/igcse/Student_1-1.jpg" alt="igcse" />
-
-            </div>
-            <div className='container lg:col-span-3 flex flex-col gap-5 py-10 justify-center items-center'>
-              <h3 className='  text-blue-900'>Personalised Instruction in Private, Virtual Classrooms</h3>
-              <p className='   text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div className='pt-20'>
-
-        <div className='bg-white lg:container'>
-          <div className='bg-green-50 flex flex-col lg:flex-row-reverse lg:gap-10 '>
-            <div className=' flex'>
-              <Image width={1000} height={1000} className='h-full max-h-96 lg:max-h-full lg:h-full w-full object-cover lg:max-w-[900px]' src="/igcse/Student_2-1.jpg" alt="igcse" />
-
-            </div>
-            <div className='container flex flex-col gap-5 py-10 justify-center items-center'>
-              <h3 className=' text-green-800'>Comprehensive I/GCSE Courses for Academic Excellence</h3>
-              <p className='   text-gray-800'>Our unique I/GCSE programme offers private, virtual classrooms for live interactive lessons via our student portal. Highly skilled and experienced teachers work closely with students, helping to identify strengths and weaknesses and offering a customised curriculum that maximises learning capabilities. Together, we can unlock your potential!</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-
-      <div className='pt-20 container'>
-        <div className='flex flex-col gap-6'>
-          <h2 className=' text-center '>
-            I/GCSE Curriculum Packages
-          </h2>
-          <p className='  text-center '>
+      <div className="pt-20 container">
+        <div className="flex flex-col gap-6">
+          <h2 className=" text-center ">Explore Our I/GCSE Subjects</h2>
+          <p className="  text-center ">
             Find your perfect combination of I/GCSE online subjects.
           </p>
         </div>
 
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {courses.map((course, index) => (
+            <Link
+              key={index}
+              href={"cambridge-igcse/" + course.url}
+              className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 border hover:shadow-custom-color"
+            >
+              <div className="bg-white border-r">
+                <Image
+                  width={1000}
+                  height={1000}
+                  className="max-w-20"
+                  src={course.icon}
+                  alt={course.subject_name}
+                />
+              </div>
+              <div className="bg-white flex flex-1 flex-col justify-center pl-5 gap-1">
+                <h4 className="  text-blue-900 text-base font-semibold leading-1">
+                  {course.subject_name}
+                </h4>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {
-            courses.map((course, index) => (
-              <Link key={index} href={'cambridge-igcse/' + course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 border hover:shadow-custom-color">
-                <div className="bg-white border-r">
-                  <Image
-                    width={1000}
-                    height={1000}
-                    className="max-w-20"
-                    src={course.icon}
-                    alt={course.subject_name}
-                  />
-                </div>
-                <div className="bg-white flex flex-1 flex-col justify-center pl-5 gap-1">
-                  <h4 className="  text-blue-900 text-base font-semibold leading-1">
-                    {course.subject_name}
-                  </h4>
-
-                  <p className=" text-sm  text-blue-600">Learn more</p>
-                </div>
-              </Link>
-
-            ))
-          }
-
+                <p className=" text-sm  text-blue-600">Learn more</p>
+              </div>
+            </Link>
+          ))}
         </div>
-
-
-
       </div>
 
+      <div className="pt-20 flex flex-col gap-14">
+        <div className="container flex flex-col gap-5">
+          <h2 className="text-center ">Fulfilling Potential</h2>
+          <h3 className="text-center">
+            {"Shaping Future Success: IWS Online School's I/GCSE Courses"}
+          </h3>
+        </div>
+
+        <div className="bg-white lg:container">
+          <div className="bg-indigo-50 grid grid-cols-1 lg:grid-cols-5 lg:gap-10 ">
+            <div className="lg:col-span-2">
+              <Image
+                width={1000}
+                height={1000}
+                className="h-full object-cover"
+                src="/igcse/Student_1-1.jpg"
+                alt="igcse"
+              />
+            </div>
+            <div className="container lg:col-span-3 flex flex-col gap-5 py-10 justify-center items-center">
+              <h3 className="  text-blue-900">
+                Personalised Instruction in Private, Virtual Classrooms
+              </h3>
+              <p className="   text-gray-800">
+                Our unique I/GCSE programme offers private, virtual classrooms
+                for live interactive lessons via our student portal. Highly
+                skilled and experienced teachers work closely with students,
+                helping to identify strengths and weaknesses and offering a
+                customised curriculum that maximises learning capabilities.
+                Together, we can unlock your potential!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="pt-20">
+        <div className="bg-white lg:container">
+          <div className="bg-green-50 flex flex-col lg:flex-row-reverse lg:gap-10 ">
+            <div className=" flex">
+              <Image
+                width={1000}
+                height={1000}
+                className="h-full max-h-96 lg:max-h-full lg:h-full w-full object-cover lg:max-w-[900px]"
+                src="/igcse/Student_2-1.jpg"
+                alt="igcse"
+              />
+            </div>
+            <div className="container flex flex-col gap-5 py-10 justify-center items-center">
+              <h3 className=" text-green-800">
+                Comprehensive I/GCSE Courses for Academic Excellence
+              </h3>
+              <p className="   text-gray-800">
+                Our unique I/GCSE programme offers private, virtual classrooms
+                for live interactive lessons via our student portal. Highly
+                skilled and experienced teachers work closely with students,
+                helping to identify strengths and weaknesses and offering a
+                customised curriculum that maximises learning capabilities.
+                Together, we can unlock your potential!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="pt-20 container">
         <h2 className="  text-center ">FAQs</h2>
@@ -247,37 +269,51 @@ const page: React.FC<pageProps> = ({ }) => {
         </div>
       </div>
 
-      <div className='pt-20'>
+      <div className="pt-20">
         <ContactUsSection />
-
       </div>
 
-
-      <div className='pt-20 container flex flex-col gap-4'>
-        <h2 className='text-center '>
-          Cambridge I/GCSE Tuition Fees
-        </h2>
-        <p className='text-center  '>
-          Our initial meeting is free with no obligations. If you decide to enroll, our flexible fee structure includes a £200 one-time fee covering comprehensive tests to tailor your child’s education. For pricing details, visit our tuition fees page.
+      <div className="pt-20 container flex flex-col gap-4">
+        <h2 className="text-center ">Cambridge I/GCSE Tuition Fees</h2>
+        <p className="text-center  ">
+          Our initial meeting is free with no obligations. If you decide to
+          enroll, our flexible fee structure includes a £200 one-time fee
+          covering comprehensive tests to tailor your child’s education. For
+          pricing details, visit our tuition fees page.
         </p>
 
-        <div className='mt-6'>
-          <h3 className='border-b   text-blue-900 border-blue-900 pb-3'>
+        <div className="mt-6">
+          <h3 className="border-b   text-blue-900 border-blue-900 pb-3">
             Accredited by
           </h3>
 
-          <div className='grid grid-cols-1 gap-10 mt-5 sm:grid-cols-2 md:grid-cols-3 justify-center items-center'>
-            <Image width={1000} height={1000} className='lg:max-w-60' src="/accredited/889-1536x670.webp" alt="" />
-            <Image width={1000} height={1000} className='lg:max-w-60' src="/accredited/Asset-18@3x.webp" alt="" />
-            <Image width={1000} height={1000} className='lg:max-w-60' src="/accredited/COBISLogo.webp" alt="" />
+          <div className="grid grid-cols-1 gap-10 mt-5 sm:grid-cols-2 md:grid-cols-3 justify-center items-center">
+            <Image
+              width={1000}
+              height={1000}
+              className="lg:max-w-60"
+              src="/accredited/889-1536x670.webp"
+              alt=""
+            />
+            <Image
+              width={1000}
+              height={1000}
+              className="lg:max-w-60"
+              src="/accredited/Asset-18@3x.webp"
+              alt=""
+            />
+            <Image
+              width={1000}
+              height={1000}
+              className="lg:max-w-60"
+              src="/accredited/COBISLogo.webp"
+              alt=""
+            />
           </div>
         </div>
-
       </div>
-
-
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

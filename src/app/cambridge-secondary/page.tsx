@@ -20,17 +20,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import ContactUsSection from "../components/sections/ContactUsSection";
 
-interface pageProps { }
+interface pageProps {}
 
-const page: React.FC<pageProps> = ({ }) => {
+const page: React.FC<pageProps> = ({}) => {
   return (
     <div className="py-14 lg:py-24 animate-fade-in">
       <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
         <div className="flex flex-col gap-5">
           <h4 className="  text-blue-600">Ages from 11 - 14</h4>
-          <h1 className="  text-blue-900">
-            Cambridge Secondary
-          </h1>
+          <h1 className="  text-blue-900">Cambridge Secondary</h1>
           <p className=" ">
             At IWS Online School, Middle level Education commences at age 11,
             culminating with students undertaking the prestigious Cambridge
@@ -52,6 +50,44 @@ const page: React.FC<pageProps> = ({ }) => {
           src="/Hero2.webp"
           alt=""
         />
+      </div>
+
+      <div className="pt-20 container">
+        <div className="flex flex-col gap-6">
+          <h2 className=" text-center ">Explore Our Secondary Subjects</h2>
+          <p className="  text-center ">
+            Maximise your academic potential with IWS Online School. Explore our
+            Secondary subjects here and combine current studies with IWS courses
+            for exam preparation or further study.
+          </p>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {courses.map((course, index) => (
+            <Link
+              key={index}
+              href={"cambridge-secondary/" + course.url}
+              className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 border hover:shadow-custom-color"
+            >
+              <div className="bg-white border-r">
+                <Image
+                  width={1000}
+                  height={1000}
+                  className="max-w-20"
+                  src={course.icon}
+                  alt={course.subject_name}
+                />
+              </div>
+              <div className="bg-white flex flex-1 flex-col justify-center pl-5 gap-1">
+                <h4 className="  text-blue-900 text-base font-semibold leading-1">
+                  {course.subject_name}
+                </h4>
+
+                <p className=" text-sm  text-blue-600">Learn more</p>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
 
       <div className="pt-20 flex flex-col gap-14">
@@ -90,12 +126,7 @@ const page: React.FC<pageProps> = ({ }) => {
             </div>
           </div>
         </div>
-
-
-
       </div>
-
-
 
       <div className="pt-20">
         <div className="bg-white lg:container">
@@ -126,48 +157,6 @@ const page: React.FC<pageProps> = ({ }) => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="pt-20 container">
-        <div className="flex flex-col gap-6">
-          <h2 className=" text-center ">
-            Secondary Subjects
-          </h2>
-          <p className="  text-center ">
-            Maximise your academic potential with IWS Online School. Explore our
-            Secondary subjects here and combine current studies with IWS courses
-            for exam preparation or further study.
-          </p>
-        </div>
-
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {
-            courses.map((course, index) => (
-              <Link key={index} href={'cambridge-secondary/' + course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 border hover:shadow-custom-color">
-                <div className="bg-white border-r">
-                  <Image
-                    width={1000}
-                    height={1000}
-                    className="max-w-20"
-                    src={course.icon}
-                    alt={course.subject_name}
-                  />
-                </div>
-                <div className="bg-white flex flex-1 flex-col justify-center pl-5 gap-1">
-                  <h4 className="  text-blue-900 text-base font-semibold leading-1">
-                    {course.subject_name}
-                  </h4>
-
-                  <p className=" text-sm  text-blue-600">Learn more</p>
-                </div>
-              </Link>
-
-            ))
-          }
-
-        </div>
-
-
       </div>
 
       <div className="pt-20 container">
@@ -285,16 +274,12 @@ const page: React.FC<pageProps> = ({ }) => {
         </div>
       </div>
 
-      <div className='pt-20'>
+      <div className="pt-20">
         <ContactUsSection />
-
       </div>
 
-
       <div className="pt-20 container flex flex-col gap-4">
-        <h2 className="text-center   ">
-          Cambridge Secondary Tuition Fees
-        </h2>
+        <h2 className="text-center   ">Cambridge Secondary Tuition Fees</h2>
         <p className="text-center  ">
           Our initial meeting is free with no obligations. If you decide to
           enroll, our flexible fee structure includes a £200 one-time fee

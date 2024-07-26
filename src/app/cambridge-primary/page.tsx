@@ -44,6 +44,44 @@ const page: React.FC<pageProps> = ({}) => {
         />
       </div>
 
+      <div className="pt-20 container">
+        <div className="flex flex-col gap-6">
+          <h2 className=" text-center ">Explore Our Primary Subjects</h2>
+          <p className=" text-center">
+            Maximise your academic potential with IWS Online School. Explore our
+            Primary subjects here and combine current studies with IWS courses
+            for exam preparation or further study.
+          </p>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {courses.map((course, index) => (
+            <Link
+              key={index}
+              href={"cambridge-primary/" + course.url}
+              className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 border hover:shadow-custom-color"
+            >
+              <div className="bg-white border-r">
+                <Image
+                  width={1000}
+                  height={1000}
+                  className="max-w-20"
+                  src={course.icon}
+                  alt={course.subject_name}
+                />
+              </div>
+              <div className="bg-white flex flex-1 flex-col justify-center pl-5 gap-1">
+                <h4 className="  text-blue-900 text-base font-semibold leading-1">
+                  {course.subject_name}
+                </h4>
+
+                <p className=" text-sm  text-blue-600">Learn more</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+
       <div className="pt-20 flex flex-col gap-14">
         <div className="container flex flex-col gap-5">
           <h2 className="text-center">
@@ -113,48 +151,6 @@ const page: React.FC<pageProps> = ({}) => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="pt-20 container">
-        <div className="flex flex-col gap-6">
-          <h2 className=" text-center ">Primary Subjects</h2>
-          <p className=" text-center">
-            Maximise your academic potential with IWS Online School. Explore our
-            Primary subjects here and combine current studies with IWS courses
-            for exam preparation or further study.
-          </p>
-        </div>
-
-
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {
-            courses.map((course, index) => (
-              <Link key={index} href={'cambridge-primary/' + course.url} className="flex rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 border hover:shadow-custom-color">
-                <div className="bg-white border-r">
-                  <Image
-                    width={1000}
-                    height={1000}
-                    className="max-w-20"
-                    src={course.icon}
-                    alt={course.subject_name}
-                  />
-                </div>
-                <div className="bg-white flex flex-1 flex-col justify-center pl-5 gap-1">
-                  <h4 className="  text-blue-900 text-base font-semibold leading-1">
-                    {course.subject_name}
-                  </h4>
-
-                  <p className=" text-sm  text-blue-600">Learn more</p>
-                </div>
-              </Link>
-
-            ))
-          }
-
-        </div>
-
-
-
       </div>
 
       <div className="pt-20 container">
