@@ -206,9 +206,10 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
           loading ? (
             <button
               type="submit"
-              className="rounded-md flex flex-1 items-center justify-center bg-indigo-600 px-3 py-5 text-2xl  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              // className="rounded-md flex flex-3 font-[26px] items-center justify-center bg-indigo-600 px-3 py-4 text-2xl  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className='bg-[#4366F6] rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300  text-lg'
             >
-              Loading...
+              Loading
             </button>
           ) : (
             <button
