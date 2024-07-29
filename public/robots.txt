@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://iwsonlineschool.co.uk
+
+# Sitemaps
+Sitemap: https://iwsonlineschool.co.uk/sitemap.xml
