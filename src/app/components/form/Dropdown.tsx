@@ -59,7 +59,7 @@ const Dropdown: React.FC<DropdownProps> = ({ label, isSearch, country, setCountr
     <div className="relative group" ref={dropdownRef}>
       <button
         id="dropdown-button"
-        className="w-full flex justify-between items-center rounded-md border-0 py-3 text-[#b1b1b1] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
+        className="w-full flex justify-between items-center rounded-md border-0 py-3 text-[#000000] shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
         onClick={toggleDropdown}
       >
         <div className={`text-[16px] ${country ? '' : 'text-[#b1b1b1]'} bg-inputBg focus:outline-none`}>{country === '' || country === null || country === undefined ? label : country.toString()}</div>
