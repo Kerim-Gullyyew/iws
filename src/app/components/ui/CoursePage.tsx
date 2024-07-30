@@ -22,6 +22,7 @@ interface CoursePageProps {
 }
 
 const CoursePage: React.FC<CoursePageProps> = ({ course }) => {
+  
   if (course) {
     return (
       <div className=" container pt-3 pb-24 animate-fade-in">
