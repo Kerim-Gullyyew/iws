@@ -29,10 +29,10 @@ const Page: React.FC<pageProps> = ({}) => {
             <h4 className="  text-blue-600">Ages from 11 - 14</h4>
             <h1 className="  text-blue-900">Cambridge Secondary</h1>
             <p className=" ">
-              At IWS Online School, Middle level Education commences at age 11,
+              At IWS Online School, Secondary level Education commences at age 11,
               culminating with students undertaking the prestigious Cambridge
               I/GCSE exams. This educational journey encompasses two distinct
-              phases: Middle (spanning the initial three years) and I/GCSE
+              phases: Secondary (spanning the initial three years) and I/GCSE
               (comprising two years). Upon successful completion, students will
               be well-prepared to embark on their A-Level studies.
             </p>
@@ -284,7 +284,7 @@ const Page: React.FC<pageProps> = ({}) => {
           <div className="container flex flex-col gap-5">
             <h2 className="text-center  ">
               {
-                "Guiding Students to Success: IWS Online School's Middle Cambridge Programme"
+                "Guiding Students to Success: IWS Online School's Secondary Cambridge Programme"
               }
             </h2>
           </div>
@@ -308,9 +308,9 @@ const Page: React.FC<pageProps> = ({}) => {
                   Cambridge Secondary at IWS Online School
                 </p>
                 <p className=" pt-4">
-                  Embark on a well-defined path of Middle Education, commencing
+                  Embark on a well-defined path of Secondary Education, commencing
                   at age 11 and culminating in the prestigious Cambridge I/GCSE
-                  examinations. This educational journey is divided into Middle
+                  examinations. This educational journey is divided into Secondary
                   (3 years) and I/GCSE (2 years).
                 </p>
               </div>
@@ -338,10 +338,10 @@ const Page: React.FC<pageProps> = ({}) => {
                   Comprehensive Secondary Support at IWS Online School
                 </p>
                 <p className="   text-gray-800">
-                  Our Middle Education program equips students with the
+                  Our Secondary Education program equips students with the
                   knowledge and skills needed to excel in the Cambridge I/GCSE
                   examinations. With a carefully crafted curriculum spanning
-                  both Middle and I/GCSE phases, students emerge well-prepared
+                  both Secondary and I/GCSE phases, students emerge well-prepared
                   and confident for future academic endeavours.
                 </p>
               </div>
@@ -491,7 +491,7 @@ const Page: React.FC<pageProps> = ({}) => {
                         >
                           <div className=" space-y-5">
                             <p className=" ">
-                              Discover tailored online learning for middle
+                              Discover tailored online learning for secondary
                               students: live lessons, accessible course
                               materials, and organised schedules.
                             </p>
@@ -549,7 +549,7 @@ const Page: React.FC<pageProps> = ({}) => {
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
                     <h3 className=" ">
-                      Accessible, Affordable Middle Education
+                      Accessible, Affordable Secondary Education
                     </h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
@@ -572,7 +572,7 @@ const Page: React.FC<pageProps> = ({}) => {
                           <div className=" space-y-5">
                             <p className=" ">
                               We are committed to providing high-quality,
-                              accessible British middle education with flexible
+                              accessible British secondary education with flexible
                               payment options to suit every budget.
                             </p>
                           </div>
