@@ -223,12 +223,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </div>
         </div>
 
-        <div className=" border-t border-gray-400 space-y-3 pt-5 mt-24 flex flex-col justify-center items-center w-full lg:grid lg:grid-cols-3 lg:space-y-0">
+        <div className=" border-t border-gray-400 space-y-3 pt-5 mt-24 flex flex-col justify-center items-center w-full lg:grid lg:grid-cols-4 lg:space-y-0">
           <p className="text-p text-left">
             &copy; {2024} IWS Online School LTD
           </p>
           <p className="text-p text-left">All rights reserved</p>
-          <p className="text-p text-left">Privacy Policy</p>
+          <p className="text-p text-left"><Link href={"/terms-conditions"}>Terms and Conditions</Link></p>
+          <p className="text-p text-left"><Link href={"/privacy-policy"}>Privacy Policy</Link></p>
         </div>
       </div>
     </footer>
