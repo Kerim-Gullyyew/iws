@@ -6,7 +6,7 @@ import type { Viewport } from "next";
 import { Sora, Inter } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
+import Script from "next/script";
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
@@ -109,6 +109,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${sora.variable}`}>
+
       <GoogleTagManager gtmId="GTM-KQK64CKD" />
       <GoogleAnalytics gaId="G-LCTE8BLQDX" />
       <body>
@@ -120,6 +121,9 @@ export default function RootLayout({
         </main>
 
         <Footer />
+        <Script
+          strategy='lazyOnload'
+          src="https://embed.tawk.to/645bc9166a9aad4bc579fefd/1h038j0d6" />
       </body>
     </html>
   );
