@@ -356,7 +356,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">24/7 Access to Quality Education</h3>
+                    <h3 className="text-[1.5em]  ">24/7 Access to Quality Education</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -394,7 +394,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Engage with Interactive Learning</h3>
+                    <h3 className="text-[1.5em]  ">Engage with Interactive Learning</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -432,7 +432,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Enriching Beyond Classrooms</h3>
+                    <h3 className="text-[1.5em]  ">Enriching Beyond Classrooms</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -470,7 +470,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Interactive Online Learning Platform</h3>
+                    <h3 className="text-[1.5em]  ">Interactive Online Learning Platform</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -491,7 +491,7 @@ const Page: React.FC<pageProps> = ({}) => {
                         >
                           <div className=" space-y-5">
                             <p className=" ">
-                              Discover tailored online learning for secondary
+                              Discover tailored online learning for middle
                               students: live lessons, accessible course
                               materials, and organised schedules.
                             </p>
@@ -508,7 +508,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">
+                    <h3 className="text-[1.5em]  ">
                       Engaging Lessons, Active Participation
                     </h3>
                     {open ? (
@@ -548,8 +548,8 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">
-                      Accessible, Affordable Secondary Education
+                    <h3 className="text-[1.5em]  ">
+                      Accessible, Affordable Middle Education
                     </h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
@@ -572,7 +572,7 @@ const Page: React.FC<pageProps> = ({}) => {
                           <div className=" space-y-5">
                             <p className=" ">
                               We are committed to providing high-quality,
-                              accessible British secondary education with flexible
+                              accessible British middle education with flexible
                               payment options to suit every budget.
                             </p>
                           </div>
@@ -588,7 +588,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">
+                    <h3 className="text-[1.5em]  ">
                       Personalised Instruction in Private, Virtual Classrooms
                     </h3>
                     {open ? (
@@ -633,7 +633,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">
+                    <h3 className="text-[1.5em]  ">
                       Comprehensive I/GCSE Courses for Academic Excellence
                     </h3>
                     {open ? (
@@ -678,7 +678,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Course Materials</h3>
+                    <h3 className="text-[1.5em]  ">Course Materials</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -739,7 +739,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Exam Information</h3>
+                    <h3 className="text-[1.5em]  ">Exam Information</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -786,7 +786,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Support may involve</h3>
+                    <h3 className="text-[1.5em]  ">Support may involve</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (

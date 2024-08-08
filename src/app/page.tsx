@@ -602,7 +602,7 @@ export default function Home() {
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className=" ">Why us?</h3>
+                  <h3 className="text-[1.5em]  ">Why us?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -669,11 +669,12 @@ export default function Home() {
             )}
           </Disclosure>
 
+        
           <Disclosure as="div" className="w-full border-b border-gray-300">
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className=" ">Are you accredited?</h3>
+                  <h3 className="text-[1.5em]  ">Are you accredited?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -711,45 +712,7 @@ export default function Home() {
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className=" ">Are you accredited?</h3>
-                  {open ? (
-                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                  ) : (
-                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                  )}
-                </DisclosureButton>
-                <div className="overflow-hidden py-2">
-                  <AnimatePresence>
-                    {open && (
-                      <DisclosurePanel
-                        static
-                        as={motion.div}
-                        initial={{ opacity: 0, y: -24 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -24 }}
-                        transition
-                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                      >
-                        <div className=" space-y-5">
-                          <p className="text-p">
-                            Yes, we offer Cambridge Assessment International
-                            Education. We are registered as UK Learner Providers
-                            and are in the process of obtaining our membership
-                            with the Council of International Schools (CIS).
-                          </p>
-                        </div>
-                      </DisclosurePanel>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </>
-            )}
-          </Disclosure>
-          <Disclosure as="div" className="w-full border-b border-gray-300">
-            {({ open }) => (
-              <>
-                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className=" ">Where are you based?</h3>
+                  <h3 className="text-[1.5em]  ">Where are you based?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -786,7 +749,7 @@ export default function Home() {
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className=" ">How does your online school work?</h3>
+                  <h3 className="text-[1.5em]  ">How does your online school work?</h3>
                   {open ? (
                     <MinusIcon className="h-8 w-8" aria-hidden="true" />
                   ) : (
@@ -832,7 +795,7 @@ export default function Home() {
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className=" ">
+                  <h3 className="text-[1.5em]  ">
                     Does online learning isolate students from their peers?
                   </h3>
                   {open ? (
@@ -885,7 +848,7 @@ export default function Home() {
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-left ">
+                  <h3 className="text-[1.5em] text-left ">
                     I reside outside the UK; is this educational approach
                     acknowledged in my country?
                   </h3>
@@ -931,7 +894,7 @@ export default function Home() {
             {({ open }) => (
               <>
                 <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className=" ">
+                  <h3 className="text-[1.5em]  ">
                     Are lessons taught in any other languages, other than
                     English?
                   </h3>

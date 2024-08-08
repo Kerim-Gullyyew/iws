@@ -351,7 +351,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">24/7 Access to Quality Education</h3>
+                    <h3 className="text-[1.5em]  ">24/7 Access to Quality Education</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -389,7 +389,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Engage with Interactive Learning</h3>
+                    <h3 className="text-[1.5em]  ">Engage with Interactive Learning</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -427,7 +427,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Enriching Beyond Classrooms</h3>
+                    <h3 className="text-[1.5em]  ">Enriching Beyond Classrooms</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -465,7 +465,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Interactive Online Learning Platform</h3>
+                    <h3 className="text-[1.5em]  ">Interactive Online Learning Platform</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -503,7 +503,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">
+                    <h3 className="text-[1.5em]  ">
                       Engaging Lessons, Active Participation
                     </h3>
                     {open ? (
@@ -543,7 +543,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">
+                    <h3 className="text-[1.5em]  ">
                       Accessible, Affordable Middle Education
                     </h3>
                     {open ? (
@@ -583,7 +583,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">
+                    <h3 className="text-[1.5em]  ">
                       Personalised Instruction in Private, Virtual Classrooms
                     </h3>
                     {open ? (
@@ -628,7 +628,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">
+                    <h3 className="text-[1.5em]  ">
                       Comprehensive I/GCSE Courses for Academic Excellence
                     </h3>
                     {open ? (
@@ -673,7 +673,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Course Materials</h3>
+                    <h3 className="text-[1.5em]  ">Course Materials</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -702,8 +702,8 @@ const Page: React.FC<pageProps> = ({}) => {
                             <ul className=" list-disc list-inside">
                               <li>An interactive student guide</li>
                               <li>
-                                A comprehensive framework covering the A and
-                                AS Levels curriculum
+                                A comprehensive framework covering the A and AS
+                                Levels curriculum
                               </li>
                               <li>
                                 Around-the-clock access to recorded English
@@ -734,7 +734,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Exam Information</h3>
+                    <h3 className="text-[1.5em]  ">Exam Information</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -781,7 +781,7 @@ const Page: React.FC<pageProps> = ({}) => {
               {({ open }) => (
                 <>
                   <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className=" ">Support may involve</h3>
+                    <h3 className="text-[1.5em]  ">Support may involve</h3>
                     {open ? (
                       <MinusIcon className="h-8 w-8" aria-hidden="true" />
                     ) : (
@@ -803,16 +803,34 @@ const Page: React.FC<pageProps> = ({}) => {
                           <div className=" space-y-5">
                             <ul className="list-disc list-inside">
                               <li>Extended exam time (25-50%)</li>
-                              <li>A scribe to transcribe answers based on student responses</li>
+                              <li>
+                                A scribe to transcribe answers based on student
+                                responses
+                              </li>
                               <li>A reader</li>
-                              <li>Enlarged print exam papers for improved visibility</li>
+                              <li>
+                                Enlarged print exam papers for improved
+                                visibility
+                              </li>
                               <li>A separate examination area</li>
                               <li>Supervised breaks to prevent fatigue</li>
                               <li>Laptop use</li>
                             </ul>
                             <p className="font-bold">Please Note</p>
-                            <p>Applications for access assistance should be submitted by February of the year the student takes the Cambridge Board Exam. Processing and approval of requests may take up to 18 months, with an additional assessment to validate the need for support.</p>
-                            <p>The evaluation will be conducted by an official board of examiners and relevant specialists such as educational psychologists, occupational therapists, etc.</p>
+                            <p>
+                              Applications for access assistance should be
+                              submitted by February of the year the student
+                              takes the Cambridge Board Exam. Processing and
+                              approval of requests may take up to 18 months,
+                              with an additional assessment to validate the need
+                              for support.
+                            </p>
+                            <p>
+                              The evaluation will be conducted by an official
+                              board of examiners and relevant specialists such
+                              as educational psychologists, occupational
+                              therapists, etc.
+                            </p>
                           </div>
                         </DisclosurePanel>
                       )}
