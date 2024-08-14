@@ -9,7 +9,7 @@ const page: React.FC<pageProps> = ({}) => {
         <div className="container py-24">
           <h1 className=" text-white leading-tight font-medium text-[46px]">
             Thank you for your interest in <br />
-            the IWS Online School!
+            IWS Online School!
           </h1>
         </div>
       </div>
