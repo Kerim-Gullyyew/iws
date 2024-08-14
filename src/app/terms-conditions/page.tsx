@@ -22,8 +22,8 @@ const page: React.FC<pageProps> = ({}) => {
       </p>
       <p>Company Number: 14794517</p>
       <p>{"Telephone: +44 (0) 20 3867 9961"}</p>
-      <p>Email: admin@iwschool.co.uk</p>
-      <p>URL: https://iwschool.co.uk</p>
+      <p>Email: admissions@iwschool.co.uk</p>
+      <p>URL: https://iwsonlineschool.co.uk/</p>
       <p className="font-bold">3. Legal Compliance and Purpose</p>
       <p>
         {
@@ -113,9 +113,9 @@ const page: React.FC<pageProps> = ({}) => {
       </p>
       <p>
         9.2 If the instalment payment option is selected, an initial payment
-        comprising the first instalment, a deposit equal to 10% of the total
+        comprising the first instalment, a refundable deposit equal to 10% of the total
         fees, and the non-refundable registration fee of £200 is required before
-        the commencement of services. This deposit is non-refundable. For
+        the commencement of services. For
         upfront payments, no deposit is required.
       </p>
       <p>
