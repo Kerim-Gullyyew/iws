@@ -126,7 +126,7 @@ export default function Home() {
 
             <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[32px] font-[500]  ">Middle School</h3>
+                <h3 className="text-[32px] font-[500]  ">Secondary School</h3>
                 <p className="text-p ">
                   Foster your child’s growth and academic success.
                 </p>
