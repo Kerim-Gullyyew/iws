@@ -1,8 +1,5 @@
 import React from "react";
-
-interface pageProps {}
-
-const page: React.FC<pageProps> = ({}) => {
+const page: React.FC = () => {
   return (
     <div className="animate-fade-in">
       <div className="bg-asset-3 bg-primary bg-center bg-cover bg-blend-luminosity">

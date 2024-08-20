@@ -71,8 +71,6 @@ const CoursePage: React.FC<CoursePageProps> = ({ course }) => {
                   </div>
                 ))
               }
-
-
             </div>
           </div>
 

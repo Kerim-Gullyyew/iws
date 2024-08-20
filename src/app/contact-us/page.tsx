@@ -1,11 +1,9 @@
 "use client"
 import React from 'react'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
-import TabSection from '../components/ui/TabSection'
 import ContactUsSection from '../components/sections/ContactUsSection'
 import { InlineWidget } from "react-calendly";
 interface pageProps {
-
 }
 
 const page: React.FC<pageProps> = ({ }) => {
