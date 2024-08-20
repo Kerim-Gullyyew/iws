@@ -1,25 +1,13 @@
-"use client";
 import {
   ArrowRightCircleIcon,
-  PlusIcon,
-  MinusIcon,
 } from "@heroicons/react/24/solid";
-import Accordion from "./components/ui/Accordion";
 import Carousel from "./components/ui/Carousel";
 import Image from "next/image";
 import Link from "next/link";
 import EnrollButton from "./components/buttons/EnrollButton";
 import ContactButton from "./components/buttons/ContactButton";
-import CardChildren from "./components/card/CardChildren";
-import TabSection from './components/ui/TabSection'
 import ContactUsSection from './components/sections/ContactUsSection'
-
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@headlessui/react";
-import { AnimatePresence, motion } from "framer-motion";
+import AccordionSecondary from "./components/ui/AccordionSecondary";
 export default function Home() {
   return (
     <div className="py-14 lg:py-24 animate-fade-in">
@@ -32,7 +20,7 @@ export default function Home() {
                 height={1000}
                 className="w-[300px] min-w-[250px] lg:w-[400px] object-contain lg:min-w-[250px]"
                 src="/Tag.webp"
-                priority={true} // {false} | {true}
+                priority={true}
                 sizes="(max-width: 576px) 50vw"
                 alt="Tag photo"
               />
@@ -61,7 +49,7 @@ export default function Home() {
           height={450}
           className="w-[300px] max-w-[90%] min-w-[280px] sm:w-[450px] sm:min-w-[50%] sm:flex lg:w-auto object-contain"
           src="/Hero.webp"
-          priority={true} // {false} | {true}
+          priority={true}
           sizes="(max-width: 576px) 40vw"
           alt=""
         />
@@ -598,341 +586,141 @@ export default function Home() {
       <div className="pt-20 container">
         <h2 className="  text-center ">FAQs</h2>
         <div className="pt-8 sm:pt-12 flex flex-col gap-8">
-          <Disclosure as="div" className="w-full border-b border-gray-300">
-            {({ open }) => (
-              <>
-                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-[1.5em]  ">Why us?</h3>
-                  {open ? (
-                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                  ) : (
-                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                  )}
-                </DisclosureButton>
-                <div className="overflow-hidden py-2">
-                  <AnimatePresence>
-                    {open && (
-                      <DisclosurePanel
-                        static
-                        as={motion.div}
-                        initial={{ opacity: 0, y: -24 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -24 }}
-                        transition
-                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                      >
-                        <div className=" space-y-5">
-                          <p className="text-p">
-                            Our British online school revolutionises remote
-                            education. With an easy-to-use platform, flexible
-                            academic programmes, and adaptable schedules, we
-                            provide a learning experience that can often exceed
-                            that of traditional schools.
-                          </p>
-                          <p className="text-p">
-                            Globally, schools are embracing technology to meet
-                            evolving educational standards. It is anticipated
-                            that within the next few decades, online education
-                            will become commonplace. At IWS, we lead by
-                            prioritising online teaching.
-                          </p>
-                          <p className="text-p">
-                            Our teachers are adept at delivering Live Online
-                            Lessons with great enthusiasm and proficiency. We
-                            also employ sophisticated and reliable technology to
-                            ensure our virtual classrooms meet every need of our
-                            pupils, including round-the-clock access to recorded
-                            lessons to support independent study.
-                          </p>
-                          <p className="text-p">
-                            In this respect, we are advancing faster than many
-                            educational institutions that are just beginning to
-                            embark on this digital transition.
-                          </p>
-                          <p className="text-p">
-                            IWS places great value on the educational
-                            experiences that occur beyond the classroom walls.
-                            Thus, we offer numerous opportunities for group
-                            interaction through a variety of clubs,
-                            extracurricular activities, and online social
-                            gatherings. This approach allows each student to
-                            connect with others across the globe, fostering a
-                            sense of belonging to a vibrant community that
-                            extends beyond the end of the school day.
-                          </p>
-                        </div>
-                      </DisclosurePanel>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </>
-            )}
-          </Disclosure>
+          <AccordionSecondary title="Why us?">
+            <div className=" space-y-5">
+              <p className="text-p">
+                Our British online school revolutionises remote
+                education. With an easy-to-use platform, flexible
+                academic programmes, and adaptable schedules, we
+                provide a learning experience that can often exceed
+                that of traditional schools.
+              </p>
+              <p className="text-p">
+                Globally, schools are embracing technology to meet
+                evolving educational standards. It is anticipated
+                that within the next few decades, online education
+                will become commonplace. At IWS, we lead by
+                prioritising online teaching.
+              </p>
+              <p className="text-p">
+                Our teachers are adept at delivering Live Online
+                Lessons with great enthusiasm and proficiency. We
+                also employ sophisticated and reliable technology to
+                ensure our virtual classrooms meet every need of our
+                pupils, including round-the-clock access to recorded
+                lessons to support independent study.
+              </p>
+              <p className="text-p">
+                In this respect, we are advancing faster than many
+                educational institutions that are just beginning to
+                embark on this digital transition.
+              </p>
+              <p className="text-p">
+                IWS places great value on the educational
+                experiences that occur beyond the classroom walls.
+                Thus, we offer numerous opportunities for group
+                interaction through a variety of clubs,
+                extracurricular activities, and online social
+                gatherings. This approach allows each student to
+                connect with others across the globe, fostering a
+                sense of belonging to a vibrant community that
+                extends beyond the end of the school day.
+              </p>
+            </div>
+          </AccordionSecondary>
 
-        
-          <Disclosure as="div" className="w-full border-b border-gray-300">
-            {({ open }) => (
-              <>
-                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-[1.5em]  ">Are you accredited?</h3>
-                  {open ? (
-                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                  ) : (
-                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                  )}
-                </DisclosureButton>
-                <div className="overflow-hidden py-2">
-                  <AnimatePresence>
-                    {open && (
-                      <DisclosurePanel
-                        static
-                        as={motion.div}
-                        initial={{ opacity: 0, y: -24 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -24 }}
-                        transition
-                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                      >
-                        <div className=" space-y-5">
-                          <p className="text-p">
-                            Yes, we offer Cambridge Assessment International
-                            Education. We are registered as UK Learner Providers
-                            and are in the process of obtaining our membership
-                            with the Council of International Schools (CIS).
-                          </p>
-                        </div>
-                      </DisclosurePanel>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </>
-            )}
-          </Disclosure>
-          <Disclosure as="div" className="w-full border-b border-gray-300">
-            {({ open }) => (
-              <>
-                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-[1.5em]  ">Where are you based?</h3>
-                  {open ? (
-                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                  ) : (
-                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                  )}
-                </DisclosureButton>
-                <div className="overflow-hidden py-2">
-                  <AnimatePresence>
-                    {open && (
-                      <DisclosurePanel
-                        static
-                        as={motion.div}
-                        initial={{ opacity: 0, y: -24 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -24 }}
-                        transition
-                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                      >
-                        <div className=" space-y-5">
-                          <p className="text-p">
-                            We are based in the UK, our headquarters are
-                            registered at 31 Long Acre Covent Garden, London
-                            England WC2E 9LA
-                          </p>
-                        </div>
-                      </DisclosurePanel>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </>
-            )}
-          </Disclosure>
-          <Disclosure as="div" className="w-full border-b border-gray-300">
-            {({ open }) => (
-              <>
-                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-[1.5em]  ">How does your online school work?</h3>
-                  {open ? (
-                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                  ) : (
-                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                  )}
-                </DisclosureButton>
-                <div className="overflow-hidden py-2">
-                  <AnimatePresence>
-                    {open && (
-                      <DisclosurePanel
-                        static
-                        as={motion.div}
-                        initial={{ opacity: 0, y: -24 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -24 }}
-                        transition
-                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                      >
-                        <div className=" space-y-5">
-                          <p className="text-p">
-                            Our trained teachers employ a range of teaching aids
-                            to support learning, such as high-quality video
-                            cameras, interactive whiteboards, screen sharing,
-                            live presentations, and lesson recordings. Students
-                            at IWS can join classes through a safe online link.
-                            Teachers use various methods and activities,
-                            including quizzes, presentations, and group work, in
-                            their lessons. The use of modern technology makes
-                            learning enjoyable for students and enhances their
-                            educational journey compared to conventional
-                            methods. This also boosts their learning as they
-                            study from home.
-                          </p>
-                        </div>
-                      </DisclosurePanel>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </>
-            )}
-          </Disclosure>
-          <Disclosure as="div" className="w-full border-b border-gray-300">
-            {({ open }) => (
-              <>
-                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-[1.5em]  ">
-                    Does online learning isolate students from their peers?
-                  </h3>
-                  {open ? (
-                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                  ) : (
-                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                  )}
-                </DisclosureButton>
-                <div className="overflow-hidden py-2">
-                  <AnimatePresence>
-                    {open && (
-                      <DisclosurePanel
-                        static
-                        as={motion.div}
-                        initial={{ opacity: 0, y: -24 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -24 }}
-                        transition
-                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                      >
-                        <div className=" space-y-5">
-                          <p className="text-p">
-                            Many parents worry about whether online learning
-                            will allow their child to socialise properly. At
-                            IWS, we encourage our international students to
-                            interact with one another by holding various clubs,
-                            social gatherings, and events throughout the school
-                            year. We also offer a summer camp, a student
-                            council, and additional activities for students to
-                            enjoy in their spare time. Furthermore, students
-                            enrolled in the same courses often work together on
-                            group tasks and projects. These collaborative
-                            efforts help develop communication skills and
-                            leadership abilities. All activities in our online
-                            classrooms are recorded and supervised to ensure the
-                            safety of our students online. We also provide
-                            training on how to use social media responsibly to
-                            maintain a safe environment for all student
-                            interactions.
-                          </p>
-                        </div>
-                      </DisclosurePanel>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </>
-            )}
-          </Disclosure>
-          <Disclosure as="div" className="w-full border-b border-gray-300">
-            {({ open }) => (
-              <>
-                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-[1.5em] text-left ">
-                    I reside outside the UK; is this educational approach
-                    acknowledged in my country?
-                  </h3>
-                  {open ? (
-                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                  ) : (
-                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                  )}
-                </DisclosureButton>
-                <div className="overflow-hidden py-2">
-                  <AnimatePresence>
-                    {open && (
-                      <DisclosurePanel
-                        static
-                        as={motion.div}
-                        initial={{ opacity: 0, y: -24 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -24 }}
-                        transition
-                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                      >
-                        <div className=" space-y-5">
-                          <p className="text-p">
-                            Every country has different rules about what kinds
-                            of education can take the place of traditional
-                            classroom learning. So, we suggest that parents
-                            check if homeschooling is allowed in the country
-                            where they plan to live or work before applying to
-                            our school. Please also remember that our lessons
-                            follow the standards of the English education
-                            system, and our staff are experts only in this
-                            system.
-                          </p>
-                        </div>
-                      </DisclosurePanel>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </>
-            )}
-          </Disclosure>
-          <Disclosure as="div" className="w-full border-b border-gray-300">
-            {({ open }) => (
-              <>
-                <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                  <h3 className="text-[1.5em]  ">
-                    Are lessons taught in any other languages, other than
-                    English?
-                  </h3>
-                  {open ? (
-                    <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                  ) : (
-                    <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                  )}
-                </DisclosureButton>
-                <div className="overflow-hidden py-2">
-                  <AnimatePresence>
-                    {open && (
-                      <DisclosurePanel
-                        static
-                        as={motion.div}
-                        initial={{ opacity: 0, y: -24 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -24 }}
-                        transition
-                        className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                      >
-                        <div className=" space-y-5">
-                          <p className="text-p">
-                            Currently, all our subjects are taught in English,
-                            in line with a British curriculum. We do, however,
-                            teach several foreign languages, including French,
-                            German, and Chinese, where teachers and students
-                            frequently engage in conversations in the language
-                            of study.
-                          </p>
-                        </div>
-                      </DisclosurePanel>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </>
-            )}
-          </Disclosure>
+          <AccordionSecondary title="Are you accredited?">
+            <div className=" space-y-5">
+              <p className="text-p">
+                Yes, we offer Cambridge Assessment International
+                Education. We are registered as UK Learner Providers
+                and are in the process of obtaining our membership
+                with the Council of International Schools (CIS).
+              </p>
+            </div>
+          </AccordionSecondary>
+
+          <AccordionSecondary title="Where are you based?">
+            <div className=" space-y-5">
+              <p className="text-p">
+                We are based in the UK, our headquarters are
+                registered at 31 Long Acre Covent Garden, London
+                England WC2E 9LA
+              </p>
+            </div>
+          </AccordionSecondary>
+
+          <AccordionSecondary title="How does your online school work?">
+            <div className=" space-y-5">
+              <p className="text-p">
+                Our trained teachers employ a range of teaching aids
+                to support learning, such as high-quality video
+                cameras, interactive whiteboards, screen sharing,
+                live presentations, and lesson recordings. Students
+                at IWS can join classes through a safe online link.
+                Teachers use various methods and activities,
+                including quizzes, presentations, and group work, in
+                their lessons. The use of modern technology makes
+                learning enjoyable for students and enhances their
+                educational journey compared to conventional
+                methods. This also boosts their learning as they
+                study from home.
+              </p>
+            </div>
+          </AccordionSecondary>
+          <AccordionSecondary title="Does online learning isolate students from their peers?">
+            <div className=" space-y-5">
+              <p className="text-p">
+                Many parents worry about whether online learning
+                will allow their child to socialise properly. At
+                IWS, we encourage our international students to
+                interact with one another by holding various clubs,
+                social gatherings, and events throughout the school
+                year. We also offer a summer camp, a student
+                council, and additional activities for students to
+                enjoy in their spare time. Furthermore, students
+                enrolled in the same courses often work together on
+                group tasks and projects. These collaborative
+                efforts help develop communication skills and
+                leadership abilities. All activities in our online
+                classrooms are recorded and supervised to ensure the
+                safety of our students online. We also provide
+                training on how to use social media responsibly to
+                maintain a safe environment for all student
+                interactions.
+              </p>
+            </div>
+          </AccordionSecondary>
+
+          <AccordionSecondary title="I reside outside the UK; is this educational approach acknowledged in my country?">
+            <div className=" space-y-5">
+              <p className="text-p">
+                Every country has different rules about what kinds
+                of education can take the place of traditional
+                classroom learning. So, we suggest that parents
+                check if homeschooling is allowed in the country
+                where they plan to live or work before applying to
+                our school. Please also remember that our lessons
+                follow the standards of the English education
+                system, and our staff are experts only in this
+                system.
+              </p>
+            </div>
+          </AccordionSecondary>
+
+          <AccordionSecondary title="Are lessons taught in any other languages, other than English?">
+            <div className=" space-y-5">
+              <p className="text-p">
+                Currently, all our subjects are taught in English,
+                in line with a British curriculum. We do, however,
+                teach several foreign languages, including French,
+                German, and Chinese, where teachers and students
+                frequently engage in conversations in the language
+                of study.
+              </p>
+            </div>
+          </AccordionSecondary>
+
         </div>
       </div>
 

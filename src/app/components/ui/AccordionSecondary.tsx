@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import {
   PlusIcon,
@@ -12,11 +13,10 @@ interface AccordionSecondaryProps {
 const AccordionSecondary: React.FC<AccordionSecondaryProps> = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-
   return (
     <Disclosure as="div" className="w-full border-b border-gray-300" onChange={() => setIsOpen(!isOpen)}>
-      <DisclosureButton className="w-full  pb-2 flex items-center justify-between">
-        <h3 className=' text-blue-900 '>
+      <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
+        <h3 className="text-[1.5em]">
           {title}
         </h3>
         {isOpen ? (

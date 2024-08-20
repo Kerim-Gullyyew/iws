@@ -1,24 +1,17 @@
-"use client";
+
 import React from "react";
 import Image from "next/image";
 import ContactButton from "../components/buttons/ContactButton";
 import EnrollButton from "../components/buttons/EnrollButton";
 import { keyStages } from "../data/keystage";
-import { PlusIcon, MinusIcon } from "@heroicons/react/24/solid";
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@headlessui/react";
-import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import ContactUsSection from "../components/sections/ContactUsSection";
-import { useRouter } from 'next/navigation'
 
-interface pageProps {}
+import AccordionSecondary from "../components/ui/AccordionSecondary";
 
-const Page: React.FC<pageProps> = ({}) => {
-  const router = useRouter();
+interface pageProps { }
+
+const Page: React.FC<pageProps> = ({ }) => {
   const course = keyStages.find((course) => course.name === "I/GCSE");
   if (course) {
     return (
@@ -47,7 +40,7 @@ const Page: React.FC<pageProps> = ({}) => {
             height={1000}
             className="max-w-lg w-full lg:w-auto object-contain"
             src="/Hero.webp"
-            priority={true} // {false} | {true}
+            priority={true}
             alt=""
           />
         </div>
@@ -113,48 +106,47 @@ const Page: React.FC<pageProps> = ({}) => {
         </div>
 
         <div className="pt-20 container ">
-            <div className="relative w-full bg-blue-600 rounded-2xl">
-              <div className="absolute left-1/2 sm:top-1/2 sm:left-0 transform -translate-x-1/2 rounded-full -translate-y-1/2 w-16 h-16 bg-white" />
-              <div className="absolute left-1/2 sm:left-auto sm:top-1/2 sm:right-0 sm:-translate-y-1/2 sm:translate-x-1/2 bottom-0 transform -translate-x-1/2 rounded-full translate-y-1/2 w-16 h-16 bg-white" />
+          <div className="relative w-full bg-blue-600 rounded-2xl">
+            <div className="absolute left-1/2 sm:top-1/2 sm:left-0 transform -translate-x-1/2 rounded-full -translate-y-1/2 w-16 h-16 bg-white" />
+            <div className="absolute left-1/2 sm:left-auto sm:top-1/2 sm:right-0 sm:-translate-y-1/2 sm:translate-x-1/2 bottom-0 transform -translate-x-1/2 rounded-full translate-y-1/2 w-16 h-16 bg-white" />
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 px-5 sm:px-10 py-14 sm:py-8">
-                <div className="flex flex-col md:flex-row col-span-2 gap-10">
-                  <div className="w-full flex gap-3">
-                    <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
-                      <p className="text-white text-[26px] font-bold">1</p>
-                    </div>
-                    <div className="space-y-5 mt-2">
-                      <p className="text-white text-[26px] font-semibold">Select core subjects</p>
-                      <p className="text-white ">
-                        Select your desired 5 core subjects. These subjects are
-                        included in I/GCSE Cambridge school fees.
-                      </p>
-                    </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 px-5 sm:px-10 py-14 sm:py-8">
+              <div className="flex flex-col md:flex-row col-span-2 gap-10">
+                <div className="w-full flex gap-3">
+                  <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
+                    <p className="text-white text-[26px] font-bold">1</p>
                   </div>
-                  <div className="w-full flex gap-3 col-span-1">
-                    <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
+                  <div className="space-y-5 mt-2">
+                    <p className="text-white text-[26px] font-semibold">Select core subjects</p>
+                    <p className="text-white ">
+                      Select your desired 5 core subjects. These subjects are
+                      included in I/GCSE Cambridge school fees.
+                    </p>
+                  </div>
+                </div>
+                <div className="w-full flex gap-3 col-span-1">
+                  <div className="border-2 flex items-center justify-center border-white min-w-10 max-w-10 min-h-10 max-h-10 w-10 h-10 rounded-full">
                     <p className="text-white text-[26px] font-bold">2</p>
-                    </div>
-                    <div className="space-y-5 mt-2">
-                      <p className="text-white text-[26px] font-semibold">Customise your study</p>
-                      <p className="text-white ">
+                  </div>
+                  <div className="space-y-5 mt-2">
+                    <p className="text-white text-[26px] font-semibold">Customise your study</p>
+                    <p className="text-white ">
                       You can customise your study by adding your desired subjects for an extra cost.
-                      </p>
-                    </div>
+                    </p>
                   </div>
                 </div>
-                <div className="w-full border-t-2 sm:border-l-2 sm:border-t-0 border-dashed flex flex-col gap-8 py-5 items-center justify-center">
-                  <div className="flex gap-4 items-end sm:flex-col lg:flex-row">
-                    <p className="text-white text-[50px] font-semibold">£7200</p>
-                    <p className="text-white text-[33px]">/year</p>
-                  </div>
-                  <button onClick={() => router.push('https://iws-register.iwsonlineschool.co.uk/')} className="bg-white rounded-full px-9 py-3 text-blue-600 font-semibold text-[18px]">
-                    Enrol now
-                  </button>
+              </div>
+              <div className="w-full border-t-2 sm:border-l-2 sm:border-t-0 border-dashed flex flex-col gap-8 py-5 items-center justify-center">
+                <div className="flex gap-4 items-end sm:flex-col lg:flex-row">
+                  <p className="text-white text-[50px] font-semibold">£7200</p>
+                  <p className="text-white text-[33px]">/year</p>
                 </div>
+                <EnrollButton light={true} />
+
               </div>
             </div>
           </div>
+        </div>
 
         <div className="pt-20 container">
           <h2 className="  text-center ">
@@ -346,501 +338,175 @@ const Page: React.FC<pageProps> = ({}) => {
         <div className="pt-20 container">
           <h2 className="  text-center ">FAQs</h2>
           <div className="pt-8 sm:pt-12 flex flex-col gap-8">
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">24/7 Access to Quality Education</h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <p className=" ">
-                              At IWS Online School, primary students enjoy 24/7
-                              access to expertly tailored, top-notch education
-                              from our skilled online instructors.
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
 
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">Engage with Interactive Learning</h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <p className=" ">
-                              Discover active, hands-on learning through
-                              thought-provoking assignments, projects, and
-                              diverse assessments at IWS Online School.
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
-
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">Enriching Beyond Classrooms</h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <p className=" ">
-                              Elevate confidence through virtual simulations and
-                              diverse extracurriculars at IWS Online School,
-                              guided by our exceptional, supportive teachers.
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
-
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">Interactive Online Learning Platform</h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <p className=" ">
-                              Discover tailored online learning for middle
-                              students: live lessons, accessible course
-                              materials, and organised schedules.
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
-
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">
-                      Engaging Lessons, Active Participation
-                    </h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <p className=" ">
-                              Interactive classes with engaging activities,
-                              diverse assessments, and virtual simulations for
-                              enhanced learning.
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
-
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">
-                      Accessible, Affordable Middle Education
-                    </h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <p className=" ">
-                              We are committed to providing high-quality,
-                              accessible British middle education with flexible
-                              payment options to suit every budget.
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
-
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">
-                      Personalised Instruction in Private, Virtual Classrooms
-                    </h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <p className=" ">
-                              Our unique I/GCSE programme offers private,
-                              virtual classrooms for live interactive lessons
-                              via our student portal. Highly skilled and
-                              experienced teachers work closely with students,
-                              helping to identify strengths and weaknesses and
-                              offering a customised curriculum that maximises
-                              learning capabilities. Together, we can unlock
-                              your potential!
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
-
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">
-                      Comprehensive I/GCSE Courses for Academic Excellence
-                    </h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <p className=" ">
-                              The I/GCSE programme at IWS Online School offers
-                              accessible online learning and a holistic approach
-                              to education. Our curriculum encompasses core
-                              subjects such as English, Mathematics, and Science
-                              and a wide selection of optional subjects to
-                              expand horizons and enrich knowledge. At IWS, we
-                              offer a well-rounded educational approach tailored
-                              to individual strengths and interests.
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
-
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">Course Materials</h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <p className=" ">
-                              Students will receive digital learning resources
-                              to complement their live lessons. These materials
-                              encompass various tools to reinforce concepts and
-                              enhance communication skills, including:
-                            </p>
-                            <ul className=" list-disc list-inside">
-                              <li>An interactive student guide</li>
-                              <li>
-                                A comprehensive framework covering the A and AS
-                                Levels curriculum
-                              </li>
-                              <li>
-                                Around-the-clock access to recorded English
-                                Language lessons
-                              </li>
-                              <li>
-                                Supplementary learning materials, including
-                                Cambridge International AS and A Level past
-                                papers and sample answers for exam preparation.
-                              </li>
-                            </ul>
-                            <p className=" ">
-                              Additionally, our Success Coaching programme
-                              ensures that each student is assigned a dedicated
-                              Success Coach to monitor their progress and
-                              provide the support they need.
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
-
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">Exam Information</h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <p className=" ">
-                              IWS Online School will promptly inform parents and
-                              guardians about the commencement of the Cambridge
-                              Board Exam application process. Students can
-                              anticipate an email on a specified date, and must
-                              choose a local exam centre for their exams and
-                              indicate a preferred schedule for relevant course
-                              subjects. Our team will guide you to the nearest
-                              centre. Once a suitable centre is selected, exam
-                              fees must be paid directly to secure a seat. A and
-                              AS Level students with specific needs may request
-                              access arrangements for physical, medical, or
-                              learning support during exams.
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
-
-            <Disclosure as="div" className="w-full border-b border-gray-300">
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-                    <h3 className="text-[1.5em]  ">Support may involve</h3>
-                    {open ? (
-                      <MinusIcon className="h-8 w-8" aria-hidden="true" />
-                    ) : (
-                      <PlusIcon className="h-8 w-8" aria-hidden="true" />
-                    )}
-                  </DisclosureButton>
-                  <div className="overflow-hidden py-2">
-                    <AnimatePresence>
-                      {open && (
-                        <DisclosurePanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, y: -24 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -24 }}
-                          transition
-                          className="origin-top transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
-                        >
-                          <div className=" space-y-5">
-                            <ul className="list-disc list-inside">
-                              <li>Extended exam time (25-50%)</li>
-                              <li>
-                                A scribe to transcribe answers based on student
-                                responses
-                              </li>
-                              <li>A reader</li>
-                              <li>
-                                Enlarged print exam papers for improved
-                                visibility
-                              </li>
-                              <li>A separate examination area</li>
-                              <li>Supervised breaks to prevent fatigue</li>
-                              <li>Laptop use</li>
-                            </ul>
-                            <p className="font-bold">Please Note</p>
-                            <p>
-                              Applications for access assistance should be
-                              submitted by February of the year the student
-                              takes the Cambridge Board Exam. Processing and
-                              approval of requests may take up to 18 months,
-                              with an additional assessment to validate the need
-                              for support.
-                            </p>
-                            <p>
-                              The evaluation will be conducted by an official
-                              board of examiners and relevant specialists such
-                              as educational psychologists, occupational
-                              therapists, etc.
-                            </p>
-                          </div>
-                        </DisclosurePanel>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </>
-              )}
-            </Disclosure>
+            <AccordionSecondary title="24/7 Access to Quality Education">
+              <div className=" space-y-5">
+                <p className=" ">
+                  At IWS Online School, primary students enjoy 24/7
+                  access to expertly tailored, top-notch education
+                  from our skilled online instructors.
+                </p>
+              </div>
+            </AccordionSecondary>
+            <AccordionSecondary title="Engage with Interactive Learning">
+              <div className=" space-y-5">
+                <p className=" ">
+                  Discover active, hands-on learning through
+                  thought-provoking assignments, projects, and
+                  diverse assessments at IWS Online School.
+                </p>
+              </div>
+            </AccordionSecondary>
+            <AccordionSecondary title="Enriching Beyond Classrooms">
+              <div className=" space-y-5">
+                <p className=" ">
+                  Elevate confidence through virtual simulations and
+                  diverse extracurriculars at IWS Online School,
+                  guided by our exceptional, supportive teachers.
+                </p>
+              </div>
+            </AccordionSecondary>
+            <AccordionSecondary title="Interactive Online Learning Platform">
+              <div className=" space-y-5">
+                <p className=" ">
+                  Discover tailored online learning for middle
+                  students: live lessons, accessible course
+                  materials, and organised schedules.
+                </p>
+              </div>
+            </AccordionSecondary>
+            <AccordionSecondary title="Engaging Lessons, Active Participation">
+              <div className=" space-y-5">
+                <p className=" ">
+                  Interactive classes with engaging activities,
+                  diverse assessments, and virtual simulations for
+                  enhanced learning.
+                </p>
+              </div>
+            </AccordionSecondary>
+            <AccordionSecondary title="Accessible, Affordable Middle Education">
+              <div className=" space-y-5">
+                <p className=" ">
+                  We are committed to providing high-quality,
+                  accessible British middle education with flexible
+                  payment options to suit every budget.
+                </p>
+              </div>
+            </AccordionSecondary>
+            <AccordionSecondary title="Personalised Instruction in Private, Virtual Classrooms">
+              <div className=" space-y-5">
+                <p className=" ">
+                  Our unique I/GCSE programme offers private,
+                  virtual classrooms for live interactive lessons
+                  via our student portal. Highly skilled and
+                  experienced teachers work closely with students,
+                  helping to identify strengths and weaknesses and
+                  offering a customised curriculum that maximises
+                  learning capabilities. Together, we can unlock
+                  your potential!
+                </p>
+              </div>
+            </AccordionSecondary>
+            <AccordionSecondary title="Comprehensive I/GCSE Courses for Academic Excellence">
+              <div className=" space-y-5">
+                <p className=" ">
+                  The I/GCSE programme at IWS Online School offers
+                  accessible online learning and a holistic approach
+                  to education. Our curriculum encompasses core
+                  subjects such as English, Mathematics, and Science
+                  and a wide selection of optional subjects to
+                  expand horizons and enrich knowledge. At IWS, we
+                  offer a well-rounded educational approach tailored
+                  to individual strengths and interests.
+                </p>
+              </div>
+            </AccordionSecondary>
+            <AccordionSecondary title="Course Materials">
+              <div className=" space-y-5">
+                <p className=" ">
+                  Students will receive digital learning resources
+                  to complement their live lessons. These materials
+                  encompass various tools to reinforce concepts and
+                  enhance communication skills, including:
+                </p>
+                <ul className=" list-disc list-inside">
+                  <li>An interactive student guide</li>
+                  <li>
+                    A comprehensive framework covering the A and AS
+                    Levels curriculum
+                  </li>
+                  <li>
+                    Around-the-clock access to recorded English
+                    Language lessons
+                  </li>
+                  <li>
+                    Supplementary learning materials, including
+                    Cambridge International AS and A Level past
+                    papers and sample answers for exam preparation.
+                  </li>
+                </ul>
+                <p className=" ">
+                  Additionally, our Success Coaching programme
+                  ensures that each student is assigned a dedicated
+                  Success Coach to monitor their progress and
+                  provide the support they need.
+                </p>
+              </div>
+            </AccordionSecondary>
+            <AccordionSecondary title="Exam Information">
+              <div className=" space-y-5">
+                <p className=" ">
+                  IWS Online School will promptly inform parents and
+                  guardians about the commencement of the Cambridge
+                  Board Exam application process. Students can
+                  anticipate an email on a specified date, and must
+                  choose a local exam centre for their exams and
+                  indicate a preferred schedule for relevant course
+                  subjects. Our team will guide you to the nearest
+                  centre. Once a suitable centre is selected, exam
+                  fees must be paid directly to secure a seat. A and
+                  AS Level students with specific needs may request
+                  access arrangements for physical, medical, or
+                  learning support during exams.
+                </p>
+              </div>
+            </AccordionSecondary>
+            <AccordionSecondary title="Support may involve">
+              <div className=" space-y-5">
+                <ul className="list-disc list-inside">
+                  <li>Extended exam time (25-50%)</li>
+                  <li>
+                    A scribe to transcribe answers based on student
+                    responses
+                  </li>
+                  <li>A reader</li>
+                  <li>
+                    Enlarged print exam papers for improved
+                    visibility
+                  </li>
+                  <li>A separate examination area</li>
+                  <li>Supervised breaks to prevent fatigue</li>
+                  <li>Laptop use</li>
+                </ul>
+                <p className="font-bold">Please Note</p>
+                <p>
+                  Applications for access assistance should be
+                  submitted by February of the year the student
+                  takes the Cambridge Board Exam. Processing and
+                  approval of requests may take up to 18 months,
+                  with an additional assessment to validate the need
+                  for support.
+                </p>
+                <p>
+                  The evaluation will be conducted by an official
+                  board of examiners and relevant specialists such
+                  as educational psychologists, occupational
+                  therapists, etc.
+                </p>
+              </div>
+            </AccordionSecondary>
           </div>
         </div>
-
         <div className="pt-20">
           <ContactUsSection />
         </div>
@@ -854,10 +520,6 @@ const Page: React.FC<pageProps> = ({}) => {
             pricing details, visit our
             <Link href={"/school-fees"} className="text-blue-500"> tuition fees page.</Link>
           </p>
-
-
-          
-
           <div className="mt-6">
             <h3 className="border-b   text-blue-900 border-blue-900 pb-3">
               Accredited by

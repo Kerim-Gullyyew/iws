@@ -1,8 +1,5 @@
-"use client";
 import React from "react";
-
 interface pageProps {}
-
 const page: React.FC<pageProps> = ({}) => {
   return (
     <div className="container pt-9 pb-14">

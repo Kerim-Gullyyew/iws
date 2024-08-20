@@ -1,19 +1,13 @@
+"use client"
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import '../utils/styles.css'
-// import './styles.css';
-
-// import required modules
 import { Navigation } from 'swiper/modules';
-interface TestimonialProps {
 
-}
 
-const Testimonial: React.FC<TestimonialProps> = ({ }) => {
+const Testimonial: React.FC = () => {
   return (
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
@@ -56,8 +50,6 @@ const Testimonial: React.FC<TestimonialProps> = ({ }) => {
             <h4 className='  text-blue-600 text-center'>Emily Turner (Parent)</h4>
           </div>
         </SwiperSlide>
-
-
       </Swiper>
     </>
   )

@@ -1,9 +1,5 @@
-"use client";
 import React from "react";
-
-interface pageProps {}
-
-const page: React.FC<pageProps> = ({}) => {
+const page: React.FC = () => {
   return (
     <div className="container pt-9 pb-14">
       <p className="font-bold">IWS Online School Terms and Conditions</p>

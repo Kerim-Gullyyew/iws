@@ -1,17 +1,13 @@
-"use client";
 import React from "react";
 import Testimonial from "../components/ui/Testimonial";
 import Image from "next/image";
 import ContactUsSection from "../components/sections/ContactUsSection";
-import Link from "next/link";
 import { keyStages } from "../data/keystage";
-import { useRouter } from 'next/navigation'
-
+import SchoolFeeCard from "../components/ui/SchoolFeeCard";
 
 interface pageProps {}
 
 const Page: React.FC<pageProps> = ({}) => {
-  const router = useRouter()
   return (
     <div className="py-14 lg:py-24 container animate-fade-in">
       <h1 className="text-center   text-[#349AFE]">School Fees</h1>
@@ -31,70 +27,8 @@ const Page: React.FC<pageProps> = ({}) => {
             key={index}
             className="w-full bg-[#f4f4f4] border-[#f4f4f4] cursor-pointer border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6"
           >
-            <div className="flex justify-between gap-4 flex-col h-full">
-              <div className="flex flex-col gap-10">
-                <div onClick={() => router.push(keystage.url)} className="flex flex-col gap-8">
-                  <h3
-                    className={`text-[24px] ${index === 0 && "text-sky-500"}  ${index === 1 && "text-green-500"} ${index === 2 && "text-orange-500"} ${index === 3 && "text-red-500"}`}
-                  >
-                    {keystage.name}
-                  </h3>
-
-                  <div className=" flex flex-wrap gap-5 items-end">
-                    <h4 className="text-[32px] ">£{keystage.price}</h4>
-                    <h4 className="text-gray-400 ">/year</h4>
-                  </div>
-
-                  <p className="text-[16px]">{keystage.description}</p>
-                </div>
-
-                <div className="flex flex-col gap-5">
-                  <h5 className="border-b-[0.5px]   pb-2  border-gray-600">
-                    Included subjects
-                  </h5>
-                  <div className="flex flex-wrap gap-2 items-center">
-                    {keystage.includedSubjects.map((subject, index) => (
-                      <Link
-                        key={index}
-                        href={subject.url}
-                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
-                      >
-                        <h6 className="text-white text-[12px]">
-                          {subject.subject_name2}
-                        </h6>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="flex flex-col gap-5">
-                  <h5 className="border-b-[0.5px]   pb-2  border-gray-600">
-                    Additional subjects
-                  </h5>
-                  <div className="flex flex-wrap gap-2 items-center">
-                    {keystage.additionalSubjects.map((subject, index) => (
-                      <Link
-                        key={index}
-                        href={subject.url}
-                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
-                      >
-                        <h6 className="text-gray-600 text-[12px]">
-                          {subject.subject_name2}
-                        </h6>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div>
-                <Link
-                  href={"https://iws-register.iwsonlineschool.co.uk/"}
-                  className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
-                >
-                  Enrol Now
-                </Link>
-              </div>
-            </div>
+            <SchoolFeeCard index={index} keystage={keystage} />
+        
           </div>
         ))}
       </div>
