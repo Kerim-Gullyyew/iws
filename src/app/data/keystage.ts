@@ -1,5 +1,7 @@
 export interface KeyStageProps {
   name: string;
+  label: string;
+  value: string;
   price: number;
   url: string;
   description: string;
@@ -27,6 +29,8 @@ export const keyStages: KeyStageProps[] = [
   {
     name: "Primary School",
     price: 5000,
+    label: "Primary School",
+    value: "Primary School",
     url: "cambridge-primary",
     description: "IWS Online School offers the Cambridge Primary International Curriculum for primary students. Our UK-based online school is proudly accredited by Cambridge Assessment International Education.",
     includedSubjects: [
@@ -327,6 +331,8 @@ export const keyStages: KeyStageProps[] = [
   {
     name: "Secondary School",
     price: 6000,
+    label: "Secondary School",
+    value: "Secondary School",
     url: "cambridge-secondary",
     description: "At IWS Online School, Middle Education starts at age 11, leading to the Cambridge I/GCSE exams over five years—three years of Middle Education followed by two years of I/GCSE. Graduates are ready for A-Level studies.",
     includedSubjects: [
@@ -626,6 +632,8 @@ export const keyStages: KeyStageProps[] = [
   {
     name: "I/GCSE",
     price: 7200,
+    label: "I/GCSE",
+    value: "I/GCSE",
     url: "cambridge-igcse",
     description: "Enrol in our two-year program for globally recognised Cambridge certifications, accepted by top universities and employers worldwide, enhancing your academic and career prospects globally.",
     includedSubjects: [
@@ -1105,6 +1113,8 @@ export const keyStages: KeyStageProps[] = [
   {
     name: "A Level",
     price: 7500,
+    label: "A Level",
+    value: "A Level",
     url: "cambridge-a-level",
     description: "The A-Levels we offer hold global recognition from esteemed universities and leading employers, significantly enhancing our students’ prospects of gaining admission to their desired institutions and securing positions in top organisations.",
     includedSubjects: [

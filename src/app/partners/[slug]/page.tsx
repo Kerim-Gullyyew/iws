@@ -1,16 +1,30 @@
 import {
   ArrowRightCircleIcon,
 } from "@heroicons/react/24/solid";
-import Carousel from "./components/ui/Carousel";
+import Carousel from "../../components/ui/Carousel";
 import Image from "next/image";
 import Link from "next/link";
-import EnrollButton from "./components/buttons/EnrollButton";
-import ContactButton from "./components/buttons/ContactButton";
-import ContactUsSection from './components/sections/ContactUsSection'
-import AccordionSecondary from "./components/ui/AccordionSecondary";
-import SchoolFeeCard from "./components/ui/SchoolFeeCard";
-import { keyStages } from "./data/keystage";
-export default function Home() {
+import EnrollButton from "../../components/buttons/EnrollButton";
+import ContactButton from "../../components/buttons/ContactButton";
+import ContactUsSection from '../../components/sections/ContactUsSection'
+import AccordionSecondary from "../../components/ui/AccordionSecondary";
+import SchoolFeeCard from "@/app/components/ui/SchoolFeeCard";
+import { keyStages } from "@/app/data/keystage";
+import { partners } from "@/app/data/partners";
+
+
+interface pageProps {
+  params: { slug: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+
+const page: React.FC<pageProps> = ({ params, searchParams }) => {
+  const { slug } = params
+    console.log("slug");
+    
+  // const partner = partners.find((partner) => partner.slug === slug);
+  // console.log("partner", partner);
   return (
     <div className="py-14 lg:py-24 animate-fade-in">
       <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
@@ -38,11 +52,14 @@ export default function Home() {
             Discover new horizons, Create lasting memories, and Lead the future
             with our live lessons.
           </p>
+
           <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
             <EnrollButton />
+
             <ContactButton />
           </div>
         </div>
+
         <Image
           width={450}
           height={450}
@@ -53,8 +70,11 @@ export default function Home() {
           alt=""
         />
       </div>
-      <div className="pt-20 container">
+
+      <div id="programmes" className="pt-20 container">
         <h2 className="  text-center ">The right study programme for you</h2>
+
+
         <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-6 gap-y-14">
           <Link
             href={"/cambridge-primary"}
@@ -198,8 +218,65 @@ export default function Home() {
           </Link>
         </div>
       </div>
-    
-      <div className="pt-20 container">
+
+      <div id="school-fees" className="py-14 lg:py-24 container">
+        <h1 className="text-center text-[#349AFE]">School Fees</h1>
+        <p className="text-center font-semibold mt-9">
+          Give your child the best education at the most reasonable rates at IWS.
+        </p>
+        <p className="text-center  mt-5">
+          Our initial meeting is free. If you decide to enrol, our flexible fee
+          structure includes a £200 one-time registration fee. This covers tests
+          to assess your child’s abilities and interests, shaping their education
+          for success.
+        </p>
+
+        <div className="pt-10 sm:pt-20 grid grid-cols-1 md:grid-cols-2 gap-5 xl:grid-cols-4">
+          {keyStages.map((keystage, index) => (
+            <div
+              key={index}
+              className="w-full bg-[#f4f4f4] border-[#f4f4f4] cursor-pointer border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6"
+            >
+              <SchoolFeeCard index={index} keystage={keystage} />
+            </div>
+          ))}
+        </div>
+
+        <div className="pt-8 sm:pt-20 flex flex-col md:flex-row lg:flex-row-reverse gap-5">
+          <Image
+            width={1000}
+            height={1000}
+            className=" object-cover md:w-1/2"
+            src="/IWS_fees_1.webp"
+            alt=""
+          />
+          <div className="flex flex-col gap-5 justify-center">
+            <h2 className=" text-[#349AFE]">What our fees include</h2>
+            <div className="flex flex-col gap-5">
+              <p className="">
+                Our school fees cover courses, career advice, assemblies,
+                workshops, one-on-one sessions with Success Coaches, and
+                year-round access to online materials. Students can also view
+                recorded lessons any time via our online portal.
+              </p>
+              <p className="">
+                There may be occasional additional fees including (but not limited
+                to): extracurricular activities, social events, trips, excursions,
+                camps, and external examination fees. Wherever possible, all such
+                additional fees will be communicated to you well in advance.
+              </p>
+              <p className="">
+                A student is presumed to be enrolled for the next academic year or
+                term if adequate notification is not received in writing by the
+                school. Please refer to our Withdrawal section for details on
+                notice periods.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="pt-20 container" id="what-awaits">
         <h2 className="  text-center ">
           What awaits you at IWS Online School?
         </h2>
@@ -720,7 +797,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-20 lg:container">
+      <div id="contact-us" className="mt-20 lg:container">
         <ContactUsSection />
         {/* <div className=" bg-[#003372] lg:rounded-xl mt-8 flex flex-col md:flex-row">
           <div className="py-12 px-8 lg:px-16 flex flex-col gap-10">
@@ -758,3 +835,4 @@ export default function Home() {
     </div>
   );
 }
+export default page;

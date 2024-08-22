@@ -1,57 +1,21 @@
 "use client"
-import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import { useState } from 'react'
+import { Dialog, Popover } from '@headlessui/react'
 import {
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, RectangleGroupIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import Image from 'next/image'
 import EnrollButton from './buttons/EnrollButton'
-
-const products = [
-  {
-    name: 'Analytics1',
-    description: 'Get a better understanding where your traffic is coming from',
-    href: '#',
-    icon: ChartPieIcon,
-  },
-  {
-    name: 'Engagement',
-    description: 'Speak directly to your customers with our engagement tool',
-    href: '#',
-    icon: CursorArrowRaysIcon,
-  },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  {
-    name: 'Integrations',
-    description: 'Your customers’ data will be safe and secure',
-    href: '#',
-    icon: SquaresPlusIcon,
-  },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-  { name: 'View all products', href: '#', icon: RectangleGroupIcon },
-]
-
-
-function classNames(...classes: string[]): string {
-  return classes.filter(Boolean).join(' ')
-}
-
-
+import { usePathname } from 'next/navigation';
 interface HeaderProps {
 
 }
 
 const Header: React.FC<HeaderProps> = ({ }) => {
+  const pathname = usePathname()
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -77,34 +41,59 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-1">
-          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-primary/"} >
-            Primary
-          </Link>
-          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-secondary/"} >
-            Secondary
-          </Link>
-          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-igcse/"} >
-            I/GCSE
-          </Link>
-          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-a-level/"} >
-            A Level
-          </Link>
-          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/school-fees/"} >
-            School Fees
-          </Link>
-          <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/contact-us/"} >
-            Contact Us
-          </Link>
-
+          {
+            pathname === '/partners/cs-canary' ? (
+              <>
+                <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href="#what-awaits">
+                  About Us
+                </Link>
+                <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href="#programmes" >
+                  Programmes
+                </Link>
+                <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href="#school-fees" >
+                  School Fees
+                </Link>
+                <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href="#contact-us" >
+                  Contact Us
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-primary/"} >
+                  Primary
+                </Link>
+                <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-secondary/"} >
+                  Secondary
+                </Link>
+                <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-igcse/"} >
+                  I/GCSE
+                </Link>
+                <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-a-level/"} >
+                  A Level
+                </Link>
+                <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/school-fees/"} >
+                  School Fees
+                </Link>
+                <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/contact-us/"} >
+                  Contact Us
+                </Link>
+              </>
+            )
+          }
 
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          {/* <div className='flex'> */}
-          <EnrollButton />
+        {
+          pathname === '/partners/cs-canary' ? (
+            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+              Language
+            </div>
+          ) : (
+            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+              <EnrollButton />
+            </div>
+          )
+        }
 
-          {/* </div> */}
-
-        </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
@@ -121,7 +110,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
-            >
+            >a
               <span className="sr-only">Close menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
@@ -180,7 +169,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </header>
+    </header >
   )
 }
 

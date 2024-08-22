@@ -4,7 +4,8 @@ import PhoneNumber from '../form/PhoneNumber'
 import Dropdown from '../form/Dropdown'
 import * as Yup from 'yup';
 import axios from 'axios'
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import DropdownCustomData from '../form/DropdownCustomData';
 interface TabSectionProps {
 
 }
@@ -18,16 +19,19 @@ interface ValidationErrors {
   lastName?: string;
   email?: string;
   phoneNumber?: string;
+  keystage?: string;
   country?: string;
   message?: string;
 }
 
 const TabSection: React.FC<TabSectionProps> = ({ }) => {
+  const pathname = usePathname()
   const [firstName, setFirstName] = useState<string>('');
   const [lastName, setLastName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [phoneNumber, setPhoneNumber] = useState<string>('44');
   const [country, setCountry] = useState<string | number>('');
+  const [keystage, setKeystage] = useState<string | number>("");
   const [message, setMessage] = useState<string>('');
   const [validationErrors, setValidationErrors] = useState<ValidationErrors>({});
   const router = useRouter()
@@ -51,6 +55,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
     lastName: Yup.string().required('Last name is required'),
     email: Yup.string().email('Invalid email').required('Email is required'),
     phoneNumber: Yup.string().required('Phone number is required'),
+    keystage: Yup.string().required('Keystage is required'),
     country: Yup.string().required('Country is required'),
     message: Yup.string().required('Your message is required'),
   });
@@ -64,6 +69,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
         lastName,
         email,
         phoneNumber,
+        keystage,
         country,
         message,
       }, { abortEarly: false });
@@ -73,8 +79,10 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
           lastName,
           email,
           phone_number: phoneNumber,
+          keystage,
           country,
-          message
+          message,
+          pathname
         });
         router.push('/thank-you');
       } catch (error) {
@@ -170,11 +178,20 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
           }
         </div>
 
-        <div className="col-span-full">
+        <div className="sm:col-span-3">
           <Dropdown country={country} setCountry={setCountry} label={"Search your country"} isSearch={true} />
           {
             validationErrors.country && (
               <p className='text-red-600 text-sm italic'>{validationErrors.country}</p>
+            )
+          }
+        </div>
+
+        <div className="sm:col-span-3">
+          <DropdownCustomData dropdown={keystage} setDropdown={setKeystage} label={"Select your Key Stage"} isSearch={false} />
+          {
+            validationErrors.country && (
+              <p className='text-red-600 text-sm italic'>{validationErrors.keystage}</p>
             )
           }
         </div>
