@@ -2,6 +2,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { partners } from "../data/partners";
 import Link from "next/link";
+import Image from "next/image";
 interface pageProps { }
 const page: React.FC<pageProps> = ({ }) => {
   return (
@@ -21,10 +22,11 @@ const page: React.FC<pageProps> = ({ }) => {
           partners.map((partner, index) => (
             <Link href={"partners/" + partner.slug} key={index} className="border cursor-pointer hover:-translate-y-3 transition-transform duration-300 w-full rounded-xl p-3 space-y-6 h-full flex flex-col justify-between">
               <div className="space-y-5">
-                <div className="w-full bg-blue-600 h-52"></div>
+                <Image className="w-full h-52 object-contain" width={1000} height={1000} src={partner.image} alt={partner.title} />
+
                 <div className="space-y-3">
                   <h4 className="font-bold">{partner.title}</h4>
-                  <p className=" leading-snug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, neque maiores? Recusandae repudiandae nulla natus aspernatur, blanditiis atque autem officia rerum iure totam deserunt dolorum iusto eveniet corporis voluptatum nesciunt.</p>
+                  <p className=" leading-snug">{partner.description}</p>
                 </div>
               </div>
 
@@ -39,56 +41,6 @@ const page: React.FC<pageProps> = ({ }) => {
           ))
         }
 
-        {/* <div className="border w-full rounded-xl p-3 space-y-6 h-full flex flex-col justify-between">
-          <div className="space-y-5">
-            <div className="w-full bg-blue-600 h-52"></div>
-            <div className="space-y-3">
-              <h4 className="font-bold">Lorem ipsum dolor.</h4>
-              <p className=" leading-snug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, neque maiores? Recusandae repudiandae nulla natus aspernatur, blanditiis atque autem officia rerum iure totam deserunt dolorum iusto eveniet corporis voluptatum nesciunt.</p>
-            </div>
-          </div>
-
-          <div className="bg-cardback rounded-full flex justify-between items-center py-2 px-3">
-            <h4 className="font-semibold">Learn more</h4>
-            <div className="bg-black w-7 h-7 min-w-7 min-h-7 p-1 rounded-full flex items-center justify-center">
-              <ArrowUpRightIcon color="white" />
-            </div>
-          </div>
-        </div>
-
-        <div className="border w-full rounded-xl p-3 space-y-6 h-full flex flex-col justify-between">
-          <div className="space-y-5">
-            <div className="w-full bg-blue-600 h-52"></div>
-            <div className="space-y-3">
-              <h4 className="font-bold">Lorem ipsum dolor.</h4>
-              <p className=" leading-snug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, neque maiores? Recusandae repudiandae nulla natus aspernatur, blanditiis atque autem officia rerum iure totam deserunt dolorum iusto eveniet corporis voluptatum nesciunt.</p>
-            </div>
-          </div>
-
-          <div className="bg-cardback rounded-full flex justify-between items-center py-2 px-3">
-            <h4 className="font-semibold">Learn more</h4>
-            <div className="bg-black w-7 h-7 min-w-7 min-h-7 p-1 rounded-full flex items-center justify-center">
-              <ArrowUpRightIcon color="white" />
-            </div>
-          </div>
-        </div>
-
-        <div className="border w-full rounded-xl p-3 space-y-6 h-full flex flex-col justify-between">
-          <div className="space-y-5">
-            <div className="w-full bg-blue-600 h-52"></div>
-            <div className="space-y-3">
-              <h4 className="font-bold">Lorem ipsum dolor.</h4>
-              <p className=" leading-snug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, neque maiores? Recusandae repudiandae nulla natus aspernatur, blanditiis atque autem officia rerum iure totam deserunt dolorum iusto eveniet corporis voluptatum nesciunt.</p>
-            </div>
-          </div>
-
-          <div className="bg-cardback rounded-full flex justify-between items-center py-2 px-3">
-            <h4 className="font-semibold">Learn more</h4>
-            <div className="bg-black w-7 h-7 min-w-7 min-h-7 p-1 rounded-full flex items-center justify-center">
-              <ArrowUpRightIcon color="white" />
-            </div>
-          </div>
-        </div> */}
 
       </div>
 
