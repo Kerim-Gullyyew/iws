@@ -111,7 +111,7 @@ const TabSection: React.FC<TabSectionProps> = ({ }) => {
     <div className='flex flex-col gap-5 max-w-4xl w-full'>
 
       <p className={`text-p  text-left`}>
-        Simply fill out the form below, and one of our friendly team members will get back to you as soon as possible. Let’s start your journey with IWS Online School together!
+        Simply fill out the form below, and one of our friendly team members will get back to you as soon as possible. Let’s start your educational journey with us today!
       </p>
 
 
