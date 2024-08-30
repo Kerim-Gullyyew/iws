@@ -10,6 +10,7 @@ import SchoolFeeCard from "@/app/components/ui/SchoolFeeCard";
 import { keyStages } from "@/app/data/keystage";
 import { partners } from "@/app/data/partners";
 import HeaderPartner from "@/app/components/HeaderPartner";
+import FooterPartner from "@/app/components/FooterPartner";
 
 interface pageProps {
   params: { slug: string }
@@ -34,6 +35,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
       <HeaderPartner partner={partner} />
       <div className="py-14 lg:py-24 animate-fade-in">
         <style>{`header { display:none; }`}</style>
+        <style>{`footer { display:none; }`}</style>
         <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
           <div className="gap-10 sm:gap-14 flex-col flex justify-center">
             <div className="flex">
@@ -239,14 +241,561 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           </p>
 
           <div className="pt-10 sm:pt-20 grid grid-cols-1 md:grid-cols-2 gap-5 xl:grid-cols-4">
-            {keyStages.map((keystage, index) => (
+            <div
+              className="w-full bg-[#f4f4f4] border-[#f4f4f4] cursor-pointer border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6"
+            >
+              <div className="flex justify-between gap-4 flex-col h-full">
+                <div className="flex flex-col gap-10">
+                  <div className="flex flex-col gap-8">
+                    <h3
+                      className="text-[24px] text-sky-500"
+                    >
+                      Primary School
+                    </h3>
+
+                    <div className=" flex flex-wrap gap-5 items-end">
+                      <h4 className="text-[32px] ">£{partner.primary}</h4>
+                      <h4 className="text-gray-400 ">/year</h4>
+                    </div>
+
+                    <p className="text-[16px]">IWS Online School offers the Cambridge Primary International Curriculum for primary students. Our UK-based online school is proudly accredited by Cambridge Assessment International Education.</p>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                    <h5 className="border-b-[0.5px]   pb-2  border-gray-600">
+                      Included subjects
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+
+
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Mathematics
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          English
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Science
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Computing
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Global Perspectives
+                        </h6>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                    <h5 className="border-b-[0.5px] pb-2 border-gray-600">
+                      Additional subjects
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          French as 2nd Language
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Spanish as 2nd Language
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          German as 2nd Language
+                        </h6>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <Link
+                    href={"https://iws-register.iwsonlineschool.co.uk/"}
+                    className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
+                  >
+                    Enrol Now
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+
+            <div
+              className="w-full bg-[#f4f4f4] border-[#f4f4f4] cursor-pointer border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6"
+            >
+              <div className="flex justify-between gap-4 flex-col h-full">
+                <div className="flex flex-col gap-10">
+                  <div className="flex flex-col gap-8">
+                    <h3
+                      className="text-[24px] text-green-500"
+                    >
+                      Secondary School
+                    </h3>
+
+                    <div className=" flex flex-wrap gap-5 items-end">
+                      <h4 className="text-[32px] ">£{partner.secondary}</h4>
+                      <h4 className="text-gray-400 ">/year</h4>
+                    </div>
+
+                    <p className="text-[16px]">At IWS Online School, Middle Education starts at age 11, leading to the Cambridge I/GCSE exams over five years—three years of Middle Education followed by two years of I/GCSE. Graduates are ready for A-Level studies.</p>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                    <h5 className="border-b-[0.5px]   pb-2  border-gray-600">
+                      Included subjects
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Mathematics
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          English
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Science
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Computing
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Global Perspectives
+                        </h6>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                    <h5 className="border-b-[0.5px] pb-2 border-gray-600">
+                      Additional subjects
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          French as 2nd Language
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Spanish as 2nd Language
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          German as 2nd Language
+                        </h6>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <Link
+                    href={"https://iws-register.iwsonlineschool.co.uk/"}
+                    className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
+                  >
+                    Enrol Now
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+
+            <div
+              className="w-full bg-[#f4f4f4] border-[#f4f4f4] cursor-pointer border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6"
+            >
+              <div className="flex justify-between gap-4 flex-col h-full">
+                <div className="flex flex-col gap-10">
+                  <div className="flex flex-col gap-8">
+                    <h3
+                      className="text-[24px] text-orange-500"
+                    >
+                      I/GCSE
+                    </h3>
+
+                    <div className=" flex flex-wrap gap-5 items-end">
+                      <h4 className="text-[32px] ">£{partner.igcse}</h4>
+                      <h4 className="text-gray-400 ">/year</h4>
+                    </div>
+
+                    <p className="text-[16px]">Enrol in our two-year program for globally recognised Cambridge certifications, accepted by top universities and employers worldwide, enhancing your academic and career prospects globally.</p>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                    <h5 className="border-b-[0.5px]   pb-2  border-gray-600">
+                      Included subjects
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Biology
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Business Studies
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Chemistry
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Computer Science
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Economics
+                        </h6>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                    <h5 className="border-b-[0.5px] pb-2 border-gray-600">
+                      Additional subjects
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          English
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          English Literature
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Geography
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          History
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Mathematics
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Physics
+                        </h6>
+                      </div>
+
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Sociology
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Spanish as Second Language
+                        </h6>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <Link
+                    href={"https://iws-register.iwsonlineschool.co.uk/"}
+                    className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
+                  >
+                    Enrol Now
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+
+            <div
+              className="w-full bg-[#f4f4f4] border-[#f4f4f4] cursor-pointer border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6"
+            >
+              <div className="flex justify-between gap-4 flex-col h-full">
+                <div className="flex flex-col gap-10">
+                  <div className="flex flex-col gap-8">
+                    <h3
+                      className="text-[24px] text-red-500"
+                    >
+                      A Level
+                    </h3>
+
+                    <div className=" flex flex-wrap gap-5 items-end">
+                      <h4 className="text-[32px] ">£{partner.alevel}</h4>
+                      <h4 className="text-gray-400 ">/year</h4>
+                    </div>
+
+                    <p className="text-[16px]">The A-Levels we offer hold global recognition from esteemed universities and leading employers, significantly enhancing our students’ prospects of gaining admission to their desired institutions and securing positions in top organisations.</p>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                    <h5 className="border-b-[0.5px]   pb-2  border-gray-600">
+                      Included subjects
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Biology
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Business Studies
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 bg-blue-600 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-white text-[12px]">
+                          Chemistry
+                        </h6>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-5">
+                    <h5 className="border-b-[0.5px] pb-2 border-gray-600">
+                      Additional subjects
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Computer Science
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Economics
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          English Literature
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          English Language
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Geography
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Global Perspectives & Research
+                        </h6>
+                      </div>
+
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          History
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Law
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Mathematics
+                        </h6>
+                      </div>
+
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Further Mathematics
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Media Studies
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Physics
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Psychology
+                        </h6>
+                      </div>
+                      <div
+                        className="px-3.5 border border-gray-300 bg-gray-200 rounded-lg py-1.5"
+                      >
+                        <h6 className="text-gray-600 text-[12px]">
+                          Sociology
+                        </h6>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <Link
+                    href={"https://iws-register.iwsonlineschool.co.uk/"}
+                    className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
+                  >
+                    Enrol Now
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* {keyStages.map((keystage, index) => (
               <div
                 key={index}
                 className="w-full bg-[#f4f4f4] border-[#f4f4f4] cursor-pointer border-2 hover:border-2 hover:border-red-600 transition duration-300  overflow-hidden rounded-lg px-5 pt-10 py-6"
               >
                 <SchoolFeeCard index={index} keystage={keystage} />
               </div>
-            ))}
+            ))} */}
           </div>
 
           <div className="pt-8 sm:pt-20 flex flex-col md:flex-row lg:flex-row-reverse gap-5">
@@ -840,7 +1389,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           <Carousel />
         </div>
       </div>
-
+      <FooterPartner partner={partner} />
     </>
   );
 }

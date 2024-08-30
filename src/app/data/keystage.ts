@@ -29,6 +29,7 @@ export const keyStages: KeyStageProps[] = [
   {
     name: "Primary School",
     price: 5000,
+
     label: "Primary School",
     value: "Primary School",
     url: "cambridge-primary",
