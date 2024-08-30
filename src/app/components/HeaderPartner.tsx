@@ -8,23 +8,22 @@ import {
 import Link from 'next/link'
 import Image from 'next/image'
 import EnrollButton from './buttons/EnrollButton'
-import { usePathname } from 'next/navigation';
-interface HeaderProps {
-
+import { PartnerProps } from '../data/partners'
+interface HeaderPartnerProps {
+  partner: PartnerProps
 }
 
-const Header: React.FC<HeaderProps> = ({ }) => {
-  const pathname = usePathname()
+const HeaderPartner: React.FC<HeaderPartnerProps> = ({ partner }) => {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="fixed w-full isolate z-50 bg-white shadow-sm">
+    <div className="fixed -mt-[100px] w-full isolate z-50 bg-white shadow-sm">
       <nav className="mx-auto container flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link className="-m-1.5 p-1.5" href={"/"} >
             <span className="sr-only">IWS Online School</span>
-            <Image priority={true} width={1000} height={1000} className="h-[3rem] w-auto" src="/IWS_Logo.webp" alt="IWS Online School Icon" />
+            <Image priority={true} width={1000} height={1000} className="h-[3rem] w-auto object-contain" src={partner.image} alt={partner.title} />
           </Link>
         </div>
         <div className="flex lg:hidden sm:items-center sm:gap-4">
@@ -44,30 +43,24 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           {
             <>
               <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-primary/"} >
-                Primary
+                About Us
               </Link>
               <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-secondary/"} >
-                Secondary
+                Programmes
               </Link>
               <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-igcse/"} >
-                I/GCSE
-              </Link>
-              <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-a-level/"} >
-                A Level
-              </Link>
-              <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/school-fees/"} >
                 School Fees
               </Link>
-              <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/contact-us/"} >
-                Contact Us
-              </Link>
+            
             </>
 
           }
 
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <EnrollButton />
+          <Link href="#contact-us" className={"bg-[#4366F6] rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300  text-lg"}>
+            Contact Us
+          </Link>
         </div>
 
       </nav>
@@ -145,8 +138,8 @@ const Header: React.FC<HeaderProps> = ({ }) => {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </header >
+    </div >
   )
 }
 
-export default Header
+export default HeaderPartner
