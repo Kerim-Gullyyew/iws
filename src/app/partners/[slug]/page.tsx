@@ -27,6 +27,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
   // console.log("partner", partner);
   return (
     <div className="py-14 lg:py-24 animate-fade-in">
+      <style>{`header { display:none; }`}</style>
       <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
         <div className="gap-10 sm:gap-14 flex-col flex justify-center">
           <div className="flex">
