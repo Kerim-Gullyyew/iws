@@ -8,7 +8,7 @@ export interface PartnerProps {
 
 export const partners: PartnerProps[] = [
   {
-    title: "cs-canary",
+    title: "CS Online School",
     slug: "cs-canary",
     image: "cs-canary",
     description: "cs-canary",
