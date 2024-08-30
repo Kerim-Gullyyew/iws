@@ -3,6 +3,10 @@ export interface PartnerProps {
   slug: string;
   image: string;
   description: string;
+  primary: string;
+  secondary: string;
+  igcse: string;
+  alevel: string;
 }
 
 
@@ -12,23 +16,39 @@ export const partners: PartnerProps[] = [
     slug: "cs-canary",
     image: "/partners/CS-logo.png",
     description: "cs-canary",
+    primary: "3000",
+    secondary: "2000",
+    igcse: "2342",
+    alevel: "2343"
   },
   {
-    title: "cs-canary-2",
-    slug: "cs-canary-2",
+    title: "CS Online School",
+    slug: "cs-canary1",
     image: "/partners/CS-logo.png",
-    description: "cs-canary-2 description",
+    description: "cs-canary",
+    primary: "3000",
+    secondary: "2000",
+    igcse: "2342",
+    alevel: "2343"
   },
   {
-    title: "cs-canary-3",
-    slug: "cs-canary-3",
+    title: "CS Online School",
+    slug: "cs-canary2",
     image: "/partners/CS-logo.png",
-    description: "cs-canary-3",
+    description: "cs-canary",
+    primary: "3000",
+    secondary: "2000",
+    igcse: "2342",
+    alevel: "2343"
   },
   {
-    title: "cs-canary-4",
-    slug: "cs-canary-4",
+    title: "CS Online School",
+    slug: "cs-canary3",
     image: "/partners/CS-logo.png",
-    description: "cs-canary-4",
-  }
+    description: "cs-canary",
+    primary: "3000",
+    secondary: "2000",
+    igcse: "2342",
+    alevel: "2343"
+  },
 ]
