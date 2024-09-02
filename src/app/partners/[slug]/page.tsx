@@ -231,7 +231,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
         <div id="school-fees" className="py-14 lg:py-24 container">
           <h1 className="text-center text-[#349AFE]">School Fees</h1>
           <p className="text-center font-semibold mt-9">
-            Give your child the best education at the most reasonable rates at IWS.
+            Give your child the best education at the most reasonable rates at CS Online School.
           </p>
           <p className="text-center  mt-5">
             Our initial meeting is free. If you decide to enrol, our flexible fee
@@ -341,7 +341,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 </div>
                 <div>
                   <Link
-                    href={"https://iws-register.iwsonlineschool.co.uk/"}
+                    href={"#contact-us"}
                     className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
                   >
                     Enrol Now
@@ -450,7 +450,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 </div>
                 <div>
                   <Link
-                    href={"https://iws-register.iwsonlineschool.co.uk/"}
+                    href={"#contact-us"}
                     className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
                   >
                     Enrol Now
@@ -600,7 +600,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 </div>
                 <div>
                   <Link
-                    href={"https://iws-register.iwsonlineschool.co.uk/"}
+                    href={"#contact-us"}
                     className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
                   >
                     Enrol Now
@@ -780,7 +780,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 </div>
                 <div>
                   <Link
-                    href={"https://iws-register.iwsonlineschool.co.uk/"}
+                    href={"#contact-us"}
                     className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
                   >
                     Enrol Now
@@ -1228,7 +1228,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   Globally, schools are embracing technology to meet
                   evolving educational standards. It is anticipated
                   that within the next few decades, online education
-                  will become commonplace. At IWS, we lead by
+                  will become commonplace. At CS Online School, we lead by
                   prioritising online teaching.
                 </p>
                 <p className="text-p">
@@ -1245,7 +1245,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   embark on this digital transition.
                 </p>
                 <p className="text-p">
-                  IWS places great value on the educational
+                CS Online School places great value on the educational
                   experiences that occur beyond the classroom walls.
                   Thus, we offer numerous opportunities for group
                   interaction through a variety of clubs,
@@ -1286,7 +1286,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   to support learning, such as high-quality video
                   cameras, interactive whiteboards, screen sharing,
                   live presentations, and lesson recordings. Students
-                  at IWS can join classes through a safe online link.
+                  at CS Online School can join classes through a safe online link.
                   Teachers use various methods and activities,
                   including quizzes, presentations, and group work, in
                   their lessons. The use of modern technology makes
@@ -1302,7 +1302,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 <p className="text-p">
                   Many parents worry about whether online learning
                   will allow their child to socialise properly. At
-                  IWS, we encourage our international students to
+                  CS Online School, we encourage our international students to
                   interact with one another by holding various clubs,
                   social gatherings, and events throughout the school
                   year. We also offer a summer camp, a student
@@ -1383,11 +1383,11 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
         </div>
 
 
-        <div className="mt-20 container">
+        {/* <div className="mt-20 container">
           <h3 className="text-[#003372]   ">Partnered by</h3>
           <div className="h-[2px] my-10 w-full bg-blue-900"></div>
           <Carousel />
-        </div>
+        </div> */}
       </div>
       <FooterPartner partner={partner} />
     </>
