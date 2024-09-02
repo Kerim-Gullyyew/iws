@@ -158,7 +158,7 @@ const FooterPartner: React.FC<FooterPartnerProps> = ({ partner }) => {
           </div>
 
           <div className="hidden ml-5 lg:ml-36 lg:grid lg:grid-cols-4 lg:w-full ">
-            <div>
+            {/* <div>
               <h5 className="  text-gray-400 text-[14px]">ACADEMICS</h5>
               <ul className="mt-3 space-y-4">
                 <li className="">
@@ -190,7 +190,7 @@ const FooterPartner: React.FC<FooterPartnerProps> = ({ partner }) => {
                   <Link href={"/about-us"}>About IWS</Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <h5 className="  text-gray-400 text-[14px]">RESOURCES</h5>
               <ul className="mt-3 space-y-4">
