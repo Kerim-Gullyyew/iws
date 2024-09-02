@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { PartnerProps } from "../data/partners";
 interface FooterPartnerProps {
-  partner: PartnerProps
+  partner: PartnerProps;
 }
 const navigation = {
   social: [
@@ -79,6 +79,7 @@ const FooterPartner: React.FC<FooterPartnerProps> = ({ partner }) => {
         Footer
       </h2>
       <div className="container py-5 flex flex-col justify-center items-center gap-8">
+        {/* <div className="flex flex-row justify-between"> */}
         <div className="w-full flex flex-col justify-center items-center gap-8 md:flex-row md:justify-between md:items-start">
           <div className="flex flex-col justify-center items-center gap-8 lg:items-start md:items-start">
             <Image
@@ -88,7 +89,6 @@ const FooterPartner: React.FC<FooterPartnerProps> = ({ partner }) => {
               src={partner.image}
               alt={partner.title}
             />
-
           </div>
 
           <div className="w-full flex flex-col mt-3 md:w-1/2 lg:hidden">
@@ -150,14 +150,13 @@ const FooterPartner: React.FC<FooterPartnerProps> = ({ partner }) => {
                     <li className=" text-gray-600 cursor-pointer hover:">
                       <Link href={"/contact-us"}>Contact Us</Link>
                     </li>
-
                   </ul>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="hidden ml-5 lg:ml-36 lg:grid lg:grid-cols-4 lg:w-full ">
+          <div className="hidden ml-5 lg:ml-36 lg:grid lg:grid-cols-1 lg:w-full ">
             {/* <div>
               <h5 className="  text-gray-400 text-[14px]">ACADEMICS</h5>
               <ul className="mt-3 space-y-4">
@@ -195,20 +194,30 @@ const FooterPartner: React.FC<FooterPartnerProps> = ({ partner }) => {
               <h5 className="  text-gray-400 text-[14px]">RESOURCES</h5>
               <ul className="mt-3 space-y-4">
                 <li className="">
-                  <Link href={"/contact-us"}>Contact Us</Link>
+                  <Link href={"/contact-us"}>About Us</Link>
+                </li>
+                <li className="">
+                  <Link href={"/contact-us"}>Programmes</Link>
+                </li>
+                <li className="">
+                  <Link href={"/contact-us"}>School Fees</Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div className=" border-t border-gray-400 space-y-3 pt-5 mt-24 flex flex-col justify-center items-center w-full lg:grid lg:grid-cols-4 lg:space-y-0">
-          <p className="text-p text-left">
+        <div className=" border-t border-gray-400 space-y-3 pt-5 mt-24 flex flex-col justify-center items-center w-full lg:grid lg:grid-cols-3 lg:space-y-0">
+          {/* <p className="text-p text-left">
             &copy; {2024} IWS Online School LTD
-          </p>
+          </p> */}
           <p className="text-p text-left">All rights reserved</p>
-          <p className="text-p text-left"><Link href={"/terms-conditions"}>Terms and Conditions</Link></p>
-          <p className="text-p text-left"><Link href={"/privacy-policy"}>Privacy Policy</Link></p>
+          <p className="text-p text-left">
+            <Link href={"/terms-conditions"}>Terms and Conditions</Link>
+          </p>
+          <p className="text-p text-left">
+            <Link href={"/privacy-policy"}>Privacy Policy</Link>
+          </p>
         </div>
       </div>
     </div>
