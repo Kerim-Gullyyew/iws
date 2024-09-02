@@ -258,7 +258,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                       <h4 className="text-gray-400 ">/year</h4>
                     </div>
 
-                    <p className="text-[16px]">IWS Online School offers the Cambridge Primary International Curriculum for primary students. Our UK-based online school is proudly accredited by Cambridge Assessment International Education.</p>
+                    <p className="text-[16px]">CS Online School offers the Cambridge Primary International Curriculum for primary students. Our UK-based online school is proudly accredited by Cambridge Assessment International Education.</p>
                   </div>
 
                   <div className="flex flex-col gap-5">
@@ -368,7 +368,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                       <h4 className="text-gray-400 ">/year</h4>
                     </div>
 
-                    <p className="text-[16px]">At IWS Online School, Middle Education starts at age 11, leading to the Cambridge I/GCSE exams over five years—three years of Middle Education followed by two years of I/GCSE. Graduates are ready for A-Level studies.</p>
+                    <p className="text-[16px]">At CS Online School, Middle Education starts at age 11, leading to the Cambridge I/GCSE exams over five years—three years of Middle Education followed by two years of I/GCSE. Graduates are ready for A-Level studies.</p>
                   </div>
 
                   <div className="flex flex-col gap-5">
