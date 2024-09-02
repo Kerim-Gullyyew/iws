@@ -22,9 +22,9 @@ export const partners: PartnerProps[] = [
     alevel: "6000"
   },
   {
-    title: "CS Online School",
-    slug: "cs-canary1",
-    image: "/partners/CS-logo.png",
+    title: "Orizont Online School",
+    slug: "orizont",
+    image: "/partners/Orizont-logo.png",
     description: "cs-canary",
     primary: "3000",
     secondary: "2000",
