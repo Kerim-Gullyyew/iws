@@ -109,10 +109,11 @@ const page: React.FC = () => {
       </p>
       <p>
         9.2 If the instalment payment option is selected, an initial payment
-        comprising the first instalment, a refundable deposit equal to 10% of the total
-        fees, and the non-refundable registration fee of £200 is required before
-        the commencement of services. For
-        upfront payments, no deposit is required.
+        comprising the first instalment, a deposit equal to 10% of the total
+        fees and, and the non-refundable registration fee of £200 is required
+        before the commencement of services. The deposit is refunded after all
+        outstanding payment is made. For upfront payments, no deposit is
+        required.
       </p>
       <p>
         9.3 All payments shall be made via bank transfer or by debit/credit

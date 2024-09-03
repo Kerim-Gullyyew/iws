@@ -24,7 +24,7 @@ export const partners: PartnerProps[] = [
   {
     title: "Orizont Online School",
     slug: "orizont",
-    image: "/partners/Orizont-logo.png",
+    image: "/partners/Orizont-logo.webp",
     description: "cs-canary",
     primary: "3000",
     secondary: "2000",
