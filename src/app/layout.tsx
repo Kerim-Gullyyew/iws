@@ -102,6 +102,29 @@ export const metadata: Metadata = {
   // other: {},
 };
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "School",
+  "name": "IWS Online School",
+  "url": "https://iwsonlineschool.co.uk/",
+  "description": "Accredited, Holistic Online Schooling IWS Online School - Your compass in the digital realm of learning.",
+  "logo": "./icon.ico",
+  "sameAs": [
+    "https://x.com/iwsonlineschool",
+    "https://www.facebook.com/iwschoolonline",
+    "https://www.instagram.com/iwsonlineschool",
+    "https://www.linkedin.com/company/iwschoolonline"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    // "telephone": "+44-1234567890",
+    "email": "admissions@iwschool.co.uk",
+    "contactType": "Customer Service",
+    "areaServed": "GB",
+    "availableLanguage": "English"
+  }
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -109,9 +132,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${sora.variable}`}>
-
       <GoogleTagManager gtmId="GTM-KQK64CKD" />
       <GoogleAnalytics gaId="G-LCTE8BLQDX" />
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      </head>
       <body>
         <header>
           <Header />
@@ -119,11 +147,11 @@ export default function RootLayout({
         <main className="flex flex-col pt-[100px] w-full min-h-screen bg-white">
           {children}
         </main>
-
         <Footer />
         <Script
-          strategy='lazyOnload'
-          src="https://embed.tawk.to/645bc9166a9aad4bc579fefd/1h038j0d6" />
+          strategy="lazyOnload"
+          src="https://embed.tawk.to/645bc9166a9aad4bc579fefd/1h038j0d6"
+        />
       </body>
     </html>
   );
