@@ -409,7 +409,7 @@ const page: React.FC = () => {
         We reserve the right to revise these terms and conditions at any time
         without prior notice.{" "}
       </p>
-      <p>Please review them periodically for any updates.</p>
+      {/* <p>Please review them periodically for any updates.</p> */}
       <p>Last updated: 01.08.2024</p>
     </div>
   );
