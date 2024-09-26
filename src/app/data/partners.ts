@@ -21,14 +21,5 @@ export const partners: PartnerProps[] = [
     igcse: "5000",
     alevel: "6000"
   },
-  {
-    title: "Orizont Online School",
-    slug: "orizont",
-    image: "/partners/Orizont-logo.webp",
-    description: "Description",
-    primary: "3000",
-    secondary: "2000",
-    igcse: "2342",
-    alevel: "2343"
-  },
+  
 ]

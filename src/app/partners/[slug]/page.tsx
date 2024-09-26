@@ -32,16 +32,8 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
         <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
           <div className="gap-10 sm:gap-14 flex-col flex justify-center">
             <div className="flex">
-              <div className="relative">
-                <Image
-                  width={1000}
-                  height={1000}
-                  className="w-[300px] min-w-[250px] lg:w-[400px] object-contain lg:min-w-[250px]"
-                  src="/Tag.webp"
-                  priority={true}
-                  sizes="(max-width: 576px) 50vw"
-                  alt="Tag photo"
-                />
+              <div className="relative bg-blue-200 text-blue-700 font-semibold text-lg sm:text-[24px] px-4 py-2 rounded-lg">
+                IWS AND CS PARTNERSHIP
               </div>
             </div>
 
@@ -50,22 +42,24 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             </h1>
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
-              {partner.title} – Your compass in the digital realm of learning.
-              Discover new horizons, Create lasting memories, and Lead the
-              future with our live lessons.
+              {
+                "Exclusive Opportunity for Students in Bangladesh! We've partnered with Canary Square to bring a 25% scholarship to students in Bangladesh, making it easier to access world-class education through IWS Online School."
+              }
             </p>
 
             <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
               <Link
-                href={"#"}
-                className={`border-[#4366F6] hover:text-white hover:bg-[#3867FF] transition-all duration-300 border-[3px] rounded-xl px-7 py-2.5 text-lg box-border`}>
-                Enroll Now
+                href={"#contact-us"}
+                className={`border-[#4366F6] hover:text-white hover:bg-[#3867FF] transition-all duration-300 border-[3px] rounded-xl px-7 py-2.5 text-lg box-border`}
+              >
+                Enrol Now
               </Link>
               <Link
                 href="#contact-us"
                 className={
                   "bg-[#4366F6] rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300  text-lg"
-                }>
+                }
+              >
                 Contact Us
               </Link>
             </div>
@@ -84,21 +78,22 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
         <div
           id="programmes"
-          className="mt-20 border-t-2 border-gray-200 pt-5 container">
+          className="mt-20 border-t-2 border-gray-200 pt-5 container"
+        >
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
             <h2 className="font-semibold md:flex-1">What We Offer</h2>
             <p className="md:flex-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              deserunt? Facere eveniet possimus, mollitia nihil placeat autem
-              vel ipsum. Soluta enim unde nobis non ipsum nisi praesentium
-              asperiores impedit expedita.
+              {
+                "Getting started with IWS Online School through our partnership with Canary Square is simple and straightforward. Follow these steps to access high-quality education at a discounted rate, sponsored by Canary Square."
+              }
             </p>
           </div>
 
           <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-6 gap-y-14">
-            <Link
-              href={"/cambridge-primary"}
-              className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#D9DFFB] flex flex-col justify-between rounded-xl">
+            <div
+              // href={"/cambridge-primary"}
+              className="relative  hover:-translate-y-2 transition-transform duration-300 bg-[#D9DFFB] flex flex-col justify-between rounded-xl"
+            >
               <div className="relative">
                 <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
                   <p className="  ">Ages 7-11</p>
@@ -120,19 +115,20 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   </p>
                 </div>
 
-                <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+                {/* <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                   <p className="text-p tracking-wide ">Learn more</p>
                   <ArrowRightCircleIcon
                     className="h-10 w-10 -rotate-45"
                     aria-hidden="true"
                   />
-                </div>
+                </div> */}
               </div>
-            </Link>
+            </div>
 
-            <Link
-              href={"/cambridge-secondary"}
-              className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#E6F2DB] flex flex-col justify-between rounded-xl">
+            <div
+              // href={"/cambridge-secondary"}
+              className="relative  hover:-translate-y-2 transition-transform duration-300 bg-[#E6F2DB] flex flex-col justify-between rounded-xl"
+            >
               <div className="relative">
                 <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
                   <p className="  ">Ages 11-14</p>
@@ -154,19 +150,20 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   </p>
                 </div>
 
-                <div className="flex  bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+                {/* <div className="flex  bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                   <p className="text-p tracking-wide ">Learn more</p>
                   <ArrowRightCircleIcon
                     className="h-10 w-10 -rotate-45"
                     aria-hidden="true"
                   />
-                </div>
+                </div> */}
               </div>
-            </Link>
+            </div>
 
-            <Link
-              href={"/cambridge-igcse"}
-              className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#FCE8D6] flex flex-col justify-between rounded-xl">
+            <div
+              // href={"/cambridge-igcse"}
+              className="relative  hover:-translate-y-2 transition-transform duration-300 bg-[#FCE8D6] flex flex-col justify-between rounded-xl"
+            >
               <div className="relative">
                 <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
                   <p className="  ">Ages 14-16</p>
@@ -189,19 +186,20 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   </p>
                 </div>
 
-                <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+                {/* <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                   <p className="text-p tracking-wide ">Learn more</p>
                   <ArrowRightCircleIcon
                     className="h-10 w-10 -rotate-45"
                     aria-hidden="true"
                   />
-                </div>
+                </div> */}
               </div>
-            </Link>
+            </div>
 
-            <Link
-              href={"/cambridge-a-level"}
-              className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#FBD9D5] flex flex-col justify-between rounded-xl">
+            <div
+              // href={"/cambridge-a-level"}
+              className="relative  hover:-translate-y-2 transition-transform duration-300 bg-[#FBD9D5] flex flex-col justify-between rounded-xl"
+            >
               <div className="relative">
                 <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
                   <p className="  ">Ages 16-18</p>
@@ -223,37 +221,38 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   </p>
                 </div>
 
-                <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
+                {/* <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
                   <p className="text-p tracking-wide ">Learn more</p>
                   <ArrowRightCircleIcon
                     className="h-10 w-10 -rotate-45"
                     aria-hidden="true"
                   />
-                </div>
+                </div> */}
               </div>
-            </Link>
+            </div>
           </div>
         </div>
 
         <div
           id="howwork"
-          className="mt-20 border-t-2 border-gray-200 pt-5 container">
+          className="mt-20 border-t-2 border-gray-200 pt-5 container"
+        >
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
             <h2 className="font-semibold md:flex-1">How It Works</h2>
             <p className="md:flex-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              deserunt? Facere eveniet possimus, mollitia nihil placeat autem
-              vel ipsum. Soluta enim unde nobis non ipsum nisi praesentium
-              asperiores impedit expedita.
+              {
+                "Getting started with IWS Online School through our partnership with Canary Square is simple and straightforward. Follow these steps to access high-quality education at a discounted rate, sponsored by Canary Square."
+              }
             </p>
           </div>
 
-          <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-6 gap-y-14">
-            <Link
-              href={"/cambridge-primary"}
-              className="relative py-4 px-2 cursor-pointer hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl">
-              <span className="text-center font-bold text-sm text-blue-600">
-                STEP1
+          <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-5 gap-y-14">
+            <div
+              // href={"/cambridge-primary"}
+              className="relative py-4 px-2 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl"
+            >
+              <span className="text-center font-semibold text-sm text-blue-600">
+                STEP 1
               </span>
               <Image
                 width={1000}
@@ -263,22 +262,24 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 alt=""
               />
 
-              <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
+              <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-[20px] text-center font-[500]">
-                    Primary School
+                  <h3 className="text-[20px] text-center font-[500] leading-7">
+                    Contact the CS Team in Bangladesh
                   </h3>
-                  <p className="text-p text-center">
-                    A strong foundation and a love for learning for your child.
+                  <p className="text-p text-center leading-6">
+                    Reach out to our local team for help with enrolment and
+                    scholarship details.
                   </p>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={"/cambridge-primary"}
-              className="relative py-4 px-2 cursor-pointer hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl">
-              <span className="text-center font-bold text-sm text-blue-600">
-                STEP1
+            </div>
+            <div
+              // href={"/cambridge-primary"}
+              className="relative py-4 px-2 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl"
+            >
+              <span className="text-center font-semibold text-sm text-blue-600">
+                STEP 2
               </span>
               <Image
                 width={1000}
@@ -288,22 +289,24 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 alt=""
               />
 
-              <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
+              <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-[20px] text-center font-[500]">
-                    Primary School
+                  <h3 className="text-[20px] text-center font-[500] leading-7">
+                    Start the Enrolment Process
                   </h3>
-                  <p className="text-p text-center">
-                    A strong foundation and a love for learning for your child.
+                  <p className="text-p text-center leading-6">
+                    Reach out to our local team for help with enrolment and
+                    scholarship details.
                   </p>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={"/cambridge-primary"}
-              className="relative py-4 px-2 cursor-pointer hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl">
-              <span className="text-center font-bold text-sm text-blue-600">
-                STEP1
+            </div>
+            <div
+              // href={"/cambridge-primary"}
+              className="relative py-4 px-2 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl"
+            >
+              <span className="text-center font-semibold text-sm text-blue-600">
+                STEP 3
               </span>
               <Image
                 width={1000}
@@ -313,22 +316,24 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 alt=""
               />
 
-              <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
+              <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-[20px] text-center font-[500]">
-                    Primary School
+                  <h3 className="text-[20px] text-center font-[500] leading-7">
+                    Get a 25% Scholarship
                   </h3>
-                  <p className="text-p text-center">
-                    A strong foundation and a love for learning for your child.
+                  <p className="text-p text-center leading-6">
+                    Reach out to our local team for help with enrolment and
+                    scholarship details.
                   </p>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={"/cambridge-primary"}
-              className="relative py-4 px-2 cursor-pointer hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl">
-              <span className="text-center font-bold text-sm text-blue-600">
-                STEP1
+            </div>
+            <div
+              // href={"/cambridge-primary"}
+              className="relative py-4 px-2 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl"
+            >
+              <span className="text-center font-semibold text-sm text-blue-600">
+                STEP 4
               </span>
               <Image
                 width={1000}
@@ -338,38 +343,42 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 alt=""
               />
 
-              <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-4 rounded-b-xl">
+              <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-[20px] text-center font-[500]">
-                    Primary School
+                  <h3 className="text-[20px] text-center font-[500] leading-7">
+                    Learn from Anywhere
                   </h3>
-                  <p className="text-p text-center">
-                    A strong foundation and a love for learning for your child.
+                  <p className="text-p text-center leading-6">
+                    Reach out to our local team for help with enrolment and
+                    scholarship details.
                   </p>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
 
         <div
           id="ready"
-          className="mt-20 border-t-2 border-gray-200 pt-5 container">
+          className="mt-20 border-t-2 border-gray-200 pt-5 container"
+        >
           <div className="pt-20 flex flex-col md:flex-row md:justify-between gap-10">
             <div className="md:w-1/2 md:max-w-lg">
               <div>
                 <h2>Ready to Apply?</h2>
               </div>
               <div className="pt-3 pb-5">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p>
+                  {
+                    "Contact our Bangladesh representatives to start your journey."
+                  }
+                </p>
               </div>
               <div>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Mollitia, reprehenderit dolores? Voluptates ab praesentium
-                  quidem quis repellat voluptate excepturi magnam dolorum neque.
-                  Aspernatur dolorum, sequi dolorem libero delectus quas
-                  nesciunt.
+                  {
+                    "Don't miss out on this exclusive opportunity. Reach out now to secure your 25% scholarship and begin your learning journey with IWS and Canary Square."
+                  }
                 </p>
               </div>
             </div>
@@ -390,12 +399,12 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   <h5>ssefsdf@sdfsd.com</h5>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
+                  <Link href="#" className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
                     Call
-                  </div>
-                  <div className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
+                  </Link>
+                  <Link href="#" className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
                     Email
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="relative space-y-5 py-4 px-4 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl">
@@ -414,12 +423,12 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   <h5>ssefsdf@sdfsd.com</h5>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
+                  <Link href="#" className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
                     Call
-                  </div>
-                  <div className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
+                  </Link>
+                  <Link href="#" className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
                     Email
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -428,7 +437,8 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
         <div
           className="mt-20 border-t-2 border-gray-200 pt-5 container"
-          id="what-awaits">
+          id="what-awaits"
+        >
           <h2 className="  text-center ">
             What awaits you at {partner.title}?
           </h2>
@@ -705,7 +715,8 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
         <div
           id="contact-us"
-          className="mt-20 border-t-2 border-gray-200 pt-5 lg:container">
+          className="mt-20 border-t-2 border-gray-200 pt-5 lg:container"
+        >
           <ContactUsSection />
           {/* <div className=" bg-[#003372] lg:rounded-xl mt-8 flex flex-col md:flex-row">
           <div className="py-12 px-8 lg:px-16 flex flex-col gap-10">

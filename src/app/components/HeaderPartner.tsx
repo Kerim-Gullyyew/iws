@@ -42,13 +42,13 @@ const HeaderPartner: React.FC<HeaderPartnerProps> = ({ partner }) => {
         <Popover.Group className="hidden lg:flex lg:gap-x-1">
           {
             <>
-              <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-primary/"} >
+              <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"#"} >
                 About Us
               </Link>
-              <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-secondary/"} >
+              <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"#"} >
                 Programmes
               </Link>
-              <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"/cambridge-igcse/"} >
+              <Link className=' leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] ' href={"#"} >
                 School Fees
               </Link>
             
@@ -64,7 +64,7 @@ const HeaderPartner: React.FC<HeaderPartnerProps> = ({ partner }) => {
         </div>
 
       </nav>
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      {/* <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
@@ -137,7 +137,7 @@ const HeaderPartner: React.FC<HeaderPartnerProps> = ({ partner }) => {
             </div>
           </div>
         </Dialog.Panel>
-      </Dialog>
+      </Dialog> */}
     </div >
   )
 }
