@@ -82,7 +82,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="container py-5 flex flex-col justify-center items-center gap-8">
+      <div className="container py-5 flex flex-col justify-center items-center gap-1">
         <div className="w-full flex flex-col justify-center items-center gap-8 md:flex-row md:justify-between md:items-start">
           <div className="flex flex-col justify-center items-center gap-8 lg:items-start md:items-start">
             <Image
@@ -97,7 +97,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               <p className="text-[14px] text-gray-400">
                 FOLLOW US ON SOCIAL MEDIA
               </p>
-              <div className="flex justify-center space-x-4 md:order-2">
+              <div className="flex justify-center space-x-4 ">
                 {navigation.social.map((item) => (
                   <a
                     key={item.name}
@@ -108,6 +108,11 @@ const Footer: React.FC<FooterProps> = ({}) => {
                     <item.icon className="h-8 w-8" aria-hidden="true" />
                   </a>
                 ))}
+              </div>
+
+              <div className="text-[15px] text-gray-400 mt-6">
+                Graphics by{" "}
+                <Link className="text-blue-600" href="https://icons8.com/">Icons8</Link>
               </div>
             </div>
           </div>
@@ -169,9 +174,8 @@ const Footer: React.FC<FooterProps> = ({}) => {
                 <div className="origin-top px-3 transition duration-300 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0">
                   <ul className="space-y-2 pb-2">
                     <li className=" text-gray-600 cursor-pointer hover:">
-                    <Link href={"/contact-us"}>Contact Us</Link>
+                      <Link href={"/contact-us"}>Contact Us</Link>
                     </li>
-
                   </ul>
                 </div>
               </div>
@@ -228,8 +232,12 @@ const Footer: React.FC<FooterProps> = ({}) => {
             &copy; {2024} IWS Online School LTD
           </p>
           <p className="text-p text-left">All rights reserved</p>
-          <p className="text-p text-left"><Link href={"/terms-conditions"}>Terms and Conditions</Link></p>
-          <p className="text-p text-left"><Link href={"/privacy-policy"}>Privacy Policy</Link></p>
+          <p className="text-p text-left">
+            <Link href={"/terms-conditions"}>Terms and Conditions</Link>
+          </p>
+          <p className="text-p text-left">
+            <Link href={"/privacy-policy"}>Privacy Policy</Link>
+          </p>
         </div>
       </div>
     </footer>

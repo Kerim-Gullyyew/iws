@@ -25,13 +25,13 @@ const page: React.FC<pageProps> = ({ }) => {
                 <Image className="w-full h-52 object-contain" width={1000} height={1000} src={partner.image} alt={partner.title} />
 
                 <div className="space-y-3">
-                  <h4 className="font-bold">{partner.title}</h4>
+                  <h2 className="font-bold text-2xl">{partner.title}</h2>
                   <p className=" leading-snug">{partner.description}</p>
                 </div>
               </div>
 
               <div className="bg-cardback rounded-full flex justify-between items-center py-2 px-3">
-                <h4 className="font-semibold">Learn more</h4>
+                <p className="font-semibold">Learn more</p>
                 <div className="bg-black w-7 h-7 min-w-7 min-h-7 p-1 rounded-full flex items-center justify-center">
                   <ArrowUpRightIcon color="white" />
                 </div>
