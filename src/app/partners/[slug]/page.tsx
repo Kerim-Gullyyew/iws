@@ -9,6 +9,7 @@ import { keyStages } from "@/app/data/keystage";
 import { partners } from "@/app/data/partners";
 import HeaderPartner from "@/app/components/HeaderPartner";
 import FooterPartner from "@/app/components/FooterPartner";
+import Header from "@/app/components/Header";
 
 interface pageProps {
   params: { slug: string };
@@ -25,10 +26,10 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
   return (
     <>
-      <HeaderPartner partner={partner} />
+      {/* <Header /> */}
       <div className="py-14 lg:py-24 animate-fade-in">
-        <style>{`header { display:none; }`}</style>
-        <style>{`footer { display:none; }`}</style>
+        {/* <style>{`header { display:none; }`}</style>
+        <style>{`footer { display:none; }`}</style> */}
         <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
           <div className="gap-10 sm:gap-14 flex-col flex justify-center">
             <div className="flex">
@@ -49,7 +50,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
             <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
               <Link
-                href={"#contact-us"}
+                href={"#ready"}
                 className={`border-[#4366F6] hover:text-white hover:bg-[#3867FF] transition-all duration-300 border-[3px] rounded-xl px-7 py-2.5 text-lg box-border`}
               >
                 Enrol Now
@@ -393,16 +394,22 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                     alt=""
                   />
                 </div>
-                <div className="space-y-1">
+                <div className="space-y-1 flex flex-col">
                   <h4 className="text-blue-600 font-bold">Jahan Shirin</h4>
-                  <h5>+99361164656</h5>
-                  <h5>ssefsdf@sdfsd.com</h5>
+                  <Link href="tel:+99361164656">+99361164656</Link>
+                  <Link href="mailto:ssefsdf@sdfsd.com">ssefsdf@sdfsd.com</Link>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Link href="#" className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
+                  <Link
+                    href="tel:+99361164656"
+                    className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center"
+                  >
                     Call
                   </Link>
-                  <Link href="#" className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
+                  <Link
+                    href="#contact-us"
+                    className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center"
+                  >
                     Email
                   </Link>
                 </div>
@@ -417,16 +424,22 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                     alt=""
                   />
                 </div>
-                <div className="space-y-1">
+                <div className="space-y-1 flex flex-col">
                   <h4 className="text-blue-600 font-bold">Jahan Shirin</h4>
-                  <h5>+99361164656</h5>
-                  <h5>ssefsdf@sdfsd.com</h5>
+                  <Link href="tel:+99361164656">+99361164656</Link>
+                  <Link href="mailto:ssefsdf@sdfsd.com">ssefsdf@sdfsd.com</Link>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Link href="#" className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
+                  <Link
+                    href="tel:+99361164656"
+                    className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center"
+                  >
                     Call
                   </Link>
-                  <Link href="#" className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center">
+                  <Link
+                    href="#contact-us"
+                    className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center"
+                  >
                     Email
                   </Link>
                 </div>
@@ -751,7 +764,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           <Carousel />
         </div> */}
       </div>
-      <FooterPartner partner={partner} />
+      {/* <FooterPartner partner={partner} /> */}
     </>
   );
 };
