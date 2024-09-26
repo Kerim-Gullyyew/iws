@@ -148,10 +148,10 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <Script
+        {/* <Script
           strategy="lazyOnload"
           src="https://embed.tawk.to/645bc9166a9aad4bc579fefd/1h038j0d6"
-        />
+        /> */}
       </body>
     </html>
   );

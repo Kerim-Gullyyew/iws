@@ -14,7 +14,7 @@ export const partners: PartnerProps[] = [
   {
     title: "CS Online School",
     slug: "cs-canary",
-    image: "/partners/CS-logo.png",
+    image: "/CS-logo.webp",
     description: "Description",
     primary: "3000",
     secondary: "4000",

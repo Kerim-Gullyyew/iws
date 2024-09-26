@@ -21,9 +21,9 @@ const HeaderPartner: React.FC<HeaderPartnerProps> = ({ partner }) => {
     <div className="fixed -mt-[100px] w-full isolate z-50 bg-white shadow-sm">
       <nav className="mx-auto container flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link className="-m-1.5 p-1.5" href={"/"} >
+          <Link className="-m-1.5 p-1.5" href={"#"} >
             <span className="sr-only">IWS Online School</span>
-            <Image priority={true} width={1000} height={1000} className="h-[3rem] w-auto object-contain" src={partner.image} alt={partner.title} />
+            <Image priority={true} width={500} height={500} className="h-[3rem] w-auto object-contain" src={partner.image} alt={partner.title} />
           </Link>
         </div>
         <div className="flex lg:hidden sm:items-center sm:gap-4">
