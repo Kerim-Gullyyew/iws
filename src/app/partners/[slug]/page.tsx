@@ -24,6 +24,8 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
     return <div>Not Found</div>;
   }
 
+  const imagePath = '/partners/3_1.webp';
+
   return (
     <>
       {/* <Header /> */}
@@ -70,7 +72,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             width={450}
             height={450}
             className="w-[300px] max-w-[90%] min-w-[280px] sm:w-[450px] sm:min-w-[50%] sm:flex lg:w-auto object-contain"
-            src="/Hero.webp"
+            src="/partners/1.webp"
             priority={true}
             sizes="(max-width: 576px) 40vw"
             alt=""
@@ -259,7 +261,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain self-center"
-                src="/programm/Primary@2x.webp"
+                src="/partners/2-1.webp"
                 alt=""
               />
 
@@ -286,7 +288,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain self-center"
-                src="/programm/Primary@2x.webp"
+                src="/partners/2-2.webp"
                 alt=""
               />
 
@@ -313,7 +315,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain self-center"
-                src="/programm/Primary@2x.webp"
+                src="/partners/2-3.webp"
                 alt=""
               />
 
@@ -340,7 +342,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain self-center"
-                src="/programm/Primary@2x.webp"
+                src="/partners/2-4.webp"
                 alt=""
               />
 
@@ -390,7 +392,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                     width={500}
                     height={500}
                     className="w-20 h-20 max-w-20 max-h-20 rounded-full"
-                    src="/programm/Primary@2x.webp"
+                    src="/partners/3-1.webp"
                     alt=""
                   />
                 </div>
@@ -420,8 +422,8 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                     width={500}
                     height={500}
                     className="w-20 h-20 max-w-20 max-h-20 rounded-full"
-                    src="/programm/Primary@2x.webp"
-                    alt=""
+                    src="/partners/3-2.webp"
+                    alt="Picture"
                   />
                 </div>
                 <div className="space-y-1 flex flex-col">
