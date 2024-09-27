@@ -10,6 +10,9 @@ import ContactUsSection from './components/sections/ContactUsSection'
 import AccordionSecondary from "./components/ui/AccordionSecondary";
 import SchoolFeeCard from "./components/ui/SchoolFeeCard";
 import { keyStages } from "./data/keystage";
+
+const imagePath = '/IWS_horizontal.png';
+
 export default function Home() {
   return (
     <div className="py-14 lg:py-24 animate-fade-in">
