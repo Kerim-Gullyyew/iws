@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@iwsonlineschool",
     creator: "@iwsonlineschool",
-    images: "https://pbs.twimg.com/profile_banners/1483361690519486469/1711116188/600x200",
+    images: "https://pbs.twimg.com/profile_banners/1483361690519486469/1727611768/1500x500",
   },
   verification: {
     google: "08jm9bLhghGJ1wdA_Xoq7Zec8ajJmsPFsCOfwkAsHBQ",
