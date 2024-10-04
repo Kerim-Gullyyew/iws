@@ -24,7 +24,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
     return <div>Not Found</div>;
   }
 
-  const imagePath = '/partners/3_1.webp';
+  const imagePath = "/partners/3_1.webp";
 
   return (
     <>
@@ -99,7 +99,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             >
               <div className="relative">
                 <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                  <p className="  ">Ages 7-11</p>
+                  <p className="  ">Classes 1-5</p>
                 </div>
                 <Image
                   width={1000}
@@ -134,7 +134,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             >
               <div className="relative">
                 <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                  <p className="  ">Ages 11-14</p>
+                  <p className="  ">Classes 6-8</p>
                 </div>
                 <Image
                   width={1000}
@@ -169,7 +169,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             >
               <div className="relative">
                 <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                  <p className="  ">Ages 14-16</p>
+                  <p className="  ">Classes 9-10</p>
                 </div>
                 <Image
                   width={1000}
@@ -205,7 +205,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             >
               <div className="relative">
                 <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                  <p className="  ">Ages 16-18</p>
+                  <p className="  ">Classes 11-12</p>
                 </div>
                 <Image
                   width={1000}
@@ -362,6 +362,89 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
         </div>
 
         <div
+          className="container grid grid-cols-1 lg:grid-cols-2 gap-6 mt-16"
+          id="ready"
+        >
+          <div className=" ">
+            <div>
+              <h2>Ready to Apply?</h2>
+            </div>
+            <div className="pt-3 pb-5">
+              <p>
+                {
+                  "Contact our Bangladesh representatives to start your journey."
+                }
+              </p>
+            </div>
+            <div>
+              <p>
+                {
+                  "Reach out now to secure your 25% scholarship and begin your learning journey with IWS and Canary Square."
+                }
+              </p>
+            </div>
+            <div className="mt-7">
+              <p>
+                Follow us on:{" "}
+                <Link href="/" className="underline">
+                  Facebook
+                </Link>
+                ,{" "}
+                <Link href="/" className="underline">
+                  LinkedIn
+                </Link>
+                ,{" "}
+                <Link href="/" className="underline">
+                  Instagram
+                </Link>
+                ,{" "}
+                <Link href="/" className="underline">
+                  Twitter
+                </Link>
+                ,{" "}
+                <Link href="/" className="underline">
+                  Youtube
+                </Link>
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="border-[3px] border-gray-100 rounded-lg px-5 flex justify-between py-9">
+              <div className="flex gap-9">
+                <div>
+                  <Image
+                    width={500}
+                    height={500}
+                    className="w-20 h-20 max-w-20 max-h-20 "
+                    src="/partners/3-1.webp"
+                    alt=""
+                  />
+                </div>
+                <div className=" flex flex-col">
+                  <h4 className="text-blue-600 font-bold">Hussain Farhaan</h4>
+                  <Link className="text-lg" href="tel:+8801727927497">+880 1727-927497</Link>
+                  <Link className="text-lg" href="mailto:farhaan@iwschool.co.uk">farhaan@iwschool.co.uk</Link>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-3">
+                <Link
+                  href="tel:+99361164656"
+                  className="bg-blue-600 text-lg text-white py-3 px-14 w-full rounded-md text-center"
+                >
+                  Call
+                </Link>
+                <Link
+                  href="#contact-us"
+                  className="bg-blue-600 text-lg text-white py-3 px-14 w-full rounded-md text-center"
+                >
+                  Email
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <div
           id="ready"
           className="mt-20 border-t-2 border-gray-200 pt-5 container"
         >
@@ -380,13 +463,37 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div>
                 <p>
                   {
-                    "Don't miss out on this exclusive opportunity. Reach out now to secure your 25% scholarship and begin your learning journey with IWS and Canary Square."
+                    "Reach out now to secure your 25% scholarship and begin your learning journey with IWS and Canary Square."
                   }
                 </p>
               </div>
+              <div className="mt-7">
+                <p>
+                  Follow us on:{" "}
+                  <Link href="/" className="underline">
+                    Facebook
+                  </Link>
+                  ,{" "}
+                  <Link href="/" className="underline">
+                    LinkedIn
+                  </Link>
+                  ,{" "}
+                  <Link href="/" className="underline">
+                    Instagram
+                  </Link>
+                  ,{" "}
+                  <Link href="/" className="underline">
+                    Twitter
+                  </Link>
+                  ,{" "}
+                  <Link href="/" className="underline">
+                    Youtube
+                  </Link>
+                </p>
+              </div>
             </div>
-            <div className="grid md:w-1/2 grid-cols-1 sm:grid-cols-2 gap-5">
-              <div className="relative space-y-5 py-4 px-4 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl">
+            <div className="grid w-full grid-cols-1">
+              <div className="border-[3px] border-gray-100 rounded-lg p-4">
                 <div>
                   <Image
                     width={500}
@@ -401,37 +508,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   <Link href="tel:+99361164656">+99361164656</Link>
                   <Link href="mailto:ssefsdf@sdfsd.com">ssefsdf@sdfsd.com</Link>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Link
-                    href="tel:+99361164656"
-                    className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center"
-                  >
-                    Call
-                  </Link>
-                  <Link
-                    href="#contact-us"
-                    className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center"
-                  >
-                    Email
-                  </Link>
-                </div>
-              </div>
-              <div className="relative space-y-5 py-4 px-4 border-[3px] border-gray-100 flex flex-col justify-between rounded-xl">
-                <div>
-                  <Image
-                    width={500}
-                    height={500}
-                    className="w-20 h-20 max-w-20 max-h-20 rounded-full"
-                    src="/partners/3-2.webp"
-                    alt="Picture"
-                  />
-                </div>
-                <div className="space-y-1 flex flex-col">
-                  <h4 className="text-blue-600 font-bold">Jahan Shirin</h4>
-                  <Link href="tel:+99361164656">+99361164656</Link>
-                  <Link href="mailto:ssefsdf@sdfsd.com">ssefsdf@sdfsd.com</Link>
-                </div>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col items-center gap-3">
                   <Link
                     href="tel:+99361164656"
                     className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center"
@@ -448,7 +525,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div
           className="mt-20 border-t-2 border-gray-200 pt-5 container"
