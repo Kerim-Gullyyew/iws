@@ -1,17 +1,19 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PhoneNumber from "../form/PhoneNumber";
 import Dropdown from "../form/Dropdown";
+import DropdownCustomData from "../form/DropdownCustomData";
 import * as Yup from "yup";
 import axios from "axios";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import DropdownCustomData from "../form/DropdownCustomData";
+import { usePathname, useRouter } from "next/navigation";
+
 interface TabSectionProps {}
 
 export interface CountryData {
   label: string;
   value: string;
 }
+
 interface ValidationErrors {
   parentFirstName?: string;
   parentLastName?: string;
@@ -25,24 +27,31 @@ interface ValidationErrors {
   message?: string;
 }
 
-const TabSection: React.FC<TabSectionProps> = ({}) => {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const fullUrl = `${pathname}?${searchParams.toString()}`;
-  const [parentFirstName, setParentFirstName] = useState<string>("");
-  const [parentLastName, setParentLastName] = useState<string>("");
-  const [parentEmail, setParentEmail] = useState<string>("");
-  const [parentPhoneNumber, setParentPhoneNumber] = useState<string>("44");
+const TabSection: React.FC<TabSectionProps> = () => {
+  const [parentFirstName, setParentFirstName] = useState("");
+  const [parentLastName, setParentLastName] = useState("");
+  const [parentEmail, setParentEmail] = useState("");
+  const [parentPhoneNumber, setParentPhoneNumber] = useState("44");
   const [country, setCountry] = useState<string | number>("");
   const [keystage, setKeystage] = useState<string | number>("");
-  const [studentFirstName, setStudentFirstName] = useState<string>("");
-  const [studentLastName, setStudentLastName] = useState<string>("");
-  const [studentDOB, setStudentDOB] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
+  const [studentFirstName, setStudentFirstName] = useState("");
+  const [studentLastName, setStudentLastName] = useState("");
+  const [studentDOB, setStudentDOB] = useState("");
+  const [message, setMessage] = useState("");
   const [validationErrors, setValidationErrors] = useState<ValidationErrors>({});
-  const router = useRouter();
+  const [loading, setLoading] = useState(false);
+  const [fullUrl, setFullUrl] = useState("");
 
-  const [loading, setLoading] = useState<boolean>(false);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const searchParams = window.location.search;
+      const fullUrl = `${pathname}${searchParams}`;
+      setFullUrl(fullUrl);
+    }
+  }, [pathname]);
 
   const validationSchema = Yup.object().shape({
     parentFirstName: Yup.string().required("Parent's first name is required"),
@@ -78,23 +87,21 @@ const TabSection: React.FC<TabSectionProps> = ({}) => {
         },
         { abortEarly: false }
       );
+
       try {
-        const response = await axios.post(
-          "https://api.main.iwsonlineschool.co.uk/iws-contact",
-          {
-            parentFirstName,
-            parentLastName,
-            parentEmail,
-            parentPhoneNumber,
-            studentFirstName,
-            studentLastName,
-            studentDOB,
-            keystage,
-            country,
-            message,
-            fullUrl,
-          }
-        );
+        await axios.post("https://api.main.iwsonlineschool.co.uk/iws-contact", {
+          parentFirstName,
+          parentLastName,
+          parentEmail,
+          parentPhoneNumber,
+          studentFirstName,
+          studentLastName,
+          studentDOB,
+          keystage,
+          country,
+          message,
+          fullUrl, // Now correctly set
+        });
         router.push("/thank-you");
       } catch (error) {
         console.error("Submission Error:", error);
