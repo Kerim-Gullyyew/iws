@@ -4,7 +4,7 @@ import PhoneNumber from "../form/PhoneNumber";
 import Dropdown from "../form/Dropdown";
 import * as Yup from "yup";
 import axios from "axios";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import DropdownCustomData from "../form/DropdownCustomData";
 interface TabSectionProps {}
 
@@ -27,6 +27,8 @@ interface ValidationErrors {
 
 const TabSection: React.FC<TabSectionProps> = ({}) => {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const fullUrl = `${pathname}?${searchParams.toString()}`;
   const [parentFirstName, setParentFirstName] = useState<string>("");
   const [parentLastName, setParentLastName] = useState<string>("");
   const [parentEmail, setParentEmail] = useState<string>("");
@@ -90,7 +92,7 @@ const TabSection: React.FC<TabSectionProps> = ({}) => {
             keystage,
             country,
             message,
-            pathname,
+            fullUrl,
           }
         );
         router.push("/thank-you");
