@@ -19,16 +19,17 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
         <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
           <div className="gap-10 sm:gap-14 flex-col flex justify-center">
             <h1 className=" leading-[50px] lg:leading-[70px] text-[35px] lg:text-[50px] sm:text-[40px] ">
-              25% Scholarship for Students in Bangladesh
+            IWS Online School
+            Scholarship Exam
             </h1>
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
               {
-                "Exclusive Opportunity for Students in Bangladesh! We've partnered with Canary Square to bring"
+                "Open to students from Year 3 to Year 13. Compete for a chance to win scholarships for IWS's online programs."
               }
             </p>
 
-            <p className="leading-[32px] font-semibold text-[18px] sm:text-[24px]">
+            <p className="leading-[32px]  text-[18px] sm:text-[24px]">
               Exam Date: November 25th
             </p>
 
@@ -41,7 +42,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 Register Now
               </Link>
               <Link
-                href="#contact-us"
+                href="/contact-us"
                 className={
                   "bg-[#4366F6] rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300  text-lg"
                 }>
@@ -54,7 +55,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             width={450}
             height={450}
             className="w-[300px] max-w-[90%] min-w-[280px] sm:w-[450px] sm:min-w-[50%] sm:flex lg:w-auto object-contain"
-            src="/partners/1.webp"
+            src="/scholarship/Scholarship_1.webp"
             priority={true}
             sizes="(max-width: 576px) 40vw"
             alt=""
@@ -65,10 +66,10 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           id="howwork"
           className="mt-20 border-t-2 border-gray-200 pt-5 container">
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
-            <h2 className="font-semibold md:flex-1">How It Works</h2>
+            <h2 className="font-semibold md:flex-1">Exam Details at a Glance</h2>
             <p className="md:flex-1">
               {
-                "Getting started with IWS Online School through our partnership with Canary Square is simple and straightforward. Follow these steps to access high-quality education at a discounted rate, sponsored by Canary Square."
+                "Find essential information about the IWS Scholarship Exam, including wha can participate, the subjects covered, and how the exam will be structured."
               }
             </p>
           </div>
@@ -79,18 +80,17 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain self-center"
-                src="/partners/2-1.webp"
+                src="/scholarship/2_1.webp"
                 alt=""
               />
 
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Contact the CS Team in Bangladesh
+                  Date & Time
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Reach out to our local team for help with enrolment and
-                    scholarship details.
+                  The exam takes place on November 25th, with exact times based on your location.
                   </p>
                 </div>
               </div>
@@ -100,18 +100,17 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain self-center"
-                src="/partners/2-2.webp"
+                src="/scholarship/2_2.webp"
                 alt=""
               />
 
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Start the Enrolment Process
+                  Who Can Enter?
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Reach out to our local team for help with enrolment and
-                    scholarship details.
+                  Open to students from Year 3 to Year 13, competing within their year groups.
                   </p>
                 </div>
               </div>
@@ -121,18 +120,17 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain self-center"
-                src="/partners/2-3.webp"
+                src="/scholarship/2_3.webp"
                 alt=""
               />
 
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Get a 25% Scholarship
+                  Exam Subjects
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Reach out to our local team for help with enrolment and
-                    scholarship details.
+                  {"The exam covers Maths and English, adjusted to each year's curriculum."}
                   </p>
                 </div>
               </div>
@@ -142,18 +140,17 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 width={1000}
                 height={1000}
                 className="max-w-lg w-11/12 object-contain self-center"
-                src="/partners/2-4.webp"
+                src="/scholarship/2_4.webp"
                 alt=""
               />
 
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Learn from Anywhere
+                  Exam Format
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Reach out to our local team for help with enrolment and
-                    scholarship details.
+                    An online test with a mix of multiple-choice and short-answer questions.
                   </p>
                 </div>
               </div>
@@ -165,10 +162,10 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           id="participate"
           className="mt-20 border-t-2 border-gray-200 pt-5 container">
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
-            <h2 className="font-semibold md:flex-1">How It Works</h2>
+            <h2 className="font-semibold md:flex-1">Why Participate</h2>
             <p className="md:flex-1">
               {
-                "Getting started with IWS Online School through our partnership with Canary Square is simple and straightforward. Follow these steps to access high-quality education at a discounted rate, sponsored by Canary Square."
+                "Understand the benefits of participating in the exam, including the chance to win scholarships and vouchers, while joining a prestigious online school."
               }
             </p>
           </div>
@@ -176,32 +173,29 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           <div className="pt-20 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 lg:gap-5 gap-y-14">
             <div className="p-10 bg-blue-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              {"Earn scholarships for IWS's accredited online programs"}
               </h4>
 
               <p className="text-white text-center text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                atque asperiores exercitationem officia culpa.
+              Top performers can win scholarships to cover part or all of their tuition fees.
               </p>
             </div>
             <div className="p-10 bg-green-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Gain a £50 voucher for participating
               </h4>
 
               <p className="text-white text-center text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                atque asperiores exercitationem officia culpa.
+              All participants receive a £50 voucher to use toward IWS services.
               </p>
             </div>
             <div className="p-10 bg-orange-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Be part of a globally recognized, Cambridge accredited school
               </h4>
 
               <p className="text-white text-center text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                atque asperiores exercitationem officia culpa.
+              Join an online school accredited by Cambridge and recognised worldwide.
               </p>
             </div>
           </div>
@@ -211,10 +205,10 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           id="results"
           className="mt-20 border-t-2 border-gray-200 pt-5 container">
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
-            <h2 className="font-semibold md:flex-1">How Result It Works</h2>
+            <h2 className="font-semibold md:flex-1">Results and Awards</h2>
             <p className="md:flex-1">
               {
-                "Getting started with IWS Online School through our partnership with Canary Square is simple and straightforward. Follow these steps to access high-quality education at a discounted rate, sponsored by Canary Square."
+                "Find essential information about the IWS Scholarship Exam, including who can participate, the subjects covered, and how the exam will be structured"
               }
             </p>
           </div>
@@ -238,12 +232,12 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <div className="relative p-4 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col  rounded-xl gap-10">
               <div className="bg-gray-400 py-3">
                 <p className="text-white text-xl font-semibold text-center">
-                  First Place
+                Second Place
                 </p>
               </div>
 
               <div className="flex-1 flex flex-col justify-center items-center">
-                <p className="text-center text-8xl font-semibold">50%</p>
+                <p className="text-center text-8xl font-semibold">25%</p>
                 <p className="text-center text-3xl font-semibold">
                   SCHOLARSHIP
                 </p>
@@ -253,12 +247,12 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <div className="relative p-4 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col  rounded-xl gap-10">
               <div className="bg-yellow-600 py-3">
                 <p className="text-white text-xl font-semibold text-center">
-                  First Place
+                  Third Place
                 </p>
               </div>
 
               <div className="flex-1 flex flex-col justify-center items-center">
-                <p className="text-center text-8xl font-semibold">50%</p>
+                <p className="text-center text-8xl font-semibold">15%</p>
                 <p className="text-center text-3xl font-semibold">
                   SCHOLARSHIP
                 </p>
@@ -268,14 +262,14 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <div className="relative p-4 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col  rounded-xl gap-10">
               <div className="bg-blue-500 py-3">
                 <p className="text-white text-xl font-semibold text-center">
-                  First Place
+                  Participants
                 </p>
               </div>
 
               <div className="flex-1 flex flex-col justify-center items-center">
-                <p className="text-center text-8xl font-semibold">50%</p>
+                <p className="text-center text-8xl font-semibold">£50</p>
                 <p className="text-center text-3xl font-semibold">
-                  SCHOLARSHIP
+                  GIFT VOUCHER
                 </p>
               </div>
             </div>
