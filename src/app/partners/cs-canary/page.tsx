@@ -12,17 +12,17 @@ import FooterPartner from "@/app/components/FooterPartner";
 import Header from "@/app/components/Header";
 
 interface pageProps {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  // params: { slug: string };
+  // searchParams: { [key: string]: string | string[] | undefined };
 }
 
-const page: React.FC<pageProps> = ({ params, searchParams }) => {
-  const { slug } = params;
-  const partner = partners.find((partner) => partner.slug === slug);
+const page: React.FC<pageProps> = ({  }) => {
+  // const { slug } = params;
+  // const partner = partners.find((partner) => partner.slug === slug);
 
-  if (!partner) {
-    return <div>Not Found</div>;
-  }
+  // if (!partner) {
+  //   return <div>Not Found</div>;
+  // }
 
   const imagePath = "/partners/3_1.webp";
 
@@ -532,13 +532,13 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           id="what-awaits"
         >
           <h2 className="  text-center ">
-            What awaits you at {partner.title}?
+            What awaits you at CS Online School?
           </h2>
 
           <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
             <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F1F9EC]">
               <h3 className="   tracking-wide">
-                Visionary Educators of {partner.title}
+                Visionary Educators of CS Online School
               </h3>
               <p className="text-p leading-6  ">
                 Explore the difference our passionate and committed teachers
