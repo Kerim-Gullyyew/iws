@@ -381,7 +381,7 @@ const page: React.FC<pageProps> = ({  }) => {
                   <Image
                     width={500}
                     height={500}
-                    className="w-20 h-20 max-w-20 max-h-20 rounded-full"
+                    className="w-20 h-20 max-w-20 max-h-20 rounded-full border border-gray-100"
                     src="/partners/3-1.webp"
                     alt=""
                   />
@@ -411,7 +411,7 @@ const page: React.FC<pageProps> = ({  }) => {
                   <Image
                     width={500}
                     height={500}
-                    className="w-20 h-20 max-w-20 max-h-20 rounded-full"
+                    className="w-20 h-20 max-w-20 max-h-20 rounded-full border border-gray-100"
                     src="/partners/3-2.webp"
                     alt="Picture"
                   />

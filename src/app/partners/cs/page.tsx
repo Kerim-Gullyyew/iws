@@ -415,8 +415,8 @@ const page: React.FC<pageProps> = ({  }) => {
                   <Image
                     width={500}
                     height={500}
-                    className="w-20 h-20 max-w-20 max-h-20 "
-                    src="/partners/3-1.webp"
+                    className="w-20 h-20 max-w-20 max-h-20 rounded-full border border-gray-100"
+                    src="/partners/3-2.webp"
                     alt=""
                   />
                 </div>
@@ -428,7 +428,7 @@ const page: React.FC<pageProps> = ({  }) => {
               </div>
               <div className="flex flex-col items-center gap-3">
                 <Link
-                  href="tel:+99361164656"
+                  href="tel:+8801727927497"
                   className="bg-blue-600 text-lg text-white py-3 px-14 w-full rounded-md text-center"
                 >
                   Call
