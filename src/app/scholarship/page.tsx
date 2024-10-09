@@ -35,7 +35,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
             <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
               <Link
-                href="#contact-us"
+                href="https://bestys.co/default/competition/details?productId=55"
                 className={
                   "bg-[#4366F6] rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300  text-lg"
                 }>
