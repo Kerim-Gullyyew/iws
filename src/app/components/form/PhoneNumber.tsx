@@ -1,20 +1,29 @@
-import React, { Dispatch, SetStateAction } from 'react'
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import PhoneInput from 'react-phone-input-2'
 import '../utils/CustomPhoneNumberInput.css'
+
 interface PhoneNumberProps {
   value: string | null | undefined;
   onChange: Dispatch<SetStateAction<string>>;
-  isError?: boolean
+  isError?: boolean;
 }
 
 const PhoneNumber: React.FC<PhoneNumberProps> = ({ value, onChange, isError }) => {
+  const [defaultCountry, setDefaultCountry] = useState('gb');
+
+  useEffect(() => {
+    const currentUrl = window.location.href;
+    if (currentUrl.includes('/partners/cs')) {
+      setDefaultCountry('bd');
+    }
+  }, []);
+
   return (
     <PhoneInput
       specialLabel={''}
-      country={'gb'}
+      country={defaultCountry}
       value={value}
       onChange={(phone) => onChange(phone)}
-      // disableDropdown
       inputStyle={{
         fontSize: '16px',
         width: '100%',
@@ -27,7 +36,7 @@ const PhoneNumber: React.FC<PhoneNumberProps> = ({ value, onChange, isError }) =
         fontWeight: '400',
       }}
     />
-  )
+  );
 }
 
-export default PhoneNumber
+export default PhoneNumber;
