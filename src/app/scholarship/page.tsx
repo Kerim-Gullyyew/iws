@@ -69,7 +69,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <h2 className="font-semibold md:flex-1">Exam Details at a Glance</h2>
             <p className="md:flex-1">
               {
-                "Find essential information about the IWS Scholarship Exam, including wha can participate, the subjects covered, and how the exam will be structured."
+                "Find essential information about the IWS Scholarship Exam, including who can participate, the subjects covered, and how the exam will be structured."
               }
             </p>
           </div>
@@ -191,7 +191,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             </div>
             <div className="p-10 bg-orange-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-              Be part of a globally recognized, Cambridge accredited school
+              Be part of a globally recognised, Cambridge accredited school
               </h4>
 
               <p className="text-white text-center text-sm">
@@ -208,7 +208,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <h2 className="font-semibold md:flex-1">Results and Awards</h2>
             <p className="md:flex-1">
               {
-                "Find essential information about the IWS Scholarship Exam, including who can participate, the subjects covered, and how the exam will be structured"
+                "Find essential information about the IWS Scholarship Exam, including who can participate, the subjects covered, and how the exam will be structured."
               }
             </p>
           </div>
