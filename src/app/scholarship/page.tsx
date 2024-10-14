@@ -9,6 +9,8 @@ interface pageProps {
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
+const imagePath = "/scholarship/chart.png";
+
 const page: React.FC<pageProps> = ({ params, searchParams }) => {
   const { slug } = params;
   const partner = partners.find((partner) => partner.slug === slug);
@@ -19,8 +21,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
         <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
           <div className="gap-10 sm:gap-14 flex-col flex justify-center">
             <h1 className=" leading-[50px] lg:leading-[70px] text-[35px] lg:text-[50px] sm:text-[40px] ">
-            IWS Online School
-            Scholarship Exam
+              IWS Online School Scholarship Exam
             </h1>
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
@@ -38,14 +39,16 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 href="https://bestys.co/default/competition/details?productId=55"
                 className={
                   "bg-[#4366F6] rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300  text-lg"
-                }>
+                }
+              >
                 Register Now
               </Link>
               <Link
                 href="/contact-us"
                 className={
                   "bg-[#4366F6] rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300  text-lg"
-                }>
+                }
+              >
                 Contact Us
               </Link>
             </div>
@@ -64,9 +67,12 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
         <div
           id="howwork"
-          className="mt-20 border-t-2 border-gray-200 pt-5 container">
+          className="mt-20 border-t-2 border-gray-200 pt-5 container"
+        >
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
-            <h2 className="font-semibold md:flex-1">Exam Details at a Glance</h2>
+            <h2 className="font-semibold md:flex-1">
+              Exam Details at a Glance
+            </h2>
             <p className="md:flex-1">
               {
                 "Find essential information about the IWS Scholarship Exam, including who can participate, the subjects covered, and how the exam will be structured."
@@ -87,10 +93,11 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                  Date & Time
+                    Date & Time
                   </h3>
                   <p className="text-p text-center leading-6">
-                  The exam takes place on November 25th, with exact times based on your location.
+                    The exam takes place on November 25th, with exact times
+                    based on your location.
                   </p>
                 </div>
               </div>
@@ -107,10 +114,11 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                  Who Can Enter?
+                    Who Can Enter?
                   </h3>
                   <p className="text-p text-center leading-6">
-                  Open to students from Year 3 to Year 13, competing within their year groups.
+                    Open to students from Year 3 to Year 13, competing within
+                    their year groups.
                   </p>
                 </div>
               </div>
@@ -127,10 +135,12 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                  Exam Subjects
+                    Exam Subjects
                   </h3>
                   <p className="text-p text-center leading-6">
-                  {"The exam covers Maths and English, adjusted to each year's curriculum."}
+                    {
+                      "The exam covers Maths and English, adjusted to each year's curriculum."
+                    }
                   </p>
                 </div>
               </div>
@@ -147,10 +157,11 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                  Exam Format
+                    Exam Format
                   </h3>
                   <p className="text-p text-center leading-6">
-                    An online test with a mix of multiple-choice and short-answer questions.
+                    An online test with a mix of multiple-choice and
+                    short-answer questions.
                   </p>
                 </div>
               </div>
@@ -160,7 +171,8 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
         <div
           id="participate"
-          className="mt-20 border-t-2 border-gray-200 pt-5 container">
+          className="mt-20 border-t-2 border-gray-200 pt-5 container"
+        >
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
             <h2 className="font-semibold md:flex-1">Why Participate</h2>
             <p className="md:flex-1">
@@ -173,29 +185,32 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           <div className="pt-20 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 lg:gap-5 gap-y-14">
             <div className="p-10 bg-blue-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-              {"Earn scholarships for IWS's accredited online programs"}
+                {"Earn scholarships for IWS's accredited online programs"}
               </h4>
 
               <p className="text-white text-center text-sm">
-              Top performers can win scholarships to cover part or all of their tuition fees.
+                Top performers can win scholarships to cover part or all of
+                their tuition fees.
               </p>
             </div>
             <div className="p-10 bg-green-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-              Gain a £50 voucher for participating
+                Gain a £50 voucher for participating
               </h4>
 
               <p className="text-white text-center text-sm">
-              All participants receive a £50 voucher to use toward IWS services.
+                All participants receive a £50 voucher to use toward IWS
+                services.
               </p>
             </div>
             <div className="p-10 bg-orange-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-              Be part of a globally recognised, Cambridge accredited school
+                Be part of a globally recognised, Cambridge accredited school
               </h4>
 
               <p className="text-white text-center text-sm">
-              Join an online school accredited by Cambridge and recognised worldwide.
+                Join an online school accredited by Cambridge and recognised
+                worldwide.
               </p>
             </div>
           </div>
@@ -203,7 +218,8 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
         <div
           id="results"
-          className="mt-20 border-t-2 border-gray-200 pt-5 container">
+          className="mt-20 border-t-2 border-gray-200 pt-5 container"
+        >
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
             <h2 className="font-semibold md:flex-1">Results and Awards</h2>
             <p className="md:flex-1">
@@ -232,7 +248,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <div className="relative p-4 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col  rounded-xl gap-10">
               <div className="bg-gray-400 py-3">
                 <p className="text-white text-xl font-semibold text-center">
-                Second Place
+                  Second Place
                 </p>
               </div>
 
@@ -278,125 +294,105 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
         <div className="mt-20 container border-t-2 pt-5 border-gray-200">
           <h2>FAQs</h2>
-          <div className="pt-8 sm:pt-12 flex flex-col gap-8">
-            <AccordionSecondary title="Why us?">
+          <div className="pt-8 sm:pt-12 flex flex-col gap-8 text-left">
+            <AccordionSecondary title="Do I need to register for the exam before I take it?">
               <div className=" space-y-5">
                 <p className="text-p">
-                  Our British online school revolutionises remote education.
-                  With an easy-to-use platform, flexible academic programmes,
-                  and adaptable schedules, we provide a learning experience that
-                  can often exceed that of traditional schools.
-                </p>
-                <p className="text-p">
-                  Globally, schools are embracing technology to meet evolving
-                  educational standards. It is anticipated that within the next
-                  few decades, online education will become commonplace. At IWS,
-                  we lead by prioritising online teaching.
-                </p>
-                <p className="text-p">
-                  Our teachers are adept at delivering Live Online Lessons with
-                  great enthusiasm and proficiency. We also employ sophisticated
-                  and reliable technology to ensure our virtual classrooms meet
-                  every need of our pupils, including round-the-clock access to
-                  recorded lessons to support independent study.
-                </p>
-                <p className="text-p">
-                  In this respect, we are advancing faster than many educational
-                  institutions that are just beginning to embark on this digital
-                  transition.
-                </p>
-                <p className="text-p">
-                  IWS places great value on the educational experiences that
-                  occur beyond the classroom walls. Thus, we offer numerous
-                  opportunities for group interaction through a variety of
-                  clubs, extracurricular activities, and online social
-                  gatherings. This approach allows each student to connect with
-                  others across the globe, fostering a sense of belonging to a
-                  vibrant community that extends beyond the end of the school
-                  day.
+                  {`Yes, you need to register for the exam. On the exam page, you will find a "Register for the Exam" button. You must complete the registration form and pay the exam fee at least one day before the exam. Registration will close at 23:50 your local time on November 22, 2024.`}
                 </p>
               </div>
             </AccordionSecondary>
 
-            <AccordionSecondary title="Are you accredited?">
+            <AccordionSecondary title="What is the format of the scholarship exam?">
               <div className=" space-y-5">
                 <p className="text-p">
-                  Yes, we offer Cambridge Assessment International Education. We
-                  are registered as UK Learner Providers and are in the process
-                  of obtaining our membership with the Council of International
-                  Schools (CIS).
+                  {
+                    "The scholarship exam consists of two sections: Maths and English. Each section has 25 questions, for a total of 50 questions. Both sections are part of the same exam and must be completed within a total time of 60 minutes."
+                  }
                 </p>
               </div>
             </AccordionSecondary>
 
-            <AccordionSecondary title="Where are you based?">
+            <AccordionSecondary title="Can students take a break between the English and Maths sections of the exam?">
               <div className=" space-y-5">
                 <p className="text-p">
-                  We are based in the UK, our headquarters are registered at 31
-                  Long Acre Covent Garden, London England WC2E 9LA
+                  {
+                    "No, Maths and English are part of the same exam. To keep it simple, students must finish the entire exam in one sitting within 60 minutes."
+                  }
                 </p>
               </div>
             </AccordionSecondary>
 
-            <AccordionSecondary title="How does your online school work?">
-              <div className=" space-y-5">
+            <AccordionSecondary title="What happens if a student loses connection during the exam? Will they be able to resume where they left off, or will they have to restart the exam from the beginning?">
+              <div className=" space-y-5 text-left">
                 <p className="text-p">
-                  Our trained teachers employ a range of teaching aids to
-                  support learning, such as high-quality video cameras,
-                  interactive whiteboards, screen sharing, live presentations,
-                  and lesson recordings. Students at IWS can join classes
-                  through a safe online link. Teachers use various methods and
-                  activities, including quizzes, presentations, and group work,
-                  in their lessons. The use of modern technology makes learning
-                  enjoyable for students and enhances their educational journey
-                  compared to conventional methods. This also boosts their
-                  learning as they study from home.
+                  {
+                    "Students can rejoin from any device and continue where they left off, as long as the exam timer has not expired. The timer starts when the student begins the exam and continues counting even if the student disconnects."
+                  }
                 </p>
               </div>
             </AccordionSecondary>
-            <AccordionSecondary title="Does online learning isolate students from their peers?">
+            <AccordionSecondary title="What time is the exam?">
               <div className=" space-y-5">
                 <p className="text-p">
-                  Many parents worry about whether online learning will allow
-                  their child to socialise properly. At IWS, we encourage our
-                  international students to interact with one another by holding
-                  various clubs, social gatherings, and events throughout the
-                  school year. We also offer a summer camp, a student council,
-                  and additional activities for students to enjoy in their spare
-                  time. Furthermore, students enrolled in the same courses often
-                  work together on group tasks and projects. These collaborative
-                  efforts help develop communication skills and leadership
-                  abilities. All activities in our online classrooms are
-                  recorded and supervised to ensure the safety of our students
-                  online. We also provide training on how to use social media
-                  responsibly to maintain a safe environment for all student
-                  interactions.
+                  {
+                    "The exam is scheduled for November 23rd at 19:00 your local time. Please ensure that you are ready and online at that time, and make sure your device’s date and time are correctly set to your local time."
+                  }
                 </p>
               </div>
             </AccordionSecondary>
 
-            <AccordionSecondary title="I reside outside the UK; is this educational approach acknowledged in my country?">
+            <AccordionSecondary title="When will the results be announced?">
               <div className=" space-y-5">
                 <p className="text-p">
-                  Every country has different rules about what kinds of
-                  education can take the place of traditional classroom
-                  learning. So, we suggest that parents check if homeschooling
-                  is allowed in the country where they plan to live or work
-                  before applying to our school. Please also remember that our
-                  lessons follow the standards of the English education system,
-                  and our staff are experts only in this system.
+                  {"Results will be announced by November 30th November on the"}
+                  <Link href="https://iwsonlineschool.co.uk/scholarship">
+                    exam webpage.
+                  </Link>
+                  There will be three winners from each year group, from Year 3
+                  to Year 13.
                 </p>
               </div>
             </AccordionSecondary>
 
-            <AccordionSecondary title="Are lessons taught in any other languages, other than English?">
+            <AccordionSecondary title="How will the winners be selected?">
               <div className=" space-y-5">
                 <p className="text-p">
-                  Currently, all our subjects are taught in English, in line
-                  with a British curriculum. We do, however, teach several
-                  foreign languages, including French, German, and Chinese,
-                  where teachers and students frequently engage in conversations
-                  in the language of study.
+                  {
+                    "Winners will be selected based on their performance in the scholarship exam. A conversion chart will be used to align grades with the appropriate year groups, ensuring fairness in the selection process."
+                  }
+                  <Link href="/scholarship/chart.png" className="text-blue-600">
+                    {" "}
+                    Grade Levels Conversion Chart
+                  </Link>
+                </p>
+              </div>
+            </AccordionSecondary>
+
+            <AccordionSecondary title="Can students use calculators or any other tools during the exam?">
+              <div className=" space-y-5">
+                <p className="text-p">
+                  {
+                    "No, calculators and other external tools are not allowed. Students are expected to complete the exam using only the resources provided within the exam platform. Please note, the exam will be recorded via auto-proctoring (camera and screen recording) to ensure academic integrity and prevent any unauthorised assistance."
+                  }
+                </p>
+              </div>
+            </AccordionSecondary>
+
+            <AccordionSecondary title="Is there any cost to take the scholarship exam?">
+              <div className=" space-y-5">
+                <p className="text-p">
+                  {"Yes, there is a $10 fee to take the exam."}
+                </p>
+              </div>
+            </AccordionSecondary>
+
+            <AccordionSecondary title="What should students do if they encounter technical issues during the exam?">
+              <div className=" space-y-5">
+                <p className="text-p">
+                  {
+                    "If a student faces any technical issues, they should attempt to rejoin the exam immediately from another device, if possible."
+                  }
                 </p>
               </div>
             </AccordionSecondary>

@@ -387,13 +387,13 @@ const page: React.FC<pageProps> = ({  }) => {
                   />
                 </div>
                 <div className="space-y-1 flex flex-col">
-                  <h4 className="text-blue-600 font-bold">Jahan Shirin</h4>
-                  <Link href="tel:+99361164656">+99361164656</Link>
-                  <Link href="mailto:ssefsdf@sdfsd.com">ssefsdf@sdfsd.com</Link>
+                  <h4 className="text-blue-600 font-bold">Aisha</h4>
+                  <Link href="tel:+2348162611661">+234 816 261 1661</Link>
+                  <Link href="mailto:aisha@iwschool.co.uk">aisha@iwschool.co.uk</Link>
                 </div>
                 <div className="flex items-center gap-3">
                   <Link
-                    href="tel:+99361164656"
+                    href="tel:+2348162611661"
                     className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center"
                   >
                     Call
@@ -417,13 +417,13 @@ const page: React.FC<pageProps> = ({  }) => {
                   />
                 </div>
                 <div className="space-y-1 flex flex-col">
-                  <h4 className="text-blue-600 font-bold">Jahan Shirin</h4>
-                  <Link href="tel:+99361164656">+99361164656</Link>
-                  <Link href="mailto:ssefsdf@sdfsd.com">ssefsdf@sdfsd.com</Link>
+                  <h4 className="text-blue-600 font-bold">Umar</h4>
+                  <Link href="tel:+2348161351148">+234 816 135 1148</Link>
+                  <Link href="mailto:umar@iwschool.co.uk">umar@iwschool.co.uk</Link>
                 </div>
                 <div className="flex items-center gap-3">
                   <Link
-                    href="tel:+99361164656"
+                    href="tel:+2348161351148"
                     className="bg-blue-600 text-sm text-white py-2 w-full rounded-md text-center"
                   >
                     Call

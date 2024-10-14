@@ -17,7 +17,7 @@ const AccordionSecondary: React.FC<AccordionSecondaryProps> = ({ title, children
       {({ open }) => (
         <>
           <DisclosureButton className="w-full pb-2 flex items-center justify-between focus:outline-none">
-            <h3 className="text-[1.5em]">
+            <h3 className="text-[1.5em] text-left">
               {title}
             </h3>
             {open ? (
@@ -30,7 +30,7 @@ const AccordionSecondary: React.FC<AccordionSecondaryProps> = ({ title, children
           <div className="overflow-hidden py-2">
             <DisclosurePanel
               transition
-              className="origin-top transition duration-300 px-3 pb-5 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
+              className="text-left origin-top transition duration-300 px-3 pb-5 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0"
             >
               {children}
             </DisclosurePanel>
