@@ -41,15 +41,22 @@ const TabSection: React.FC<TabSectionProps> = () => {
   const [validationErrors, setValidationErrors] = useState<ValidationErrors>({});
   const [loading, setLoading] = useState(false);
   const [fullUrl, setFullUrl] = useState("");
+  const [initialUrl, setInitialUrl] = useState("");
 
   const router = useRouter();
   const pathname = usePathname();
 
+  // Retrieve the initial URL from localStorage
   useEffect(() => {
     if (typeof window !== "undefined") {
       const searchParams = window.location.search;
       const fullUrl = `${pathname}${searchParams}`;
       setFullUrl(fullUrl);
+
+      const savedInitialUrl = localStorage.getItem("initialUrl");
+      if (savedInitialUrl) {
+        setInitialUrl(savedInitialUrl);
+      }
     }
   }, [pathname]);
 
@@ -100,7 +107,8 @@ const TabSection: React.FC<TabSectionProps> = () => {
           keystage,
           country,
           message,
-          fullUrl, // Now correctly set
+          fullUrl, // Current page URL
+          initialUrl, // The initial URL from localStorage
         });
         router.push("/thank-you");
       } catch (error) {
