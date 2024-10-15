@@ -31,7 +31,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             </p>
 
             <p className="leading-[32px]  text-[18px] sm:text-[24px]">
-              Exam Date: November 25th
+              Exam Date: November 23th
             </p>
 
             <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
@@ -96,7 +96,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                     Date & Time
                   </h3>
                   <p className="text-p text-center leading-6">
-                    The exam takes place on November 25th, with exact times
+                    The exam takes place on November 23th, with exact times
                     based on your location.
                   </p>
                 </div>
@@ -392,6 +392,16 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 <p className="text-p">
                   {
                     "If a student faces any technical issues, they should attempt to rejoin the exam immediately from another device, if possible."
+                  }
+                </p>
+              </div>
+            </AccordionSecondary>
+
+            <AccordionSecondary title="Can I use my scholarship award for any programs or courses at IWS Online School?">
+              <div className=" space-y-5">
+                <p className="text-p">
+                  {
+                    "No, the scholarship award is valid only for our Complete School Programme (full time) and Hybrid Model Programme( part time). It cannot be applied to other programs or courses."
                   }
                 </p>
               </div>
