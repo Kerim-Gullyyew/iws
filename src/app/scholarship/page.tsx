@@ -26,12 +26,12 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
               {
-                "Open to students from Year 3 to Year 13. Compete for a chance to win scholarships for IWS's online programs."
+                "Open to students from Year 3 to Year 13. Compete to earn a scholarship for IWS Online School programmes."
               }
             </p>
 
             <p className="leading-[32px]  text-[18px] sm:text-[24px]">
-              Exam Date: November 23th
+              Exam Date: 23rd November 2024
             </p>
 
             <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
@@ -75,7 +75,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             </h2>
             <p className="md:flex-1">
               {
-                "Find essential information about the IWS Scholarship Exam, including who can participate, the subjects covered, and how the exam will be structured."
+                "Find essential information about the IWS Scholarship Exam, including eligible participants, the content of the exam and how the exam will be conducted."
               }
             </p>
           </div>
@@ -96,8 +96,8 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                     Date & Time
                   </h3>
                   <p className="text-p text-center leading-6">
-                    The exam takes place on November 23th, with exact times
-                    based on your location.
+                    The exam takes place 23rd November 2024 at 7pm your local
+                    time.
                   </p>
                 </div>
               </div>
@@ -114,11 +114,11 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Who Can Enter?
+                    Eligible Participants
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Open to students from Year 3 to Year 13, competing within
-                    their year groups.
+                    Students who are currently studying Year 3- Year 13.
+                    Students will compete within their year group.
                   </p>
                 </div>
               </div>
@@ -135,11 +135,11 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Exam Subjects
+                    Exam Content
                   </h3>
                   <p className="text-p text-center leading-6">
                     {
-                      "The exam covers Maths and English, adjusted to each year's curriculum."
+                      "The exam covers topics in English and Maths from topics in the respective year group."
                     }
                   </p>
                 </div>
@@ -160,8 +160,8 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                     Exam Format
                   </h3>
                   <p className="text-p text-center leading-6">
-                    An online test with a mix of multiple-choice and
-                    short-answer questions.
+                    An online assessment with a mix of multiple choice and short
+                    answer questions.
                   </p>
                 </div>
               </div>
@@ -177,7 +177,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <h2 className="font-semibold md:flex-1">Why Participate</h2>
             <p className="md:flex-1">
               {
-                "Understand the benefits of participating in the exam, including the chance to win scholarships and vouchers, while joining a prestigious online school."
+                "Benefits of participating in the IWS Online Scholarship Exam: The opportunity to join a prestigious online school by being awarded scholarships towards the academic tuition fees. Participate in an exam that informs you of your current knowledge and skills for your expected year group."
               }
             </p>
           </div>
@@ -185,32 +185,33 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           <div className="pt-20 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 lg:gap-5 gap-y-14">
             <div className="p-10 bg-blue-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-                {"Earn scholarships for IWS's accredited online programs"}
+                {"Earn scholarships for IWS's accredited online programmes"}
               </h4>
 
               <p className="text-white text-center text-sm">
-                Top performers can win scholarships to cover part or all of
-                their tuition fees.
+                Top performers can be awarded partial or full scholarships for
+                their academic tuition fees.
               </p>
             </div>
             <div className="p-10 bg-green-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-                Gain a £50 voucher for participating
+                Gain a 50 pounds voucher for participating in the IWS
+                Scholarship Exam.
               </h4>
 
               <p className="text-white text-center text-sm">
-                All participants receive a £50 voucher to use toward IWS
+                All participants receive a 50 pounds voucher to use towards IWS
                 services.
               </p>
             </div>
             <div className="p-10 bg-orange-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-                Be part of a globally recognised, Cambridge accredited school
+                Be part of a recognised Cambridge accredited school!
               </h4>
 
               <p className="text-white text-center text-sm">
-                Join an online school accredited by Cambridge and recognised
-                worldwide.
+                Join IWS Online School that provides world- class international
+                education.
               </p>
             </div>
           </div>
@@ -222,11 +223,11 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
         >
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
             <h2 className="font-semibold md:flex-1">Results and Awards</h2>
-            <p className="md:flex-1">
+            {/* <p className="md:flex-1">
               {
                 "Find essential information about the IWS Scholarship Exam, including who can participate, the subjects covered, and how the exam will be structured."
               }
-            </p>
+            </p> */}
           </div>
 
           <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-5 gap-y-14">
@@ -295,10 +296,10 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
         <div className="mt-20 container border-t-2 pt-5 border-gray-200">
           <h2>FAQs</h2>
           <div className="pt-8 sm:pt-12 flex flex-col gap-8 text-left">
-            <AccordionSecondary title="Do I need to register for the exam before I take it?">
+            <AccordionSecondary title="How do I register for the exam?">
               <div className=" space-y-5">
                 <p className="text-p">
-                  {`Yes, you need to register for the exam. On the exam page, you will find a "Register for the Exam" button. You must complete the registration form and pay the exam fee at least one day before the exam. Registration will close at 23:50 your local time on November 22, 2024.`}
+                  {`On the IWS scholarship exam page, click on the "Register for the Exam" button. You must complete the registration form and pay the exam fee at the latest one day before the exam. Registration will close at 23:50 am your local time on 22nd November 2024.`}
                 </p>
               </div>
             </AccordionSecondary>
@@ -307,7 +308,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className=" space-y-5">
                 <p className="text-p">
                   {
-                    "The scholarship exam consists of two sections: Maths and English. Each section has 25 questions, for a total of 50 questions. Both sections are part of the same exam and must be completed within a total time of 60 minutes."
+                    "The scholarship exam consists of two sections: Maths and English. Each section has 25 questions, a total of 50 questions. Both sections must be completed within 60 minutes."
                   }
                 </p>
               </div>
@@ -317,7 +318,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className=" space-y-5">
                 <p className="text-p">
                   {
-                    "No, Maths and English are part of the same exam. To keep it simple, students must finish the entire exam in one sitting within 60 minutes."
+                    "No, Maths and English are part of the same exam. Students must finish the entire exam in one sitting within 60 minutes."
                   }
                 </p>
               </div>
@@ -327,7 +328,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className=" space-y-5 text-left">
                 <p className="text-p">
                   {
-                    "Students can rejoin from any device and continue where they left off, as long as the exam timer has not expired. The timer starts when the student begins the exam and continues counting even if the student disconnects."
+                    "Students can rejoin from any device and continue where they left off, as long as the exam timer has not expired. The timer starts when the student begins the exam and continues running even if the student disconnects."
                   }
                 </p>
               </div>
@@ -336,7 +337,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className=" space-y-5">
                 <p className="text-p">
                   {
-                    "The exam is scheduled for November 23rd at 19:00 your local time. Please ensure that you are ready and online at that time, and make sure your device’s date and time are correctly set to your local time."
+                    "The exam takes place on 23rd November at 19:00 pm your local time. Please ensure that you are ready and online at that time, and make sure your device’s date and time are correctly set to your local time."
                   }
                 </p>
               </div>
@@ -349,8 +350,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   <Link href="https://iwsonlineschool.co.uk/scholarship">
                     exam webpage.
                   </Link>
-                  There will be three winners from each year group, from Year 3
-                  to Year 13.
+                  Results will be announced on 30th November on the Scholarship  exam webpage. There will be three winners from each year group, from Year 3 to Year 13.
                 </p>
               </div>
             </AccordionSecondary>
@@ -373,7 +373,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className=" space-y-5">
                 <p className="text-p">
                   {
-                    "No, calculators and other external tools are not allowed. Students are expected to complete the exam using only the resources provided within the exam platform. Please note, the exam will be recorded via auto-proctoring (camera and screen recording) to ensure academic integrity and prevent any unauthorised assistance."
+                    "No, calculators and other external tools are not permitted in the exam. Students are expected to complete the exam using only the resources provided within the exam platform. Please note, the exam will be recorded via auto-proctoring (camera and screen recording) to ensure academic integrity and prevent any unauthorised assistance."
                   }
                 </p>
               </div>
@@ -397,11 +397,21 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               </div>
             </AccordionSecondary>
 
-            <AccordionSecondary title="Can I use my scholarship award for any programs or courses at IWS Online School?">
+            <AccordionSecondary title="Can I use my scholarship award for any programmes or courses at IWS Online School?">
               <div className=" space-y-5">
                 <p className="text-p">
                   {
-                    "No, the scholarship award is valid only for our Complete School Programme (full time) and Hybrid Model Programme( part time). It cannot be applied to other programs or courses."
+                    "No, the scholarship award is valid only for our Complete School Programme (full time) and Hybrid Model Programme( part time). It cannot be applied to other programmes or courses."
+                  }
+                </p>
+              </div>
+            </AccordionSecondary>
+
+            <AccordionSecondary title="Can I use any device to access the exam questions and complete my exam?">
+              <div className=" space-y-5">
+                <p className="text-p">
+                  {
+                    "Yes, the platform supports mobile phones and tablets. However, you must ensure that your camera is turned on, and your face remains visible to the camera at all times during the exam. Therefore, any device with a functioning camera will work."
                   }
                 </p>
               </div>
