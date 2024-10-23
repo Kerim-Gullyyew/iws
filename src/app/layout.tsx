@@ -345,19 +345,19 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         <Script
-          id="website-schema"
+          id="school-schema"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolSchema) }}
         />
         <Script
-          id="website-schema"
+          id="webpage-schema"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
         />
         <Script
-          id="website-schema"
+          id="organization-schema"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -365,19 +365,19 @@ export default function RootLayout({
           }}
         />
         <Script
-          id="website-schema"
+          id="offer-schema"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }}
         />
         <Script
-          id="website-schema"
+          id="review-schema-1"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }}
         />
         <Script
-          id="website-schema"
+          id="review-schema-2"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
