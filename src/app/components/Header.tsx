@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
           <div className="w-[70%]">
             <InfiniteCarousel />
           </div>
-          <Link href="https://bestys.co/default/competition/details?productId=55" className="underline">Learn more</Link>
+          <Link href="/scholarship" className="underline">Learn more</Link>
         </div>
       </div>
       <nav
