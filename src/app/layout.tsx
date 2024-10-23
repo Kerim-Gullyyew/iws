@@ -92,10 +92,6 @@ const schemaData = {
     "https://www.instagram.com/iwsonlineschool",
     "https://www.linkedin.com/company/iwschoolonline",
   ],
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": "https://iwsonlineschool.co.uk/",
-  },
   about: {
     "@type": "EducationalOrganization",
     name: "IWS Online School",
@@ -106,9 +102,7 @@ const schemaData = {
     "@type": "Organization",
     name: "IWS Online School",
   },
-  schoolType: "Online School",
   foundingDate: "2021",
-  numberOfStudents: 153,
   copyrightYear: "2024",
   inLanguage: "en",
   isFamilyFriendly: true,
@@ -116,35 +110,6 @@ const schemaData = {
     "@type": "InteractionCounter",
     interactionType: "https://schema.org/CommentAction",
     userInteractionCount: 1568,
-  },
-  breadcrumb: {
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://iwsonlineschool.co.uk/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "About Us",
-        item: "https://iwsonlineschool.co.uk/about-us",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "School Fees",
-        item: "https://iwsonlineschool.co.uk/school-fees",
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        name: "Contact",
-        item: "https://iwsonlineschool.co.uk/contact-us",
-      },
-    ],
   },
   mainEntity: {
     "@type": "ItemList",
@@ -238,13 +203,46 @@ const schemaData = {
       },
       datePublished: "2023-10-02",
       reviewBody:
-        "Jonathan always ran away from Maths.  Now he has become one of the top performers in class! The teachers at IWS ensure that Johnathan receives extra attention in Maths and Science. They are friendly and always ready to answer his questions. They deserve a 10/10 for the dedication!",
+        "Jonathan always ran away from Maths. Now he has become one of the top performers in class! The teachers at IWS ensure that Johnathan receives extra attention in Maths and Science. They are friendly and always ready to answer his questions. They deserve a 10/10 for the dedication!",
       reviewRating: {
         "@type": "Rating",
         ratingValue: "5",
       },
     },
   ],
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://iwsonlineschool.co.uk/",
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://iwsonlineschool.co.uk/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "About Us",
+          item: "https://iwsonlineschool.co.uk/about-us",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "School Fees",
+          item: "https://iwsonlineschool.co.uk/school-fees",
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: "Contact",
+          item: "https://iwsonlineschool.co.uk/contact-us",
+        },
+      ],
+    },
+  },
 };
 
 export default function RootLayout({
