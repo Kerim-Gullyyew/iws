@@ -165,7 +165,6 @@ const schoolSchema = {
   telephone: "+44-7424-781613",
   email: "admissions@iwschool.co.uk",
   foundingDate: "2021",
-  copyrightYear: "2024",
   sameAs: [
     "https://x.com/iwsonlineschool",
     "https://www.facebook.com/iwschoolonline",
@@ -207,18 +206,6 @@ const schoolSchema = {
       },
     },
   ],
-  offers: {
-    "@type": "Offer",
-    url: "https://iwsonlineschool.co.uk/school-fees",
-    priceCurrency: "GBP",
-    price: "5000",
-    validFrom: "2024-01-01",
-    availability: "https://schema.org/InStock",
-    eligibleRegion: {
-      "@type": "Place",
-      name: "Worldwide",
-    },
-  },
 };
 
 // Define Schema 3: WebPage with Breadcrumb
