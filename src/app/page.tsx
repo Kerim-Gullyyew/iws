@@ -12,12 +12,13 @@ import SchoolFeeCard from "./components/ui/SchoolFeeCard";
 import { keyStages } from "./data/keystage";
 
 const imagePath = '/IWS_horizontal.png';
+const logo = '/logo.png'
 
 export default function Home() {
   return (
     <div className="py-14 lg:py-24 animate-fade-in">
-      <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
-        <div className="gap-10 sm:gap-14 flex-col flex justify-center">
+      <div className="container flex flex-col items-center justify-center gap-10 sm:gap-14 lg:flex lg:flex-row">
+        <div className="flex flex-col justify-center gap-10 sm:gap-14">
           <div className="flex">
             <div className="relative">
               <Image
@@ -41,7 +42,7 @@ export default function Home() {
             Discover new horizons, Create lasting memories, and Lead the future
             with our live lessons.
           </p>
-          <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
+          <div className="flex flex-wrap items-center justify-center gap-5 sm:justify-start">
             <EnrollButton />
             <ContactButton />
           </div>
@@ -56,21 +57,21 @@ export default function Home() {
           alt=""
         />
       </div>
-      <div className="pt-20 container">
-        <h2 className="  text-center ">The right study programme for you</h2>
-        <div className="pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-6 gap-y-14">
+      <div className="container pt-20">
+        <h2 className="text-center ">The right study programme for you</h2>
+        <div className="grid grid-cols-1 gap-4 pt-20 sm:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-6 gap-y-14">
           <Link
             href={"/cambridge-primary"}
             className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#D9DFFB] flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
-              <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <p className="  ">Ages 7-11</p>
+              <div className="absolute px-8 py-2 bg-white rounded bottom-4 left-4">
+                <p className="">Ages 7-11</p>
               </div>
               <Image
                 width={1000}
                 height={1000}
-                className="max-w-lg w-11/12 object-contain -mt-14 self-center"
+                className="self-center object-contain w-11/12 max-w-lg -mt-14"
                 src="/programm/Primary@2x.webp"
                 alt=""
               />
@@ -84,10 +85,10 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide ">Learn more</p>
+              <div className="flex items-center justify-between px-5 py-2 transition-colors duration-300 bg-gray-100 rounded-full cursor-pointer hover:bg-gray-200">
+                <p className="tracking-wide text-p ">Learn more</p>
                 <ArrowRightCircleIcon
-                  className="h-10 w-10 -rotate-45"
+                  className="w-10 h-10 -rotate-45"
                   aria-hidden="true"
                 />
               </div>
@@ -99,13 +100,13 @@ export default function Home() {
             className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#E6F2DB] flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
-              <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <p className="  ">Ages 11-14</p>
+              <div className="absolute px-8 py-2 bg-white rounded bottom-4 left-4">
+                <p className="">Ages 11-14</p>
               </div>
               <Image
                 width={1000}
                 height={1000}
-                className="max-w-lg w-11/12 object-contain -mt-14 self-center"
+                className="self-center object-contain w-11/12 max-w-lg -mt-14"
                 src="/programm/Middle@2x.webp"
                 alt=""
               />
@@ -119,10 +120,10 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex  bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide ">Learn more</p>
+              <div className="flex items-center justify-between px-5 py-2 transition-colors duration-300 bg-gray-100 rounded-full cursor-pointer hover:bg-gray-200">
+                <p className="tracking-wide text-p ">Learn more</p>
                 <ArrowRightCircleIcon
-                  className="h-10 w-10 -rotate-45"
+                  className="w-10 h-10 -rotate-45"
                   aria-hidden="true"
                 />
               </div>
@@ -134,13 +135,13 @@ export default function Home() {
             className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#FCE8D6] flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
-              <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <p className="  ">Ages 14-16</p>
+              <div className="absolute px-8 py-2 bg-white rounded bottom-4 left-4">
+                <p className="">Ages 14-16</p>
               </div>
               <Image
                 width={1000}
                 height={1000}
-                className="max-w-lg w-11/12 object-contain -mt-14 self-center"
+                className="self-center object-contain w-11/12 max-w-lg -mt-14"
                 src="/programm/IGCSE@2x.webp"
                 alt=""
               />
@@ -155,10 +156,10 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide ">Learn more</p>
+              <div className="flex items-center justify-between px-5 py-2 transition-colors duration-300 bg-gray-100 rounded-full cursor-pointer hover:bg-gray-200">
+                <p className="tracking-wide text-p ">Learn more</p>
                 <ArrowRightCircleIcon
-                  className="h-10 w-10 -rotate-45"
+                  className="w-10 h-10 -rotate-45"
                   aria-hidden="true"
                 />
               </div>
@@ -170,13 +171,13 @@ export default function Home() {
             className="relative cursor-pointer hover:-translate-y-2 transition-transform duration-300 bg-[#FBD9D5] flex flex-col justify-between rounded-xl"
           >
             <div className="relative">
-              <div className="bg-white absolute bottom-4 left-4 px-8 py-2 rounded">
-                <p className="  ">Ages 16-18</p>
+              <div className="absolute px-8 py-2 bg-white rounded bottom-4 left-4">
+                <p className="">Ages 16-18</p>
               </div>
               <Image
                 width={1000}
                 height={1000}
-                className="max-w-lg w-11/12 object-contain -mt-14 self-center"
+                className="self-center object-contain w-11/12 max-w-lg -mt-14"
                 src="/programm/A-Level@2x.webp"
                 alt=""
               />
@@ -190,10 +191,10 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex bg-gray-100 rounded-full px-5 py-2 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide ">Learn more</p>
+              <div className="flex items-center justify-between px-5 py-2 transition-colors duration-300 bg-gray-100 rounded-full cursor-pointer hover:bg-gray-200">
+                <p className="tracking-wide text-p ">Learn more</p>
                 <ArrowRightCircleIcon
-                  className="h-10 w-10 -rotate-45"
+                  className="w-10 h-10 -rotate-45"
                   aria-hidden="true"
                 />
               </div>
@@ -202,17 +203,17 @@ export default function Home() {
         </div>
       </div>
     
-      <div className="pt-20 container">
-        <h2 className="  text-center ">
+      <div className="container pt-20">
+        <h2 className="text-center ">
           What awaits you at IWS Online School?
         </h2>
 
-        <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
+        <div className="grid grid-cols-6 gap-8 pt-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
           <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F1F9EC]">
-            <h3 className="   tracking-wide">
+            <h3 className="tracking-wide ">
               Visionary Educators of IWS Online School
             </h3>
-            <p className="text-p leading-6  ">
+            <p className="leading-6 text-p ">
               Explore the difference our passionate and committed teachers make
               in every student’s learning journey.
             </p>
@@ -222,16 +223,16 @@ export default function Home() {
             <Image
               width={1000}
               height={1000}
-              className="object-contain self-center md:w-3/5 max-w-sm"
+              className="self-center object-contain max-w-sm md:w-3/5"
               src="/await/2-1-1024x589.webp"
               alt=""
             />
 
-            <div className="flex flex-col gap-6 h-full justify-between px-6 py-8">
-              <h3 className="   tracking-wide">
+            <div className="flex flex-col justify-between h-full gap-6 px-6 py-8">
+              <h3 className="tracking-wide ">
                 Our teachers are <br /> always in touch
               </h3>
-              <p className="text-p leading-6  ">
+              <p className="leading-6 text-p ">
                 Our teachers and mentors are ready to help with lesson queries
                 and platform guidance.
               </p>
@@ -242,16 +243,16 @@ export default function Home() {
             <Image
               width={1000}
               height={1000}
-              className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
+              className="absolute z-30 object-contain w-56 -top-10 md:w-28 md:right-0"
               src="/await/3.webp"
               alt=""
             />
 
-            <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
+            <div className="flex flex-col justify-between h-full gap-6 pt-44 md:pt-20 lg:pt-0">
               <h3 className="   tracking-wide lg:w-[250px]">
                 Individual Programmes
               </h3>
-              <p className="text-p leading-6  ">
+              <p className="leading-6 text-p ">
                 Every child is unique. Our personalized assessments and Success
                 Coaching ensure tailored educational paths for every student.
               </p>
@@ -262,16 +263,16 @@ export default function Home() {
             <Image
               width={1000}
               height={1000}
-              className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
+              className="absolute z-30 object-contain w-56 -top-10 md:w-28 md:right-0"
               src="/await/4.webp"
               alt=""
             />
 
-            <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
+            <div className="flex flex-col justify-between h-full gap-6 pt-44 md:pt-20 lg:pt-0">
               <h3 className="   tracking-wide lg:w-[250px]">
                 Dynamic Live Lessons
               </h3>
-              <p className="text-p leading-6  ">
+              <p className="leading-6 text-p ">
                 Experience structured sessions for active participation,
                 collaboration, and growth in academics and personal development.
               </p>
@@ -282,16 +283,16 @@ export default function Home() {
             <Image
               width={1000}
               height={1000}
-              className="absolute -top-10 w-56 md:w-28 md:right-0 object-contain z-30"
+              className="absolute z-30 object-contain w-56 -top-10 md:w-28 md:right-0"
               src="/await/5.webp"
               alt=""
             />
 
-            <div className="flex flex-col h-full justify-between gap-6 pt-44 md:pt-20 lg:pt-0">
+            <div className="flex flex-col justify-between h-full gap-6 pt-44 md:pt-20 lg:pt-0">
               <h3 className="   tracking-wide lg:w-[250px]">
                 Accredited Curriculum
               </h3>
-              <p className="text-p leading-6  ">
+              <p className="leading-6 text-p ">
                 We prioritize holistic education, combining academic excellence
                 with skill development for a comprehensive learning experience.
               </p>
@@ -302,16 +303,16 @@ export default function Home() {
             <Image
               width={1000}
               height={1000}
-              className="object-contain self-center md:w-1/2"
+              className="self-center object-contain md:w-1/2"
               src="/await/6-1024x399.webp"
               alt=""
             />
 
-            <div className="flex flex-col gap-6 h-full justify-between px-6 py-8 md:w-1/2">
+            <div className="flex flex-col justify-between h-full gap-6 px-6 py-8 md:w-1/2">
               <h3 className="   tracking-wide lg:w-[250px]">
                 Taking care of parents
               </h3>
-              <p className="text-p leading-6">
+              <p className="leading-6 text-p">
                 Our support specialists are always ready to assist, and our
                 bi-weekly parent assemblies offer a platform to discuss any
                 topic and connect with like-minded families worldwide.
@@ -321,26 +322,26 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-20 container">
-        <h2 className="  text-center ">Who can benefit from our school?</h2>
-        <div className="pt-8 sm:pt-12 flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-10 xl:gap-3">
+      <div className="container pt-20">
+        <h2 className="text-center ">Who can benefit from our school?</h2>
+        <div className="flex justify-center pt-8 sm:pt-12">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 lg:gap-10 xl:gap-3">
             <div className="group max-w-[380px] relative bg-[#F4F5F8] flex justify-between flex-col cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" px-4 py-6 z-20 leading-tight ">
+              <h4 className="z-20 px-4 py-6 leading-tight ">
                 For those who are not satisfied with a regular school
               </h4>
               <div className="h-full">
                 <Image
                   width={1000}
                   height={1000}
-                  className="object-cover w-full pt-20 h-full transition-opacity absolute duration-500 ease-in-out opacity-100 group-hover:hidden bottom-0"
+                  className="absolute bottom-0 object-cover w-full h-full pt-20 transition-opacity duration-500 ease-in-out opacity-100 group-hover:hidden"
                   src="/benefit/4_1.webp"
                   alt=""
                 />
 
-                <div className="relative bottom-0 inset-0 flex h-full flex-col justify-between px-9 sm:px-9 py-3 sm:pb-8 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <div className="relative inset-0 bottom-0 flex flex-col justify-between h-full gap-3 py-3 transition-opacity duration-500 ease-in-out opacity-0 px-9 sm:px-9 sm:pb-8 sm:py-8 sm:gap-10 group-hover:opacity-100">
                   <p className=" text-[16px] ">Is this about you?</p>
-                  <ul className="list-disc  flex-1 justify-between flex flex-col ml-10">
+                  <ul className="flex flex-col justify-between flex-1 ml-10 list-disc">
                     <li className=" text-[16px] font-normal">
                       Feeling uneasy in your current school environment?
                     </li>
@@ -364,21 +365,21 @@ export default function Home() {
             </div>
 
             <div className="group max-w-[380px] relative bg-[#F4F5F8] flex justify-between flex-col cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" px-4 py-6 z-20 leading-tight ">
+              <h4 className="z-20 px-4 py-6 leading-tight ">
                 For students who often miss school.
               </h4>
               <div className="h-full">
                 <Image
                   width={1000}
                   height={1000}
-                  className="object-cover w-full pt-20 h-full transition-opacity absolute duration-500 ease-in-out opacity-100 group-hover:hidden bottom-0"
+                  className="absolute bottom-0 object-cover w-full h-full pt-20 transition-opacity duration-500 ease-in-out opacity-100 group-hover:hidden"
                   src="/benefit/4_2.webp"
                   alt=""
                 />
 
-                <div className="relative bottom-0 inset-0 flex h-full flex-col justify-between px-9 sm:px-9 py-3 sm:pb-8 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <div className="relative inset-0 bottom-0 flex flex-col justify-between h-full gap-3 py-3 transition-opacity duration-500 ease-in-out opacity-0 px-9 sm:px-9 sm:pb-8 sm:py-8 sm:gap-10 group-hover:opacity-100">
                   <p className=" text-[16px] ">Does this sound like you?</p>
-                  <ul className="list-disc  flex-1 justify-between flex flex-col ml-10">
+                  <ul className="flex flex-col justify-between flex-1 ml-10 list-disc">
                     <li className=" text-[16px] font-normal">
                       Struggling to balance school with extracurricular
                       activities?
@@ -403,21 +404,21 @@ export default function Home() {
 
             </div>
             <div className="group max-w-[380px] relative bg-[#F4F5F8] flex justify-between flex-col cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" px-4 py-6 z-20 leading-tight ">
+              <h4 className="z-20 px-4 py-6 leading-tight ">
                 For those who live abroad or the family travels a lot
               </h4>
               <div className="h-full">
                 <Image
                   width={1000}
                   height={1000}
-                  className="object-cover w-full pt-20 h-full transition-opacity absolute duration-500 ease-in-out opacity-100 group-hover:hidden bottom-0"
+                  className="absolute bottom-0 object-cover w-full h-full pt-20 transition-opacity duration-500 ease-in-out opacity-100 group-hover:hidden"
                   src="/benefit/4_3.webp"
                   alt=""
                 />
 
-                <div className="relative bottom-0 inset-0 flex h-full flex-col justify-between px-9 sm:px-9 py-3 sm:pb-8 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <div className="relative inset-0 bottom-0 flex flex-col justify-between h-full gap-3 py-3 transition-opacity duration-500 ease-in-out opacity-0 px-9 sm:px-9 sm:pb-8 sm:py-8 sm:gap-10 group-hover:opacity-100">
                   <p className=" text-[16px] ">Is this about you?</p>
-                  <ul className="list-disc  flex-1 justify-between flex flex-col ml-10">
+                  <ul className="flex flex-col justify-between flex-1 ml-10 list-disc">
                     <li className=" text-[16px] font-normal">
                       Frequent relocation due to parental work or lifestyle
                       choices.
@@ -440,21 +441,21 @@ export default function Home() {
 
             </div>
             <div className="group max-w-[380px] relative bg-[#F4F5F8] flex justify-between flex-col cursor-pointer hover:bg-[#EBF0FE] rounded-xl overflow-hidden transition duration-500">
-              <h4 className=" px-4 py-6 z-20 leading-tight ">
+              <h4 className="z-20 px-4 py-6 leading-tight ">
                 For students preparing to enter a prestigious university
               </h4>
               <div className="h-full">
                 <Image
                   width={1000}
                   height={1000}
-                  className="object-cover w-full pt-20 h-full transition-opacity absolute duration-500 ease-in-out opacity-100 group-hover:hidden bottom-0"
+                  className="absolute bottom-0 object-cover w-full h-full pt-20 transition-opacity duration-500 ease-in-out opacity-100 group-hover:hidden"
                   src="/benefit/4_4.webp"
                   alt=""
                 />
 
-                <div className="relative bottom-0 inset-0 flex h-full flex-col justify-between px-9 sm:px-9 py-3 sm:pb-8 sm:py-8 gap-3 sm:gap-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <div className="relative inset-0 bottom-0 flex flex-col justify-between h-full gap-3 py-3 transition-opacity duration-500 ease-in-out opacity-0 px-9 sm:px-9 sm:pb-8 sm:py-8 sm:gap-10 group-hover:opacity-100">
                   <p className=" text-[16px] ">Is this about you?</p>
-                  <ul className="list-disc  flex-1 justify-between flex flex-col ml-10">
+                  <ul className="flex flex-col justify-between flex-1 ml-10 list-disc">
                     <li className=" text-[16px] font-normal">
                       Aiming for top-tier university admissions.
                     </li>
@@ -481,34 +482,34 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="pt-20 container">
-        <h2 className="  text-center ">Choose your education model</h2>
-        <div className="pt-8 sm:pt-12 grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-5">
+      {/* <div className="container pt-20">
+        <h2 className="text-center ">Choose your education model</h2>
+        <div className="grid grid-cols-1 pt-8 sm:pt-12 lg:grid-cols-3 gap-14 lg:gap-5">
           <div className="relative gap-10 flex flex-col px-6 py-8 rounded-xl bg-[#F2F4F7]">
             <Image
               width={1000}
               height={1000}
-              className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
+              className="absolute z-30 object-contain w-56 -top-10 md:w-36 md:right-0"
               src="/await/3.webp"
               alt=""
             />
-            <div className="flex h-full justify-between flex-col gap-14">
+            <div className="flex flex-col justify-between h-full gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className="   tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className="tracking-wide  lg:w-1/2 lg:text-4xl">
                   Hybrid Model
                 </h3>
-                <p className="text-p leading-6  ">
+                <p className="leading-6 text-p ">
                   Blend online learning with hands-on experience.
                 </p>
-                <p className="text-p leading-6  ">
+                <p className="leading-6 text-p ">
                   From September to June, students join live online classes,
                   then attend a 4-week summer camp in the UK.
                 </p>
               </div>
-              <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide ">Learn more</p>
+              <div className="flex items-center justify-between px-6 py-1 transition-colors duration-300 bg-white rounded-full shadow-sm cursor-pointer hover:bg-gray-200">
+                <p className="tracking-wide text-p ">Learn more</p>
                 <ArrowRightCircleIcon
-                  className="h-12 w-12 -rotate-45"
+                  className="w-12 h-12 -rotate-45"
                   aria-hidden="true"
                 />
               </div>
@@ -519,29 +520,29 @@ export default function Home() {
             <Image
               width={1000}
               height={1000}
-              className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
+              className="absolute z-30 object-contain w-56 -top-10 md:w-36 md:right-0"
               src="/await/3.webp"
               alt=""
             />
-            <div className="flex h-full justify-between flex-col gap-14">
+            <div className="flex flex-col justify-between h-full gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className="   tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className="tracking-wide  lg:w-1/2 lg:text-4xl">
                   Fully Online
                 </h3>
-                <p className="text-p leading-6  ">
+                <p className="leading-6 text-p ">
                   From September to June with classes from 09:00 to 15:00 UK
                   time.
                 </p>
-                <p className="text-p leading-6  ">
+                <p className="leading-6 text-p ">
                   {
                     "It's structured, flexible, and taught by qualified teachers to keep your child engaged and progressing."
                   }
                 </p>
               </div>
-              <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide ">Learn more</p>
+              <div className="flex items-center justify-between px-6 py-1 transition-colors duration-300 bg-white rounded-full shadow-sm cursor-pointer hover:bg-gray-200">
+                <p className="tracking-wide text-p ">Learn more</p>
                 <ArrowRightCircleIcon
-                  className="h-12 w-12 -rotate-45"
+                  className="w-12 h-12 -rotate-45"
                   aria-hidden="true"
                 />
               </div>
@@ -552,28 +553,28 @@ export default function Home() {
             <Image
               width={1000}
               height={1000}
-              className="absolute -top-10 w-56 md:w-36 md:right-0 object-contain z-30"
+              className="absolute z-30 object-contain w-56 -top-10 md:w-36 md:right-0"
               src="/await/3.webp"
               alt=""
             />
-            <div className="flex h-full justify-between flex-col gap-14">
+            <div className="flex flex-col justify-between h-full gap-14">
               <div className="flex flex-col gap-8 pt-44 md:pt-20 lg:pt-0">
-                <h3 className="   tracking-wide lg:w-1/2 lg:text-4xl">
+                <h3 className="tracking-wide  lg:w-1/2 lg:text-4xl">
                   Self Paced
                 </h3>
-                <p className="text-p leading-6  ">
+                <p className="leading-6 text-p ">
                   Our Flexible Learning Model offers students the freedom to
                   learn at their own pace and schedule.
                 </p>
-                <p className="text-p leading-6  ">
+                <p className="leading-6 text-p ">
                   This is ideal for independent learners or those with time
                   constraints.
                 </p>
               </div>
-              <div className="flex bg-white shadow-sm rounded-full px-6 py-1 cursor-pointer transition-colors duration-300 hover:bg-gray-200 justify-between items-center">
-                <p className="text-p tracking-wide ">Learn more</p>
+              <div className="flex items-center justify-between px-6 py-1 transition-colors duration-300 bg-white rounded-full shadow-sm cursor-pointer hover:bg-gray-200">
+                <p className="tracking-wide text-p ">Learn more</p>
                 <ArrowRightCircleIcon
-                  className="h-12 w-12 -rotate-45"
+                  className="w-12 h-12 -rotate-45"
                   aria-hidden="true"
                 />
               </div>
@@ -582,11 +583,11 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div className="pt-20 container">
-        <h2 className="  text-center ">FAQs</h2>
-        <div className="pt-8 sm:pt-12 flex flex-col gap-8">
+      <div className="container pt-20">
+        <h2 className="text-center ">FAQs</h2>
+        <div className="flex flex-col gap-8 pt-8 sm:pt-12">
           <AccordionSecondary title="Why us?">
-            <div className=" space-y-5">
+            <div className="space-y-5 ">
               <p className="text-p">
                 Our British online school revolutionises remote
                 education. With an easy-to-use platform, flexible
@@ -629,7 +630,7 @@ export default function Home() {
           </AccordionSecondary>
 
           <AccordionSecondary title="Are you accredited?">
-            <div className=" space-y-5">
+            <div className="space-y-5 ">
               <p className="text-p">
                 Yes, we offer Cambridge Assessment International
                 Education. We are registered as UK Learner Providers
@@ -640,7 +641,7 @@ export default function Home() {
           </AccordionSecondary>
 
           <AccordionSecondary title="Where are you based?">
-            <div className=" space-y-5">
+            <div className="space-y-5 ">
               <p className="text-p">
                 We are based in the UK, our headquarters are
                 registered at 31 Long Acre Covent Garden, London
@@ -650,7 +651,7 @@ export default function Home() {
           </AccordionSecondary>
 
           <AccordionSecondary title="How does your online school work?">
-            <div className=" space-y-5">
+            <div className="space-y-5 ">
               <p className="text-p">
                 Our trained teachers employ a range of teaching aids
                 to support learning, such as high-quality video
@@ -668,7 +669,7 @@ export default function Home() {
             </div>
           </AccordionSecondary>
           <AccordionSecondary title="Does online learning isolate students from their peers?">
-            <div className=" space-y-5">
+            <div className="space-y-5 ">
               <p className="text-p">
                 Many parents worry about whether online learning
                 will allow their child to socialise properly. At
@@ -692,7 +693,7 @@ export default function Home() {
           </AccordionSecondary>
 
           <AccordionSecondary title="I reside outside the UK; is this educational approach acknowledged in my country?">
-            <div className=" space-y-5">
+            <div className="space-y-5 ">
               <p className="text-p">
                 Every country has different rules about what kinds
                 of education can take the place of traditional
@@ -708,7 +709,7 @@ export default function Home() {
           </AccordionSecondary>
 
           <AccordionSecondary title="Are lessons taught in any other languages, other than English?">
-            <div className=" space-y-5">
+            <div className="space-y-5 ">
               <p className="text-p">
                 Currently, all our subjects are taught in English,
                 in line with a British curriculum. We do, however,
@@ -726,17 +727,17 @@ export default function Home() {
       <div className="mt-20 lg:container">
         <ContactUsSection />
         {/* <div className=" bg-[#003372] lg:rounded-xl mt-8 flex flex-col md:flex-row">
-          <div className="py-12 px-8 lg:px-16 flex flex-col gap-10">
+          <div className="flex flex-col gap-10 px-8 py-12 lg:px-16">
             <h2 className="text-[62px] text-white/90 tracking-tighter  leading-[60px]">
               Looking to learn more?
             </h2>
 
-            <p className="text-white text-p leading-9">
+            <p className="leading-9 text-white text-p">
               To find out more about our fresh approach to global learning, talk
               to us today
             </p>
 
-            <div className="flex items-center flex-wrap gap-5">
+            <div className="flex flex-wrap items-center gap-5">
               <EnrollButton />
 
               <ContactButton textColor="text-white" />
@@ -745,7 +746,7 @@ export default function Home() {
           <Image
             width={1000}
             height={1000}
-            className="object-contain md:w-1/2 self-end"
+            className="self-end object-contain md:w-1/2"
             src="/Brochure.webp"
             alt=""
           />
@@ -753,7 +754,7 @@ export default function Home() {
       </div>
 
 
-      <div className="mt-20 container">
+      <div className="container mt-20">
         <h3 className="text-[#003372]   ">Partnered by</h3>
         <div className="h-[2px] my-10 w-full bg-blue-900"></div>
         <Carousel />
