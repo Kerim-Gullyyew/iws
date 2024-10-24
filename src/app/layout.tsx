@@ -162,7 +162,7 @@ const schoolSchema = {
     postalCode: "ME14 5PP",
     addressCountry: "United Kingdom",
   },
-  telephone: "+44-7424-781613",
+  telephone: "+44-5657-765765",
   email: "admissions@iwschool.co.uk",
   foundingDate: "2021",
   sameAs: [
