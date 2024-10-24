@@ -323,6 +323,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${sora.variable}`}>
       <GoogleTagManager gtmId="GTM-KQK64CKD" />
+      <GoogleTagManager gtmId="AW-16733897427" />
       <GoogleAnalytics gaId="G-LCTE8BLQDX" />
       <head>
         <Script
