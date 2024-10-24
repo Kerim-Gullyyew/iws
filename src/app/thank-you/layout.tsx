@@ -13,6 +13,17 @@ export default function RootLayout({
 }>) {
   return (
     <section>
+      <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              gtag('event', 'conversion', {
+                'send_to': 'AW-16733897427/deABCLjuheEZENOFrKs-',
+                'value': 1.0,
+                'currency': 'USD'
+              });
+            `,
+          }}
+        />
       {children}
     </section>
   );
