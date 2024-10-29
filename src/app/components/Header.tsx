@@ -7,6 +7,7 @@ import Image from "next/image";
 import EnrollButton from "./buttons/EnrollButton";
 import InfiniteCarousel from "../components/InfiniteCarousel";
 import { usePathname } from "next/navigation";
+import Tooltip from "../components/Tooltip";
 interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = ({}) => {
@@ -21,7 +22,9 @@ const Header: React.FC<HeaderProps> = ({}) => {
           <div className="w-[70%]">
             <InfiniteCarousel />
           </div>
-          <Link href="/scholarship" className="underline">Learn more</Link>
+          <Link href="/scholarship" className="underline">
+            Learn more
+          </Link>
         </div>
       </div>
       <nav
@@ -43,7 +46,9 @@ const Header: React.FC<HeaderProps> = ({}) => {
         </div>
         <div className="flex lg:hidden sm:items-center sm:gap-4">
           <div className="hidden sm:flex">
-            <EnrollButton />
+            <Tooltip text="Enroll Now">
+              <EnrollButton />
+            </Tooltip>
           </div>
           <button
             type="button"
@@ -79,7 +84,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
                 className=" leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] "
                 href={"/cambridge-a-level/"}
               >
-                A Level
+                A Levels
               </Link>
               <Link
                 className=" leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] "
@@ -97,7 +102,9 @@ const Header: React.FC<HeaderProps> = ({}) => {
           }
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <EnrollButton />
+          <Tooltip text="Enroll Now">
+            <EnrollButton />
+          </Tooltip>
         </div>
       </nav>
       <Dialog
@@ -162,7 +169,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
                   href={"/cambridge-a-level/"}
                   className="block px-3 py-2 -mx-3 text-base leading-7 rounded-lg hover:bg-gray-50"
                 >
-                  A Level
+                  A Levels
                 </Link>
               </div>
               <div className="py-6">

@@ -1,4 +1,3 @@
-
 import React from "react";
 import Image from "next/image";
 import ContactButton from "../components/buttons/ContactButton";
@@ -6,12 +5,13 @@ import EnrollButton from "../components/buttons/EnrollButton";
 import { keyStages } from "../data/keystage";
 import Link from "next/link";
 import ContactUsSection from "../components/sections/ContactUsSection";
+import Tooltip from "../components/Tooltip";
 
 import AccordionSecondary from "../components/ui/AccordionSecondary";
 
-interface pageProps { }
+interface pageProps {}
 
-const Page: React.FC<pageProps> = ({ }) => {
+const Page: React.FC<pageProps> = ({}) => {
   const course = keyStages.find((course) => course.name === "I/GCSE");
   if (course) {
     return (
@@ -19,20 +19,26 @@ const Page: React.FC<pageProps> = ({ }) => {
         <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
           <div className="flex flex-col gap-5">
             <h4 className="  text-blue-600">Ages from 14 - 16</h4>
-            <h1 className="  text-blue-900">Cambridge I/GCSE</h1>
+            <h1 className="  text-blue-900">
+              Online IGCSE Courses – Get Cambridge Certified from Anywhere
+            </h1>
             <p className="  ">
-              The two-year IWS Online School I/GCSE programme sets your child on
-              the path to obtaining globally recognised and accredited Cambridge
-              certifications. The I/GCSE is an esteemed qualification widely
-              accepted by renowned universities and employers worldwide, serving
-              as a powerful catalyst for both academic and professional
-              advancement, ensuring future success on a global scale. Enrol in
-              our I/GCSE online courses today!
+              Online IGCSE courses at IWS Online School offer a two-year programme
+              that sets your child on the path to obtaining globally recognised
+              and accredited Cambridge certifications. The Online IGCSE is a
+              respected qualification, widely accepted by top universities and
+              employers worldwide, serving as a catalyst for academic and
+              professional advancement. Enroll in our IGCSE online courses
+              today!
             </p>
 
             <div className="flex flex-wrap gap-5">
-              <EnrollButton />
-              <ContactButton />
+              <Tooltip text="Enroll in Online IGCSE">
+                <EnrollButton />
+              </Tooltip>
+              <Tooltip text="Contact us to learn more about Online IGCSE">
+                <ContactButton />
+              </Tooltip>
             </div>
           </div>
           <Image
@@ -47,9 +53,11 @@ const Page: React.FC<pageProps> = ({ }) => {
 
         <div className="pt-20 container">
           <div className="flex flex-col gap-6">
-            <h2 className=" text-center ">Explore Our I/GCSE Subjects</h2>
+            <h2 className=" text-center ">Explore Our Online IGCSE Subjects</h2>
             <p className="  text-center ">
-              Find your perfect combination of I/GCSE online subjects.
+              Our online IGCSE courses cover a broad range of subjects to suit
+              every interest and career aspiration. Discover the available
+              subjects below.
             </p>
           </div>
 
@@ -117,10 +125,12 @@ const Page: React.FC<pageProps> = ({ }) => {
                     <p className="text-white text-[26px] font-bold">1</p>
                   </div>
                   <div className="space-y-5 mt-2">
-                    <p className="text-white text-[26px] font-semibold">Select core subjects</p>
+                    <p className="text-white text-[26px] font-semibold">
+                      Select core subjects
+                    </p>
                     <p className="text-white ">
                       Select your desired 5 core subjects. These subjects are
-                      included in I/GCSE Cambridge school fees.
+                      included in IGCSE Cambridge school fees.
                     </p>
                   </div>
                 </div>
@@ -129,9 +139,12 @@ const Page: React.FC<pageProps> = ({ }) => {
                     <p className="text-white text-[26px] font-bold">2</p>
                   </div>
                   <div className="space-y-5 mt-2">
-                    <p className="text-white text-[26px] font-semibold">Customise your study</p>
+                    <p className="text-white text-[26px] font-semibold">
+                      Customise your study
+                    </p>
                     <p className="text-white ">
-                      You can customise your study by adding your desired subjects for an extra cost.
+                      You can customise your study by adding your desired
+                      subjects for an extra cost.
                     </p>
                   </div>
                 </div>
@@ -141,8 +154,9 @@ const Page: React.FC<pageProps> = ({ }) => {
                   <p className="text-white text-[50px] font-semibold">£7200</p>
                   <p className="text-white text-[33px]">/year</p>
                 </div>
-                <EnrollButton light={true} />
-
+                <Tooltip text="Enroll in Online IGCSE">
+                  <EnrollButton light={true} />
+                </Tooltip>
               </div>
             </div>
           </div>
@@ -150,7 +164,7 @@ const Page: React.FC<pageProps> = ({ }) => {
 
         <div className="pt-20 container">
           <h2 className="  text-center ">
-            What awaits you at IWS Online School?
+            Why Choose IWS Online School for Online IGCSE
           </h2>
 
           <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
@@ -257,8 +271,8 @@ const Page: React.FC<pageProps> = ({ }) => {
               />
 
               <div className="flex flex-col gap-6 h-full justify-between px-6 py-8 md:w-1/2">
-                <h3 className="   tracking-wide lg:w-[250px]">
-                  Taking care of parents
+                <h3 className="   tracking-wide">
+                  Personalized Online Support for IGCSE Students and Parents
                 </h3>
                 <p className="text-p leading-6">
                   Our support specialists are always ready to assist, and our
@@ -274,7 +288,7 @@ const Page: React.FC<pageProps> = ({ }) => {
           <div className="container flex flex-col gap-5">
             <h2 className="text-center ">Fulfilling Potential</h2>
             <h3 className="text-center">
-              {"Shaping Future Success: IWS Online School's I/GCSE Courses"}
+              {"Shaping Future Success: IWS Online School's IGCSE Courses"}
             </h3>
           </div>
 
@@ -294,7 +308,7 @@ const Page: React.FC<pageProps> = ({ }) => {
                   Personalised Instruction in Private, Virtual Classrooms
                 </h3>
                 <p className="   text-gray-800">
-                  Our unique I/GCSE programme offers private, virtual classrooms
+                  Our unique IGCSE programme offers private, virtual classrooms
                   for live interactive lessons via our student portal. Highly
                   skilled and experienced teachers work closely with students,
                   helping to identify strengths and weaknesses and offering a
@@ -320,10 +334,10 @@ const Page: React.FC<pageProps> = ({ }) => {
               </div>
               <div className="container flex flex-col gap-5 py-10 justify-center items-center">
                 <h3 className=" text-green-800">
-                  Comprehensive I/GCSE Courses for Academic Excellence
+                  Comprehensive IGCSE Courses for Academic Excellence
                 </h3>
                 <p className="   text-gray-800">
-                  Our unique I/GCSE programme offers private, virtual classrooms
+                  Our unique IGCSE programme offers private, virtual classrooms
                   for live interactive lessons via our student portal. Highly
                   skilled and experienced teachers work closely with students,
                   helping to identify strengths and weaknesses and offering a
@@ -335,139 +349,166 @@ const Page: React.FC<pageProps> = ({ }) => {
           </div>
         </div>
 
+        <div className="pt-20">
+          <div className="container grid grid-cols-1 sm:grid-cols-2 gap-9">
+            <div>
+              <Image
+                width={1000}
+                height={1000}
+                className="h-full max-h-96 lg:max-h-full lg:h-full w-full object-cover lg:max-w-[900px]"
+                src="/student.webp"
+                alt="igcse"
+              />
+            </div>
+            <div>
+              <h2 className="pt-3">Why Online IGCSE?</h2>
+              <ul className=" list-disc list-inside pt-9">
+                <li>
+                  Self-Paced Learning: Students can review lessons at their own
+                  pace and revisit recorded sessions anytime.
+                </li>
+                <li>
+                  Global Access: Join our online IGCSE courses from any location
+                  worldwide, ideal for expatriates, travelers, or international
+                  students.
+                </li>
+                <li>
+                  Reduced Commute: Focus time and energy on studies instead of
+                  traveling to physical classes.
+                </li>
+                <li>
+                  Tailored Support for Online Students: IWS’s dedicated team
+                  ensures that students have the guidance needed to succeed in
+                  an online setting.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div className="pt-20 container">
           <h2 className="  text-center ">FAQs</h2>
           <div className="pt-8 sm:pt-12 flex flex-col gap-8">
-
             <AccordionSecondary title="24/7 Access to Quality Education">
               <div className=" space-y-5">
                 <p className=" ">
-                  At IWS Online School, primary students enjoy 24/7
-                  access to expertly tailored, top-notch education
-                  from our skilled online instructors.
+                  At IWS Online School, primary students enjoy 24/7 access to
+                  expertly tailored, top-notch education from our skilled online
+                  instructors.
                 </p>
               </div>
             </AccordionSecondary>
             <AccordionSecondary title="Engage with Interactive Learning">
               <div className=" space-y-5">
                 <p className=" ">
-                  Discover active, hands-on learning through
-                  thought-provoking assignments, projects, and
-                  diverse assessments at IWS Online School.
+                  Discover active, hands-on learning through thought-provoking
+                  assignments, projects, and diverse assessments at IWS Online
+                  School.
                 </p>
               </div>
             </AccordionSecondary>
             <AccordionSecondary title="Enriching Beyond Classrooms">
               <div className=" space-y-5">
                 <p className=" ">
-                  Elevate confidence through virtual simulations and
-                  diverse extracurriculars at IWS Online School,
-                  guided by our exceptional, supportive teachers.
+                  Elevate confidence through virtual simulations and diverse
+                  extracurriculars at IWS Online School, guided by our
+                  exceptional, supportive teachers.
                 </p>
               </div>
             </AccordionSecondary>
             <AccordionSecondary title="Interactive Online Learning Platform">
               <div className=" space-y-5">
                 <p className=" ">
-                  Discover tailored online learning for middle
-                  students: live lessons, accessible course
-                  materials, and organised schedules.
+                  Discover tailored online learning for middle students: live
+                  lessons, accessible course materials, and organised schedules.
                 </p>
               </div>
             </AccordionSecondary>
             <AccordionSecondary title="Engaging Lessons, Active Participation">
               <div className=" space-y-5">
                 <p className=" ">
-                  Interactive classes with engaging activities,
-                  diverse assessments, and virtual simulations for
-                  enhanced learning.
+                  Interactive classes with engaging activities, diverse
+                  assessments, and virtual simulations for enhanced learning.
                 </p>
               </div>
             </AccordionSecondary>
             <AccordionSecondary title="Accessible, Affordable Middle Education">
               <div className=" space-y-5">
                 <p className=" ">
-                  We are committed to providing high-quality,
-                  accessible British middle education with flexible
-                  payment options to suit every budget.
+                  We are committed to providing high-quality, accessible British
+                  middle education with flexible payment options to suit every
+                  budget.
                 </p>
               </div>
             </AccordionSecondary>
             <AccordionSecondary title="Personalised Instruction in Private, Virtual Classrooms">
               <div className=" space-y-5">
                 <p className=" ">
-                  Our unique I/GCSE programme offers private,
-                  virtual classrooms for live interactive lessons
-                  via our student portal. Highly skilled and
-                  experienced teachers work closely with students,
-                  helping to identify strengths and weaknesses and
-                  offering a customised curriculum that maximises
-                  learning capabilities. Together, we can unlock
-                  your potential!
+                  Our unique IGCSE programme offers private, virtual classrooms
+                  for live interactive lessons via our student portal. Highly
+                  skilled and experienced teachers work closely with students,
+                  helping to identify strengths and weaknesses and offering a
+                  customised curriculum that maximises learning capabilities.
+                  Together, we can unlock your potential!
                 </p>
               </div>
             </AccordionSecondary>
-            <AccordionSecondary title="Comprehensive I/GCSE Courses for Academic Excellence">
+            <AccordionSecondary title="Comprehensive IGCSE Courses for Academic Excellence">
               <div className=" space-y-5">
                 <p className=" ">
-                  The I/GCSE programme at IWS Online School offers
-                  accessible online learning and a holistic approach
-                  to education. Our curriculum encompasses core
-                  subjects such as English, Mathematics, and Science
-                  and a wide selection of optional subjects to
-                  expand horizons and enrich knowledge. At IWS, we
-                  offer a well-rounded educational approach tailored
-                  to individual strengths and interests.
+                  The IGCSE programme at IWS Online School offers accessible
+                  online learning and a holistic approach to education. Our
+                  curriculum encompasses core subjects such as English,
+                  Mathematics, and Science and a wide selection of optional
+                  subjects to expand horizons and enrich knowledge. At IWS, we
+                  offer a well-rounded educational approach tailored to
+                  individual strengths and interests.
                 </p>
               </div>
             </AccordionSecondary>
             <AccordionSecondary title="Course Materials">
               <div className=" space-y-5">
                 <p className=" ">
-                  Students will receive digital learning resources
-                  to complement their live lessons. These materials
-                  encompass various tools to reinforce concepts and
-                  enhance communication skills, including:
+                  Students will receive digital learning resources to complement
+                  their live lessons. These materials encompass various tools to
+                  reinforce concepts and enhance communication skills,
+                  including:
                 </p>
                 <ul className=" list-disc list-inside">
                   <li>An interactive student guide</li>
                   <li>
-                    A comprehensive framework covering the A and AS
-                    Levels curriculum
+                    A comprehensive framework covering the A and AS Levels
+                    curriculum
                   </li>
                   <li>
-                    Around-the-clock access to recorded English
-                    Language lessons
+                    Around-the-clock access to recorded English Language lessons
                   </li>
                   <li>
-                    Supplementary learning materials, including
-                    Cambridge International AS and A Level past
-                    papers and sample answers for exam preparation.
+                    Supplementary learning materials, including Cambridge
+                    International AS and A Level past papers and sample answers
+                    for exam preparation.
                   </li>
                 </ul>
                 <p className=" ">
-                  Additionally, our Success Coaching programme
-                  ensures that each student is assigned a dedicated
-                  Success Coach to monitor their progress and
-                  provide the support they need.
+                  Additionally, our Success Coaching programme ensures that each
+                  student is assigned a dedicated Success Coach to monitor their
+                  progress and provide the support they need.
                 </p>
               </div>
             </AccordionSecondary>
             <AccordionSecondary title="Exam Information">
               <div className=" space-y-5">
                 <p className=" ">
-                  IWS Online School will promptly inform parents and
-                  guardians about the commencement of the Cambridge
-                  Board Exam application process. Students can
-                  anticipate an email on a specified date, and must
-                  choose a local exam centre for their exams and
-                  indicate a preferred schedule for relevant course
-                  subjects. Our team will guide you to the nearest
-                  centre. Once a suitable centre is selected, exam
-                  fees must be paid directly to secure a seat. A and
-                  AS Level students with specific needs may request
-                  access arrangements for physical, medical, or
-                  learning support during exams.
+                  IWS Online School will promptly inform parents and guardians
+                  about the commencement of the Cambridge Board Exam application
+                  process. Students can anticipate an email on a specified date,
+                  and must choose a local exam centre for their exams and
+                  indicate a preferred schedule for relevant course subjects.
+                  Our team will guide you to the nearest centre. Once a suitable
+                  centre is selected, exam fees must be paid directly to secure
+                  a seat. A and AS Level students with specific needs may
+                  request access arrangements for physical, medical, or learning
+                  support during exams.
                 </p>
               </div>
             </AccordionSecondary>
@@ -476,32 +517,26 @@ const Page: React.FC<pageProps> = ({ }) => {
                 <ul className="list-disc list-inside">
                   <li>Extended exam time (25-50%)</li>
                   <li>
-                    A scribe to transcribe answers based on student
-                    responses
+                    A scribe to transcribe answers based on student responses
                   </li>
                   <li>A reader</li>
-                  <li>
-                    Enlarged print exam papers for improved
-                    visibility
-                  </li>
+                  <li>Enlarged print exam papers for improved visibility</li>
                   <li>A separate examination area</li>
                   <li>Supervised breaks to prevent fatigue</li>
                   <li>Laptop use</li>
                 </ul>
                 <p className="font-bold">Please Note</p>
                 <p>
-                  Applications for access assistance should be
-                  submitted by February of the year the student
-                  takes the Cambridge Board Exam. Processing and
-                  approval of requests may take up to 18 months,
-                  with an additional assessment to validate the need
-                  for support.
+                  Applications for access assistance should be submitted by
+                  February of the year the student takes the Cambridge Board
+                  Exam. Processing and approval of requests may take up to 18
+                  months, with an additional assessment to validate the need for
+                  support.
                 </p>
                 <p>
-                  The evaluation will be conducted by an official
-                  board of examiners and relevant specialists such
-                  as educational psychologists, occupational
-                  therapists, etc.
+                  The evaluation will be conducted by an official board of
+                  examiners and relevant specialists such as educational
+                  psychologists, occupational therapists, etc.
                 </p>
               </div>
             </AccordionSecondary>
@@ -512,13 +547,16 @@ const Page: React.FC<pageProps> = ({ }) => {
         </div>
 
         <div className="pt-20 container flex flex-col gap-4">
-          <h2 className="text-center ">Cambridge I/GCSE Tuition Fees</h2>
+          <h2 className="text-center ">Cambridge IGCSE Tuition Fees</h2>
           <p className="text-center  ">
             Our initial meeting is free with no obligations. If you decide to
             enroll, our flexible fee structure includes a £200 one-time fee
             covering comprehensive tests to tailor your child’s education. For
             pricing details, visit our
-            <Link href={"/school-fees"} className="text-blue-500"> tuition fees page.</Link>
+            <Link href={"/school-fees"} className="text-blue-500">
+              {" "}
+              tuition fees page.
+            </Link>
           </p>
           <div className="mt-6">
             <h3 className="border-b   text-blue-900 border-blue-900 pb-3">

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IWS Online A Level Courses | Cambridge Online A Levels Distance Learning",
-  description: "Cambridge Accredited Online A Level Courses for flexible distance learning. Study your chosen Online A Level subjects at your own pace with unlimited support.",
-  abstract: "Cambridge Accredited Online A Level Courses for flexible distance learning. Study your chosen Online A Level subjects at your own pace with unlimited support.",
+  title: "Online A Levels | IWS Cambridge A Levels Distance Learning",
+  description: "Online A Levels with Cambridge accreditation for flexible distance learning. Study at your own pace with full support in your chosen subjects.",
+  abstract: "Online A Levels with Cambridge accreditation for flexible distance learning. Study at your own pace with full support in your chosen subjects.",
 };
 
 export default function RootLayout({
