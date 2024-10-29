@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IWS Online School - Secondary Education",
-  description: "Ages from 11 - 14 Cambridge Secondary At IWS Online School, Secondary level Education commences at age 11, culminating with students undertaking the prestigious Cambridge I/GCSE exams. This educational journey encompasses two distinct phases: Secondary (spanning the initial three years) and I/GCSE (comprising two years). Upon successful completion, students will be well-prepared to embark on",
-  abstract: "Ages from 11 - 14 Cambridge Secondary At IWS Online School, Secondary level Education commences at age 11, culminating with students undertaking the prestigious Cambridge I/GCSE exams. This educational journey encompasses two distinct phases: Secondary (spanning the initial three years) and I/GCSE (comprising two years). Upon successful completion, students will be well-prepared to embark on",
+  title: "Online Secondary School – Cambridge Programme for Ages 11-14",
+  description: "Enroll at IWS Online Secondary School for ages 11-14. Our Cambridge program builds a strong academic foundation, leading to I/GCSE exams and future success.",
+  abstract: "Enroll at IWS Online Secondary School for ages 11-14. Our Cambridge program builds a strong academic foundation, leading to I/GCSE exams and future success.",
 };
 
 export default function RootLayout({
