@@ -10,7 +10,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = ({ }) => {
   return (
     <div className='flex flex-col gap-10'>
       <div className=' flex flex-col gap-5'>
-        <h2 className='text-center   tracking-tight'>{"Get in touch with us"}</h2>
+        <h2 className='text-center   tracking-tight'>{"Gett in touch with us"}</h2>
         <p className='text-center '>{"Whether you have questions about our courses, need assistance with enrollment, or just want to say hello, we're here to help!"}</p>
       </div>
 
