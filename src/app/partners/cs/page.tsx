@@ -46,7 +46,7 @@ const page: React.FC<pageProps> = ({  }) => {
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
               {
-                "Exclusive Opportunity for Students in Bangladesh! We've partnered with Canary Square to bring a 25% scholarship to students in Bangladesh, making it easier to access world-class education through IWS Online School."
+                "Exclusive Opportunity for Students in Bangladesh! We've partnered with CS Meta Limited, supported by global CS Valley to bring a 25% scholarship to students in Bangladesh, making it easier to access world-class education through IWS Online School."
               }
             </p>
 
@@ -268,11 +268,10 @@ const page: React.FC<pageProps> = ({  }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Contact the CS Team in Bangladesh
+                  Contact the CS Team in Bangladesh
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Reach out to our local team for help with enrolment and
-                    scholarship details.
+                  Get started by connecting with our team in Bangladesh for a smooth enrollment process.
                   </p>
                 </div>
               </div>
@@ -295,11 +294,10 @@ const page: React.FC<pageProps> = ({  }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Start the Enrolment Process
+                  Start the Enrolment Process
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Reach out to our local team for help with enrolment and
-                    scholarship details.
+                  Begin your journey with our step-by-step guidance on enrollment and scholarship applications.
                   </p>
                 </div>
               </div>
@@ -322,11 +320,10 @@ const page: React.FC<pageProps> = ({  }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Get a 25% Scholarship
+                  Get a 25% Scholarship
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Reach out to our local team for help with enrolment and
-                    scholarship details.
+                  Access a 25% scholarship, making quality British education more affordable for you.
                   </p>
                 </div>
               </div>
@@ -352,8 +349,7 @@ const page: React.FC<pageProps> = ({  }) => {
                     Learn from Anywhere
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Reach out to our local team for help with enrolment and
-                    scholarship details.
+                  Study from anywhere, with an adaptable online learning environment.
                   </p>
                 </div>
               </div>
@@ -409,8 +405,8 @@ const page: React.FC<pageProps> = ({  }) => {
             </div>
           </div>
           <div>
-            <div className="border-[3px] border-gray-100 rounded-lg px-5 flex justify-between py-9">
-              <div className="flex gap-9">
+            <div className="border-[3px] border-gray-100 rounded-lg px-5 flex flex-col sm:flex-row justify-between py-9">
+              <div className="flex gap-6">
                 <div>
                   <Image
                     width={500}
@@ -426,7 +422,7 @@ const page: React.FC<pageProps> = ({  }) => {
                   <Link className="text-lg" href="mailto:farhaan@iwschool.co.uk">farhaan@iwschool.co.uk</Link>
                 </div>
               </div>
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex sm:flex-col items-center gap-3">
                 <Link
                   href="tel:+8801727927497"
                   className="bg-blue-600 text-lg text-white py-3 px-14 w-full rounded-md text-center"

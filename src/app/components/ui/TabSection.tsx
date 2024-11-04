@@ -6,6 +6,8 @@ import DropdownCustomData from "../form/DropdownCustomData";
 import * as Yup from "yup";
 import axios from "axios";
 import { usePathname, useRouter } from "next/navigation";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 interface TabSectionProps {}
 
@@ -36,7 +38,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
   const [keystage, setKeystage] = useState<string | number>("");
   const [studentFirstName, setStudentFirstName] = useState("");
   const [studentLastName, setStudentLastName] = useState("");
-  const [studentDOB, setStudentDOB] = useState("");
+  const [studentDOB, setStudentDOB] = useState<Date | null>(null);
   const [message, setMessage] = useState("");
   const [validationErrors, setValidationErrors] = useState<ValidationErrors>({});
   const [loading, setLoading] = useState(false);
@@ -67,7 +69,9 @@ const TabSection: React.FC<TabSectionProps> = () => {
     parentPhoneNumber: Yup.string().required("Phone number is required"),
     studentFirstName: Yup.string().required("Student's first name is required"),
     studentLastName: Yup.string().required("Student's last name is required"),
-    studentDOB: Yup.string().required("Student's date of birth is required"),
+    studentDOB: Yup.date()
+      .nullable()
+      .required("Student's date of birth is required"),
     keystage: Yup.string().required("Keystage is required"),
     country: Yup.string().required("Country is required"),
     message: Yup.string().required("Your message is required"),
@@ -103,7 +107,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
           parentPhoneNumber,
           studentFirstName,
           studentLastName,
-          studentDOB,
+          studentDOB: studentDOB?.toISOString().split("T")[0], // Format date for submission
           keystage,
           country,
           message,
@@ -116,7 +120,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
       }
     } catch (err) {
       if (err instanceof Yup.ValidationError) {
-        const errors = err.inner.reduce((acc, error) => {
+        const errors = err.inner.reduce((acc: ValidationErrors, error) => {
           if (typeof error.path === "string") {
             return {
               ...acc,
@@ -151,7 +155,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
             placeholder="Parent First Name *"
             className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
-          {validationErrors.  parentFirstName && (
+          {validationErrors.parentFirstName && (
             <p className="text-red-600 text-sm italic">
               {validationErrors.parentFirstName}
             </p>
@@ -254,14 +258,15 @@ const TabSection: React.FC<TabSectionProps> = () => {
         </div>
 
         <div className="sm:col-span-3">
-          <input
-            value={studentDOB}
-            onChange={(e) => setStudentDOB(e.target.value)}
-            type="date"
-            name="student-dob"
-            id="student-dob"
-            placeholder="Date of Birth"
-            className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
+          <DatePicker
+            selected={studentDOB}
+            onChange={(date: Date | null) => setStudentDOB(date)}
+            placeholderText="Date of Birth *"
+            dateFormat="dd/MM/yyyy"
+            maxDate={new Date()}
+            showYearDropdown
+            scrollableYearDropdown
+            className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
           {validationErrors.studentDOB && (
             <p className="text-red-600 text-sm italic">
