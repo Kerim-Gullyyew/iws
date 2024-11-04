@@ -382,25 +382,22 @@ const page: React.FC<pageProps> = ({  }) => {
             <div className="mt-7">
               <p>
                 Follow us on:{" "}
-                <Link href="/" className="underline">
+                <Link href="https://www.facebook.com/iwsonlinebangladesh/" className="underline">
                   Facebook
                 </Link>
                 ,{" "}
-                <Link href="/" className="underline">
+                <Link href="https://www.linkedin.com/company/iws-bangladesh/" className="underline">
                   LinkedIn
                 </Link>
                 ,{" "}
-                <Link href="/" className="underline">
+                <Link href="https://www.instagram.com/iwsbangladesh/" className="underline">
                   Instagram
                 </Link>
                 ,{" "}
-                <Link href="/" className="underline">
+                <Link href="https://x.com/iwsbangladesh" className="underline">
                   Twitter
                 </Link>
                 ,{" "}
-                <Link href="/" className="underline">
-                  Youtube
-                </Link>
               </p>
             </div>
           </div>

@@ -7,7 +7,7 @@ export default function Home() {
   const allPostsData = getSortedPostsMetaData();
 
   return (
-    <div>
+    <div className='pt-20'>
       <h1>My Blog</h1>
       <ul>
         {allPostsData.map(({ id, date, title }) => (
