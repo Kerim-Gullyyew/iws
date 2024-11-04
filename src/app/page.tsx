@@ -13,7 +13,7 @@ import { keyStages } from "./data/keystage";
 
 const imagePath = '/IWS_horizontal.png';
 const logo = '/logo.png'
-const icon="icon.ico"
+const icon="/icon.ico"
 
 export default function Home() {
   return (
