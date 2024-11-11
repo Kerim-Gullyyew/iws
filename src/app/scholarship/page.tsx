@@ -416,6 +416,16 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 </p>
               </div>
             </AccordionSecondary>
+
+            <AccordionSecondary title="What payment methods are available for the scholarship exam fee?">
+              <div className=" space-y-5">
+                <p className="text-p">
+                  {
+                    "For the scholarship exam fee, we accept payments via credit or debit card and PayPal. To pay by card, select the “Stripe” option at checkout. If you prefer to use PayPal, simply choose the “PayPal” option to complete your payment securely."
+                  }
+                </p>
+              </div>
+            </AccordionSecondary>
           </div>
         </div>
       </div>
