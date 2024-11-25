@@ -157,7 +157,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
               width={1000}
               height={1000}
               className="w-52 object-contain"
-              src="/IWS_Logo.webp"
+              src="/logo.webp"
               alt="logo"
             />
 

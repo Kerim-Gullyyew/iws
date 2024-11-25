@@ -72,7 +72,7 @@ const HeaderPartner: React.FC<HeaderPartnerProps> = ({ partner }) => {
               <span className="sr-only">IWS Online School</span>
               <Image width={1000} height={1000}
                 className="h-8 w-auto"
-                src="/IWS_Logo.webp" alt="IWS Online School Icon"
+                src="/logo.webp" alt="IWS Online School Icon"
               />
             </Link>
             <button

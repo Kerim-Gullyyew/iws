@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
               width={1000}
               height={1000}
               className="h-[3rem] w-auto"
-              src="/IWS_Logo.webp"
+              src="/logo.webp"
               alt="IWS Online School Icon"
             />
           </Link>
@@ -126,7 +126,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
                 width={1000}
                 height={1000}
                 className="w-auto h-8"
-                src="/IWS_Logo.webp"
+                src="/logo.webp"
                 alt="IWS Online School Icon"
               />
             </Link>
