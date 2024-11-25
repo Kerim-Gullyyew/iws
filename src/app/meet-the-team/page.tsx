@@ -52,8 +52,8 @@ const Page: React.FC<pageProps> = ({}) => {
             <Image
               width={1000}
               height={1000}
-              className=" object-cover md:w-1/2"
-              src="/IWS_fees_1.webp"
+              className=" object-cover md:w-[80%]"
+              src="/meet-team/matt.png"
               alt=""
             />
           </div>
@@ -62,13 +62,13 @@ const Page: React.FC<pageProps> = ({}) => {
       <div className="p-[1px] container bg-gray-200"></div>
       <div className="pt-20 container">
         <h2 className="text-center">Leadership Team</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 pt-9">
           <div>
             <Image
               width={1000}
               height={1000}
               className=" object-cover md:w-1/2"
-              src="/IWS_fees_1.webp"
+              src="/meet-team/matt.png"
               alt=""
             />
             <div>Title</div>
@@ -79,7 +79,7 @@ const Page: React.FC<pageProps> = ({}) => {
               width={1000}
               height={1000}
               className=" object-cover md:w-1/2"
-              src="/IWS_fees_1.webp"
+              src="/meet-team/matt.png"
               alt=""
             />
             <div>Title</div>
@@ -90,7 +90,7 @@ const Page: React.FC<pageProps> = ({}) => {
               width={1000}
               height={1000}
               className=" object-cover md:w-1/2"
-              src="/IWS_fees_1.webp"
+              src="/meet-team/matt.png"
               alt=""
             />
             <div>Title</div>
@@ -107,7 +107,7 @@ const Page: React.FC<pageProps> = ({}) => {
               width={1000}
               height={1000}
               className=" object-cover md:w-1/2"
-              src="/IWS_fees_1.webp"
+              src="/meet-team/matt.png"
               alt=""
             />
             <div>Alex Farmer</div>
@@ -118,7 +118,7 @@ const Page: React.FC<pageProps> = ({}) => {
               width={1000}
               height={1000}
               className=" object-cover md:w-1/2"
-              src="/IWS_fees_1.webp"
+              src="/meet-team/matt.png"
               alt=""
             />
             <div>Danielle Roodt</div>
@@ -129,7 +129,7 @@ const Page: React.FC<pageProps> = ({}) => {
               width={1000}
               height={1000}
               className=" object-cover md:w-1/2"
-              src="/IWS_fees_1.webp"
+              src="/meet-team/matt.png"
               alt=""
             />
             <div>Darion</div>
@@ -140,7 +140,7 @@ const Page: React.FC<pageProps> = ({}) => {
               width={1000}
               height={1000}
               className=" object-cover md:w-1/2"
-              src="/IWS_fees_1.webp"
+              src="/meet-team/matt.png"
               alt=""
             />
             <div>Deborah</div>
@@ -151,7 +151,7 @@ const Page: React.FC<pageProps> = ({}) => {
               width={1000}
               height={1000}
               className=" object-cover md:w-1/2"
-              src="/IWS_fees_1.webp"
+              src="/meet-team/matt.png"
               alt=""
             />
             <div>James Broad</div>
@@ -162,7 +162,7 @@ const Page: React.FC<pageProps> = ({}) => {
               width={1000}
               height={1000}
               className=" object-cover md:w-1/2"
-              src="/IWS_fees_1.webp"
+              src="/meet-team/matt.png"
               alt=""
             />
           </div>

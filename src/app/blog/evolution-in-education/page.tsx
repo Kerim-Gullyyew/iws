@@ -12,9 +12,9 @@ const Page: React.FC<pageProps> = ({}) => {
           <div className="container mt-12">
             <p>Back to Latest News</p>
           </div>
-          <div className="container">
+          <div className="container pt-5">
             
-            <h1>Evolution in education</h1>
+            <h1 className="text-[40px]">Evolution in education</h1>
             <p>
               {
                 "Throughout the recent years, we have witnessed education transform, driven by technological advancements and the development of new learning styles. The most notable shift is the move from traditional in-person teaching to online learning. This evolution has altered the foundations of education, breaking down barriers of time and space. In this post we will dive into five key aspects of this revolution in education."
@@ -24,7 +24,7 @@ const Page: React.FC<pageProps> = ({}) => {
               width={1000}
               height={1000}
               className="mt-9 object-contain self-center"
-              src="/scholarship/2_1.webp"
+              src="/evo.png"
               alt=""
             />
             <p className="mt-9">1. Accessibility and Flexibility:</p>
@@ -55,7 +55,7 @@ const Page: React.FC<pageProps> = ({}) => {
               width={1000}
               height={1000}
               className="mt-9 object-contain self-center"
-              src="/scholarship/2_1.webp"
+              src="/evo.png"
               alt=""
             />
             <p className="mt-9">
