@@ -22,7 +22,7 @@ const page: React.FC<pageProps> = ({}) => {
         {/* <style>{`header { display:none; }`}</style>
         <style>{`footer { display:none; }`}</style> */}
         <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
-          <div className="gap-10 sm:gap-14 flex-col flex justify-center">
+          <div className="gap-10 sm:gap-8 flex-col flex justify-center">
             <div className="flex">
               <div className="relative bg-blue-200 text-blue-700 font-semibold text-lg sm:text-[24px] px-4 py-2 rounded-lg">
                 IWS AND BUMED MEC PARTNERSHIP
@@ -30,13 +30,16 @@ const page: React.FC<pageProps> = ({}) => {
             </div>
 
             <h1 className=" leading-[50px] lg:leading-[70px] text-[35px] lg:text-[50px] sm:text-[40px] ">
-              A New Era in Education Begins!
+            Double Diploma Programme with IWS and BUMED MEC
             </h1>
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
               {
-                "We are thrilled to announce a groundbreaking partnership between BUMED MEC Schools and the Cambridge-accredited IWS Online School, bringing an exceptional learning experience to our students!"
+                "We are proud to partner with BUMED MEC Schools to offer an exclusive Double Diploma programme through Cambridge-accredited IWS Online School."
               }
+            </p>
+            <p className="leading-[32px] text-[18px] sm:text-[24px]">
+              {"This unique collaboration provides students with the opportunity to earn both national and international diplomas, ensuring a competitive edge in academics and future career prospects."}
             </p>
 
             <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
