@@ -582,7 +582,7 @@ const page: React.FC<pageProps> = ({}) => {
                   width={400}
                   height={400}
                   className="w-36 h-36 max-w-36 max-h-36"
-                  src="/partners/MEÇ Logo_Transparan.webp"
+                  src="/partners/mec-logo.webp"
                   alt=""
                 />
                 <div>
