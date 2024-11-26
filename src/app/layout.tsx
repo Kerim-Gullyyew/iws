@@ -213,35 +213,35 @@ const webpageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "@id": "https://iwsonlineschool.co.uk/",
-  breadcrumb: {
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://iwsonlineschool.co.uk/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "About Us",
-        item: "https://iwsonlineschool.co.uk/about-us",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "School Fees",
-        item: "https://iwsonlineschool.co.uk/school-fees",
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        name: "Contact",
-        item: "https://iwsonlineschool.co.uk/contact-us",
-      },
-    ],
-  },
+  // breadcrumb: {
+  //   "@type": "BreadcrumbList",
+  //   itemListElement: [
+  //     {
+  //       "@type": "ListItem",
+  //       position: 1,
+  //       name: "Home",
+  //       item: "https://iwsonlineschool.co.uk/",
+  //     },
+  //     {
+  //       "@type": "ListItem",
+  //       position: 2,
+  //       name: "About Us",
+  //       item: "https://iwsonlineschool.co.uk/about-us",
+  //     },
+  //     {
+  //       "@type": "ListItem",
+  //       position: 3,
+  //       name: "School Fees",
+  //       item: "https://iwsonlineschool.co.uk/school-fees",
+  //     },
+  //     {
+  //       "@type": "ListItem",
+  //       position: 4,
+  //       name: "Contact",
+  //       item: "https://iwsonlineschool.co.uk/contact-us",
+  //     },
+  //   ],
+  // },
 };
 
 const organisationSchema = {
