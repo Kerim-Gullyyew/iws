@@ -35,12 +35,12 @@ const page: React.FC<pageProps> = ({}) => {
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
               {
-                "We are proud to partner with BUMED MEC Schools to offer students the chance to achieve a prestigious Cambridge Diploma through Cambridge-accredited IWS Online School."
+                "We are proud to partner with BUMED MEC Schools to offer students the opportunity to achieve a prestigious Cambridge Diploma through the Cambridge-accredited IWS Online School."
               }
             </p>
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
               {
-                "This collaboration enables students to earn both national and international diplomas simultaneously, enhancing their academic credentials and future career opportunities."
+                "This collaboration enables students to obtain both national and international diplomas simultaneously, enhancing their academic credentials and future career opportunities."
               }
             </p>
 
@@ -116,7 +116,7 @@ const page: React.FC<pageProps> = ({}) => {
             <h2 className="font-semibold md:flex-1">Partnership Highlights</h2>
             <p className="md:flex-1">
               {
-                "We are excited to offer Cambridge-accredited learning opportunities that elevate our students' education to international standards. Highlights include:"
+                "We are delighted to offer Cambridge-accredited learning opportunities that elevate our students' education to international standards. Highlights include:"
               }
             </p>
           </div>
@@ -491,7 +491,7 @@ const page: React.FC<pageProps> = ({}) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Start the Enrollment Process
+                    Start the Enrolment Process
                   </h3>
                   <p className="text-p text-center leading-6">
                     Follow simple steps to secure your place in the Double
@@ -521,7 +521,7 @@ const page: React.FC<pageProps> = ({}) => {
                   Begin Your Cambridge Diploma Journey
                   </h3>
                   <p className="text-p text-center leading-6">
-                  Start your path to earning a prestigious Cambridge diploma while studying locally.
+                  Start your path to obtain a prestigious Cambridge diploma whilst studying locally.
                   </p>
                 </div>
               </div>
@@ -755,12 +755,10 @@ const page: React.FC<pageProps> = ({}) => {
 
               <div className="flex flex-col gap-6 h-full justify-between pt-44 md:pt-20 lg:pt-0">
                 <h3 className="   tracking-wide lg:w-[250px]">
-                  Individual Programmes
+                Personalised Programmes
                 </h3>
                 <p className="text-p leading-6  ">
-                  Every child is unique. Our personalized assessments and
-                  Success Coaching ensure tailored educational paths for every
-                  student.
+                  {"Every child is unique. Our personalised assessments and Success Coaching ensure tailored educational paths for every student."}
                 </p>
               </div>
             </div>
@@ -800,9 +798,7 @@ const page: React.FC<pageProps> = ({}) => {
                   Accredited Curriculum
                 </h3>
                 <p className="text-p leading-6  ">
-                  We prioritize holistic education, combining academic
-                  excellence with skill development for a comprehensive learning
-                  experience.
+                  {"We prioritise holistic education, combining academic excellence with skill development for a comprehensive learning experience."}
                 </p>
               </div>
             </div>
