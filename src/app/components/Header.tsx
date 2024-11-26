@@ -17,7 +17,8 @@ const Header: React.FC<HeaderProps> = ({}) => {
 
   return (
     <header className="fixed z-50 w-full bg-white shadow-sm isolate">
-      <div className="bg-[#4366F6] ">
+      {/* This is announcement */}
+      {/* <div className="bg-[#4366F6] ">
         <div className="container flex justify-between py-2 text-white sm:flex-row">
           <div className="w-[70%]">
             <InfiniteCarousel />
@@ -26,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
             Learn more
           </Link>
         </div>
-      </div>
+      </div> */}
       <nav
         className="container flex items-center justify-between p-6 mx-auto lg:px-8"
         aria-label="Global"
