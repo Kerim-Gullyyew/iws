@@ -30,16 +30,18 @@ const page: React.FC<pageProps> = ({}) => {
             </div>
 
             <h1 className=" leading-[50px] lg:leading-[70px] text-[35px] lg:text-[50px] sm:text-[40px] ">
-            Double Diploma Programme with IWS and BUMED MEC
+              Achieve a Cambridge Diploma at BUMED MEC
             </h1>
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
               {
-                "We are proud to partner with BUMED MEC Schools to offer an exclusive Double Diploma programme through Cambridge-accredited IWS Online School."
+                "We are proud to partner with BUMED MEC Schools to offer students the chance to achieve a prestigious Cambridge Diploma through Cambridge-accredited IWS Online School."
               }
             </p>
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
-              {"This unique collaboration provides students with the opportunity to earn both national and international diplomas, ensuring a competitive edge in academics and future career prospects."}
+              {
+                "This collaboration enables students to earn both national and international diplomas simultaneously, enhancing their academic credentials and future career opportunities."
+              }
             </p>
 
             <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
@@ -64,7 +66,7 @@ const page: React.FC<pageProps> = ({}) => {
             width={450}
             height={450}
             className="w-[300px] max-w-[90%] min-w-[280px] sm:w-[450px] sm:min-w-[50%] sm:flex lg:w-auto object-contain"
-            src="/partners/BUMED_1.webp"
+            src="/partners/BUMED-hero.webp"
             priority={true}
             sizes="(max-width: 576px) 40vw"
             alt=""
@@ -84,7 +86,7 @@ const page: React.FC<pageProps> = ({}) => {
               alt=""
             />
           </div>
-          
+
           <div className="flex justify-center">
             <Image
               width={200}
@@ -281,7 +283,7 @@ const page: React.FC<pageProps> = ({}) => {
             <h2 className="font-semibold md:flex-1">What We Offer</h2>
             <p className="md:flex-1">
               {
-                "Getting started with IWS Online School through our partnership with BUMED MEC is simple and straightforward. Follow these steps to access high-quality education at a discounted rate, sponsored by BUMED MEC."
+                "Through our partnership with BUMED MEC Schools, IWS Online School offers students the chance to earn a prestigious Cambridge Diploma alongside their local education. Explore our programmes:"
               }
             </p>
           </div>
@@ -438,7 +440,7 @@ const page: React.FC<pageProps> = ({}) => {
             <h2 className="font-semibold md:flex-1">How It Works</h2>
             <p className="md:flex-1">
               {
-                "Getting started with IWS Online School through our partnership with BUMED MEC is simple and straightforward. Follow these steps to access high-quality education at a discounted rate, sponsored by BUMED MEC."
+                "Getting started with IWS Online School and BUMED MEC Schools is simple. Follow these steps to earn a Cambridge-accredited diploma alongside your local education:"
               }
             </p>
           </div>
@@ -516,11 +518,10 @@ const page: React.FC<pageProps> = ({}) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Learn from Anywhere
+                  Begin Your Cambridge Diploma Journey
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Enjoy flexible online learning designed to fit your
-                    lifestyle.
+                  Start your path to earning a prestigious Cambridge diploma while studying locally.
                   </p>
                 </div>
               </div>
@@ -543,11 +544,10 @@ const page: React.FC<pageProps> = ({}) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                    Earn Dual Accreditation
+                  Achieve Your Double Diploma
                   </h3>
                   <p className="text-p text-center leading-6">
-                    Gain qualifications from both BUMED MEC and IWS Online
-                    School.
+                  Gain a prestigious Cambridge diploma alongside your local qualification.
                   </p>
                 </div>
               </div>
@@ -598,7 +598,12 @@ const page: React.FC<pageProps> = ({}) => {
                   </div>
                   <div className="flex flex-col sm:flex-row">
                     <p className="font-semibold w-[28%]">Email:</p>
-                    <Link className="text-lg" href="mailto:info@mecokullari.k12.tr">info@mecokullari.k12.tr</Link>
+                    <Link
+                      className="text-lg"
+                      href="mailto:info@mecokullari.k12.tr"
+                    >
+                      info@mecokullari.k12.tr
+                    </Link>
                   </div>
                   <div className="flex flex-col sm:flex-row">
                     <p className="font-semibold w-[28%]">Phone:</p>
@@ -715,8 +720,7 @@ const page: React.FC<pageProps> = ({}) => {
                 Visionary Educators of IWS Online School
               </h3>
               <p className="text-p leading-6  ">
-                Explore the difference our passionate and committed teachers
-                make in every student’s learning journey.
+              Our native English-speaking teachers guide students with expertise and dedication.
               </p>
             </div>
 
@@ -826,7 +830,7 @@ const page: React.FC<pageProps> = ({}) => {
           </div>
         </div>
 
-        <div className="mt-20 border-t-2 border-gray-200 pt-5 container">
+        {/* <div className="mt-20 border-t-2 border-gray-200 pt-5 container">
           <h2 className="  text-center ">Who can benefit from our school?</h2>
           <div className="pt-8 sm:pt-12 flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-10 xl:gap-3">
@@ -977,7 +981,7 @@ const page: React.FC<pageProps> = ({}) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div
           id="contact-us"
