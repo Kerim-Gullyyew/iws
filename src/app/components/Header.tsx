@@ -83,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
               </Link>
               <Link
                 className=" leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] "
-                href={"/cambridge-a-level/"}
+                href={"/online-a-levels/"}
               >
                 A Levels
               </Link>
@@ -167,7 +167,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
                 </Link>
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
-                  href={"/cambridge-a-level/"}
+                  href={"/online-a-levels/"}
                   className="block px-3 py-2 -mx-3 text-base leading-7 rounded-lg hover:bg-gray-50"
                 >
                   A Levels
