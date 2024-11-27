@@ -410,7 +410,7 @@ const page: React.FC = () => {
         without prior notice.{" "}
       </p>
       {/* <p>Please review them periodically for any updates.</p> */}
-      <p>Last updated: 01.08.2024</p>
+      <p>Last updated: 01.08.2024.</p>
     </div>
   );
 };
