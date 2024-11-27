@@ -60,7 +60,7 @@ const Page: React.FC<pageProps> = ({}) => {
             </p>
           </div>
 
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div id="courses" className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {course.includedSubjects.map((course, index) => (
               <Link
                 key={index}
