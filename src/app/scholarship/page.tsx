@@ -401,7 +401,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className=" space-y-5">
                 <p className="text-p">
                   {
-                    "No, the scholarship award is valid only for our Complete School Programme (full time) and Hybrid Model Programme( part time). It cannot be applied to other programmes or courses."
+                    "No, the scholarship award is valid only for our Complete School Programme (full-time) and Hybrid Model Programme (part-time), starting from the 2025-2026 academic year. It cannot be applied to other programmes or courses."
                   }
                 </p>
               </div>
