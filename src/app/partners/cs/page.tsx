@@ -41,12 +41,12 @@ const page: React.FC<pageProps> = ({  }) => {
             </div>
 
             <h1 className=" leading-[50px] lg:leading-[70px] text-[35px] lg:text-[50px] sm:text-[40px] ">
-              25% Scholarship for Students in Bangladesh
+              Up to 25% Scholarship for Students in Bangladesh
             </h1>
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
               {
-                "Exclusive Opportunity for Students in Bangladesh! We've partnered with CS Meta Limited, supported by global CS Valley to bring a 25% scholarship to students in Bangladesh, making it easier to access world-class education through IWS Online School."
+                "Exclusive Opportunity for Students in Bangladesh! We've partnered with CS Meta Limited, supported by global CS Valley to bring up to a 25% scholarship to students in Bangladesh, making it easier to access world-class education through IWS Online School."
               }
             </p>
 
@@ -320,10 +320,10 @@ const page: React.FC<pageProps> = ({  }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                  Get a 25% Scholarship
+                  Get up to a 25% Scholarship
                   </h3>
                   <p className="text-p text-center leading-6">
-                  Access a 25% scholarship, making quality British education more affordable for you.
+                  Access up to a 25% scholarship, making quality British education more affordable for you.
                   </p>
                 </div>
               </div>
@@ -375,7 +375,7 @@ const page: React.FC<pageProps> = ({  }) => {
             <div>
               <p>
                 {
-                  "Reach out now to secure your 25% scholarship and begin your learning journey with IWS and Canary Square."
+                  "Reach out now to secure your up to 25% scholarship and begin your learning journey with IWS and Canary Square."
                 }
               </p>
             </div>
