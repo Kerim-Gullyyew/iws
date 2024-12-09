@@ -41,12 +41,12 @@ const page: React.FC<pageProps> = ({  }) => {
             </div>
 
             <h1 className=" leading-[50px] lg:leading-[70px] text-[35px] lg:text-[50px] sm:text-[40px] ">
-              Up to 25% Scholarship for Students in Bangladesh
+              Up to 40% Scholarship for Students in Bangladesh
             </h1>
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
               {
-                "Exclusive Opportunity for Students in Bangladesh! We've partnered with CS Meta Limited, supported by global CS Valley to bring up to a 25% scholarship to students in Bangladesh, making it easier to access world-class education through IWS Online School."
+                "Exclusive Opportunity for Students in Bangladesh! We've partnered with CS Meta Limited, supported by global CS Valley to bring up to a 40% scholarship to students in Bangladesh, making it easier to access world-class education through IWS Online School."
               }
             </p>
 
@@ -244,7 +244,7 @@ const page: React.FC<pageProps> = ({  }) => {
             <h2 className="font-semibold md:flex-1">How It Works</h2>
             <p className="md:flex-1">
               {
-                "Getting started with IWS Online School through our partnership with Canary Square is simple and straightforward. Follow these steps to access high-quality education at a discounted rate, sponsored by Canary Square."
+                "Start your journey with IWS Online School through our partnership with Canary Square and unlock access to premium education at an exclusive discounted rate."
               }
             </p>
           </div>
@@ -271,7 +271,7 @@ const page: React.FC<pageProps> = ({  }) => {
                   Contact the CS Team in Bangladesh
                   </h3>
                   <p className="text-p text-center leading-6">
-                  Get started by connecting with our team in Bangladesh for a smooth enrollment process.
+                  Get started by connecting with our team in Bangladesh for a smooth enrolment process.
                   </p>
                 </div>
               </div>
@@ -297,7 +297,7 @@ const page: React.FC<pageProps> = ({  }) => {
                   Start the Enrolment Process
                   </h3>
                   <p className="text-p text-center leading-6">
-                  Begin your journey with our step-by-step guidance on enrollment and scholarship applications.
+                  Begin your journey with our step-by-step guidance on enrolment and scholarship applications.
                   </p>
                 </div>
               </div>
@@ -320,10 +320,10 @@ const page: React.FC<pageProps> = ({  }) => {
               <div className="bg-white flex-1 flex gap-10 justify-between flex-col m-[3px] p-3 rounded-b-xl">
                 <div className="flex flex-col gap-4">
                   <h3 className="text-[20px] text-center font-[500] leading-7">
-                  Get up to a 25% Scholarship
+                  Get up to a 40% Scholarship
                   </h3>
                   <p className="text-p text-center leading-6">
-                  Access up to a 25% scholarship, making quality British education more affordable for you.
+                  Access up to a 40% scholarship, making quality British education more affordable for you.
                   </p>
                 </div>
               </div>
@@ -375,7 +375,7 @@ const page: React.FC<pageProps> = ({  }) => {
             <div>
               <p>
                 {
-                  "Reach out now to secure your up to 25% scholarship and begin your learning journey with IWS and Canary Square."
+                  "Reach out now to secure your up to 40% scholarship and begin your learning journey with IWS and Canary Square."
                 }
               </p>
             </div>
@@ -525,13 +525,13 @@ const page: React.FC<pageProps> = ({  }) => {
           id="what-awaits"
         >
           <h2 className="  text-center ">
-            What awaits you at CS Online School?
+            What awaits you at IWS Online School partnered with CS?
           </h2>
 
           <div className="grid grid-cols-6 pt-8 gap-8 sm:gap-10 sm:pt-12 md:gap-8 lg:gap-6">
             <div className="overflow-hidden h-full justify-between gap-10 flex flex-col px-6 py-8 rounded-xl col-span-6 md:col-span-2 bg-[#F1F9EC]">
               <h3 className="   tracking-wide">
-                Visionary Educators of CS Online School
+                Visionary Educators of IWS Online School
               </h3>
               <p className="text-p leading-6  ">
                 Explore the difference our passionate and committed teachers

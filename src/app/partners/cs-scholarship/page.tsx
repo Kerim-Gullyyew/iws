@@ -3,6 +3,7 @@ import Link from "next/link";
 // import ContactUsSection from "../components/sections/ContactUsSection";
 import { partners } from "@/app/data/partners";
 import AccordionSecondary from "../../components/ui/AccordionSecondary";
+import ContactUsSection from "../../components/sections/ContactUsSection";
 
 interface pageProps {
   params: { slug: string };
@@ -21,7 +22,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
         <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
           <div className="gap-10 sm:gap-14 flex-col flex justify-center">
             <h1 className=" leading-[50px] lg:leading-[70px] text-[35px] lg:text-[50px] sm:text-[40px] ">
-              IWS Online School Scholarship Exam
+              IWS Online School Scholarship Exam for Bangladesh
             </h1>
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
@@ -44,7 +45,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                 Register Now
               </Link>
               <Link
-                href="/contact-us"
+                href="#contact-us"
                 className={
                   "bg-[#4366F6] rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300  text-lg"
                 }
@@ -491,6 +492,37 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               </div>
             </AccordionSecondary>
           </div>
+        </div>
+        <div
+          id="contact-us"
+          className="mt-20 border-t-2 border-gray-200 pt-5 lg:container"
+        >
+          <ContactUsSection />
+          {/* <div className=" bg-[#003372] lg:rounded-xl mt-8 flex flex-col md:flex-row">
+          <div className="py-12 px-8 lg:px-16 flex flex-col gap-10">
+            <h2 className="text-[62px] text-white/90 tracking-tighter  leading-[60px]">
+              Looking to learn more?
+            </h2>
+
+            <p className="text-white text-p leading-9">
+              To find out more about our fresh approach to global learning, talk
+              to us today
+            </p>
+
+            <div className="flex items-center flex-wrap gap-5">
+              <EnrollButton />
+
+              <ContactButton textColor="text-white" />
+            </div>
+          </div>
+          <Image
+            width={1000}
+            height={1000}
+            className="object-contain md:w-1/2 self-end"
+            src="/Brochure.webp"
+            alt=""
+          />
+        </div> */}
         </div>
       </div>
     </>
