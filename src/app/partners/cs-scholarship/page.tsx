@@ -20,14 +20,19 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
     <>
       <div className="py-14 lg:py-24 animate-fade-in">
         <div className="gap-10 container sm:gap-14 flex-col flex justify-center items-center lg:flex lg:flex-row">
-          <div className="gap-10 sm:gap-14 flex-col flex justify-center">
+          <div className="gap-10 sm:gap-7 flex-col flex justify-center">
             <h1 className=" leading-[50px] lg:leading-[70px] text-[35px] lg:text-[50px] sm:text-[40px] ">
               IWS Online School Scholarship Exam for Bangladesh
             </h1>
 
             <p className="leading-[32px] text-[18px] sm:text-[24px]">
               {
-                "Open to students from Year 3 to Year 13. Compete to earn a scholarship for IWS Online School programmes."
+                "Exclusive Opportunity for Students in Bangladesh! Compete to earn a scholarship for IWS Online School programmes. Open to students from Year 3 to Year 13."
+              }
+            </p>
+            <p className="leading-[32px] text-[18px] sm:text-[24px]">
+              {
+                "We've partnered with CS Meta Limited, supported by global CS Valley to bring up to a 40% scholarship to students in Bangladesh, making it easier to access world-class education through IWS Online School."
               }
             </p>
 
@@ -415,7 +420,9 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   <Link href="https://iwsonlineschool.co.uk/scholarship">
                     exam webpage.
                   </Link>
-                  Results will be announced on 30th November on the Scholarship  exam webpage. There will be three winners from each year group, from Year 3 to Year 13.
+                  Results will be announced on 30th November on the Scholarship
+                  exam webpage. There will be three winners from each year
+                  group, from Year 3 to Year 13.
                 </p>
               </div>
             </AccordionSecondary>

@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 interface pageProps { }
 
-// const icon="/icon.ico"
 const page: React.FC<pageProps> = ({ }) => {
   return (
     <div className="container py-10 lg:py-10 animate-fade-in">

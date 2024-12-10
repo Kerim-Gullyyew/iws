@@ -87,7 +87,7 @@ const page: React.FC<pageProps> = ({  }) => {
             <h2 className="font-semibold md:flex-1">What We Offer</h2>
             <p className="md:flex-1">
               {
-                "Getting started with IWS Online School through our partnership withCS Group is simple and straightforward. Follow these steps to access high-quality education at a discounted rate, sponsored byCS Group."
+                "Getting started with IWS Online School through our partnership with CS Group is simple and straightforward. Follow these steps to access high-quality education at a discounted rate, sponsored by CS Group."
               }
             </p>
           </div>
@@ -244,7 +244,7 @@ const page: React.FC<pageProps> = ({  }) => {
             <h2 className="font-semibold md:flex-1">How It Works</h2>
             <p className="md:flex-1">
               {
-                "Start your journey with IWS Online School through our partnership withCS Group and unlock access to premium education at an exclusive discounted rate."
+                "Start your journey with IWS Online School through our partnership with CS Group and unlock access to premium education at an exclusive discounted rate."
               }
             </p>
           </div>
@@ -375,7 +375,7 @@ const page: React.FC<pageProps> = ({  }) => {
             <div>
               <p>
                 {
-                  "Reach out now to secure your up to 40% scholarship and begin your learning journey with IWS andCS Group."
+                  "Reach out now to secure your up to 40% scholarship and begin your learning journey with IWS and CS Group."
                 }
               </p>
             </div>
@@ -456,7 +456,7 @@ const page: React.FC<pageProps> = ({  }) => {
               <div>
                 <p>
                   {
-                    "Reach out now to secure your 25% scholarship and begin your learning journey with IWS andCS Group."
+                    "Reach out now to secure your 25% scholarship and begin your learning journey with IWS and CS Group."
                   }
                 </p>
               </div>

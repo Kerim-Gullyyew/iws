@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   publisher: "IWS Team",
   robots: "index, follow",
   alternates: { canonical: "https://iwsonlineschool.co.uk/" },
-  icons: "./icon.ico",
+  // icons: "./favicon.ico",
   twitter: {
     card: "summary_large_image",
     site: "@iwsonlineschool",
