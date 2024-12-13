@@ -237,7 +237,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           </div>
           <h2 className="font-semibold pt-16">From Class 1 - 8</h2>
 
-          <div className="pt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-5 gap-y-14">
+          <div className="pt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-5 gap-y-14">
             <div className="relative p-4 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col  rounded-xl gap-10">
               <div className="bg-orange-400 py-3">
                 <p className="text-white text-xl font-semibold text-center">
@@ -283,7 +283,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               </div>
             </div>
 
-            <div className="relative p-4 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col  rounded-xl gap-10">
+            {/* <div className="relative p-4 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col  rounded-xl gap-10">
               <div className="bg-blue-500 py-3">
                 <p className="text-white text-xl font-semibold text-center">
                   Participants
@@ -296,11 +296,11 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   GIFT VOUCHER
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
           <h2 className="font-semibold pt-16">From Class 9 - A Levels </h2>
 
-          <div className="pt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-5 gap-y-14">
+          <div className="pt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-5 gap-y-14">
             <div className="relative p-4 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col  rounded-xl gap-10">
               <div className="bg-orange-400 py-3">
                 <p className="text-white text-xl font-semibold text-center">
@@ -346,7 +346,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               </div>
             </div>
 
-            <div className="relative p-4 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col  rounded-xl gap-10">
+            {/* <div className="relative p-4 hover:-translate-y-2 transition-transform duration-300 border-[3px] border-gray-100 flex flex-col  rounded-xl gap-10">
               <div className="bg-blue-500 py-3">
                 <p className="text-white text-xl font-semibold text-center">
                   Participants
@@ -359,7 +359,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   GIFT VOUCHER
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
