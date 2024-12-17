@@ -39,6 +39,9 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <p className="leading-[32px]  text-[18px] sm:text-[24px]">
               Exam Date: 21st December 2024
             </p>
+            <p className="leading-[32px]  text-[18px] sm:text-[24px]">
+              Deadline: 20st December 2024
+            </p>
 
             <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
               <Link
@@ -191,7 +194,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
           <div className="pt-20 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 lg:gap-5 gap-y-14">
             <div className="p-10 bg-blue-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-                {"Earn scholarships for IWS's accredited online programmes"}
+                {"Receive scholarships for IWS's accredited online programmes"}
               </h4>
 
               <p className="text-white text-center text-sm">
@@ -201,7 +204,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             </div>
             <div className="p-10 bg-green-500 rounded-lg space-y-8">
               <h4 className="text-white font-bold text-center">
-                Gain a 50 pounds voucher for participating in the IWS
+                Receive a 50 pounds voucher for participating in the IWS
                 Scholarship Exam.
               </h4>
 
@@ -366,6 +369,14 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
         <div className="mt-20 container border-t-2 pt-5 border-gray-200">
           <h2>FAQs</h2>
           <div className="pt-8 sm:pt-12 flex flex-col gap-8 text-left">
+            <AccordionSecondary title="Can I use any device to access the exam questions and complete my exam?">
+              <div className=" space-y-5">
+                <p className="text-p">
+                  {`Yes, the platform supports mobile phones and tablets. However, it is crucial to use a device with a functioning camera. Your camera must remain on at all times, and your face must be clearly visible throughout the exam. Failure to meet these requirements will result in the exam being invalid.`}
+                </p>
+              </div>
+            </AccordionSecondary>
+
             <AccordionSecondary title="How do I register for the exam?">
               <div className=" space-y-5">
                 <p className="text-p">
@@ -407,7 +418,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className=" space-y-5">
                 <p className="text-p">
                   {
-                    "The exam takes place on 21st December at 19:00 pm your local time. Please ensure that you are ready and online at that time, and make sure your device’s date and time are correctly set to your local time."
+                    "The exam takes place on 21st December at 19:00 pm Bangladesh time. Please ensure that you are ready and online at that time, and make sure your device’s date and time are correctly set to your local time."
                   }
                 </p>
               </div>
@@ -416,13 +427,9 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <AccordionSecondary title="When will the results be announced?">
               <div className=" space-y-5">
                 <p className="text-p">
-                  {"Results will be announced by 30th November on the"}
-                  <Link href="https://iwsonlineschool.co.uk/scholarship">
-                    exam webpage.
-                  </Link>
-                  Results will be announced on 30th November on the Scholarship
-                  exam webpage. There will be three winners from each year
-                  group, from Year 3 to Year 13.
+                  {
+                    "Results will be announced by 27 th December on the Scholarship exam webpage. There will be three winners from each year group, from Year 3 to Year 13."
+                  }
                 </p>
               </div>
             </AccordionSecondary>
@@ -454,7 +461,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <AccordionSecondary title="Is there any cost to take the scholarship exam?">
               <div className=" space-y-5">
                 <p className="text-p">
-                  {"Yes, there is a $10 fee to take the exam."}
+                  {"No, the scholarship exam is free of charge."}
                 </p>
               </div>
             </AccordionSecondary>
@@ -473,12 +480,12 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className=" space-y-5">
                 <p className="text-p">
                   {
-                    "No, the scholarship award is valid only for our Complete School Programme (full-time) and Hybrid Model Programme (part-time), starting from the 2025-2026 academic year. It cannot be applied to other programmes or courses."
+                    "No, the scholarship award is exclusively valid for our Complete School Programme (full-time) and Hybrid Model Programme (part-time) starting in January 2025, for a duration of one year. It cannot be applied to other programs or courses"
                   }
                 </p>
               </div>
             </AccordionSecondary>
-
+            {/* 
             <AccordionSecondary title="Can I use any device to access the exam questions and complete my exam?">
               <div className=" space-y-5">
                 <p className="text-p">
@@ -497,7 +504,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                   }
                 </p>
               </div>
-            </AccordionSecondary>
+            </AccordionSecondary> */}
           </div>
         </div>
         <div
