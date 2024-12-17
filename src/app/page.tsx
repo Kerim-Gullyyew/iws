@@ -19,8 +19,8 @@ export default function Home() {
   return (
     <div className="py-0 lg:py-0 animate-fade-in">
       <div className="bg-[#214AD2]">
-
-      <div className=" bg-[url('/Star.svg')] bg-black/25 bg-right bg-no-repeat ">
+      {/* <div className=" bg-[url('/Star.svg')] bg-black/25 bg-right bg-no-repeat "> */}
+      <div className="  ">
         <div className="container pt-24 grid grid-cols-1 lg:grid-cols-2 gap-9">
           <div>
             <h1 className="text-white">
