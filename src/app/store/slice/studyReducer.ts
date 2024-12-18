@@ -3,7 +3,7 @@ import {
   DateObject,
   Package,
   Subject,
-} from "@/src/lib/Interfaces";
+} from "@/app/lib/Interfaces";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface StudyState {

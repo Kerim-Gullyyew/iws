@@ -109,6 +109,7 @@ const Page: NextPage<Props> = ({}) => {
     if (!validDays.includes(date.day)) {
       setDate((currentDate) => ({ ...currentDate, day: validDays[0] }));
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [date.month, date.year]);
 
   useEffect(() => {
