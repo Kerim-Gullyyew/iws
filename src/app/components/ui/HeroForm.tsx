@@ -82,7 +82,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
           fullUrl, // Current page URL
           initialUrl, // The initial URL from localStorage
         });
-        router.push("/thank-you");
+        router.push("/thank-you-hero");
       } catch (error) {
         console.error("Submission Error:", error);
       }
