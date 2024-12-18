@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
                 href="/contact-us"
                 className="bg-[#FF8D00] rounded-xl px-7 py-3 text-white hover:bg-[#b2892f] transition-all duration-300 text-lg"
               >
-                Enquire
+                Enquire now
               </Link>
             </Tooltip>
           </div>
@@ -124,7 +124,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
                 href="/contact-us"
                 className="bg-[#FF8D00] rounded-xl px-7 py-3 text-white hover:bg-[#b2892f] transition-all duration-300 text-lg"
               >
-                Enquire
+                Enquire now
               </Link>
             </Tooltip>
           </div>
