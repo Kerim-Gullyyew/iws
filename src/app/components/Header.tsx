@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
             />
           </Link>
         </div>
-        <div className="flex gap-7 lg:hidden sm:items-center sm:gap-9">
+        <div className="flex gap-4 lg:hidden sm:items-center sm:gap-9">
           {/* <div className=" sm:flex">
             <Tooltip text="Enroll Now">
               <EnrollButton />
@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
             <Tooltip text="Enquire">
               <Link
                 href="/contact-us"
-                className="bg-[#FF8D00] rounded-xl px-7 py-3 text-white hover:bg-[#b2892f] transition-all duration-300 text-lg"
+                className="bg-[#FF8D00] rounded-xl px-6 py-3 text-white hover:bg-[#b2892f] transition-all duration-300 text-lg"
               >
                 Enquire now
               </Link>
