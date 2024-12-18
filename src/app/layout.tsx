@@ -6,6 +6,7 @@ import { Sora, Inter } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
+import { ReduxProvider } from "./store/providers/ReduxProvider";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -394,7 +395,7 @@ export default function RootLayout({
           <Header />
         </header>
         <main className="flex flex-col pt-[100px] w-full min-h-screen bg-white">
-          {children}
+          <ReduxProvider>{children}</ReduxProvider>
         </main>
         <Footer />
       </body>
