@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
         className="container flex items-center justify-between p-6 mx-auto lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex ">
           <Link className="-m-1.5 p-1.5" href={"/"}>
             <span className="sr-only">IWS Online School</span>
             <Image
@@ -45,8 +45,23 @@ const Header: React.FC<HeaderProps> = ({}) => {
             />
           </Link>
         </div>
-        <div className="flex lg:hidden sm:items-center sm:gap-4">
-          <div className="hidden sm:flex">
+        <div className="flex gap-7 lg:hidden sm:items-center sm:gap-9">
+          {/* <div className=" sm:flex">
+            <Tooltip text="Enroll Now">
+              <EnrollButton />
+            </Tooltip>
+          </div> */}
+          <div className=" sm:flex">
+            <Tooltip text="Enquire">
+              <Link
+                href="/contact-us"
+                className="bg-[#FF8D00] rounded-xl px-7 py-3 text-white hover:bg-[#b2892f] transition-all duration-300 text-lg"
+              >
+                Enquire
+              </Link>
+            </Tooltip>
+          </div>
+          <div className="hidden sm:flex lg:hidden">
             <Tooltip text="Enroll Now">
               <EnrollButton />
             </Tooltip>
@@ -93,19 +108,31 @@ const Header: React.FC<HeaderProps> = ({}) => {
               >
                 School Fees
               </Link>
-              <Link
+              {/* <Link
                 className=" leading-6 hover:bg-[#E6F4FE] px-6 py-2 rounded-lg transition duration-300 text-[18px] "
                 href={"/contact-us/"}
               >
                 Contact Us
-              </Link>
+              </Link> */}
             </>
           }
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Tooltip text="Enroll Now">
-            <EnrollButton />
-          </Tooltip>
+        <div className="hidden lg:flex  lg:justify-end lg:gap-6">
+          <div className=" ">
+            <Tooltip text="Enquire">
+              <Link
+                href="/contact-us"
+                className="bg-[#FF8D00] rounded-xl px-7 py-3 text-white hover:bg-[#b2892f] transition-all duration-300 text-lg"
+              >
+                Enquire
+              </Link>
+            </Tooltip>
+          </div>
+          <div className="">
+            <Tooltip text="Enroll Now">
+              <EnrollButton />
+            </Tooltip>
+          </div>
         </div>
       </nav>
       <Dialog
