@@ -75,7 +75,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
       );
 
       try {
-        await axios.post("https://api.main.iwsonlineschool.co.uk/iws-contact", {
+        await axios.post("https://api.main.iwsonlineschool.co.uk/iws-herocontact", {
           FullName,
           Email,
           contactPhoneNumber,
@@ -119,7 +119,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
             name="parent-first-name"
             id="parent-first-name"
             placeholder="Full Name"
-            className="block w-full rounded-full border-0 py-3 shadow-sm ring-0 ring-inset ring-[#E4E4E4] placeholder:text-gray-200 sm:text-base bg-[#3E69E0] sm:leading-6 outline-none px-4"
+            className="block w-full text-white rounded-full border-0 py-3 shadow-sm ring-0 ring-inset ring-[#E4E4E4] placeholder:text-gray-200 sm:text-base bg-[#3E69E0] sm:leading-6 outline-none px-4"
           />
           {validationErrors.FullName && (
             <p className="text-red-600 text-sm italic">
@@ -148,7 +148,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
             name="parent-email"
             id="parent-email"
             placeholder="Email address"
-            className="block w-full rounded-full border-0 py-3 shadow-sm ring-0 ring-inset ring-[#E4E4E4] placeholder:text-gray-200 sm:text-base bg-[#3E69E0] sm:leading-6 outline-none px-4"
+            className="block w-full text-white rounded-full border-0 py-3 shadow-sm ring-0 ring-inset ring-[#E4E4E4] placeholder:text-gray-200 sm:text-base bg-[#3E69E0] sm:leading-6 outline-none px-4"
           />
           {validationErrors.Email && (
             <p className="text-red-600 text-sm italic">
@@ -272,7 +272,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
           <button
             type="submit"
             onClick={handleSubmit}
-            className="bg-[#FF8D00] w-full rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300 text-lg"
+            className="bg-[#FF8D00] w-full rounded-xl px-7 py-3 text-white hover:bg-[#ad6c1d] transition-all duration-300 text-lg"
           >
             Get a consultation
           </button>

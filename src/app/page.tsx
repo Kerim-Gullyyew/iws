@@ -19,30 +19,37 @@ export default function Home() {
   return (
     <div className="py-0 lg:py-0 animate-fade-in">
       <div className="bg-[#214AD2]">
-      {/* <div className=" bg-[url('/Star.svg')] bg-black/25 bg-right bg-no-repeat "> */}
-      <div className="  ">
-        <div className="container pt-24 grid grid-cols-1 lg:grid-cols-2 gap-9">
-          <div>
-            <h1 className="text-white">
-              Accredited, Holistic Online Schooling
-            </h1>
-            <p className="text-white pt-5">
-              IWS Online School empowers students with live, interactive
-              lessons, fostering growth, connection, and future success.
-            </p>
-            <HeroForm />
-          </div>
-          <div className="flex justify-center">
-            <Image
-              width={1000}
-              height={1000}
-              className="self-center object-contain w-11/12 -mt-14 "
-              src="/heroo.webp"
-              alt=""
-            />
+        <div className="relative">
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-[url('/Star.svg')] bg-[length:1000px] bg-bottom opacity-15 
+                 sm:bg-bottom sm:bg-[length:1400px] bg-no-repeat md:bg-[length:1400px] md:bg-bottom lg:bg-right"
+          ></div>
+
+          {/* Content */}
+          <div className="relative z-10 container pt-24 grid grid-cols-1 lg:grid-cols-2 gap-9">
+            <div>
+              <h1 className="text-white">
+                Accredited, Holistic Online Schooling
+              </h1>
+              <p className="text-white pt-5">
+                IWS Online School empowers students with live, interactive
+                lessons, fostering growth, connection, and future success.
+              </p>
+              <div className="sm:hidden bg-gray-400 p-[1px] mt-7"></div>
+              <HeroForm />
+            </div>
+            <div className="flex justify-center">
+              <Image
+                width={1000}
+                height={1000}
+                className="self-center object-contain w-11/12 mt-2 sm:-mt-14"
+                src="/heroo.webp"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-      </div>
       </div>
 
       {/* <div className="container flex flex-col items-center justify-center gap-10 sm:gap-14 lg:flex lg:flex-row">
