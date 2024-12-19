@@ -10,7 +10,7 @@ const EnrollButton: React.FC<EnrollButtonProps> = ({ light }) => {
   const router = useRouter();
 
   const handleClick = () => {
-    let newUrl = '/apply';
+    let newUrl = 'https://iws-register.iwsonlineschool.co.uk';
 
     if (typeof window !== 'undefined') {
       const initialUrl = localStorage.getItem('initialUrl');
