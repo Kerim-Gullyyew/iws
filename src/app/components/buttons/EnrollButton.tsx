@@ -10,21 +10,21 @@ const EnrollButton: React.FC<EnrollButtonProps> = ({ light }) => {
   const router = useRouter();
 
   const handleClick = () => {
-    let newUrl = 'https://iws-register.iwsonlineschool.co.uk';
+    let newUrl = '/apply';
 
-    if (typeof window !== 'undefined') {
-      const initialUrl = localStorage.getItem('initialUrl');
-      if (initialUrl) {
-        try {
-          const url = new URL(initialUrl);
-          // Extract the path and query parameters
-          const pathAndQuery = url.pathname + url.search;
-          newUrl += pathAndQuery;
-        } catch (error) {
-          console.error('Invalid URL in localStorage:', initialUrl);
-        }
-      }
-    }
+    // if (typeof window !== 'undefined') {
+    //   const initialUrl = localStorage.getItem('initialUrl');
+    //   if (initialUrl) {
+    //     try {
+    //       const url = new URL(initialUrl);
+    //       // Extract the path and query parameters
+    //       const pathAndQuery = url.pathname + url.search;
+    //       newUrl += pathAndQuery;
+    //     } catch (error) {
+    //       console.error('Invalid URL in localStorage:', initialUrl);
+    //     }
+    //   }
+    // }
 
     router.push(newUrl);
   };

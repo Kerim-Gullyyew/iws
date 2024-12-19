@@ -26,8 +26,8 @@ const Page: NextPage<Props> = ({}) => {
     }
 
     // Save the current full URL to local storage as 'initialUrl'
-    const initialUrl = window.location.href;
-    localStorage.setItem("initialUrl", initialUrl);
+    // const initialUrl = window.location.href;
+    // localStorage.setItem("initialUrl", initialUrl);
   }, [completed, router]);
 
   const handleBack = () => {
