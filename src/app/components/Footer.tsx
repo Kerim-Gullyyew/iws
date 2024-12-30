@@ -220,6 +220,9 @@ const Footer: React.FC<FooterProps> = ({}) => {
                     <li className=" text-gray-600 cursor-pointer hover:">
                       <Link href={"/school-fees"}>School Fees</Link>
                     </li>
+                    <li className=" text-gray-600 cursor-pointer hover:">
+                      <Link href={"/partners"}>Partners</Link>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -276,6 +279,9 @@ const Footer: React.FC<FooterProps> = ({}) => {
                 <li className="">
                   <Link href={"/school-fees"}>School Fees</Link>
                 </li>
+                <li className=" ">
+                      <Link href={"/partners"}>Partners</Link>
+                    </li>
               </ul>
             </div>
             <div>
