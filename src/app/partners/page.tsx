@@ -18,7 +18,7 @@ const page: React.FC<pageProps> = ({ }) => {
         partnerships bring innovative education directly to you.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-16">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-16">
         {
           partners.map((partner, index) => (
             <Link href={"partners/" + partner.slug} key={index} className="border cursor-pointer hover:-translate-y-3 transition-transform duration-300 w-full rounded-xl p-3 space-y-6 h-full flex flex-col justify-between">
@@ -43,7 +43,7 @@ const page: React.FC<pageProps> = ({ }) => {
         }
 
 
-      </div>
+      </div> */}
 
       <div className="bg-asset-2 mb-16 bg-no-repeat bg-cover bg-center rounded-3xl bg-blue-900 bg-blend-multiply flex items-center flex-col gap-12 pb-14 pt-20">
         <h1 className="text-white">Interested in becoming a partner?</h1>
