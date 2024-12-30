@@ -38,7 +38,7 @@ const page: React.FC<pageProps> = ({}) => {
               "data-[selected]:bg-blue-800 transition duration-300 data-[selected]:animate-fade-in bg-white flex-1 px-3 py-3 rounded-xl text-black data-[selected]:text-white outline-none hover:bg-green-300"
             }
           >
-            <Link href="#" className="flex justify-center items-center gap-1">
+            <Link href="https://wa.me/447440423094" className="flex justify-center items-center gap-1">
               <Image
                 width={1000}
                 height={1000}
