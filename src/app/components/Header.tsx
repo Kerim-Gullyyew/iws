@@ -232,6 +232,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
                   Apply Now
                 </Link> */}
                 <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/apply"
                   className="bg-[#4366F6] rounded-xl px-7 py-3 text-white hover:bg-[#2C50C7] transition-all duration-300 text-lg"
                 >
