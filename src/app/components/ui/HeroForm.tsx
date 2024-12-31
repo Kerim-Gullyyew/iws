@@ -80,7 +80,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
       );
 
       try {
-        const response = await fetch("/api/your-backend-endpoint", {
+        const response = await fetch("https://api.main.iwsonlineschool.co.uk/iws-herocontact", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -171,7 +171,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
 
         <div className="sm:col-span-3">
           <ReCAPTCHA
-            sitekey="YOUR_RECAPTCHA_SITE_KEY"
+            sitekey="6LednaoqAAAAAPvLwejTxX18h3W9Hj_u4G10zls7"
             onChange={handleRecaptchaChange}
           />
           {validationErrors.recaptcha && (
