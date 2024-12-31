@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import PhoneNumberHero from "../form/PhoneNumberHero";
 import * as Yup from "yup";
-import axios from "axios";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -68,6 +67,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
   ) => {
     event.preventDefault();
     setLoading(true);
+
     try {
       await validationSchema.validate(
         {
@@ -80,15 +80,27 @@ const TabSection: React.FC<TabSectionProps> = () => {
       );
 
       try {
-        await axios.post("https://api.main.iwsonlineschool.co.uk/iws-herocontact", {
-          FullName,
-          Email,
-          contactPhoneNumber,
-          fullUrl, // Current page URL
-          initialUrl, // The initial URL from localStorage
-          recaptchaToken,
+        const response = await fetch("/api/your-backend-endpoint", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            FullName,
+            Email,
+            contactPhoneNumber,
+            fullUrl, // Current page URL
+            initialUrl, // The initial URL from localStorage
+            recaptchaToken, // reCAPTCHA token
+          }),
         });
-        router.push("/thank-you-hero");
+
+        if (response.ok) {
+          router.push("/thank-you-hero");
+        } else {
+          const errorData = await response.json();
+          console.error("Submission Error:", errorData);
+        }
       } catch (error) {
         console.error("Submission Error:", error);
       }
@@ -159,9 +171,8 @@ const TabSection: React.FC<TabSectionProps> = () => {
 
         <div className="sm:col-span-3">
           <ReCAPTCHA
-            sitekey="6LednaoqAAAAAPvLwejTxX18h3W9Hj_u4G10zls7"
+            sitekey="YOUR_RECAPTCHA_SITE_KEY"
             onChange={handleRecaptchaChange}
-            className="h-4"
           />
           {validationErrors.recaptcha && (
             <p className="text-red-600 text-sm italic">
