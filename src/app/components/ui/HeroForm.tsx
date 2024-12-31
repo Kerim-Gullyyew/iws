@@ -170,18 +170,6 @@ const TabSection: React.FC<TabSectionProps> = () => {
         </div>
 
         <div className="sm:col-span-3">
-          <ReCAPTCHA
-            sitekey="6LednaoqAAAAAPvLwejTxX18h3W9Hj_u4G10zls7"
-            onChange={handleRecaptchaChange}
-          />
-          {validationErrors.recaptcha && (
-            <p className="text-red-600 text-sm italic">
-              {validationErrors.recaptcha}
-            </p>
-          )}
-        </div>
-
-        <div className="sm:col-span-3">
           <p className="text-white text-[11px] leading-4">
             By clicking the button, you agree to the{" "}
             <Link className="text-orange-400 underline" href="/terms-conditions">
@@ -193,6 +181,21 @@ const TabSection: React.FC<TabSectionProps> = () => {
             </Link>
           </p>
         </div>
+
+        <div className="sm:col-span-3">
+          <ReCAPTCHA
+            sitekey="6LednaoqAAAAAPvLwejTxX18h3W9Hj_u4G10zls7"
+            onChange={handleRecaptchaChange}
+          />
+          {validationErrors.recaptcha && (
+            <p className="text-red-600 text-sm italic">
+              {validationErrors.recaptcha}
+            </p>
+          )}
+        </div>
+
+        
+
       </div>
 
       <div className="mt-1">

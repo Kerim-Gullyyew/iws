@@ -4,10 +4,10 @@ import PhoneNumber from "../form/PhoneNumber";
 import Dropdown from "../form/Dropdown";
 import DropdownCustomData from "../form/DropdownCustomData";
 import * as Yup from "yup";
-import axios from "axios";
 import { usePathname, useRouter } from "next/navigation";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 interface TabSectionProps {}
 
@@ -27,6 +27,7 @@ interface ValidationErrors {
   keystage?: string;
   country?: string;
   message?: string;
+  recaptcha?: string;
 }
 
 const TabSection: React.FC<TabSectionProps> = () => {
@@ -44,11 +45,11 @@ const TabSection: React.FC<TabSectionProps> = () => {
   const [loading, setLoading] = useState(false);
   const [fullUrl, setFullUrl] = useState("");
   const [initialUrl, setInitialUrl] = useState("");
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
 
   const router = useRouter();
   const pathname = usePathname();
 
-  // Retrieve the initial URL from localStorage
   useEffect(() => {
     if (typeof window !== "undefined") {
       const searchParams = window.location.search;
@@ -75,13 +76,19 @@ const TabSection: React.FC<TabSectionProps> = () => {
     keystage: Yup.string().required("Keystage is required"),
     country: Yup.string().required("Country is required"),
     message: Yup.string().required("Your message is required"),
+    recaptcha: Yup.string().required("Please complete the reCAPTCHA"),
   });
+
+  const handleRecaptchaChange = (token: string | null) => {
+    setRecaptchaToken(token);
+  };
 
   const handleSubmit: React.MouseEventHandler<HTMLButtonElement> = async (
     event
   ) => {
     event.preventDefault();
     setLoading(true);
+
     try {
       await validationSchema.validate(
         {
@@ -95,26 +102,40 @@ const TabSection: React.FC<TabSectionProps> = () => {
           keystage,
           country,
           message,
+          recaptcha: recaptchaToken,
         },
         { abortEarly: false }
       );
 
       try {
-        await axios.post("https://api.main.iwsonlineschool.co.uk/iws-contact", {
-          parentFirstName,
-          parentLastName,
-          parentEmail,
-          parentPhoneNumber,
-          studentFirstName,
-          studentLastName,
-          studentDOB: studentDOB?.toISOString().split("T")[0], // Format date for submission
-          keystage,
-          country,
-          message,
-          fullUrl, // Current page URL
-          initialUrl, // The initial URL from localStorage
+        const response = await fetch("https://api.main.iwsonlineschool.co.uk/iws-contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            parentFirstName,
+            parentLastName,
+            parentEmail,
+            parentPhoneNumber,
+            studentFirstName,
+            studentLastName,
+            studentDOB: studentDOB?.toISOString().split("T")[0],
+            keystage,
+            country,
+            message,
+            fullUrl,
+            initialUrl,
+            recaptchaToken,
+          }),
         });
-        router.push("/thank-you");
+
+        if (response.ok) {
+          router.push("/thank-you");
+        } else {
+          const errorData = await response.json();
+          console.error("Submission Error:", errorData);
+        }
       } catch (error) {
         console.error("Submission Error:", error);
       }
@@ -145,13 +166,12 @@ const TabSection: React.FC<TabSectionProps> = () => {
 
       <p className="font-bold">Parent / Guardian Details</p>
       <div className="mt-1 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-6">
+        {/* Parent Details */}
         <div className="sm:col-span-3">
           <input
             value={parentFirstName}
             onChange={(e) => setParentFirstName(e.target.value)}
             type="text"
-            name="parent-first-name"
-            id="parent-first-name"
             placeholder="Parent First Name *"
             className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
@@ -166,8 +186,6 @@ const TabSection: React.FC<TabSectionProps> = () => {
             value={parentLastName}
             onChange={(e) => setParentLastName(e.target.value)}
             type="text"
-            name="parent-last-name"
-            id="parent-last-name"
             placeholder="Parent Last Name *"
             className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
@@ -177,14 +195,11 @@ const TabSection: React.FC<TabSectionProps> = () => {
             </p>
           )}
         </div>
-
         <div className="sm:col-span-3">
           <input
             value={parentEmail}
             onChange={(e) => setParentEmail(e.target.value)}
             type="email"
-            name="parent-email"
-            id="parent-email"
             placeholder="Parent Email *"
             className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
@@ -194,7 +209,6 @@ const TabSection: React.FC<TabSectionProps> = () => {
             </p>
           )}
         </div>
-
         <div className="sm:col-span-3">
           <PhoneNumber
             value={parentPhoneNumber}
@@ -206,7 +220,6 @@ const TabSection: React.FC<TabSectionProps> = () => {
             </p>
           )}
         </div>
-
         <div className="sm:col-span-3">
           <Dropdown
             country={country}
@@ -224,13 +237,12 @@ const TabSection: React.FC<TabSectionProps> = () => {
 
       <p className="font-bold">Student Details</p>
       <div className="mt-1 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-6">
+        {/* Student Details */}
         <div className="sm:col-span-3">
           <input
             value={studentFirstName}
             onChange={(e) => setStudentFirstName(e.target.value)}
             type="text"
-            name="student-first-name"
-            id="student-first-name"
             placeholder="Student First Name *"
             className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
@@ -245,8 +257,6 @@ const TabSection: React.FC<TabSectionProps> = () => {
             value={studentLastName}
             onChange={(e) => setStudentLastName(e.target.value)}
             type="text"
-            name="student-last-name"
-            id="student-last-name"
             placeholder="Student Last Name *"
             className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
@@ -256,7 +266,6 @@ const TabSection: React.FC<TabSectionProps> = () => {
             </p>
           )}
         </div>
-
         <div className="sm:col-span-3">
           <DatePicker
             selected={studentDOB}
@@ -264,9 +273,7 @@ const TabSection: React.FC<TabSectionProps> = () => {
             placeholderText="Date of Birth *"
             dateFormat="dd/MM/yyyy"
             maxDate={new Date()}
-            showYearDropdown
-            scrollableYearDropdown
-            className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
+            className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
           />
           {validationErrors.studentDOB && (
             <p className="text-red-600 text-sm italic">
@@ -294,8 +301,6 @@ const TabSection: React.FC<TabSectionProps> = () => {
         <textarea
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          id="message"
-          name="message"
           rows={6}
           placeholder="Write your message here..."
           className="block w-full rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-[#E4E4E4] placeholder:text-gray-400 sm:text-base bg-[#ebecee] sm:leading-6 outline-none px-4"
@@ -303,6 +308,19 @@ const TabSection: React.FC<TabSectionProps> = () => {
         {validationErrors.message && (
           <p className="text-red-600 text-sm italic">
             {validationErrors.message}
+          </p>
+        )}
+      </div>
+
+      {/* reCAPTCHA */}
+      <div className="sm:col-span-6">
+        <ReCAPTCHA
+          sitekey="6LednaoqAAAAAPvLwejTxX18h3W9Hj_u4G10zls7"
+          onChange={handleRecaptchaChange}
+        />
+        {validationErrors.recaptcha && (
+          <p className="text-red-600 text-sm italic">
+            {validationErrors.recaptcha}
           </p>
         )}
       </div>
