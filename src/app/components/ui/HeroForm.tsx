@@ -159,8 +159,9 @@ const TabSection: React.FC<TabSectionProps> = () => {
 
         <div className="sm:col-span-3">
           <ReCAPTCHA
-            sitekey="6LcnlqoqAAAAAAwbyoRYFc6yfNDfvKCDtoBpGl2A"
+            sitekey="6LednaoqAAAAAPvLwejTxX18h3W9Hj_u4G10zls7"
             onChange={handleRecaptchaChange}
+            className="h-4"
           />
           {validationErrors.recaptcha && (
             <p className="text-red-600 text-sm italic">
