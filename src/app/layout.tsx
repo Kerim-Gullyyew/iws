@@ -134,7 +134,7 @@ const websiteSchema = {
       {
         "@type": "SiteNavigationElement",
         name: "Apply Now",
-        url: "https://iws-register.iwsonlineschool.co.uk",
+        url: "https://iwsonlineschool.co.uk/apply",
       },
     ],
   },

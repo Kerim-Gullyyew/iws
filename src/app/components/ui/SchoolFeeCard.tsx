@@ -67,10 +67,10 @@ const SchoolFeeCard: React.FC<SchoolFeeCardProps> = ({ keystage, index }) => {
       </div>
       <div>
         <Link
-          href={"https://iws-register.iwsonlineschool.co.uk/"}
+          href={"/apply"}
           className="w-full flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white py-3 rounded-lg overflow-hidden"
         >
-          Enrol Now
+          Apply Now
         </Link>
       </div>
     </div>

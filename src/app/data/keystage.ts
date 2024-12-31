@@ -1080,7 +1080,7 @@ export const keyStages: KeyStageProps[] = [
         image_url: "",
         icon: "/subjects/Spanish@2x.png",
         description: "Inclusive Spanish course for effective communication skills.",
-        description2: "Explore our Cambridge I/GCSE Spanish – Foreign Language (0530) course for comprehensive language learning. Develop critical thinking, grammar, and vocabulary skills. Build a strong foundation with expert teachers. Enrol now for immersive Spanish education!  ",
+        description2: "Explore our Cambridge I/GCSE Spanish – Foreign Language (0530) course for comprehensive language learning. Develop critical thinking, grammar, and vocabulary skills. Build a strong foundation with expert teachers. Apply now for immersive Spanish education!  ",
         key_objective: [
           "At IWS Online School, stay updated on Cambridge exam applications with October notifications for I/GCSE students. Parents assist in selecting local exam centres and schedules. We provide special support, such as extra time and laptop use, for comfortable testing experiences. Explore our supportive exam environment today!",
           "",

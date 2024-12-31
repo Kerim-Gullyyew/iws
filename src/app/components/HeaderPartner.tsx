@@ -131,7 +131,7 @@ const HeaderPartner: React.FC<HeaderPartnerProps> = ({ partner }) => {
                   href={"https://iws-register.iwsonlineschool.co.uk/"}
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base  leading-7  hover:bg-gray-50"
                 >
-                  Enrol Now
+                  Apply Now
                 </Link>
               </div>
             </div>

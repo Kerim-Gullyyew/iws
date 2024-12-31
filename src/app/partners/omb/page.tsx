@@ -45,7 +45,7 @@ const page: React.FC<pageProps> = ({  }) => {
                 href={"#ready"}
                 className={`border-[#4366F6] hover:text-white hover:bg-[#3867FF] transition-all duration-300 border-[3px] rounded-xl px-7 py-2.5 text-lg box-border`}
               >
-                Enrol Now
+                Apply Now
               </Link>
               <Link
                 href="#contact-us"

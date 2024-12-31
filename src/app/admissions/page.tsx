@@ -30,7 +30,7 @@ const Page: React.FC<pageProps> = ({}) => {
             Complete the{" "}
             <Link
               className="text-blue-500"
-              href="https://iws-register.iwsonlineschool.co.uk/"
+              href="/apply"
             >
               {"application form "}
             </Link>

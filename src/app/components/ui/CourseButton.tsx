@@ -10,11 +10,11 @@ const CourseButton: React.FC<CourseButtonProps> = ({}) => {
     <div className="flex items-center gap-x-5">
       <button
         onClick={() =>
-          router.push("https://iws-register.iwsonlineschool.co.uk/")
+          router.push("/apply")
         }
         className="bg-white px-6 py-2 rounded-lg cursor-pointer text-blue-600 hover:bg-gray-100 "
       >
-        Enrol now
+        Apply now
       </button>
       <button
         onClick={() =>
