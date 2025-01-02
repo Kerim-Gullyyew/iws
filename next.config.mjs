@@ -13,6 +13,11 @@ const nextConfig = {
         destination: "/partners/bangladesh/cs",
         permanent: true,
       },
+      {
+        source: "/cambridge-a-level/:path*",
+        destination: "/online-a-levels/:path*",
+        permanent: true,
+      },
     ];
   },
 };
