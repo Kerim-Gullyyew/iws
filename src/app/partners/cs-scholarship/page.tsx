@@ -37,10 +37,10 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             </p>
 
             <p className="leading-[32px]  text-[18px] sm:text-[24px]">
-              Exam Date: 21st December 2024
+              Exam Date: 11th January 2025 at 07:00 PM
             </p>
             <p className="leading-[32px]  text-[18px] sm:text-[24px]">
-              Deadline: 20st December 2024
+              Deadline: 10th January 2025 at 11:50 PM
             </p>
 
             <div className="flex items-center justify-center flex-wrap gap-5 sm:justify-start">
@@ -105,7 +105,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
                     Date & Time
                   </h3>
                   <p className="text-p text-center leading-6">
-                    The exam takes place 21st December 2024 at 7pm your local
+                    The exam takes place 11th January 2025 at 07:00 PM your local
                     time.
                   </p>
                 </div>
@@ -380,7 +380,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
             <AccordionSecondary title="How do I register for the exam?">
               <div className=" space-y-5">
                 <p className="text-p">
-                  {`On the IWS scholarship exam page, click on the "Register for the Exam" button. You must complete the registration form and pay the exam fee at the latest one day before the exam. Registration will close at 23:50 am your local time on 20th December 2024.`}
+                  {`On the IWS scholarship exam page, click on the "Register for the Exam" button. You must complete the registration form and pay the exam fee at the latest one day before the exam. Registration will close at 11:50 PM your local time on 10th January 2025.`}
                 </p>
               </div>
             </AccordionSecondary>
@@ -418,7 +418,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className=" space-y-5">
                 <p className="text-p">
                   {
-                    "The exam takes place on 21st December at 19:00 pm Bangladesh time. Please ensure that you are ready and online at that time, and make sure your device’s date and time are correctly set to your local time."
+                    "The exam takes place on 11th January at 07:00 PM Bangladesh time. Please ensure that you are ready and online at that time, and make sure your device’s date and time are correctly set to your local time."
                   }
                 </p>
               </div>
@@ -428,7 +428,7 @@ const page: React.FC<pageProps> = ({ params, searchParams }) => {
               <div className=" space-y-5">
                 <p className="text-p">
                   {
-                    "Results will be announced by 27 th December on the Scholarship exam webpage. There will be three winners from each year group, from Year 3 to Year 13."
+                    "Results will be announced by 27th January on the Scholarship exam webpage. There will be three winners from each year group, from Year 3 to Year 13."
                   }
                 </p>
               </div>
